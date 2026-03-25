@@ -6,6 +6,11 @@ import { ArabicText } from "../../components/ui/ArabicText";
 import { Crescent, StarOrnament, OrnamentalDivider } from "../../components/ornaments";
 import type { ThemeMode, UXMode } from "../../types";
 
+const LANG_OPTIONS: { value: string; label: string; labelNative: string }[] = [
+  { value: "en", label: "English", labelNative: "English" },
+  { value: "ur", label: "Urdu", labelNative: "\u0627\u0631\u062F\u0648" },
+];
+
 const THEME_OPTIONS: { value: ThemeMode; label: string; desc: string }[] = [
   { value: "light", label: "Light", desc: "Warm cream" },
   { value: "dark", label: "Dark", desc: "Warm midnight" },
@@ -31,6 +36,7 @@ export default function SettingsScreen() {
   const setTheme = useAppStore((s) => s.setTheme);
   const setFontSize = useAppStore((s) => s.setFontSize);
   const setUXMode = useAppStore((s) => s.setUXMode);
+  const setTranslationLang = useAppStore((s) => s.setTranslationLang);
 
   return (
     <ScrollView
@@ -233,6 +239,71 @@ export default function SettingsScreen() {
                   >
                     {opt.label}
                   </Text>
+                </TouchableOpacity>
+              );
+            })}
+          </View>
+        </View>
+
+        {/* Language */}
+        <View style={[styles.card, { backgroundColor: colors.surface }]}>
+          <Text
+            style={[
+              styles.cardTitle,
+              { color: colors.textSecondary, fontFamily: fonts.latin.semiBold },
+            ]}
+          >
+            LANGUAGE
+          </Text>
+          <View style={styles.modeList}>
+            {LANG_OPTIONS.map((opt) => {
+              const isActive = settings.translationLang === opt.value;
+              return (
+                <TouchableOpacity
+                  key={opt.value}
+                  onPress={() => setTranslationLang(opt.value)}
+                  style={[
+                    styles.modeButton,
+                    {
+                      backgroundColor: isActive ? `${colors.accent}15` : "transparent",
+                      borderColor: isActive ? `${colors.accent}40` : "transparent",
+                      borderWidth: isActive ? 1 : 0,
+                    },
+                  ]}
+                  accessibilityLabel={`${opt.label} language`}
+                  accessibilityState={{ selected: isActive }}
+                >
+                  <StarOrnament
+                    size={16}
+                    color={isActive ? colors.accent : colors.textSecondary}
+                    opacity={isActive ? 0.8 : 0.3}
+                  />
+                  <View style={styles.modeTextContainer}>
+                    <Text
+                      style={[
+                        styles.modeLabel,
+                        {
+                          color: isActive ? colors.accent : colors.textPrimary,
+                          fontFamily: fonts.latin.medium,
+                        },
+                      ]}
+                    >
+                      {opt.label}
+                    </Text>
+                    <Text
+                      style={[
+                        styles.modeDesc,
+                        {
+                          color: colors.textSecondary,
+                          fontFamily: opt.value === "ur" ? fonts.arabic.regular : fonts.latin.regular,
+                          writingDirection: opt.value === "ur" ? "rtl" : "ltr",
+                        },
+                      ]}
+                      {...(opt.value === "ur" ? { accessibilityLanguage: "ur" } : {})}
+                    >
+                      {opt.labelNative}
+                    </Text>
+                  </View>
                 </TouchableOpacity>
               );
             })}

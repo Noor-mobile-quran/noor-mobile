@@ -29,6 +29,7 @@ interface AppState {
   setUXMode: (mode: UXMode) => void;
   setTheme: (theme: ThemeMode) => void;
   setFontSize: (size: UserSettings["fontSize"]) => void;
+  setTranslationLang: (lang: string) => void;
   updateProgress: (p: Partial<UserProgress>) => void;
   recordReading: (surah: number, ayah: number) => void;
   setAudioPlaying: (playing: boolean, ayah?: number | null) => void;
@@ -59,6 +60,14 @@ export const useAppStore = create<AppState>((set, get) => ({
   setFontSize: (fontSize) => {
     set((s) => {
       const settings = { ...s.settings, fontSize };
+      storage.setSettings(settings);
+      return { settings };
+    });
+  },
+
+  setTranslationLang: (translationLang) => {
+    set((s) => {
+      const settings = { ...s.settings, translationLang };
       storage.setSettings(settings);
       return { settings };
     });

@@ -21,6 +21,7 @@ interface Props {
   onBookmark: () => void;
   isBookmarked: boolean;
   uxMode?: UXMode;
+  translationLang?: string;
 }
 
 function PlayIcon({ size, color }: { size: number; color: string }) {
@@ -60,6 +61,7 @@ export default function AyahCard({
   onBookmark,
   isBookmarked,
   uxMode = "serene",
+  translationLang,
 }: Props) {
   const { colors } = useTheme();
   const [showControls, setShowControls] = useState(false);
@@ -225,11 +227,19 @@ export default function AyahCard({
             styles.translation,
             {
               color: colors.textSecondary,
-              fontFamily: fonts.latin.regular,
+              fontFamily:
+                translationLang === "ur" ? "Amiri_400Regular" : fonts.latin.regular,
+              ...(translationLang === "ur" && {
+                writingDirection: "rtl" as const,
+                textAlign: "right" as const,
+              }),
             },
           ]}
+          {...(translationLang === "ur" && { accessibilityLanguage: "ur" })}
         >
-          {ayah.text_translation}
+          {translationLang === "ur" && ayah.text_translation_ur
+            ? ayah.text_translation_ur
+            : ayah.text_translation}
         </Text>
       </View>
     </TouchableOpacity>

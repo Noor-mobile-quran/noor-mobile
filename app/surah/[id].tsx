@@ -36,6 +36,7 @@ export default function ReadingScreen() {
   const currentAudioAyah = useAppStore((s) => s.currentAudioAyah);
 
   const uxMode = useAppStore((s) => s.settings.uxMode);
+  const translationLang = useAppStore((s) => s.settings.translationLang);
 
   const { play, stop } = useAudioPlayer();
   const [bookmarks, setBookmarks] = useState<Bookmark[]>([]);
@@ -147,6 +148,7 @@ export default function ReadingScreen() {
           onBookmark={() => toggleBookmark(item.number_in_surah)}
           isBookmarked={isBookmarked(item.number_in_surah)}
           uxMode={uxMode}
+          translationLang={translationLang}
         />
         {isStudy && (
           <NotesInput
@@ -158,7 +160,7 @@ export default function ReadingScreen() {
         )}
       </View>
     ),
-    [audioPlaying, currentAudioAyah, playAyah, toggleBookmark, isBookmarked, uxMode, isStudy, surahNum, getNote, saveNote]
+    [audioPlaying, currentAudioAyah, playAyah, toggleBookmark, isBookmarked, uxMode, translationLang, isStudy, surahNum, getNote, saveNote]
   );
 
   if (isLoading) {

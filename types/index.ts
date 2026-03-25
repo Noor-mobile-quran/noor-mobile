@@ -13,6 +13,7 @@ export interface Ayah {
   number_in_surah: number;
   text_arabic: string;
   text_translation: string;
+  text_translation_ur?: string;
   juz: number;
   page: number;
   audio_url?: string;
