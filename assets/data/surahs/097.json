@@ -1,0 +1,56 @@
+{
+  "number": 97,
+  "name_arabic": "سُورَةُ القَدۡرِ",
+  "name_english": "Al-Qadr",
+  "name_translation": "The Power, Fate",
+  "revelation_type": "meccan",
+  "ayah_count": 5,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6126,
+      "number_in_surah": 1,
+      "text_arabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "text_translation": "Indeed, We sent the Qur'an down during the Night of Decree.",
+      "juz": 30,
+      "page": 598,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6126.mp3"
+    },
+    {
+      "number": 6127,
+      "number_in_surah": 2,
+      "text_arabic": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+      "text_translation": "And what can make you know what is the Night of Decree?",
+      "juz": 30,
+      "page": 598,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6127.mp3"
+    },
+    {
+      "number": 6128,
+      "number_in_surah": 3,
+      "text_arabic": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ",
+      "text_translation": "The Night of Decree is better than a thousand months.",
+      "juz": 30,
+      "page": 598,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6128.mp3"
+    },
+    {
+      "number": 6129,
+      "number_in_surah": 4,
+      "text_arabic": "تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ",
+      "text_translation": "The angels and the Spirit descend therein by permission of their Lord for every matter.",
+      "juz": 30,
+      "page": 598,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6129.mp3"
+    },
+    {
+      "number": 6130,
+      "number_in_surah": 5,
+      "text_arabic": "سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+      "text_translation": "Peace it is until the emergence of dawn.",
+      "juz": 30,
+      "page": 598,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6130.mp3"
+    }
+  ]
+}

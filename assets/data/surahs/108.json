@@ -1,0 +1,38 @@
+{
+  "number": 108,
+  "name_arabic": "سُورَةُ الكَوۡثَرِ",
+  "name_english": "Al-Kawthar",
+  "name_translation": "Abundance",
+  "revelation_type": "meccan",
+  "ayah_count": 3,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6205,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ",
+      "text_translation": "Indeed, We have granted you, [O Muhammad], al-Kawthar.",
+      "juz": 30,
+      "page": 602,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6205.mp3"
+    },
+    {
+      "number": 6206,
+      "number_in_surah": 2,
+      "text_arabic": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+      "text_translation": "So pray to your Lord and sacrifice [to Him alone].",
+      "juz": 30,
+      "page": 602,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6206.mp3"
+    },
+    {
+      "number": 6207,
+      "number_in_surah": 3,
+      "text_arabic": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+      "text_translation": "Indeed, your enemy is the one cut off.",
+      "juz": 30,
+      "page": 602,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6207.mp3"
+    }
+  ]
+}

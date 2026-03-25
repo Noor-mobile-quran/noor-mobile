@@ -1,0 +1,83 @@
+{
+  "number": 94,
+  "name_arabic": "سُورَةُ الشَّرۡحِ",
+  "name_english": "Ash-Sharh",
+  "name_translation": "The Consolation",
+  "revelation_type": "meccan",
+  "ayah_count": 8,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6091,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+      "text_translation": "Did We not expand for you, [O Muhammad], your breast?",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6091.mp3"
+    },
+    {
+      "number": 6092,
+      "number_in_surah": 2,
+      "text_arabic": "وَوَضَعْنَا عَنكَ وِزْرَكَ",
+      "text_translation": "And We removed from you your burden",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6092.mp3"
+    },
+    {
+      "number": 6093,
+      "number_in_surah": 3,
+      "text_arabic": "ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ",
+      "text_translation": "Which had weighed upon your back",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6093.mp3"
+    },
+    {
+      "number": 6094,
+      "number_in_surah": 4,
+      "text_arabic": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
+      "text_translation": "And raised high for you your repute.",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6094.mp3"
+    },
+    {
+      "number": 6095,
+      "number_in_surah": 5,
+      "text_arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+      "text_translation": "For indeed, with hardship [will be] ease.",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6095.mp3"
+    },
+    {
+      "number": 6096,
+      "number_in_surah": 6,
+      "text_arabic": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًۭا",
+      "text_translation": "Indeed, with hardship [will be] ease.",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6096.mp3"
+    },
+    {
+      "number": 6097,
+      "number_in_surah": 7,
+      "text_arabic": "فَإِذَا فَرَغْتَ فَٱنصَبْ",
+      "text_translation": "So when you have finished [your duties], then stand up [for worship].",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6097.mp3"
+    },
+    {
+      "number": 6098,
+      "number_in_surah": 8,
+      "text_arabic": "وَإِلَىٰ رَبِّكَ فَٱرْغَب",
+      "text_translation": "And to your Lord direct [your] longing.",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6098.mp3"
+    }
+  ]
+}

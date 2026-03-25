@@ -1,0 +1,182 @@
+{
+  "number": 96,
+  "name_arabic": "سُورَةُ العَلَقِ",
+  "name_english": "Al-Alaq",
+  "name_translation": "The Clot",
+  "revelation_type": "meccan",
+  "ayah_count": 19,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6107,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+      "text_translation": "Recite in the name of your Lord who created -",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6107.mp3"
+    },
+    {
+      "number": 6108,
+      "number_in_surah": 2,
+      "text_arabic": "خَلَقَ ٱلْإِنسَٰنَ مِنْ عَلَقٍ",
+      "text_translation": "Created man from a clinging substance.",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6108.mp3"
+    },
+    {
+      "number": 6109,
+      "number_in_surah": 3,
+      "text_arabic": "ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ",
+      "text_translation": "Recite, and your Lord is the most Generous -",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6109.mp3"
+    },
+    {
+      "number": 6110,
+      "number_in_surah": 4,
+      "text_arabic": "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ",
+      "text_translation": "Who taught by the pen -",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6110.mp3"
+    },
+    {
+      "number": 6111,
+      "number_in_surah": 5,
+      "text_arabic": "عَلَّمَ ٱلْإِنسَٰنَ مَا لَمْ يَعْلَمْ",
+      "text_translation": "Taught man that which he knew not.",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6111.mp3"
+    },
+    {
+      "number": 6112,
+      "number_in_surah": 6,
+      "text_arabic": "كَلَّآ إِنَّ ٱلْإِنسَٰنَ لَيَطْغَىٰٓ",
+      "text_translation": "No! [But] indeed, man transgresses",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6112.mp3"
+    },
+    {
+      "number": 6113,
+      "number_in_surah": 7,
+      "text_arabic": "أَن رَّءَاهُ ٱسْتَغْنَىٰٓ",
+      "text_translation": "Because he sees himself self-sufficient.",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6113.mp3"
+    },
+    {
+      "number": 6114,
+      "number_in_surah": 8,
+      "text_arabic": "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجْعَىٰٓ",
+      "text_translation": "Indeed, to your Lord is the return.",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6114.mp3"
+    },
+    {
+      "number": 6115,
+      "number_in_surah": 9,
+      "text_arabic": "أَرَءَيْتَ ٱلَّذِى يَنْهَىٰ",
+      "text_translation": "Have you seen the one who forbids",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6115.mp3"
+    },
+    {
+      "number": 6116,
+      "number_in_surah": 10,
+      "text_arabic": "عَبْدًا إِذَا صَلَّىٰٓ",
+      "text_translation": "A servant when he prays?",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6116.mp3"
+    },
+    {
+      "number": 6117,
+      "number_in_surah": 11,
+      "text_arabic": "أَرَءَيْتَ إِن كَانَ عَلَى ٱلْهُدَىٰٓ",
+      "text_translation": "Have you seen if he is upon guidance",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6117.mp3"
+    },
+    {
+      "number": 6118,
+      "number_in_surah": 12,
+      "text_arabic": "أَوْ أَمَرَ بِٱلتَّقْوَىٰٓ",
+      "text_translation": "Or enjoins righteousness?",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6118.mp3"
+    },
+    {
+      "number": 6119,
+      "number_in_surah": 13,
+      "text_arabic": "أَرَءَيْتَ إِن كَذَّبَ وَتَوَلَّىٰٓ",
+      "text_translation": "Have you seen if he denies and turns away -",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6119.mp3"
+    },
+    {
+      "number": 6120,
+      "number_in_surah": 14,
+      "text_arabic": "أَلَمْ يَعْلَم بِأَنَّ ٱللَّهَ يَرَىٰ",
+      "text_translation": "Does he not know that Allah sees?",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6120.mp3"
+    },
+    {
+      "number": 6121,
+      "number_in_surah": 15,
+      "text_arabic": "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًۢا بِٱلنَّاصِيَةِ",
+      "text_translation": "No! If he does not desist, We will surely drag him by the forelock -",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6121.mp3"
+    },
+    {
+      "number": 6122,
+      "number_in_surah": 16,
+      "text_arabic": "نَاصِيَةٍۢ كَٰذِبَةٍ خَاطِئَةٍۢ",
+      "text_translation": "A lying, sinning forelock.",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6122.mp3"
+    },
+    {
+      "number": 6123,
+      "number_in_surah": 17,
+      "text_arabic": "فَلْيَدْعُ نَادِيَهُۥ",
+      "text_translation": "Then let him call his associates;",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6123.mp3"
+    },
+    {
+      "number": 6124,
+      "number_in_surah": 18,
+      "text_arabic": "سَنَدْعُ ٱلزَّبَانِيَةَ",
+      "text_translation": "We will call the angels of Hell.",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6124.mp3"
+    },
+    {
+      "number": 6125,
+      "number_in_surah": 19,
+      "text_arabic": "كَلَّا لَا تُطِعْهُ وَٱسْجُدْ وَٱقْتَرِب ۩",
+      "text_translation": "No! Do not obey him. But prostrate and draw near [to Allah].",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6125.mp3"
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "number": 79,
+  "name_arabic": "سُورَةُ النَّازِعَاتِ",
+  "name_english": "An-Naazi'aat",
+  "name_translation": "Those who drag forth",
+  "revelation_type": "meccan",
+  "ayah_count": 46,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 5713,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلنَّٰزِعَٰتِ غَرْقًۭا",
+      "text_translation": "By those [angels] who extract with violence",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5713.mp3"
+    },
+    {
+      "number": 5714,
+      "number_in_surah": 2,
+      "text_arabic": "وَٱلنَّٰشِطَٰتِ نَشْطًۭا",
+      "text_translation": "And [by] those who remove with ease",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5714.mp3"
+    },
+    {
+      "number": 5715,
+      "number_in_surah": 3,
+      "text_arabic": "وَٱلسَّٰبِحَٰتِ سَبْحًۭا",
+      "text_translation": "And [by] those who glide [as if] swimming",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5715.mp3"
+    },
+    {
+      "number": 5716,
+      "number_in_surah": 4,
+      "text_arabic": "فَٱلسَّٰبِقَٰتِ سَبْقًۭا",
+      "text_translation": "And those who race each other in a race",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5716.mp3"
+    },
+    {
+      "number": 5717,
+      "number_in_surah": 5,
+      "text_arabic": "فَٱلْمُدَبِّرَٰتِ أَمْرًۭا",
+      "text_translation": "And those who arrange [each] matter,",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5717.mp3"
+    },
+    {
+      "number": 5718,
+      "number_in_surah": 6,
+      "text_arabic": "يَوْمَ تَرْجُفُ ٱلرَّاجِفَةُ",
+      "text_translation": "On the Day the blast [of the Horn] will convulse [creation],",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5718.mp3"
+    },
+    {
+      "number": 5719,
+      "number_in_surah": 7,
+      "text_arabic": "تَتْبَعُهَا ٱلرَّادِفَةُ",
+      "text_translation": "There will follow it the subsequent [one].",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5719.mp3"
+    },
+    {
+      "number": 5720,
+      "number_in_surah": 8,
+      "text_arabic": "قُلُوبٌۭ يَوْمَئِذٍۢ وَاجِفَةٌ",
+      "text_translation": "Hearts, that Day, will tremble,",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5720.mp3"
+    },
+    {
+      "number": 5721,
+      "number_in_surah": 9,
+      "text_arabic": "أَبْصَٰرُهَا خَٰشِعَةٌۭ",
+      "text_translation": "Their eyes humbled.",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5721.mp3"
+    },
+    {
+      "number": 5722,
+      "number_in_surah": 10,
+      "text_arabic": "يَقُولُونَ أَءِنَّا لَمَرْدُودُونَ فِى ٱلْحَافِرَةِ",
+      "text_translation": "They are [presently] saying, \"Will we indeed be returned to [our] former state [of life]?",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5722.mp3"
+    },
+    {
+      "number": 5723,
+      "number_in_surah": 11,
+      "text_arabic": "أَءِذَا كُنَّا عِظَٰمًۭا نَّخِرَةًۭ",
+      "text_translation": "Even if we should be decayed bones?",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5723.mp3"
+    },
+    {
+      "number": 5724,
+      "number_in_surah": 12,
+      "text_arabic": "قَالُوا۟ تِلْكَ إِذًۭا كَرَّةٌ خَاسِرَةٌۭ",
+      "text_translation": "They say, \"That, then, would be a losing return.\"",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5724.mp3"
+    },
+    {
+      "number": 5725,
+      "number_in_surah": 13,
+      "text_arabic": "فَإِنَّمَا هِىَ زَجْرَةٌۭ وَٰحِدَةٌۭ",
+      "text_translation": "Indeed, it will be but one shout,",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5725.mp3"
+    },
+    {
+      "number": 5726,
+      "number_in_surah": 14,
+      "text_arabic": "فَإِذَا هُم بِٱلسَّاهِرَةِ",
+      "text_translation": "And suddenly they will be [alert] upon the earth's surface.",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5726.mp3"
+    },
+    {
+      "number": 5727,
+      "number_in_surah": 15,
+      "text_arabic": "هَلْ أَتَىٰكَ حَدِيثُ مُوسَىٰٓ",
+      "text_translation": "Has there reached you the story of Moses? -",
+      "juz": 30,
+      "page": 583,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5727.mp3"
+    },
+    {
+      "number": 5728,
+      "number_in_surah": 16,
+      "text_arabic": "إِذْ نَادَىٰهُ رَبُّهُۥ بِٱلْوَادِ ٱلْمُقَدَّسِ طُوًى",
+      "text_translation": "When his Lord called to him in the sacred valley of Tuwa,",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5728.mp3"
+    },
+    {
+      "number": 5729,
+      "number_in_surah": 17,
+      "text_arabic": "ٱذْهَبْ إِلَىٰ فِرْعَوْنَ إِنَّهُۥ طَغَىٰ",
+      "text_translation": "\"Go to Pharaoh. Indeed, he has transgressed.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5729.mp3"
+    },
+    {
+      "number": 5730,
+      "number_in_surah": 18,
+      "text_arabic": "فَقُلْ هَل لَّكَ إِلَىٰٓ أَن تَزَكَّىٰ",
+      "text_translation": "And say to him, 'Would you [be willing to] purify yourself",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5730.mp3"
+    },
+    {
+      "number": 5731,
+      "number_in_surah": 19,
+      "text_arabic": "وَأَهْدِيَكَ إِلَىٰ رَبِّكَ فَتَخْشَىٰ",
+      "text_translation": "And let me guide you to your Lord so you would fear [Him]?'\"",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5731.mp3"
+    },
+    {
+      "number": 5732,
+      "number_in_surah": 20,
+      "text_arabic": "فَأَرَىٰهُ ٱلْءَايَةَ ٱلْكُبْرَىٰ",
+      "text_translation": "And he showed him the greatest sign,",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5732.mp3"
+    },
+    {
+      "number": 5733,
+      "number_in_surah": 21,
+      "text_arabic": "فَكَذَّبَ وَعَصَىٰ",
+      "text_translation": "But Pharaoh denied and disobeyed.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5733.mp3"
+    },
+    {
+      "number": 5734,
+      "number_in_surah": 22,
+      "text_arabic": "ثُمَّ أَدْبَرَ يَسْعَىٰ",
+      "text_translation": "Then he turned his back, striving.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5734.mp3"
+    },
+    {
+      "number": 5735,
+      "number_in_surah": 23,
+      "text_arabic": "فَحَشَرَ فَنَادَىٰ",
+      "text_translation": "And he gathered [his people] and called out",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5735.mp3"
+    },
+    {
+      "number": 5736,
+      "number_in_surah": 24,
+      "text_arabic": "فَقَالَ أَنَا۠ رَبُّكُمُ ٱلْأَعْلَىٰ",
+      "text_translation": "And said, \"I am your most exalted lord.\"",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5736.mp3"
+    },
+    {
+      "number": 5737,
+      "number_in_surah": 25,
+      "text_arabic": "فَأَخَذَهُ ٱللَّهُ نَكَالَ ٱلْءَاخِرَةِ وَٱلْأُولَىٰٓ",
+      "text_translation": "So Allah seized him in exemplary punishment for the last and the first [transgression].",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5737.mp3"
+    },
+    {
+      "number": 5738,
+      "number_in_surah": 26,
+      "text_arabic": "إِنَّ فِى ذَٰلِكَ لَعِبْرَةًۭ لِّمَن يَخْشَىٰٓ",
+      "text_translation": "Indeed in that is a warning for whoever would fear [Allah].",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5738.mp3"
+    },
+    {
+      "number": 5739,
+      "number_in_surah": 27,
+      "text_arabic": "ءَأَنتُمْ أَشَدُّ خَلْقًا أَمِ ٱلسَّمَآءُ ۚ بَنَىٰهَا",
+      "text_translation": "Are you a more difficult creation or is the heaven? Allah constructed it.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5739.mp3"
+    },
+    {
+      "number": 5740,
+      "number_in_surah": 28,
+      "text_arabic": "رَفَعَ سَمْكَهَا فَسَوَّىٰهَا",
+      "text_translation": "He raised its ceiling and proportioned it.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5740.mp3"
+    },
+    {
+      "number": 5741,
+      "number_in_surah": 29,
+      "text_arabic": "وَأَغْطَشَ لَيْلَهَا وَأَخْرَجَ ضُحَىٰهَا",
+      "text_translation": "And He darkened its night and extracted its brightness.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5741.mp3"
+    },
+    {
+      "number": 5742,
+      "number_in_surah": 30,
+      "text_arabic": "وَٱلْأَرْضَ بَعْدَ ذَٰلِكَ دَحَىٰهَآ",
+      "text_translation": "And after that He spread the earth.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5742.mp3"
+    },
+    {
+      "number": 5743,
+      "number_in_surah": 31,
+      "text_arabic": "أَخْرَجَ مِنْهَا مَآءَهَا وَمَرْعَىٰهَا",
+      "text_translation": "He extracted from it its water and its pasture,",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5743.mp3"
+    },
+    {
+      "number": 5744,
+      "number_in_surah": 32,
+      "text_arabic": "وَٱلْجِبَالَ أَرْسَىٰهَا",
+      "text_translation": "And the mountains He set firmly",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5744.mp3"
+    },
+    {
+      "number": 5745,
+      "number_in_surah": 33,
+      "text_arabic": "مَتَٰعًۭا لَّكُمْ وَلِأَنْعَٰمِكُمْ",
+      "text_translation": "As provision for you and your grazing livestock.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5745.mp3"
+    },
+    {
+      "number": 5746,
+      "number_in_surah": 34,
+      "text_arabic": "فَإِذَا جَآءَتِ ٱلطَّآمَّةُ ٱلْكُبْرَىٰ",
+      "text_translation": "But when there comes the greatest Overwhelming Calamity -",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5746.mp3"
+    },
+    {
+      "number": 5747,
+      "number_in_surah": 35,
+      "text_arabic": "يَوْمَ يَتَذَكَّرُ ٱلْإِنسَٰنُ مَا سَعَىٰ",
+      "text_translation": "The Day when man will remember that for which he strove,",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5747.mp3"
+    },
+    {
+      "number": 5748,
+      "number_in_surah": 36,
+      "text_arabic": "وَبُرِّزَتِ ٱلْجَحِيمُ لِمَن يَرَىٰ",
+      "text_translation": "And Hellfire will be exposed for [all] those who see -",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5748.mp3"
+    },
+    {
+      "number": 5749,
+      "number_in_surah": 37,
+      "text_arabic": "فَأَمَّا مَن طَغَىٰ",
+      "text_translation": "So as for he who transgressed",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5749.mp3"
+    },
+    {
+      "number": 5750,
+      "number_in_surah": 38,
+      "text_arabic": "وَءَاثَرَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+      "text_translation": "And preferred the life of the world,",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5750.mp3"
+    },
+    {
+      "number": 5751,
+      "number_in_surah": 39,
+      "text_arabic": "فَإِنَّ ٱلْجَحِيمَ هِىَ ٱلْمَأْوَىٰ",
+      "text_translation": "Then indeed, Hellfire will be [his] refuge.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5751.mp3"
+    },
+    {
+      "number": 5752,
+      "number_in_surah": 40,
+      "text_arabic": "وَأَمَّا مَنْ خَافَ مَقَامَ رَبِّهِۦ وَنَهَى ٱلنَّفْسَ عَنِ ٱلْهَوَىٰ",
+      "text_translation": "But as for he who feared the position of his Lord and prevented the soul from [unlawful] inclination,",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5752.mp3"
+    },
+    {
+      "number": 5753,
+      "number_in_surah": 41,
+      "text_arabic": "فَإِنَّ ٱلْجَنَّةَ هِىَ ٱلْمَأْوَىٰ",
+      "text_translation": "Then indeed, Paradise will be [his] refuge.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5753.mp3"
+    },
+    {
+      "number": 5754,
+      "number_in_surah": 42,
+      "text_arabic": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا",
+      "text_translation": "They ask you, [O Muhammad], about the Hour: when is its arrival?",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5754.mp3"
+    },
+    {
+      "number": 5755,
+      "number_in_surah": 43,
+      "text_arabic": "فِيمَ أَنتَ مِن ذِكْرَىٰهَآ",
+      "text_translation": "In what [position] are you that you should mention it?",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5755.mp3"
+    },
+    {
+      "number": 5756,
+      "number_in_surah": 44,
+      "text_arabic": "إِلَىٰ رَبِّكَ مُنتَهَىٰهَآ",
+      "text_translation": "To your Lord is its finality.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5756.mp3"
+    },
+    {
+      "number": 5757,
+      "number_in_surah": 45,
+      "text_arabic": "إِنَّمَآ أَنتَ مُنذِرُ مَن يَخْشَىٰهَا",
+      "text_translation": "You are only a warner for those who fear it.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5757.mp3"
+    },
+    {
+      "number": 5758,
+      "number_in_surah": 46,
+      "text_arabic": "كَأَنَّهُمْ يَوْمَ يَرَوْنَهَا لَمْ يَلْبَثُوٓا۟ إِلَّا عَشِيَّةً أَوْ ضُحَىٰهَا",
+      "text_translation": "It will be, on the Day they see it, as though they had not remained [in the world] except for an afternoon or a morning thereof.",
+      "juz": 30,
+      "page": 584,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5758.mp3"
+    }
+  ]
+}

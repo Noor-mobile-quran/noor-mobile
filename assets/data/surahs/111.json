@@ -1,0 +1,56 @@
+{
+  "number": 111,
+  "name_arabic": "سُورَةُ المَسَدِ",
+  "name_english": "Al-Masad",
+  "name_translation": "The Palm Fibre",
+  "revelation_type": "meccan",
+  "ayah_count": 5,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6217,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ تَبَّتْ يَدَآ أَبِى لَهَبٍۢ وَتَبَّ",
+      "text_translation": "May the hands of Abu Lahab be ruined, and ruined is he.",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6217.mp3"
+    },
+    {
+      "number": 6218,
+      "number_in_surah": 2,
+      "text_arabic": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+      "text_translation": "His wealth will not avail him or that which he gained.",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6218.mp3"
+    },
+    {
+      "number": 6219,
+      "number_in_surah": 3,
+      "text_arabic": "سَيَصْلَىٰ نَارًۭا ذَاتَ لَهَبٍۢ",
+      "text_translation": "He will [enter to] burn in a Fire of [blazing] flame",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6219.mp3"
+    },
+    {
+      "number": 6220,
+      "number_in_surah": 4,
+      "text_arabic": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+      "text_translation": "And his wife [as well] - the carrier of firewood.",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6220.mp3"
+    },
+    {
+      "number": 6221,
+      "number_in_surah": 5,
+      "text_arabic": "فِى جِيدِهَا حَبْلٌۭ مِّن مَّسَدٍۭ",
+      "text_translation": "Around her neck is a rope of [twisted] fiber.",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6221.mp3"
+    }
+  ]
+}

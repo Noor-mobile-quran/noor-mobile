@@ -1,0 +1,893 @@
+{
+  "number": 19,
+  "name_arabic": "سُورَةُ مَرۡيَمَ",
+  "name_english": "Maryam",
+  "name_translation": "Mary",
+  "revelation_type": "meccan",
+  "ayah_count": 98,
+  "juz_start": 16,
+  "ayahs": [
+    {
+      "number": 2251,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ كٓهيعٓصٓ",
+      "text_translation": "Kaf, Ha, Ya, 'Ayn, Sad.",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2251.mp3"
+    },
+    {
+      "number": 2252,
+      "number_in_surah": 2,
+      "text_arabic": "ذِكْرُ رَحْمَتِ رَبِّكَ عَبْدَهُۥ زَكَرِيَّآ",
+      "text_translation": "[This is] a mention of the mercy of your Lord to His servant Zechariah",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2252.mp3"
+    },
+    {
+      "number": 2253,
+      "number_in_surah": 3,
+      "text_arabic": "إِذْ نَادَىٰ رَبَّهُۥ نِدَآءً خَفِيًّۭا",
+      "text_translation": "When he called to his Lord a private supplication.",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2253.mp3"
+    },
+    {
+      "number": 2254,
+      "number_in_surah": 4,
+      "text_arabic": "قَالَ رَبِّ إِنِّى وَهَنَ ٱلْعَظْمُ مِنِّى وَٱشْتَعَلَ ٱلرَّأْسُ شَيْبًۭا وَلَمْ أَكُنۢ بِدُعَآئِكَ رَبِّ شَقِيًّۭا",
+      "text_translation": "He said, \"My Lord, indeed my bones have weakened, and my head has filled with white, and never have I been in my supplication to You, my Lord, unhappy.",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2254.mp3"
+    },
+    {
+      "number": 2255,
+      "number_in_surah": 5,
+      "text_arabic": "وَإِنِّى خِفْتُ ٱلْمَوَٰلِىَ مِن وَرَآءِى وَكَانَتِ ٱمْرَأَتِى عَاقِرًۭا فَهَبْ لِى مِن لَّدُنكَ وَلِيًّۭا",
+      "text_translation": "And indeed, I fear the successors after me, and my wife has been barren, so give me from Yourself an heir",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2255.mp3"
+    },
+    {
+      "number": 2256,
+      "number_in_surah": 6,
+      "text_arabic": "يَرِثُنِى وَيَرِثُ مِنْ ءَالِ يَعْقُوبَ ۖ وَٱجْعَلْهُ رَبِّ رَضِيًّۭا",
+      "text_translation": "Who will inherit me and inherit from the family of Jacob. And make him, my Lord, pleasing [to You].\"",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2256.mp3"
+    },
+    {
+      "number": 2257,
+      "number_in_surah": 7,
+      "text_arabic": "يَٰزَكَرِيَّآ إِنَّا نُبَشِّرُكَ بِغُلَٰمٍ ٱسْمُهُۥ يَحْيَىٰ لَمْ نَجْعَل لَّهُۥ مِن قَبْلُ سَمِيًّۭا",
+      "text_translation": "[He was told], \"O Zechariah, indeed We give you good tidings of a boy whose name will be John. We have not assigned to any before [this] name.\"",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2257.mp3"
+    },
+    {
+      "number": 2258,
+      "number_in_surah": 8,
+      "text_arabic": "قَالَ رَبِّ أَنَّىٰ يَكُونُ لِى غُلَٰمٌۭ وَكَانَتِ ٱمْرَأَتِى عَاقِرًۭا وَقَدْ بَلَغْتُ مِنَ ٱلْكِبَرِ عِتِيًّۭا",
+      "text_translation": "He said, \"My Lord, how will I have a boy when my wife has been barren and I have reached extreme old age?\"",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2258.mp3"
+    },
+    {
+      "number": 2259,
+      "number_in_surah": 9,
+      "text_arabic": "قَالَ كَذَٰلِكَ قَالَ رَبُّكَ هُوَ عَلَىَّ هَيِّنٌۭ وَقَدْ خَلَقْتُكَ مِن قَبْلُ وَلَمْ تَكُ شَيْـًۭٔا",
+      "text_translation": "[An angel] said, \"Thus [it will be]; your Lord says, 'It is easy for Me, for I created you before, while you were nothing.' \"",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2259.mp3"
+    },
+    {
+      "number": 2260,
+      "number_in_surah": 10,
+      "text_arabic": "قَالَ رَبِّ ٱجْعَل لِّىٓ ءَايَةًۭ ۚ قَالَ ءَايَتُكَ أَلَّا تُكَلِّمَ ٱلنَّاسَ ثَلَٰثَ لَيَالٍۢ سَوِيًّۭا",
+      "text_translation": "[Zechariah] said, \"My Lord, make for me a sign.\" He said, \"Your sign is that you will not speak to the people for three nights, [being] sound.\"",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2260.mp3"
+    },
+    {
+      "number": 2261,
+      "number_in_surah": 11,
+      "text_arabic": "فَخَرَجَ عَلَىٰ قَوْمِهِۦ مِنَ ٱلْمِحْرَابِ فَأَوْحَىٰٓ إِلَيْهِمْ أَن سَبِّحُوا۟ بُكْرَةًۭ وَعَشِيًّۭا",
+      "text_translation": "So he came out to his people from the prayer chamber and signaled to them to exalt [Allah] in the morning and afternoon.",
+      "juz": 16,
+      "page": 305,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2261.mp3"
+    },
+    {
+      "number": 2262,
+      "number_in_surah": 12,
+      "text_arabic": "يَٰيَحْيَىٰ خُذِ ٱلْكِتَٰبَ بِقُوَّةٍۢ ۖ وَءَاتَيْنَٰهُ ٱلْحُكْمَ صَبِيًّۭا",
+      "text_translation": "[Allah] said, \"O John, take the Scripture with determination.\" And We gave him judgement [while yet] a boy",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2262.mp3"
+    },
+    {
+      "number": 2263,
+      "number_in_surah": 13,
+      "text_arabic": "وَحَنَانًۭا مِّن لَّدُنَّا وَزَكَوٰةًۭ ۖ وَكَانَ تَقِيًّۭا",
+      "text_translation": "And affection from Us and purity, and he was fearing of Allah",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2263.mp3"
+    },
+    {
+      "number": 2264,
+      "number_in_surah": 14,
+      "text_arabic": "وَبَرًّۢا بِوَٰلِدَيْهِ وَلَمْ يَكُن جَبَّارًا عَصِيًّۭا",
+      "text_translation": "And dutiful to his parents, and he was not a disobedient tyrant.",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2264.mp3"
+    },
+    {
+      "number": 2265,
+      "number_in_surah": 15,
+      "text_arabic": "وَسَلَٰمٌ عَلَيْهِ يَوْمَ وُلِدَ وَيَوْمَ يَمُوتُ وَيَوْمَ يُبْعَثُ حَيًّۭا",
+      "text_translation": "And peace be upon him the day he was born and the day he dies and the day he is raised alive.",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2265.mp3"
+    },
+    {
+      "number": 2266,
+      "number_in_surah": 16,
+      "text_arabic": "وَٱذْكُرْ فِى ٱلْكِتَٰبِ مَرْيَمَ إِذِ ٱنتَبَذَتْ مِنْ أَهْلِهَا مَكَانًۭا شَرْقِيًّۭا",
+      "text_translation": "And mention, [O Muhammad], in the Book [the story of] Mary, when she withdrew from her family to a place toward the east.",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2266.mp3"
+    },
+    {
+      "number": 2267,
+      "number_in_surah": 17,
+      "text_arabic": "فَٱتَّخَذَتْ مِن دُونِهِمْ حِجَابًۭا فَأَرْسَلْنَآ إِلَيْهَا رُوحَنَا فَتَمَثَّلَ لَهَا بَشَرًۭا سَوِيًّۭا",
+      "text_translation": "And she took, in seclusion from them, a screen. Then We sent to her Our Angel, and he represented himself to her as a well-proportioned man.",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2267.mp3"
+    },
+    {
+      "number": 2268,
+      "number_in_surah": 18,
+      "text_arabic": "قَالَتْ إِنِّىٓ أَعُوذُ بِٱلرَّحْمَٰنِ مِنكَ إِن كُنتَ تَقِيًّۭا",
+      "text_translation": "She said, \"Indeed, I seek refuge in the Most Merciful from you, [so leave me], if you should be fearing of Allah.\"",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2268.mp3"
+    },
+    {
+      "number": 2269,
+      "number_in_surah": 19,
+      "text_arabic": "قَالَ إِنَّمَآ أَنَا۠ رَسُولُ رَبِّكِ لِأَهَبَ لَكِ غُلَٰمًۭا زَكِيًّۭا",
+      "text_translation": "He said, \"I am only the messenger of your Lord to give you [news of] a pure boy.\"",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2269.mp3"
+    },
+    {
+      "number": 2270,
+      "number_in_surah": 20,
+      "text_arabic": "قَالَتْ أَنَّىٰ يَكُونُ لِى غُلَٰمٌۭ وَلَمْ يَمْسَسْنِى بَشَرٌۭ وَلَمْ أَكُ بَغِيًّۭا",
+      "text_translation": "She said, \"How can I have a boy while no man has touched me and I have not been unchaste?\"",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2270.mp3"
+    },
+    {
+      "number": 2271,
+      "number_in_surah": 21,
+      "text_arabic": "قَالَ كَذَٰلِكِ قَالَ رَبُّكِ هُوَ عَلَىَّ هَيِّنٌۭ ۖ وَلِنَجْعَلَهُۥٓ ءَايَةًۭ لِّلنَّاسِ وَرَحْمَةًۭ مِّنَّا ۚ وَكَانَ أَمْرًۭا مَّقْضِيًّۭا",
+      "text_translation": "He said, \"Thus [it will be]; your Lord says, 'It is easy for Me, and We will make him a sign to the people and a mercy from Us. And it is a matter [already] decreed.' \"",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2271.mp3"
+    },
+    {
+      "number": 2272,
+      "number_in_surah": 22,
+      "text_arabic": "۞ فَحَمَلَتْهُ فَٱنتَبَذَتْ بِهِۦ مَكَانًۭا قَصِيًّۭا",
+      "text_translation": "So she conceived him, and she withdrew with him to a remote place.",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2272.mp3"
+    },
+    {
+      "number": 2273,
+      "number_in_surah": 23,
+      "text_arabic": "فَأَجَآءَهَا ٱلْمَخَاضُ إِلَىٰ جِذْعِ ٱلنَّخْلَةِ قَالَتْ يَٰلَيْتَنِى مِتُّ قَبْلَ هَٰذَا وَكُنتُ نَسْيًۭا مَّنسِيًّۭا",
+      "text_translation": "And the pains of childbirth drove her to the trunk of a palm tree. She said, \"Oh, I wish I had died before this and was in oblivion, forgotten.\"",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2273.mp3"
+    },
+    {
+      "number": 2274,
+      "number_in_surah": 24,
+      "text_arabic": "فَنَادَىٰهَا مِن تَحْتِهَآ أَلَّا تَحْزَنِى قَدْ جَعَلَ رَبُّكِ تَحْتَكِ سَرِيًّۭا",
+      "text_translation": "But he called her from below her, \"Do not grieve; your Lord has provided beneath you a stream.",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2274.mp3"
+    },
+    {
+      "number": 2275,
+      "number_in_surah": 25,
+      "text_arabic": "وَهُزِّىٓ إِلَيْكِ بِجِذْعِ ٱلنَّخْلَةِ تُسَٰقِطْ عَلَيْكِ رُطَبًۭا جَنِيًّۭا",
+      "text_translation": "And shake toward you the trunk of the palm tree; it will drop upon you ripe, fresh dates.",
+      "juz": 16,
+      "page": 306,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2275.mp3"
+    },
+    {
+      "number": 2276,
+      "number_in_surah": 26,
+      "text_arabic": "فَكُلِى وَٱشْرَبِى وَقَرِّى عَيْنًۭا ۖ فَإِمَّا تَرَيِنَّ مِنَ ٱلْبَشَرِ أَحَدًۭا فَقُولِىٓ إِنِّى نَذَرْتُ لِلرَّحْمَٰنِ صَوْمًۭا فَلَنْ أُكَلِّمَ ٱلْيَوْمَ إِنسِيًّۭا",
+      "text_translation": "So eat and drink and be contented. And if you see from among humanity anyone, say, 'Indeed, I have vowed to the Most Merciful abstention, so I will not speak today to [any] man.' \"",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2276.mp3"
+    },
+    {
+      "number": 2277,
+      "number_in_surah": 27,
+      "text_arabic": "فَأَتَتْ بِهِۦ قَوْمَهَا تَحْمِلُهُۥ ۖ قَالُوا۟ يَٰمَرْيَمُ لَقَدْ جِئْتِ شَيْـًۭٔا فَرِيًّۭا",
+      "text_translation": "Then she brought him to her people, carrying him. They said, \"O Mary, you have certainly done a thing unprecedented.",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2277.mp3"
+    },
+    {
+      "number": 2278,
+      "number_in_surah": 28,
+      "text_arabic": "يَٰٓأُخْتَ هَٰرُونَ مَا كَانَ أَبُوكِ ٱمْرَأَ سَوْءٍۢ وَمَا كَانَتْ أُمُّكِ بَغِيًّۭا",
+      "text_translation": "O sister of Aaron, your father was not a man of evil, nor was your mother unchaste.\"",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2278.mp3"
+    },
+    {
+      "number": 2279,
+      "number_in_surah": 29,
+      "text_arabic": "فَأَشَارَتْ إِلَيْهِ ۖ قَالُوا۟ كَيْفَ نُكَلِّمُ مَن كَانَ فِى ٱلْمَهْدِ صَبِيًّۭا",
+      "text_translation": "So she pointed to him. They said, \"How can we speak to one who is in the cradle a child?\"",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2279.mp3"
+    },
+    {
+      "number": 2280,
+      "number_in_surah": 30,
+      "text_arabic": "قَالَ إِنِّى عَبْدُ ٱللَّهِ ءَاتَىٰنِىَ ٱلْكِتَٰبَ وَجَعَلَنِى نَبِيًّۭا",
+      "text_translation": "[Jesus] said, \"Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet.",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2280.mp3"
+    },
+    {
+      "number": 2281,
+      "number_in_surah": 31,
+      "text_arabic": "وَجَعَلَنِى مُبَارَكًا أَيْنَ مَا كُنتُ وَأَوْصَٰنِى بِٱلصَّلَوٰةِ وَٱلزَّكَوٰةِ مَا دُمْتُ حَيًّۭا",
+      "text_translation": "And He has made me blessed wherever I am and has enjoined upon me prayer and zakah as long as I remain alive",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2281.mp3"
+    },
+    {
+      "number": 2282,
+      "number_in_surah": 32,
+      "text_arabic": "وَبَرًّۢا بِوَٰلِدَتِى وَلَمْ يَجْعَلْنِى جَبَّارًۭا شَقِيًّۭا",
+      "text_translation": "And [made me] dutiful to my mother, and He has not made me a wretched tyrant.",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2282.mp3"
+    },
+    {
+      "number": 2283,
+      "number_in_surah": 33,
+      "text_arabic": "وَٱلسَّلَٰمُ عَلَىَّ يَوْمَ وُلِدتُّ وَيَوْمَ أَمُوتُ وَيَوْمَ أُبْعَثُ حَيًّۭا",
+      "text_translation": "And peace is on me the day I was born and the day I will die and the day I am raised alive.\"",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2283.mp3"
+    },
+    {
+      "number": 2284,
+      "number_in_surah": 34,
+      "text_arabic": "ذَٰلِكَ عِيسَى ٱبْنُ مَرْيَمَ ۚ قَوْلَ ٱلْحَقِّ ٱلَّذِى فِيهِ يَمْتَرُونَ",
+      "text_translation": "That is Jesus, the son of Mary - the word of truth about which they are in dispute.",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2284.mp3"
+    },
+    {
+      "number": 2285,
+      "number_in_surah": 35,
+      "text_arabic": "مَا كَانَ لِلَّهِ أَن يَتَّخِذَ مِن وَلَدٍۢ ۖ سُبْحَٰنَهُۥٓ ۚ إِذَا قَضَىٰٓ أَمْرًۭا فَإِنَّمَا يَقُولُ لَهُۥ كُن فَيَكُونُ",
+      "text_translation": "It is not [befitting] for Allah to take a son; exalted is He! When He decrees an affair, He only says to it, \"Be,\" and it is.",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2285.mp3"
+    },
+    {
+      "number": 2286,
+      "number_in_surah": 36,
+      "text_arabic": "وَإِنَّ ٱللَّهَ رَبِّى وَرَبُّكُمْ فَٱعْبُدُوهُ ۚ هَٰذَا صِرَٰطٌۭ مُّسْتَقِيمٌۭ",
+      "text_translation": "[Jesus said], \"And indeed, Allah is my Lord and your Lord, so worship Him. That is a straight path.\"",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2286.mp3"
+    },
+    {
+      "number": 2287,
+      "number_in_surah": 37,
+      "text_arabic": "فَٱخْتَلَفَ ٱلْأَحْزَابُ مِنۢ بَيْنِهِمْ ۖ فَوَيْلٌۭ لِّلَّذِينَ كَفَرُوا۟ مِن مَّشْهَدِ يَوْمٍ عَظِيمٍ",
+      "text_translation": "Then the factions differed [concerning Jesus] from among them, so woe to those who disbelieved - from the scene of a tremendous Day.",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2287.mp3"
+    },
+    {
+      "number": 2288,
+      "number_in_surah": 38,
+      "text_arabic": "أَسْمِعْ بِهِمْ وَأَبْصِرْ يَوْمَ يَأْتُونَنَا ۖ لَٰكِنِ ٱلظَّٰلِمُونَ ٱلْيَوْمَ فِى ضَلَٰلٍۢ مُّبِينٍۢ",
+      "text_translation": "How [clearly] they will hear and see the Day they come to Us, but the wrongdoers today are in clear error.",
+      "juz": 16,
+      "page": 307,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2288.mp3"
+    },
+    {
+      "number": 2289,
+      "number_in_surah": 39,
+      "text_arabic": "وَأَنذِرْهُمْ يَوْمَ ٱلْحَسْرَةِ إِذْ قُضِىَ ٱلْأَمْرُ وَهُمْ فِى غَفْلَةٍۢ وَهُمْ لَا يُؤْمِنُونَ",
+      "text_translation": "And warn them, [O Muhammad], of the Day of Regret, when the matter will be concluded; and [yet], they are in [a state of] heedlessness, and they do not believe.",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2289.mp3"
+    },
+    {
+      "number": 2290,
+      "number_in_surah": 40,
+      "text_arabic": "إِنَّا نَحْنُ نَرِثُ ٱلْأَرْضَ وَمَنْ عَلَيْهَا وَإِلَيْنَا يُرْجَعُونَ",
+      "text_translation": "Indeed, it is We who will inherit the earth and whoever is on it, and to Us they will be returned.",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2290.mp3"
+    },
+    {
+      "number": 2291,
+      "number_in_surah": 41,
+      "text_arabic": "وَٱذْكُرْ فِى ٱلْكِتَٰبِ إِبْرَٰهِيمَ ۚ إِنَّهُۥ كَانَ صِدِّيقًۭا نَّبِيًّا",
+      "text_translation": "And mention in the Book [the story of] Abraham. Indeed, he was a man of truth and a prophet.",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2291.mp3"
+    },
+    {
+      "number": 2292,
+      "number_in_surah": 42,
+      "text_arabic": "إِذْ قَالَ لِأَبِيهِ يَٰٓأَبَتِ لِمَ تَعْبُدُ مَا لَا يَسْمَعُ وَلَا يُبْصِرُ وَلَا يُغْنِى عَنكَ شَيْـًۭٔا",
+      "text_translation": "[Mention] when he said to his father, \"O my father, why do you worship that which does not hear and does not see and will not benefit you at all?",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2292.mp3"
+    },
+    {
+      "number": 2293,
+      "number_in_surah": 43,
+      "text_arabic": "يَٰٓأَبَتِ إِنِّى قَدْ جَآءَنِى مِنَ ٱلْعِلْمِ مَا لَمْ يَأْتِكَ فَٱتَّبِعْنِىٓ أَهْدِكَ صِرَٰطًۭا سَوِيًّۭا",
+      "text_translation": "O my father, indeed there has come to me of knowledge that which has not come to you, so follow me; I will guide you to an even path.",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2293.mp3"
+    },
+    {
+      "number": 2294,
+      "number_in_surah": 44,
+      "text_arabic": "يَٰٓأَبَتِ لَا تَعْبُدِ ٱلشَّيْطَٰنَ ۖ إِنَّ ٱلشَّيْطَٰنَ كَانَ لِلرَّحْمَٰنِ عَصِيًّۭا",
+      "text_translation": "O my father, do not worship Satan. Indeed Satan has ever been, to the Most Merciful, disobedient.",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2294.mp3"
+    },
+    {
+      "number": 2295,
+      "number_in_surah": 45,
+      "text_arabic": "يَٰٓأَبَتِ إِنِّىٓ أَخَافُ أَن يَمَسَّكَ عَذَابٌۭ مِّنَ ٱلرَّحْمَٰنِ فَتَكُونَ لِلشَّيْطَٰنِ وَلِيًّۭا",
+      "text_translation": "O my father, indeed I fear that there will touch you a punishment from the Most Merciful so you would be to Satan a companion [in Hellfire].\"",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2295.mp3"
+    },
+    {
+      "number": 2296,
+      "number_in_surah": 46,
+      "text_arabic": "قَالَ أَرَاغِبٌ أَنتَ عَنْ ءَالِهَتِى يَٰٓإِبْرَٰهِيمُ ۖ لَئِن لَّمْ تَنتَهِ لَأَرْجُمَنَّكَ ۖ وَٱهْجُرْنِى مَلِيًّۭا",
+      "text_translation": "[His father] said, \"Have you no desire for my gods, O Abraham? If you do not desist, I will surely stone you, so avoid me a prolonged time.\"",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2296.mp3"
+    },
+    {
+      "number": 2297,
+      "number_in_surah": 47,
+      "text_arabic": "قَالَ سَلَٰمٌ عَلَيْكَ ۖ سَأَسْتَغْفِرُ لَكَ رَبِّىٓ ۖ إِنَّهُۥ كَانَ بِى حَفِيًّۭا",
+      "text_translation": "[Abraham] said, \"Peace will be upon you. I will ask forgiveness for you of my Lord. Indeed, He is ever gracious to me.",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2297.mp3"
+    },
+    {
+      "number": 2298,
+      "number_in_surah": 48,
+      "text_arabic": "وَأَعْتَزِلُكُمْ وَمَا تَدْعُونَ مِن دُونِ ٱللَّهِ وَأَدْعُوا۟ رَبِّى عَسَىٰٓ أَلَّآ أَكُونَ بِدُعَآءِ رَبِّى شَقِيًّۭا",
+      "text_translation": "And I will leave you and those you invoke other than Allah and will invoke my Lord. I expect that I will not be in invocation to my Lord unhappy.\"",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2298.mp3"
+    },
+    {
+      "number": 2299,
+      "number_in_surah": 49,
+      "text_arabic": "فَلَمَّا ٱعْتَزَلَهُمْ وَمَا يَعْبُدُونَ مِن دُونِ ٱللَّهِ وَهَبْنَا لَهُۥٓ إِسْحَٰقَ وَيَعْقُوبَ ۖ وَكُلًّۭا جَعَلْنَا نَبِيًّۭا",
+      "text_translation": "So when he had left them and those they worshipped other than Allah, We gave him Isaac and Jacob, and each [of them] We made a prophet.",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2299.mp3"
+    },
+    {
+      "number": 2300,
+      "number_in_surah": 50,
+      "text_arabic": "وَوَهَبْنَا لَهُم مِّن رَّحْمَتِنَا وَجَعَلْنَا لَهُمْ لِسَانَ صِدْقٍ عَلِيًّۭا",
+      "text_translation": "And We gave them of Our mercy, and we made for them a reputation of high honor.",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2300.mp3"
+    },
+    {
+      "number": 2301,
+      "number_in_surah": 51,
+      "text_arabic": "وَٱذْكُرْ فِى ٱلْكِتَٰبِ مُوسَىٰٓ ۚ إِنَّهُۥ كَانَ مُخْلَصًۭا وَكَانَ رَسُولًۭا نَّبِيًّۭا",
+      "text_translation": "And mention in the Book, Moses. Indeed, he was chosen, and he was a messenger and a prophet.",
+      "juz": 16,
+      "page": 308,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2301.mp3"
+    },
+    {
+      "number": 2302,
+      "number_in_surah": 52,
+      "text_arabic": "وَنَٰدَيْنَٰهُ مِن جَانِبِ ٱلطُّورِ ٱلْأَيْمَنِ وَقَرَّبْنَٰهُ نَجِيًّۭا",
+      "text_translation": "And We called him from the side of the mount at [his] right and brought him near, confiding [to him].",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2302.mp3"
+    },
+    {
+      "number": 2303,
+      "number_in_surah": 53,
+      "text_arabic": "وَوَهَبْنَا لَهُۥ مِن رَّحْمَتِنَآ أَخَاهُ هَٰرُونَ نَبِيًّۭا",
+      "text_translation": "And We gave him out of Our mercy his brother Aaron as a prophet.",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2303.mp3"
+    },
+    {
+      "number": 2304,
+      "number_in_surah": 54,
+      "text_arabic": "وَٱذْكُرْ فِى ٱلْكِتَٰبِ إِسْمَٰعِيلَ ۚ إِنَّهُۥ كَانَ صَادِقَ ٱلْوَعْدِ وَكَانَ رَسُولًۭا نَّبِيًّۭا",
+      "text_translation": "And mention in the Book, Ishmael. Indeed, he was true to his promise, and he was a messenger and a prophet.",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2304.mp3"
+    },
+    {
+      "number": 2305,
+      "number_in_surah": 55,
+      "text_arabic": "وَكَانَ يَأْمُرُ أَهْلَهُۥ بِٱلصَّلَوٰةِ وَٱلزَّكَوٰةِ وَكَانَ عِندَ رَبِّهِۦ مَرْضِيًّۭا",
+      "text_translation": "And he used to enjoin on his people prayer and zakah and was to his Lord pleasing.",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2305.mp3"
+    },
+    {
+      "number": 2306,
+      "number_in_surah": 56,
+      "text_arabic": "وَٱذْكُرْ فِى ٱلْكِتَٰبِ إِدْرِيسَ ۚ إِنَّهُۥ كَانَ صِدِّيقًۭا نَّبِيًّۭا",
+      "text_translation": "And mention in the Book, Idrees. Indeed, he was a man of truth and a prophet.",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2306.mp3"
+    },
+    {
+      "number": 2307,
+      "number_in_surah": 57,
+      "text_arabic": "وَرَفَعْنَٰهُ مَكَانًا عَلِيًّا",
+      "text_translation": "And We raised him to a high station.",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2307.mp3"
+    },
+    {
+      "number": 2308,
+      "number_in_surah": 58,
+      "text_arabic": "أُو۟لَٰٓئِكَ ٱلَّذِينَ أَنْعَمَ ٱللَّهُ عَلَيْهِم مِّنَ ٱلنَّبِيِّۦنَ مِن ذُرِّيَّةِ ءَادَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍۢ وَمِن ذُرِّيَّةِ إِبْرَٰهِيمَ وَإِسْرَٰٓءِيلَ وَمِمَّنْ هَدَيْنَا وَٱجْتَبَيْنَآ ۚ إِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَٰتُ ٱلرَّحْمَٰنِ خَرُّوا۟ سُجَّدًۭا وَبُكِيًّۭا ۩",
+      "text_translation": "Those were the ones upon whom Allah bestowed favor from among the prophets of the descendants of Adam and of those We carried [in the ship] with Noah, and of the descendants of Abraham and Israel, and of those whom We guided and chose. When the verses of the Most Merciful were recited to them, they fell in prostration and weeping.",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2308.mp3"
+    },
+    {
+      "number": 2309,
+      "number_in_surah": 59,
+      "text_arabic": "۞ فَخَلَفَ مِنۢ بَعْدِهِمْ خَلْفٌ أَضَاعُوا۟ ٱلصَّلَوٰةَ وَٱتَّبَعُوا۟ ٱلشَّهَوَٰتِ ۖ فَسَوْفَ يَلْقَوْنَ غَيًّا",
+      "text_translation": "But there came after them successors who neglected prayer and pursued desires; so they are going to meet evil -",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2309.mp3"
+    },
+    {
+      "number": 2310,
+      "number_in_surah": 60,
+      "text_arabic": "إِلَّا مَن تَابَ وَءَامَنَ وَعَمِلَ صَٰلِحًۭا فَأُو۟لَٰٓئِكَ يَدْخُلُونَ ٱلْجَنَّةَ وَلَا يُظْلَمُونَ شَيْـًۭٔا",
+      "text_translation": "Except those who repent, believe and do righteousness; for those will enter Paradise and will not be wronged at all.",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2310.mp3"
+    },
+    {
+      "number": 2311,
+      "number_in_surah": 61,
+      "text_arabic": "جَنَّٰتِ عَدْنٍ ٱلَّتِى وَعَدَ ٱلرَّحْمَٰنُ عِبَادَهُۥ بِٱلْغَيْبِ ۚ إِنَّهُۥ كَانَ وَعْدُهُۥ مَأْتِيًّۭا",
+      "text_translation": "[Therein are] gardens of perpetual residence which the Most Merciful has promised His servants in the unseen. Indeed, His promise has ever been coming.",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2311.mp3"
+    },
+    {
+      "number": 2312,
+      "number_in_surah": 62,
+      "text_arabic": "لَّا يَسْمَعُونَ فِيهَا لَغْوًا إِلَّا سَلَٰمًۭا ۖ وَلَهُمْ رِزْقُهُمْ فِيهَا بُكْرَةًۭ وَعَشِيًّۭا",
+      "text_translation": "They will not hear therein any ill speech - only [greetings of] peace - and they will have their provision therein, morning and afternoon.",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2312.mp3"
+    },
+    {
+      "number": 2313,
+      "number_in_surah": 63,
+      "text_arabic": "تِلْكَ ٱلْجَنَّةُ ٱلَّتِى نُورِثُ مِنْ عِبَادِنَا مَن كَانَ تَقِيًّۭا",
+      "text_translation": "That is Paradise, which We give as inheritance to those of Our servants who were fearing of Allah.",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2313.mp3"
+    },
+    {
+      "number": 2314,
+      "number_in_surah": 64,
+      "text_arabic": "وَمَا نَتَنَزَّلُ إِلَّا بِأَمْرِ رَبِّكَ ۖ لَهُۥ مَا بَيْنَ أَيْدِينَا وَمَا خَلْفَنَا وَمَا بَيْنَ ذَٰلِكَ ۚ وَمَا كَانَ رَبُّكَ نَسِيًّۭا",
+      "text_translation": "[Gabriel said], \"And we [angels] descend not except by the order of your Lord. To Him belongs that before us and that behind us and what is in between. And never is your Lord forgetful -",
+      "juz": 16,
+      "page": 309,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2314.mp3"
+    },
+    {
+      "number": 2315,
+      "number_in_surah": 65,
+      "text_arabic": "رَّبُّ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا فَٱعْبُدْهُ وَٱصْطَبِرْ لِعِبَٰدَتِهِۦ ۚ هَلْ تَعْلَمُ لَهُۥ سَمِيًّۭا",
+      "text_translation": "Lord of the heavens and the earth and whatever is between them - so worship Him and have patience for His worship. Do you know of any similarity to Him?\"",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2315.mp3"
+    },
+    {
+      "number": 2316,
+      "number_in_surah": 66,
+      "text_arabic": "وَيَقُولُ ٱلْإِنسَٰنُ أَءِذَا مَا مِتُّ لَسَوْفَ أُخْرَجُ حَيًّا",
+      "text_translation": "And the disbeliever says, \"When I have died, am I going to be brought forth alive?\"",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2316.mp3"
+    },
+    {
+      "number": 2317,
+      "number_in_surah": 67,
+      "text_arabic": "أَوَلَا يَذْكُرُ ٱلْإِنسَٰنُ أَنَّا خَلَقْنَٰهُ مِن قَبْلُ وَلَمْ يَكُ شَيْـًۭٔا",
+      "text_translation": "Does man not remember that We created him before, while he was nothing?",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2317.mp3"
+    },
+    {
+      "number": 2318,
+      "number_in_surah": 68,
+      "text_arabic": "فَوَرَبِّكَ لَنَحْشُرَنَّهُمْ وَٱلشَّيَٰطِينَ ثُمَّ لَنُحْضِرَنَّهُمْ حَوْلَ جَهَنَّمَ جِثِيًّۭا",
+      "text_translation": "So by your Lord, We will surely gather them and the devils; then We will bring them to be present around Hell upon their knees.",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2318.mp3"
+    },
+    {
+      "number": 2319,
+      "number_in_surah": 69,
+      "text_arabic": "ثُمَّ لَنَنزِعَنَّ مِن كُلِّ شِيعَةٍ أَيُّهُمْ أَشَدُّ عَلَى ٱلرَّحْمَٰنِ عِتِيًّۭا",
+      "text_translation": "Then We will surely extract from every sect those of them who were worst against the Most Merciful in insolence.",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2319.mp3"
+    },
+    {
+      "number": 2320,
+      "number_in_surah": 70,
+      "text_arabic": "ثُمَّ لَنَحْنُ أَعْلَمُ بِٱلَّذِينَ هُمْ أَوْلَىٰ بِهَا صِلِيًّۭا",
+      "text_translation": "Then, surely it is We who are most knowing of those most worthy of burning therein.",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2320.mp3"
+    },
+    {
+      "number": 2321,
+      "number_in_surah": 71,
+      "text_arabic": "وَإِن مِّنكُمْ إِلَّا وَارِدُهَا ۚ كَانَ عَلَىٰ رَبِّكَ حَتْمًۭا مَّقْضِيًّۭا",
+      "text_translation": "And there is none of you except he will come to it. This is upon your Lord an inevitability decreed.",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2321.mp3"
+    },
+    {
+      "number": 2322,
+      "number_in_surah": 72,
+      "text_arabic": "ثُمَّ نُنَجِّى ٱلَّذِينَ ٱتَّقَوا۟ وَّنَذَرُ ٱلظَّٰلِمِينَ فِيهَا جِثِيًّۭا",
+      "text_translation": "Then We will save those who feared Allah and leave the wrongdoers within it, on their knees.",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2322.mp3"
+    },
+    {
+      "number": 2323,
+      "number_in_surah": 73,
+      "text_arabic": "وَإِذَا تُتْلَىٰ عَلَيْهِمْ ءَايَٰتُنَا بَيِّنَٰتٍۢ قَالَ ٱلَّذِينَ كَفَرُوا۟ لِلَّذِينَ ءَامَنُوٓا۟ أَىُّ ٱلْفَرِيقَيْنِ خَيْرٌۭ مَّقَامًۭا وَأَحْسَنُ نَدِيًّۭا",
+      "text_translation": "And when Our verses are recited to them as clear evidences, those who disbelieve say to those who believe, \"Which of [our] two parties is best in position and best in association?\"",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2323.mp3"
+    },
+    {
+      "number": 2324,
+      "number_in_surah": 74,
+      "text_arabic": "وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ هُمْ أَحْسَنُ أَثَٰثًۭا وَرِءْيًۭا",
+      "text_translation": "And how many a generation have We destroyed before them who were better in possessions and [outward] appearance?",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2324.mp3"
+    },
+    {
+      "number": 2325,
+      "number_in_surah": 75,
+      "text_arabic": "قُلْ مَن كَانَ فِى ٱلضَّلَٰلَةِ فَلْيَمْدُدْ لَهُ ٱلرَّحْمَٰنُ مَدًّا ۚ حَتَّىٰٓ إِذَا رَأَوْا۟ مَا يُوعَدُونَ إِمَّا ٱلْعَذَابَ وَإِمَّا ٱلسَّاعَةَ فَسَيَعْلَمُونَ مَنْ هُوَ شَرٌّۭ مَّكَانًۭا وَأَضْعَفُ جُندًۭا",
+      "text_translation": "Say, \"Whoever is in error - let the Most Merciful extend for him an extension [in wealth and time] until, when they see that which they were promised - either punishment [in this world] or the Hour [of resurrection] - they will come to know who is worst in position and weaker in soldiers.\"",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2325.mp3"
+    },
+    {
+      "number": 2326,
+      "number_in_surah": 76,
+      "text_arabic": "وَيَزِيدُ ٱللَّهُ ٱلَّذِينَ ٱهْتَدَوْا۟ هُدًۭى ۗ وَٱلْبَٰقِيَٰتُ ٱلصَّٰلِحَٰتُ خَيْرٌ عِندَ رَبِّكَ ثَوَابًۭا وَخَيْرٌۭ مَّرَدًّا",
+      "text_translation": "And Allah increases those who were guided, in guidance, and the enduring good deeds are better to your Lord for reward and better for recourse.",
+      "juz": 16,
+      "page": 310,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2326.mp3"
+    },
+    {
+      "number": 2327,
+      "number_in_surah": 77,
+      "text_arabic": "أَفَرَءَيْتَ ٱلَّذِى كَفَرَ بِـَٔايَٰتِنَا وَقَالَ لَأُوتَيَنَّ مَالًۭا وَوَلَدًا",
+      "text_translation": "Then, have you seen he who disbelieved in Our verses and said, \"I will surely be given wealth and children [in the next life]?\"",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2327.mp3"
+    },
+    {
+      "number": 2328,
+      "number_in_surah": 78,
+      "text_arabic": "أَطَّلَعَ ٱلْغَيْبَ أَمِ ٱتَّخَذَ عِندَ ٱلرَّحْمَٰنِ عَهْدًۭا",
+      "text_translation": "Has he looked into the unseen, or has he taken from the Most Merciful a promise?",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2328.mp3"
+    },
+    {
+      "number": 2329,
+      "number_in_surah": 79,
+      "text_arabic": "كَلَّا ۚ سَنَكْتُبُ مَا يَقُولُ وَنَمُدُّ لَهُۥ مِنَ ٱلْعَذَابِ مَدًّۭا",
+      "text_translation": "No! We will record what he says and extend for him from the punishment extensively.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2329.mp3"
+    },
+    {
+      "number": 2330,
+      "number_in_surah": 80,
+      "text_arabic": "وَنَرِثُهُۥ مَا يَقُولُ وَيَأْتِينَا فَرْدًۭا",
+      "text_translation": "And We will inherit him [in] what he mentions, and he will come to Us alone.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2330.mp3"
+    },
+    {
+      "number": 2331,
+      "number_in_surah": 81,
+      "text_arabic": "وَٱتَّخَذُوا۟ مِن دُونِ ٱللَّهِ ءَالِهَةًۭ لِّيَكُونُوا۟ لَهُمْ عِزًّۭا",
+      "text_translation": "And they have taken besides Allah [false] deities that they would be for them [a source of] honor.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2331.mp3"
+    },
+    {
+      "number": 2332,
+      "number_in_surah": 82,
+      "text_arabic": "كَلَّا ۚ سَيَكْفُرُونَ بِعِبَادَتِهِمْ وَيَكُونُونَ عَلَيْهِمْ ضِدًّا",
+      "text_translation": "No! Those \"gods\" will deny their worship of them and will be against them opponents [on the Day of Judgement].",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2332.mp3"
+    },
+    {
+      "number": 2333,
+      "number_in_surah": 83,
+      "text_arabic": "أَلَمْ تَرَ أَنَّآ أَرْسَلْنَا ٱلشَّيَٰطِينَ عَلَى ٱلْكَٰفِرِينَ تَؤُزُّهُمْ أَزًّۭا",
+      "text_translation": "Do you not see that We have sent the devils upon the disbelievers, inciting them to [evil] with [constant] incitement?",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2333.mp3"
+    },
+    {
+      "number": 2334,
+      "number_in_surah": 84,
+      "text_arabic": "فَلَا تَعْجَلْ عَلَيْهِمْ ۖ إِنَّمَا نَعُدُّ لَهُمْ عَدًّۭا",
+      "text_translation": "So be not impatient over them. We only count out to them a [limited] number.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2334.mp3"
+    },
+    {
+      "number": 2335,
+      "number_in_surah": 85,
+      "text_arabic": "يَوْمَ نَحْشُرُ ٱلْمُتَّقِينَ إِلَى ٱلرَّحْمَٰنِ وَفْدًۭا",
+      "text_translation": "On the Day We will gather the righteous to the Most Merciful as a delegation",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2335.mp3"
+    },
+    {
+      "number": 2336,
+      "number_in_surah": 86,
+      "text_arabic": "وَنَسُوقُ ٱلْمُجْرِمِينَ إِلَىٰ جَهَنَّمَ وِرْدًۭا",
+      "text_translation": "And will drive the criminals to Hell in thirst",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2336.mp3"
+    },
+    {
+      "number": 2337,
+      "number_in_surah": 87,
+      "text_arabic": "لَّا يَمْلِكُونَ ٱلشَّفَٰعَةَ إِلَّا مَنِ ٱتَّخَذَ عِندَ ٱلرَّحْمَٰنِ عَهْدًۭا",
+      "text_translation": "None will have [power of] intercession except he who had taken from the Most Merciful a covenant.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2337.mp3"
+    },
+    {
+      "number": 2338,
+      "number_in_surah": 88,
+      "text_arabic": "وَقَالُوا۟ ٱتَّخَذَ ٱلرَّحْمَٰنُ وَلَدًۭا",
+      "text_translation": "And they say, \"The Most Merciful has taken [for Himself] a son.\"",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2338.mp3"
+    },
+    {
+      "number": 2339,
+      "number_in_surah": 89,
+      "text_arabic": "لَّقَدْ جِئْتُمْ شَيْـًٔا إِدًّۭا",
+      "text_translation": "You have done an atrocious thing.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2339.mp3"
+    },
+    {
+      "number": 2340,
+      "number_in_surah": 90,
+      "text_arabic": "تَكَادُ ٱلسَّمَٰوَٰتُ يَتَفَطَّرْنَ مِنْهُ وَتَنشَقُّ ٱلْأَرْضُ وَتَخِرُّ ٱلْجِبَالُ هَدًّا",
+      "text_translation": "The heavens almost rupture therefrom and the earth splits open and the mountains collapse in devastation",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2340.mp3"
+    },
+    {
+      "number": 2341,
+      "number_in_surah": 91,
+      "text_arabic": "أَن دَعَوْا۟ لِلرَّحْمَٰنِ وَلَدًۭا",
+      "text_translation": "That they attribute to the Most Merciful a son.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2341.mp3"
+    },
+    {
+      "number": 2342,
+      "number_in_surah": 92,
+      "text_arabic": "وَمَا يَنۢبَغِى لِلرَّحْمَٰنِ أَن يَتَّخِذَ وَلَدًا",
+      "text_translation": "And it is not appropriate for the Most Merciful that He should take a son.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2342.mp3"
+    },
+    {
+      "number": 2343,
+      "number_in_surah": 93,
+      "text_arabic": "إِن كُلُّ مَن فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ إِلَّآ ءَاتِى ٱلرَّحْمَٰنِ عَبْدًۭا",
+      "text_translation": "There is no one in the heavens and earth but that he comes to the Most Merciful as a servant.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2343.mp3"
+    },
+    {
+      "number": 2344,
+      "number_in_surah": 94,
+      "text_arabic": "لَّقَدْ أَحْصَىٰهُمْ وَعَدَّهُمْ عَدًّۭا",
+      "text_translation": "He has enumerated them and counted them a [full] counting.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2344.mp3"
+    },
+    {
+      "number": 2345,
+      "number_in_surah": 95,
+      "text_arabic": "وَكُلُّهُمْ ءَاتِيهِ يَوْمَ ٱلْقِيَٰمَةِ فَرْدًا",
+      "text_translation": "And all of them are coming to Him on the Day of Resurrection alone.",
+      "juz": 16,
+      "page": 311,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2345.mp3"
+    },
+    {
+      "number": 2346,
+      "number_in_surah": 96,
+      "text_arabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ سَيَجْعَلُ لَهُمُ ٱلرَّحْمَٰنُ وُدًّۭا",
+      "text_translation": "Indeed, those who have believed and done righteous deeds - the Most Merciful will appoint for them affection.",
+      "juz": 16,
+      "page": 312,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2346.mp3"
+    },
+    {
+      "number": 2347,
+      "number_in_surah": 97,
+      "text_arabic": "فَإِنَّمَا يَسَّرْنَٰهُ بِلِسَانِكَ لِتُبَشِّرَ بِهِ ٱلْمُتَّقِينَ وَتُنذِرَ بِهِۦ قَوْمًۭا لُّدًّۭا",
+      "text_translation": "So, [O Muhammad], We have only made Qur'an easy in the Arabic language that you may give good tidings thereby to the righteous and warn thereby a hostile people.",
+      "juz": 16,
+      "page": 312,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2347.mp3"
+    },
+    {
+      "number": 2348,
+      "number_in_surah": 98,
+      "text_arabic": "وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ هَلْ تُحِسُّ مِنْهُم مِّنْ أَحَدٍ أَوْ تَسْمَعُ لَهُمْ رِكْزًۢا",
+      "text_translation": "And how many have We destroyed before them of generations? Do you perceive of them anyone or hear from them a sound?",
+      "juz": 16,
+      "page": 312,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2348.mp3"
+    }
+  ]
+}

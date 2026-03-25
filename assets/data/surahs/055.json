@@ -1,0 +1,713 @@
+{
+  "number": 55,
+  "name_arabic": "سُورَةُ الرَّحۡمَٰن",
+  "name_english": "Ar-Rahmaan",
+  "name_translation": "The Beneficent",
+  "revelation_type": "medinan",
+  "ayah_count": 78,
+  "juz_start": 27,
+  "ayahs": [
+    {
+      "number": 4902,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلرَّحْمَٰنُ",
+      "text_translation": "The Most Merciful",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4902.mp3"
+    },
+    {
+      "number": 4903,
+      "number_in_surah": 2,
+      "text_arabic": "عَلَّمَ ٱلْقُرْءَانَ",
+      "text_translation": "Taught the Qur'an,",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4903.mp3"
+    },
+    {
+      "number": 4904,
+      "number_in_surah": 3,
+      "text_arabic": "خَلَقَ ٱلْإِنسَٰنَ",
+      "text_translation": "Created man,",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4904.mp3"
+    },
+    {
+      "number": 4905,
+      "number_in_surah": 4,
+      "text_arabic": "عَلَّمَهُ ٱلْبَيَانَ",
+      "text_translation": "[And] taught him eloquence.",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4905.mp3"
+    },
+    {
+      "number": 4906,
+      "number_in_surah": 5,
+      "text_arabic": "ٱلشَّمْسُ وَٱلْقَمَرُ بِحُسْبَانٍۢ",
+      "text_translation": "The sun and the moon [move] by precise calculation,",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4906.mp3"
+    },
+    {
+      "number": 4907,
+      "number_in_surah": 6,
+      "text_arabic": "وَٱلنَّجْمُ وَٱلشَّجَرُ يَسْجُدَانِ",
+      "text_translation": "And the stars and trees prostrate.",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4907.mp3"
+    },
+    {
+      "number": 4908,
+      "number_in_surah": 7,
+      "text_arabic": "وَٱلسَّمَآءَ رَفَعَهَا وَوَضَعَ ٱلْمِيزَانَ",
+      "text_translation": "And the heaven He raised and imposed the balance",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4908.mp3"
+    },
+    {
+      "number": 4909,
+      "number_in_surah": 8,
+      "text_arabic": "أَلَّا تَطْغَوْا۟ فِى ٱلْمِيزَانِ",
+      "text_translation": "That you not transgress within the balance.",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4909.mp3"
+    },
+    {
+      "number": 4910,
+      "number_in_surah": 9,
+      "text_arabic": "وَأَقِيمُوا۟ ٱلْوَزْنَ بِٱلْقِسْطِ وَلَا تُخْسِرُوا۟ ٱلْمِيزَانَ",
+      "text_translation": "And establish weight in justice and do not make deficient the balance.",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4910.mp3"
+    },
+    {
+      "number": 4911,
+      "number_in_surah": 10,
+      "text_arabic": "وَٱلْأَرْضَ وَضَعَهَا لِلْأَنَامِ",
+      "text_translation": "And the earth He laid [out] for the creatures.",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4911.mp3"
+    },
+    {
+      "number": 4912,
+      "number_in_surah": 11,
+      "text_arabic": "فِيهَا فَٰكِهَةٌۭ وَٱلنَّخْلُ ذَاتُ ٱلْأَكْمَامِ",
+      "text_translation": "Therein is fruit and palm trees having sheaths [of dates]",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4912.mp3"
+    },
+    {
+      "number": 4913,
+      "number_in_surah": 12,
+      "text_arabic": "وَٱلْحَبُّ ذُو ٱلْعَصْفِ وَٱلرَّيْحَانُ",
+      "text_translation": "And grain having husks and scented plants.",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4913.mp3"
+    },
+    {
+      "number": 4914,
+      "number_in_surah": 13,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4914.mp3"
+    },
+    {
+      "number": 4915,
+      "number_in_surah": 14,
+      "text_arabic": "خَلَقَ ٱلْإِنسَٰنَ مِن صَلْصَٰلٍۢ كَٱلْفَخَّارِ",
+      "text_translation": "He created man from clay like [that of] pottery.",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4915.mp3"
+    },
+    {
+      "number": 4916,
+      "number_in_surah": 15,
+      "text_arabic": "وَخَلَقَ ٱلْجَآنَّ مِن مَّارِجٍۢ مِّن نَّارٍۢ",
+      "text_translation": "And He created the jinn from a smokeless flame of fire.",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4916.mp3"
+    },
+    {
+      "number": 4917,
+      "number_in_surah": 16,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 531,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4917.mp3"
+    },
+    {
+      "number": 4918,
+      "number_in_surah": 17,
+      "text_arabic": "رَبُّ ٱلْمَشْرِقَيْنِ وَرَبُّ ٱلْمَغْرِبَيْنِ",
+      "text_translation": "[He is] Lord of the two sunrises and Lord of the two sunsets.",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4918.mp3"
+    },
+    {
+      "number": 4919,
+      "number_in_surah": 18,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4919.mp3"
+    },
+    {
+      "number": 4920,
+      "number_in_surah": 19,
+      "text_arabic": "مَرَجَ ٱلْبَحْرَيْنِ يَلْتَقِيَانِ",
+      "text_translation": "He released the two seas, meeting [side by side];",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4920.mp3"
+    },
+    {
+      "number": 4921,
+      "number_in_surah": 20,
+      "text_arabic": "بَيْنَهُمَا بَرْزَخٌۭ لَّا يَبْغِيَانِ",
+      "text_translation": "Between them is a barrier [so] neither of them transgresses.",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4921.mp3"
+    },
+    {
+      "number": 4922,
+      "number_in_surah": 21,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4922.mp3"
+    },
+    {
+      "number": 4923,
+      "number_in_surah": 22,
+      "text_arabic": "يَخْرُجُ مِنْهُمَا ٱللُّؤْلُؤُ وَٱلْمَرْجَانُ",
+      "text_translation": "From both of them emerge pearl and coral.",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4923.mp3"
+    },
+    {
+      "number": 4924,
+      "number_in_surah": 23,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4924.mp3"
+    },
+    {
+      "number": 4925,
+      "number_in_surah": 24,
+      "text_arabic": "وَلَهُ ٱلْجَوَارِ ٱلْمُنشَـَٔاتُ فِى ٱلْبَحْرِ كَٱلْأَعْلَٰمِ",
+      "text_translation": "And to Him belong the ships [with sails] elevated in the sea like mountains.",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4925.mp3"
+    },
+    {
+      "number": 4926,
+      "number_in_surah": 25,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4926.mp3"
+    },
+    {
+      "number": 4927,
+      "number_in_surah": 26,
+      "text_arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍۢ",
+      "text_translation": "Everyone upon the earth will perish,",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4927.mp3"
+    },
+    {
+      "number": 4928,
+      "number_in_surah": 27,
+      "text_arabic": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ",
+      "text_translation": "And there will remain the Face of your Lord, Owner of Majesty and Honor.",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4928.mp3"
+    },
+    {
+      "number": 4929,
+      "number_in_surah": 28,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4929.mp3"
+    },
+    {
+      "number": 4930,
+      "number_in_surah": 29,
+      "text_arabic": "يَسْـَٔلُهُۥ مَن فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۚ كُلَّ يَوْمٍ هُوَ فِى شَأْنٍۢ",
+      "text_translation": "Whoever is within the heavens and earth asks Him; every day He is bringing about a matter.",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4930.mp3"
+    },
+    {
+      "number": 4931,
+      "number_in_surah": 30,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4931.mp3"
+    },
+    {
+      "number": 4932,
+      "number_in_surah": 31,
+      "text_arabic": "سَنَفْرُغُ لَكُمْ أَيُّهَ ٱلثَّقَلَانِ",
+      "text_translation": "We will attend to you, O prominent beings.",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4932.mp3"
+    },
+    {
+      "number": 4933,
+      "number_in_surah": 32,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4933.mp3"
+    },
+    {
+      "number": 4934,
+      "number_in_surah": 33,
+      "text_arabic": "يَٰمَعْشَرَ ٱلْجِنِّ وَٱلْإِنسِ إِنِ ٱسْتَطَعْتُمْ أَن تَنفُذُوا۟ مِنْ أَقْطَارِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ فَٱنفُذُوا۟ ۚ لَا تَنفُذُونَ إِلَّا بِسُلْطَٰنٍۢ",
+      "text_translation": "O company of jinn and mankind, if you are able to pass beyond the regions of the heavens and the earth, then pass. You will not pass except by authority [from Allah].",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4934.mp3"
+    },
+    {
+      "number": 4935,
+      "number_in_surah": 34,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4935.mp3"
+    },
+    {
+      "number": 4936,
+      "number_in_surah": 35,
+      "text_arabic": "يُرْسَلُ عَلَيْكُمَا شُوَاظٌۭ مِّن نَّارٍۢ وَنُحَاسٌۭ فَلَا تَنتَصِرَانِ",
+      "text_translation": "There will be sent upon you a flame of fire and smoke, and you will not defend yourselves.",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4936.mp3"
+    },
+    {
+      "number": 4937,
+      "number_in_surah": 36,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4937.mp3"
+    },
+    {
+      "number": 4938,
+      "number_in_surah": 37,
+      "text_arabic": "فَإِذَا ٱنشَقَّتِ ٱلسَّمَآءُ فَكَانَتْ وَرْدَةًۭ كَٱلدِّهَانِ",
+      "text_translation": "And when the heaven is split open and becomes rose-colored like oil -",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4938.mp3"
+    },
+    {
+      "number": 4939,
+      "number_in_surah": 38,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny? -",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4939.mp3"
+    },
+    {
+      "number": 4940,
+      "number_in_surah": 39,
+      "text_arabic": "فَيَوْمَئِذٍۢ لَّا يُسْـَٔلُ عَن ذَنۢبِهِۦٓ إِنسٌۭ وَلَا جَآنٌّۭ",
+      "text_translation": "Then on that Day none will be asked about his sin among men or jinn.",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4940.mp3"
+    },
+    {
+      "number": 4941,
+      "number_in_surah": 40,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 532,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4941.mp3"
+    },
+    {
+      "number": 4942,
+      "number_in_surah": 41,
+      "text_arabic": "يُعْرَفُ ٱلْمُجْرِمُونَ بِسِيمَٰهُمْ فَيُؤْخَذُ بِٱلنَّوَٰصِى وَٱلْأَقْدَامِ",
+      "text_translation": "The criminals will be known by their marks, and they will be seized by the forelocks and the feet.",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4942.mp3"
+    },
+    {
+      "number": 4943,
+      "number_in_surah": 42,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4943.mp3"
+    },
+    {
+      "number": 4944,
+      "number_in_surah": 43,
+      "text_arabic": "هَٰذِهِۦ جَهَنَّمُ ٱلَّتِى يُكَذِّبُ بِهَا ٱلْمُجْرِمُونَ",
+      "text_translation": "This is Hell, which the criminals deny.",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4944.mp3"
+    },
+    {
+      "number": 4945,
+      "number_in_surah": 44,
+      "text_arabic": "يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍۢ",
+      "text_translation": "They will go around between it and scalding water, heated [to the utmost degree].",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4945.mp3"
+    },
+    {
+      "number": 4946,
+      "number_in_surah": 45,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4946.mp3"
+    },
+    {
+      "number": 4947,
+      "number_in_surah": 46,
+      "text_arabic": "وَلِمَنْ خَافَ مَقَامَ رَبِّهِۦ جَنَّتَانِ",
+      "text_translation": "But for he who has feared the position of his Lord are two gardens -",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4947.mp3"
+    },
+    {
+      "number": 4948,
+      "number_in_surah": 47,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny? -",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4948.mp3"
+    },
+    {
+      "number": 4949,
+      "number_in_surah": 48,
+      "text_arabic": "ذَوَاتَآ أَفْنَانٍۢ",
+      "text_translation": "Having [spreading] branches.",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4949.mp3"
+    },
+    {
+      "number": 4950,
+      "number_in_surah": 49,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4950.mp3"
+    },
+    {
+      "number": 4951,
+      "number_in_surah": 50,
+      "text_arabic": "فِيهِمَا عَيْنَانِ تَجْرِيَانِ",
+      "text_translation": "In both of them are two springs, flowing.",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4951.mp3"
+    },
+    {
+      "number": 4952,
+      "number_in_surah": 51,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4952.mp3"
+    },
+    {
+      "number": 4953,
+      "number_in_surah": 52,
+      "text_arabic": "فِيهِمَا مِن كُلِّ فَٰكِهَةٍۢ زَوْجَانِ",
+      "text_translation": "In both of them are of every fruit, two kinds.",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4953.mp3"
+    },
+    {
+      "number": 4954,
+      "number_in_surah": 53,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4954.mp3"
+    },
+    {
+      "number": 4955,
+      "number_in_surah": 54,
+      "text_arabic": "مُتَّكِـِٔينَ عَلَىٰ فُرُشٍۭ بَطَآئِنُهَا مِنْ إِسْتَبْرَقٍۢ ۚ وَجَنَى ٱلْجَنَّتَيْنِ دَانٍۢ",
+      "text_translation": "[They are] reclining on beds whose linings are of silk brocade, and the fruit of the two gardens is hanging low.",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4955.mp3"
+    },
+    {
+      "number": 4956,
+      "number_in_surah": 55,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4956.mp3"
+    },
+    {
+      "number": 4957,
+      "number_in_surah": 56,
+      "text_arabic": "فِيهِنَّ قَٰصِرَٰتُ ٱلطَّرْفِ لَمْ يَطْمِثْهُنَّ إِنسٌۭ قَبْلَهُمْ وَلَا جَآنٌّۭ",
+      "text_translation": "In them are women limiting [their] glances, untouched before them by man or jinni -",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4957.mp3"
+    },
+    {
+      "number": 4958,
+      "number_in_surah": 57,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny? -",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4958.mp3"
+    },
+    {
+      "number": 4959,
+      "number_in_surah": 58,
+      "text_arabic": "كَأَنَّهُنَّ ٱلْيَاقُوتُ وَٱلْمَرْجَانُ",
+      "text_translation": "As if they were rubies and coral.",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4959.mp3"
+    },
+    {
+      "number": 4960,
+      "number_in_surah": 59,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4960.mp3"
+    },
+    {
+      "number": 4961,
+      "number_in_surah": 60,
+      "text_arabic": "هَلْ جَزَآءُ ٱلْإِحْسَٰنِ إِلَّا ٱلْإِحْسَٰنُ",
+      "text_translation": "Is the reward for good [anything] but good?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4961.mp3"
+    },
+    {
+      "number": 4962,
+      "number_in_surah": 61,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4962.mp3"
+    },
+    {
+      "number": 4963,
+      "number_in_surah": 62,
+      "text_arabic": "وَمِن دُونِهِمَا جَنَّتَانِ",
+      "text_translation": "And below them both [in excellence] are two [other] gardens -",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4963.mp3"
+    },
+    {
+      "number": 4964,
+      "number_in_surah": 63,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny? -",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4964.mp3"
+    },
+    {
+      "number": 4965,
+      "number_in_surah": 64,
+      "text_arabic": "مُدْهَآمَّتَانِ",
+      "text_translation": "Dark green [in color].",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4965.mp3"
+    },
+    {
+      "number": 4966,
+      "number_in_surah": 65,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4966.mp3"
+    },
+    {
+      "number": 4967,
+      "number_in_surah": 66,
+      "text_arabic": "فِيهِمَا عَيْنَانِ نَضَّاخَتَانِ",
+      "text_translation": "In both of them are two springs, spouting.",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4967.mp3"
+    },
+    {
+      "number": 4968,
+      "number_in_surah": 67,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 533,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4968.mp3"
+    },
+    {
+      "number": 4969,
+      "number_in_surah": 68,
+      "text_arabic": "فِيهِمَا فَٰكِهَةٌۭ وَنَخْلٌۭ وَرُمَّانٌۭ",
+      "text_translation": "In both of them are fruit and palm trees and pomegranates.",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4969.mp3"
+    },
+    {
+      "number": 4970,
+      "number_in_surah": 69,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4970.mp3"
+    },
+    {
+      "number": 4971,
+      "number_in_surah": 70,
+      "text_arabic": "فِيهِنَّ خَيْرَٰتٌ حِسَانٌۭ",
+      "text_translation": "In them are good and beautiful women -",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4971.mp3"
+    },
+    {
+      "number": 4972,
+      "number_in_surah": 71,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny? -",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4972.mp3"
+    },
+    {
+      "number": 4973,
+      "number_in_surah": 72,
+      "text_arabic": "حُورٌۭ مَّقْصُورَٰتٌۭ فِى ٱلْخِيَامِ",
+      "text_translation": "Fair ones reserved in pavilions -",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4973.mp3"
+    },
+    {
+      "number": 4974,
+      "number_in_surah": 73,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny? -",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4974.mp3"
+    },
+    {
+      "number": 4975,
+      "number_in_surah": 74,
+      "text_arabic": "لَمْ يَطْمِثْهُنَّ إِنسٌۭ قَبْلَهُمْ وَلَا جَآنٌّۭ",
+      "text_translation": "Untouched before them by man or jinni -",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4975.mp3"
+    },
+    {
+      "number": 4976,
+      "number_in_surah": 75,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny? -",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4976.mp3"
+    },
+    {
+      "number": 4977,
+      "number_in_surah": 76,
+      "text_arabic": "مُتَّكِـِٔينَ عَلَىٰ رَفْرَفٍ خُضْرٍۢ وَعَبْقَرِىٍّ حِسَانٍۢ",
+      "text_translation": "Reclining on green cushions and beautiful fine carpets.",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4977.mp3"
+    },
+    {
+      "number": 4978,
+      "number_in_surah": 77,
+      "text_arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+      "text_translation": "So which of the favors of your Lord would you deny?",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4978.mp3"
+    },
+    {
+      "number": 4979,
+      "number_in_surah": 78,
+      "text_arabic": "تَبَٰرَكَ ٱسْمُ رَبِّكَ ذِى ٱلْجَلَٰلِ وَٱلْإِكْرَامِ",
+      "text_translation": "Blessed is the name of your Lord, Owner of Majesty and Honor.",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4979.mp3"
+    }
+  ]
+}

@@ -1,0 +1,875 @@
+{
+  "number": 56,
+  "name_arabic": "سُورَةُ الوَاقِعَةِ",
+  "name_english": "Al-Waaqia",
+  "name_translation": "The Inevitable",
+  "revelation_type": "meccan",
+  "ayah_count": 96,
+  "juz_start": 27,
+  "ayahs": [
+    {
+      "number": 4980,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا وَقَعَتِ ٱلْوَاقِعَةُ",
+      "text_translation": "When the Occurrence occurs,",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4980.mp3"
+    },
+    {
+      "number": 4981,
+      "number_in_surah": 2,
+      "text_arabic": "لَيْسَ لِوَقْعَتِهَا كَاذِبَةٌ",
+      "text_translation": "There is, at its occurrence, no denial.",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4981.mp3"
+    },
+    {
+      "number": 4982,
+      "number_in_surah": 3,
+      "text_arabic": "خَافِضَةٌۭ رَّافِعَةٌ",
+      "text_translation": "It will bring down [some] and raise up [others].",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4982.mp3"
+    },
+    {
+      "number": 4983,
+      "number_in_surah": 4,
+      "text_arabic": "إِذَا رُجَّتِ ٱلْأَرْضُ رَجًّۭا",
+      "text_translation": "When the earth is shaken with convulsion",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4983.mp3"
+    },
+    {
+      "number": 4984,
+      "number_in_surah": 5,
+      "text_arabic": "وَبُسَّتِ ٱلْجِبَالُ بَسًّۭا",
+      "text_translation": "And the mountains are broken down, crumbling",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4984.mp3"
+    },
+    {
+      "number": 4985,
+      "number_in_surah": 6,
+      "text_arabic": "فَكَانَتْ هَبَآءًۭ مُّنۢبَثًّۭا",
+      "text_translation": "And become dust dispersing.",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4985.mp3"
+    },
+    {
+      "number": 4986,
+      "number_in_surah": 7,
+      "text_arabic": "وَكُنتُمْ أَزْوَٰجًۭا ثَلَٰثَةًۭ",
+      "text_translation": "And you become [of] three kinds:",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4986.mp3"
+    },
+    {
+      "number": 4987,
+      "number_in_surah": 8,
+      "text_arabic": "فَأَصْحَٰبُ ٱلْمَيْمَنَةِ مَآ أَصْحَٰبُ ٱلْمَيْمَنَةِ",
+      "text_translation": "Then the companions of the right - what are the companions of the right?",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4987.mp3"
+    },
+    {
+      "number": 4988,
+      "number_in_surah": 9,
+      "text_arabic": "وَأَصْحَٰبُ ٱلْمَشْـَٔمَةِ مَآ أَصْحَٰبُ ٱلْمَشْـَٔمَةِ",
+      "text_translation": "And the companions of the left - what are the companions of the left?",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4988.mp3"
+    },
+    {
+      "number": 4989,
+      "number_in_surah": 10,
+      "text_arabic": "وَٱلسَّٰبِقُونَ ٱلسَّٰبِقُونَ",
+      "text_translation": "And the forerunners, the forerunners -",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4989.mp3"
+    },
+    {
+      "number": 4990,
+      "number_in_surah": 11,
+      "text_arabic": "أُو۟لَٰٓئِكَ ٱلْمُقَرَّبُونَ",
+      "text_translation": "Those are the ones brought near [to Allah]",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4990.mp3"
+    },
+    {
+      "number": 4991,
+      "number_in_surah": 12,
+      "text_arabic": "فِى جَنَّٰتِ ٱلنَّعِيمِ",
+      "text_translation": "In the Gardens of Pleasure,",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4991.mp3"
+    },
+    {
+      "number": 4992,
+      "number_in_surah": 13,
+      "text_arabic": "ثُلَّةٌۭ مِّنَ ٱلْأَوَّلِينَ",
+      "text_translation": "A [large] company of the former peoples",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4992.mp3"
+    },
+    {
+      "number": 4993,
+      "number_in_surah": 14,
+      "text_arabic": "وَقَلِيلٌۭ مِّنَ ٱلْءَاخِرِينَ",
+      "text_translation": "And a few of the later peoples,",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4993.mp3"
+    },
+    {
+      "number": 4994,
+      "number_in_surah": 15,
+      "text_arabic": "عَلَىٰ سُرُرٍۢ مَّوْضُونَةٍۢ",
+      "text_translation": "On thrones woven [with ornament],",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4994.mp3"
+    },
+    {
+      "number": 4995,
+      "number_in_surah": 16,
+      "text_arabic": "مُّتَّكِـِٔينَ عَلَيْهَا مُتَقَٰبِلِينَ",
+      "text_translation": "Reclining on them, facing each other.",
+      "juz": 27,
+      "page": 534,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4995.mp3"
+    },
+    {
+      "number": 4996,
+      "number_in_surah": 17,
+      "text_arabic": "يَطُوفُ عَلَيْهِمْ وِلْدَٰنٌۭ مُّخَلَّدُونَ",
+      "text_translation": "There will circulate among them young boys made eternal",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4996.mp3"
+    },
+    {
+      "number": 4997,
+      "number_in_surah": 18,
+      "text_arabic": "بِأَكْوَابٍۢ وَأَبَارِيقَ وَكَأْسٍۢ مِّن مَّعِينٍۢ",
+      "text_translation": "With vessels, pitchers and a cup [of wine] from a flowing spring -",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4997.mp3"
+    },
+    {
+      "number": 4998,
+      "number_in_surah": 19,
+      "text_arabic": "لَّا يُصَدَّعُونَ عَنْهَا وَلَا يُنزِفُونَ",
+      "text_translation": "No headache will they have therefrom, nor will they be intoxicated -",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4998.mp3"
+    },
+    {
+      "number": 4999,
+      "number_in_surah": 20,
+      "text_arabic": "وَفَٰكِهَةٍۢ مِّمَّا يَتَخَيَّرُونَ",
+      "text_translation": "And fruit of what they select",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4999.mp3"
+    },
+    {
+      "number": 5000,
+      "number_in_surah": 21,
+      "text_arabic": "وَلَحْمِ طَيْرٍۢ مِّمَّا يَشْتَهُونَ",
+      "text_translation": "And the meat of fowl, from whatever they desire.",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5000.mp3"
+    },
+    {
+      "number": 5001,
+      "number_in_surah": 22,
+      "text_arabic": "وَحُورٌ عِينٌۭ",
+      "text_translation": "And [for them are] fair women with large, [beautiful] eyes,",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5001.mp3"
+    },
+    {
+      "number": 5002,
+      "number_in_surah": 23,
+      "text_arabic": "كَأَمْثَٰلِ ٱللُّؤْلُؤِ ٱلْمَكْنُونِ",
+      "text_translation": "The likenesses of pearls well-protected,",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5002.mp3"
+    },
+    {
+      "number": 5003,
+      "number_in_surah": 24,
+      "text_arabic": "جَزَآءًۢ بِمَا كَانُوا۟ يَعْمَلُونَ",
+      "text_translation": "As reward for what they used to do.",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5003.mp3"
+    },
+    {
+      "number": 5004,
+      "number_in_surah": 25,
+      "text_arabic": "لَا يَسْمَعُونَ فِيهَا لَغْوًۭا وَلَا تَأْثِيمًا",
+      "text_translation": "They will not hear therein ill speech or commission of sin -",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5004.mp3"
+    },
+    {
+      "number": 5005,
+      "number_in_surah": 26,
+      "text_arabic": "إِلَّا قِيلًۭا سَلَٰمًۭا سَلَٰمًۭا",
+      "text_translation": "Only a saying: \"Peace, peace.\"",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5005.mp3"
+    },
+    {
+      "number": 5006,
+      "number_in_surah": 27,
+      "text_arabic": "وَأَصْحَٰبُ ٱلْيَمِينِ مَآ أَصْحَٰبُ ٱلْيَمِينِ",
+      "text_translation": "The companions of the right - what are the companions of the right?",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5006.mp3"
+    },
+    {
+      "number": 5007,
+      "number_in_surah": 28,
+      "text_arabic": "فِى سِدْرٍۢ مَّخْضُودٍۢ",
+      "text_translation": "[They will be] among lote trees with thorns removed",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5007.mp3"
+    },
+    {
+      "number": 5008,
+      "number_in_surah": 29,
+      "text_arabic": "وَطَلْحٍۢ مَّنضُودٍۢ",
+      "text_translation": "And [banana] trees layered [with fruit]",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5008.mp3"
+    },
+    {
+      "number": 5009,
+      "number_in_surah": 30,
+      "text_arabic": "وَظِلٍّۢ مَّمْدُودٍۢ",
+      "text_translation": "And shade extended",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5009.mp3"
+    },
+    {
+      "number": 5010,
+      "number_in_surah": 31,
+      "text_arabic": "وَمَآءٍۢ مَّسْكُوبٍۢ",
+      "text_translation": "And water poured out",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5010.mp3"
+    },
+    {
+      "number": 5011,
+      "number_in_surah": 32,
+      "text_arabic": "وَفَٰكِهَةٍۢ كَثِيرَةٍۢ",
+      "text_translation": "And fruit, abundant [and varied],",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5011.mp3"
+    },
+    {
+      "number": 5012,
+      "number_in_surah": 33,
+      "text_arabic": "لَّا مَقْطُوعَةٍۢ وَلَا مَمْنُوعَةٍۢ",
+      "text_translation": "Neither limited [to season] nor forbidden,",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5012.mp3"
+    },
+    {
+      "number": 5013,
+      "number_in_surah": 34,
+      "text_arabic": "وَفُرُشٍۢ مَّرْفُوعَةٍ",
+      "text_translation": "And [upon] beds raised high.",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5013.mp3"
+    },
+    {
+      "number": 5014,
+      "number_in_surah": 35,
+      "text_arabic": "إِنَّآ أَنشَأْنَٰهُنَّ إِنشَآءًۭ",
+      "text_translation": "Indeed, We have produced the women of Paradise in a [new] creation",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5014.mp3"
+    },
+    {
+      "number": 5015,
+      "number_in_surah": 36,
+      "text_arabic": "فَجَعَلْنَٰهُنَّ أَبْكَارًا",
+      "text_translation": "And made them virgins,",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5015.mp3"
+    },
+    {
+      "number": 5016,
+      "number_in_surah": 37,
+      "text_arabic": "عُرُبًا أَتْرَابًۭا",
+      "text_translation": "Devoted [to their husbands] and of equal age,",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5016.mp3"
+    },
+    {
+      "number": 5017,
+      "number_in_surah": 38,
+      "text_arabic": "لِّأَصْحَٰبِ ٱلْيَمِينِ",
+      "text_translation": "For the companions of the right [who are]",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5017.mp3"
+    },
+    {
+      "number": 5018,
+      "number_in_surah": 39,
+      "text_arabic": "ثُلَّةٌۭ مِّنَ ٱلْأَوَّلِينَ",
+      "text_translation": "A company of the former peoples",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5018.mp3"
+    },
+    {
+      "number": 5019,
+      "number_in_surah": 40,
+      "text_arabic": "وَثُلَّةٌۭ مِّنَ ٱلْءَاخِرِينَ",
+      "text_translation": "And a company of the later peoples.",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5019.mp3"
+    },
+    {
+      "number": 5020,
+      "number_in_surah": 41,
+      "text_arabic": "وَأَصْحَٰبُ ٱلشِّمَالِ مَآ أَصْحَٰبُ ٱلشِّمَالِ",
+      "text_translation": "And the companions of the left - what are the companions of the left?",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5020.mp3"
+    },
+    {
+      "number": 5021,
+      "number_in_surah": 42,
+      "text_arabic": "فِى سَمُومٍۢ وَحَمِيمٍۢ",
+      "text_translation": "[They will be] in scorching fire and scalding water",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5021.mp3"
+    },
+    {
+      "number": 5022,
+      "number_in_surah": 43,
+      "text_arabic": "وَظِلٍّۢ مِّن يَحْمُومٍۢ",
+      "text_translation": "And a shade of black smoke,",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5022.mp3"
+    },
+    {
+      "number": 5023,
+      "number_in_surah": 44,
+      "text_arabic": "لَّا بَارِدٍۢ وَلَا كَرِيمٍ",
+      "text_translation": "Neither cool nor beneficial.",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5023.mp3"
+    },
+    {
+      "number": 5024,
+      "number_in_surah": 45,
+      "text_arabic": "إِنَّهُمْ كَانُوا۟ قَبْلَ ذَٰلِكَ مُتْرَفِينَ",
+      "text_translation": "Indeed they were, before that, indulging in affluence,",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5024.mp3"
+    },
+    {
+      "number": 5025,
+      "number_in_surah": 46,
+      "text_arabic": "وَكَانُوا۟ يُصِرُّونَ عَلَى ٱلْحِنثِ ٱلْعَظِيمِ",
+      "text_translation": "And they used to persist in the great violation,",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5025.mp3"
+    },
+    {
+      "number": 5026,
+      "number_in_surah": 47,
+      "text_arabic": "وَكَانُوا۟ يَقُولُونَ أَئِذَا مِتْنَا وَكُنَّا تُرَابًۭا وَعِظَٰمًا أَءِنَّا لَمَبْعُوثُونَ",
+      "text_translation": "And they used to say, \"When we die and become dust and bones, are we indeed to be resurrected?",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5026.mp3"
+    },
+    {
+      "number": 5027,
+      "number_in_surah": 48,
+      "text_arabic": "أَوَءَابَآؤُنَا ٱلْأَوَّلُونَ",
+      "text_translation": "And our forefathers [as well]?\"",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5027.mp3"
+    },
+    {
+      "number": 5028,
+      "number_in_surah": 49,
+      "text_arabic": "قُلْ إِنَّ ٱلْأَوَّلِينَ وَٱلْءَاخِرِينَ",
+      "text_translation": "Say, [O Muhammad], \"Indeed, the former and the later peoples",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5028.mp3"
+    },
+    {
+      "number": 5029,
+      "number_in_surah": 50,
+      "text_arabic": "لَمَجْمُوعُونَ إِلَىٰ مِيقَٰتِ يَوْمٍۢ مَّعْلُومٍۢ",
+      "text_translation": "Are to be gathered together for the appointment of a known Day.\"",
+      "juz": 27,
+      "page": 535,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5029.mp3"
+    },
+    {
+      "number": 5030,
+      "number_in_surah": 51,
+      "text_arabic": "ثُمَّ إِنَّكُمْ أَيُّهَا ٱلضَّآلُّونَ ٱلْمُكَذِّبُونَ",
+      "text_translation": "Then indeed you, O those astray [who are] deniers,",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5030.mp3"
+    },
+    {
+      "number": 5031,
+      "number_in_surah": 52,
+      "text_arabic": "لَءَاكِلُونَ مِن شَجَرٍۢ مِّن زَقُّومٍۢ",
+      "text_translation": "Will be eating from trees of zaqqum",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5031.mp3"
+    },
+    {
+      "number": 5032,
+      "number_in_surah": 53,
+      "text_arabic": "فَمَالِـُٔونَ مِنْهَا ٱلْبُطُونَ",
+      "text_translation": "And filling with it your bellies",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5032.mp3"
+    },
+    {
+      "number": 5033,
+      "number_in_surah": 54,
+      "text_arabic": "فَشَٰرِبُونَ عَلَيْهِ مِنَ ٱلْحَمِيمِ",
+      "text_translation": "And drinking on top of it from scalding water",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5033.mp3"
+    },
+    {
+      "number": 5034,
+      "number_in_surah": 55,
+      "text_arabic": "فَشَٰرِبُونَ شُرْبَ ٱلْهِيمِ",
+      "text_translation": "And will drink as the drinking of thirsty camels.",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5034.mp3"
+    },
+    {
+      "number": 5035,
+      "number_in_surah": 56,
+      "text_arabic": "هَٰذَا نُزُلُهُمْ يَوْمَ ٱلدِّينِ",
+      "text_translation": "That is their accommodation on the Day of Recompense.",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5035.mp3"
+    },
+    {
+      "number": 5036,
+      "number_in_surah": 57,
+      "text_arabic": "نَحْنُ خَلَقْنَٰكُمْ فَلَوْلَا تُصَدِّقُونَ",
+      "text_translation": "We have created you, so why do you not believe?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5036.mp3"
+    },
+    {
+      "number": 5037,
+      "number_in_surah": 58,
+      "text_arabic": "أَفَرَءَيْتُم مَّا تُمْنُونَ",
+      "text_translation": "Have you seen that which you emit?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5037.mp3"
+    },
+    {
+      "number": 5038,
+      "number_in_surah": 59,
+      "text_arabic": "ءَأَنتُمْ تَخْلُقُونَهُۥٓ أَمْ نَحْنُ ٱلْخَٰلِقُونَ",
+      "text_translation": "Is it you who creates it, or are We the Creator?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5038.mp3"
+    },
+    {
+      "number": 5039,
+      "number_in_surah": 60,
+      "text_arabic": "نَحْنُ قَدَّرْنَا بَيْنَكُمُ ٱلْمَوْتَ وَمَا نَحْنُ بِمَسْبُوقِينَ",
+      "text_translation": "We have decreed death among you, and We are not to be outdone",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5039.mp3"
+    },
+    {
+      "number": 5040,
+      "number_in_surah": 61,
+      "text_arabic": "عَلَىٰٓ أَن نُّبَدِّلَ أَمْثَٰلَكُمْ وَنُنشِئَكُمْ فِى مَا لَا تَعْلَمُونَ",
+      "text_translation": "In that We will change your likenesses and produce you in that [form] which you do not know.",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5040.mp3"
+    },
+    {
+      "number": 5041,
+      "number_in_surah": 62,
+      "text_arabic": "وَلَقَدْ عَلِمْتُمُ ٱلنَّشْأَةَ ٱلْأُولَىٰ فَلَوْلَا تَذَكَّرُونَ",
+      "text_translation": "And you have already known the first creation, so will you not remember?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5041.mp3"
+    },
+    {
+      "number": 5042,
+      "number_in_surah": 63,
+      "text_arabic": "أَفَرَءَيْتُم مَّا تَحْرُثُونَ",
+      "text_translation": "And have you seen that [seed] which you sow?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5042.mp3"
+    },
+    {
+      "number": 5043,
+      "number_in_surah": 64,
+      "text_arabic": "ءَأَنتُمْ تَزْرَعُونَهُۥٓ أَمْ نَحْنُ ٱلزَّٰرِعُونَ",
+      "text_translation": "Is it you who makes it grow, or are We the grower?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5043.mp3"
+    },
+    {
+      "number": 5044,
+      "number_in_surah": 65,
+      "text_arabic": "لَوْ نَشَآءُ لَجَعَلْنَٰهُ حُطَٰمًۭا فَظَلْتُمْ تَفَكَّهُونَ",
+      "text_translation": "If We willed, We could make it [dry] debris, and you would remain in wonder,",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5044.mp3"
+    },
+    {
+      "number": 5045,
+      "number_in_surah": 66,
+      "text_arabic": "إِنَّا لَمُغْرَمُونَ",
+      "text_translation": "[Saying], \"Indeed, we are [now] in debt;",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5045.mp3"
+    },
+    {
+      "number": 5046,
+      "number_in_surah": 67,
+      "text_arabic": "بَلْ نَحْنُ مَحْرُومُونَ",
+      "text_translation": "Rather, we have been deprived.\"",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5046.mp3"
+    },
+    {
+      "number": 5047,
+      "number_in_surah": 68,
+      "text_arabic": "أَفَرَءَيْتُمُ ٱلْمَآءَ ٱلَّذِى تَشْرَبُونَ",
+      "text_translation": "And have you seen the water that you drink?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5047.mp3"
+    },
+    {
+      "number": 5048,
+      "number_in_surah": 69,
+      "text_arabic": "ءَأَنتُمْ أَنزَلْتُمُوهُ مِنَ ٱلْمُزْنِ أَمْ نَحْنُ ٱلْمُنزِلُونَ",
+      "text_translation": "Is it you who brought it down from the clouds, or is it We who bring it down?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5048.mp3"
+    },
+    {
+      "number": 5049,
+      "number_in_surah": 70,
+      "text_arabic": "لَوْ نَشَآءُ جَعَلْنَٰهُ أُجَاجًۭا فَلَوْلَا تَشْكُرُونَ",
+      "text_translation": "If We willed, We could make it bitter, so why are you not grateful?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5049.mp3"
+    },
+    {
+      "number": 5050,
+      "number_in_surah": 71,
+      "text_arabic": "أَفَرَءَيْتُمُ ٱلنَّارَ ٱلَّتِى تُورُونَ",
+      "text_translation": "And have you seen the fire that you ignite?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5050.mp3"
+    },
+    {
+      "number": 5051,
+      "number_in_surah": 72,
+      "text_arabic": "ءَأَنتُمْ أَنشَأْتُمْ شَجَرَتَهَآ أَمْ نَحْنُ ٱلْمُنشِـُٔونَ",
+      "text_translation": "Is it you who produced its tree, or are We the producer?",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5051.mp3"
+    },
+    {
+      "number": 5052,
+      "number_in_surah": 73,
+      "text_arabic": "نَحْنُ جَعَلْنَٰهَا تَذْكِرَةًۭ وَمَتَٰعًۭا لِّلْمُقْوِينَ",
+      "text_translation": "We have made it a reminder and provision for the travelers,",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5052.mp3"
+    },
+    {
+      "number": 5053,
+      "number_in_surah": 74,
+      "text_arabic": "فَسَبِّحْ بِٱسْمِ رَبِّكَ ٱلْعَظِيمِ",
+      "text_translation": "So exalt the name of your Lord, the Most Great.",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5053.mp3"
+    },
+    {
+      "number": 5054,
+      "number_in_surah": 75,
+      "text_arabic": "۞ فَلَآ أُقْسِمُ بِمَوَٰقِعِ ٱلنُّجُومِ",
+      "text_translation": "Then I swear by the setting of the stars,",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5054.mp3"
+    },
+    {
+      "number": 5055,
+      "number_in_surah": 76,
+      "text_arabic": "وَإِنَّهُۥ لَقَسَمٌۭ لَّوْ تَعْلَمُونَ عَظِيمٌ",
+      "text_translation": "And indeed, it is an oath - if you could know - [most] great.",
+      "juz": 27,
+      "page": 536,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5055.mp3"
+    },
+    {
+      "number": 5056,
+      "number_in_surah": 77,
+      "text_arabic": "إِنَّهُۥ لَقُرْءَانٌۭ كَرِيمٌۭ",
+      "text_translation": "Indeed, it is a noble Qur'an",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5056.mp3"
+    },
+    {
+      "number": 5057,
+      "number_in_surah": 78,
+      "text_arabic": "فِى كِتَٰبٍۢ مَّكْنُونٍۢ",
+      "text_translation": "In a Register well-protected;",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5057.mp3"
+    },
+    {
+      "number": 5058,
+      "number_in_surah": 79,
+      "text_arabic": "لَّا يَمَسُّهُۥٓ إِلَّا ٱلْمُطَهَّرُونَ",
+      "text_translation": "None touch it except the purified.",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5058.mp3"
+    },
+    {
+      "number": 5059,
+      "number_in_surah": 80,
+      "text_arabic": "تَنزِيلٌۭ مِّن رَّبِّ ٱلْعَٰلَمِينَ",
+      "text_translation": "[It is] a revelation from the Lord of the worlds.",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5059.mp3"
+    },
+    {
+      "number": 5060,
+      "number_in_surah": 81,
+      "text_arabic": "أَفَبِهَٰذَا ٱلْحَدِيثِ أَنتُم مُّدْهِنُونَ",
+      "text_translation": "Then is it to this statement that you are indifferent",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5060.mp3"
+    },
+    {
+      "number": 5061,
+      "number_in_surah": 82,
+      "text_arabic": "وَتَجْعَلُونَ رِزْقَكُمْ أَنَّكُمْ تُكَذِّبُونَ",
+      "text_translation": "And make [the thanks for] your provision that you deny [the Provider]?",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5061.mp3"
+    },
+    {
+      "number": 5062,
+      "number_in_surah": 83,
+      "text_arabic": "فَلَوْلَآ إِذَا بَلَغَتِ ٱلْحُلْقُومَ",
+      "text_translation": "Then why, when the soul at death reaches the throat",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5062.mp3"
+    },
+    {
+      "number": 5063,
+      "number_in_surah": 84,
+      "text_arabic": "وَأَنتُمْ حِينَئِذٍۢ تَنظُرُونَ",
+      "text_translation": "And you are at that time looking on -",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5063.mp3"
+    },
+    {
+      "number": 5064,
+      "number_in_surah": 85,
+      "text_arabic": "وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنكُمْ وَلَٰكِن لَّا تُبْصِرُونَ",
+      "text_translation": "And Our angels are nearer to him than you, but you do not see -",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5064.mp3"
+    },
+    {
+      "number": 5065,
+      "number_in_surah": 86,
+      "text_arabic": "فَلَوْلَآ إِن كُنتُمْ غَيْرَ مَدِينِينَ",
+      "text_translation": "Then why do you not, if you are not to be recompensed,",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5065.mp3"
+    },
+    {
+      "number": 5066,
+      "number_in_surah": 87,
+      "text_arabic": "تَرْجِعُونَهَآ إِن كُنتُمْ صَٰدِقِينَ",
+      "text_translation": "Bring it back, if you should be truthful?",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5066.mp3"
+    },
+    {
+      "number": 5067,
+      "number_in_surah": 88,
+      "text_arabic": "فَأَمَّآ إِن كَانَ مِنَ ٱلْمُقَرَّبِينَ",
+      "text_translation": "And if the deceased was of those brought near to Allah,",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5067.mp3"
+    },
+    {
+      "number": 5068,
+      "number_in_surah": 89,
+      "text_arabic": "فَرَوْحٌۭ وَرَيْحَانٌۭ وَجَنَّتُ نَعِيمٍۢ",
+      "text_translation": "Then [for him is] rest and bounty and a garden of pleasure.",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5068.mp3"
+    },
+    {
+      "number": 5069,
+      "number_in_surah": 90,
+      "text_arabic": "وَأَمَّآ إِن كَانَ مِنْ أَصْحَٰبِ ٱلْيَمِينِ",
+      "text_translation": "And if he was of the companions of the right,",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5069.mp3"
+    },
+    {
+      "number": 5070,
+      "number_in_surah": 91,
+      "text_arabic": "فَسَلَٰمٌۭ لَّكَ مِنْ أَصْحَٰبِ ٱلْيَمِينِ",
+      "text_translation": "Then [the angels will say], \"Peace for you; [you are] from the companions of the right.\"",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5070.mp3"
+    },
+    {
+      "number": 5071,
+      "number_in_surah": 92,
+      "text_arabic": "وَأَمَّآ إِن كَانَ مِنَ ٱلْمُكَذِّبِينَ ٱلضَّآلِّينَ",
+      "text_translation": "But if he was of the deniers [who were] astray,",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5071.mp3"
+    },
+    {
+      "number": 5072,
+      "number_in_surah": 93,
+      "text_arabic": "فَنُزُلٌۭ مِّنْ حَمِيمٍۢ",
+      "text_translation": "Then [for him is] accommodation of scalding water",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5072.mp3"
+    },
+    {
+      "number": 5073,
+      "number_in_surah": 94,
+      "text_arabic": "وَتَصْلِيَةُ جَحِيمٍ",
+      "text_translation": "And burning in Hellfire",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5073.mp3"
+    },
+    {
+      "number": 5074,
+      "number_in_surah": 95,
+      "text_arabic": "إِنَّ هَٰذَا لَهُوَ حَقُّ ٱلْيَقِينِ",
+      "text_translation": "Indeed, this is the true certainty,",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5074.mp3"
+    },
+    {
+      "number": 5075,
+      "number_in_surah": 96,
+      "text_arabic": "فَسَبِّحْ بِٱسْمِ رَبِّكَ ٱلْعَظِيمِ",
+      "text_translation": "So exalt the name of your Lord, the Most Great.",
+      "juz": 27,
+      "page": 537,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5075.mp3"
+    }
+  ]
+}

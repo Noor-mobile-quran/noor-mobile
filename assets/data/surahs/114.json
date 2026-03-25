@@ -1,0 +1,65 @@
+{
+  "number": 114,
+  "name_arabic": "سُورَةُ النَّاسِ",
+  "name_english": "An-Naas",
+  "name_translation": "Mankind",
+  "revelation_type": "meccan",
+  "ayah_count": 6,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6231,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "text_translation": "Say, \"I seek refuge in the Lord of mankind,",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6231.mp3"
+    },
+    {
+      "number": 6232,
+      "number_in_surah": 2,
+      "text_arabic": "مَلِكِ ٱلنَّاسِ",
+      "text_translation": "The Sovereign of mankind.",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6232.mp3"
+    },
+    {
+      "number": 6233,
+      "number_in_surah": 3,
+      "text_arabic": "إِلَٰهِ ٱلنَّاسِ",
+      "text_translation": "The God of mankind,",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6233.mp3"
+    },
+    {
+      "number": 6234,
+      "number_in_surah": 4,
+      "text_arabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+      "text_translation": "From the evil of the retreating whisperer -",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6234.mp3"
+    },
+    {
+      "number": 6235,
+      "number_in_surah": 5,
+      "text_arabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+      "text_translation": "Who whispers [evil] into the breasts of mankind -",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6235.mp3"
+    },
+    {
+      "number": 6236,
+      "number_in_surah": 6,
+      "text_arabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "text_translation": "From among the jinn and mankind.\"",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6236.mp3"
+    }
+  ]
+}

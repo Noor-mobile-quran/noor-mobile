@@ -1,0 +1,110 @@
+{
+  "number": 101,
+  "name_arabic": "سُورَةُ القَارِعَةِ",
+  "name_english": "Al-Qaari'a",
+  "name_translation": "The Calamity",
+  "revelation_type": "meccan",
+  "ayah_count": 11,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6158,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْقَارِعَةُ",
+      "text_translation": "The Striking Calamity -",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6158.mp3"
+    },
+    {
+      "number": 6159,
+      "number_in_surah": 2,
+      "text_arabic": "مَا ٱلْقَارِعَةُ",
+      "text_translation": "What is the Striking Calamity?",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6159.mp3"
+    },
+    {
+      "number": 6160,
+      "number_in_surah": 3,
+      "text_arabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+      "text_translation": "And what can make you know what is the Striking Calamity?",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6160.mp3"
+    },
+    {
+      "number": 6161,
+      "number_in_surah": 4,
+      "text_arabic": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+      "text_translation": "It is the Day when people will be like moths, dispersed,",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6161.mp3"
+    },
+    {
+      "number": 6162,
+      "number_in_surah": 5,
+      "text_arabic": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+      "text_translation": "And the mountains will be like wool, fluffed up.",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6162.mp3"
+    },
+    {
+      "number": 6163,
+      "number_in_surah": 6,
+      "text_arabic": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+      "text_translation": "Then as for one whose scales are heavy [with good deeds],",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6163.mp3"
+    },
+    {
+      "number": 6164,
+      "number_in_surah": 7,
+      "text_arabic": "فَهُوَ فِى عِيشَةٍۢ رَّاضِيَةٍۢ",
+      "text_translation": "He will be in a pleasant life.",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6164.mp3"
+    },
+    {
+      "number": 6165,
+      "number_in_surah": 8,
+      "text_arabic": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+      "text_translation": "But as for one whose scales are light,",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6165.mp3"
+    },
+    {
+      "number": 6166,
+      "number_in_surah": 9,
+      "text_arabic": "فَأُمُّهُۥ هَاوِيَةٌۭ",
+      "text_translation": "His refuge will be an abyss.",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6166.mp3"
+    },
+    {
+      "number": 6167,
+      "number_in_surah": 10,
+      "text_arabic": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+      "text_translation": "And what can make you know what that is?",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6167.mp3"
+    },
+    {
+      "number": 6168,
+      "number_in_surah": 11,
+      "text_arabic": "نَارٌ حَامِيَةٌۢ",
+      "text_translation": "It is a Fire, intensely hot.",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6168.mp3"
+    }
+  ]
+}

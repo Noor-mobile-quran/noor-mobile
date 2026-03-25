@@ -1,0 +1,38 @@
+{
+  "number": 103,
+  "name_arabic": "سُورَةُ العَصۡرِ",
+  "name_english": "Al-Asr",
+  "name_translation": "The Declining Day, Epoch",
+  "revelation_type": "meccan",
+  "ayah_count": 3,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6177,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْعَصْرِ",
+      "text_translation": "By time,",
+      "juz": 30,
+      "page": 601,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6177.mp3"
+    },
+    {
+      "number": 6178,
+      "number_in_surah": 2,
+      "text_arabic": "إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ",
+      "text_translation": "Indeed, mankind is in loss,",
+      "juz": 30,
+      "page": 601,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6178.mp3"
+    },
+    {
+      "number": 6179,
+      "number_in_surah": 3,
+      "text_arabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+      "text_translation": "Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
+      "juz": 30,
+      "page": 601,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6179.mp3"
+    }
+  ]
+}

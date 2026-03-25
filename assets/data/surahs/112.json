@@ -1,0 +1,47 @@
+{
+  "number": 112,
+  "name_arabic": "سُورَةُ الإِخۡلَاصِ",
+  "name_english": "Al-Ikhlaas",
+  "name_translation": "Sincerity",
+  "revelation_type": "meccan",
+  "ayah_count": 4,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6222,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+      "text_translation": "Say, \"He is Allah, [who is] One,",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6222.mp3"
+    },
+    {
+      "number": 6223,
+      "number_in_surah": 2,
+      "text_arabic": "ٱللَّهُ ٱلصَّمَدُ",
+      "text_translation": "Allah, the Eternal Refuge.",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6223.mp3"
+    },
+    {
+      "number": 6224,
+      "number_in_surah": 3,
+      "text_arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+      "text_translation": "He neither begets nor is born,",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6224.mp3"
+    },
+    {
+      "number": 6225,
+      "number_in_surah": 4,
+      "text_arabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+      "text_translation": "Nor is there to Him any equivalent.\"",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6225.mp3"
+    }
+  ]
+}

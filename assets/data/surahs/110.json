@@ -1,0 +1,38 @@
+{
+  "number": 110,
+  "name_arabic": "سُورَةُ النَّصۡرِ",
+  "name_english": "An-Nasr",
+  "name_translation": "Divine Support",
+  "revelation_type": "medinan",
+  "ayah_count": 3,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6214,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+      "text_translation": "When the victory of Allah has come and the conquest,",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6214.mp3"
+    },
+    {
+      "number": 6215,
+      "number_in_surah": 2,
+      "text_arabic": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًۭا",
+      "text_translation": "And you see the people entering into the religion of Allah in multitudes,",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6215.mp3"
+    },
+    {
+      "number": 6216,
+      "number_in_surah": 3,
+      "text_arabic": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+      "text_translation": "Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance.",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6216.mp3"
+    }
+  ]
+}

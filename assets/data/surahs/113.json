@@ -1,0 +1,56 @@
+{
+  "number": 113,
+  "name_arabic": "سُورَةُ الفَلَقِ",
+  "name_english": "Al-Falaq",
+  "name_translation": "The Dawn",
+  "revelation_type": "meccan",
+  "ayah_count": 5,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6226,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+      "text_translation": "Say, \"I seek refuge in the Lord of daybreak",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6226.mp3"
+    },
+    {
+      "number": 6227,
+      "number_in_surah": 2,
+      "text_arabic": "مِن شَرِّ مَا خَلَقَ",
+      "text_translation": "From the evil of that which He created",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6227.mp3"
+    },
+    {
+      "number": 6228,
+      "number_in_surah": 3,
+      "text_arabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+      "text_translation": "And from the evil of darkness when it settles",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6228.mp3"
+    },
+    {
+      "number": 6229,
+      "number_in_surah": 4,
+      "text_arabic": "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ",
+      "text_translation": "And from the evil of the blowers in knots",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6229.mp3"
+    },
+    {
+      "number": 6230,
+      "number_in_surah": 5,
+      "text_arabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "text_translation": "And from the evil of an envier when he envies.\"",
+      "juz": 30,
+      "page": 604,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6230.mp3"
+    }
+  ]
+}

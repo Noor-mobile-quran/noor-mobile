@@ -1,0 +1,65 @@
+{
+  "number": 109,
+  "name_arabic": "سُورَةُ الكَافِرُونَ",
+  "name_english": "Al-Kaafiroon",
+  "name_translation": "The Disbelievers",
+  "revelation_type": "meccan",
+  "ayah_count": 6,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6208,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
+      "text_translation": "Say, \"O disbelievers,",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6208.mp3"
+    },
+    {
+      "number": 6209,
+      "number_in_surah": 2,
+      "text_arabic": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
+      "text_translation": "I do not worship what you worship.",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6209.mp3"
+    },
+    {
+      "number": 6210,
+      "number_in_surah": 3,
+      "text_arabic": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
+      "text_translation": "Nor are you worshippers of what I worship.",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6210.mp3"
+    },
+    {
+      "number": 6211,
+      "number_in_surah": 4,
+      "text_arabic": "وَلَآ أَنَا۠ عَابِدٌۭ مَّا عَبَدتُّمْ",
+      "text_translation": "Nor will I be a worshipper of what you worship.",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6211.mp3"
+    },
+    {
+      "number": 6212,
+      "number_in_surah": 5,
+      "text_arabic": "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
+      "text_translation": "Nor will you be worshippers of what I worship.",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6212.mp3"
+    },
+    {
+      "number": 6213,
+      "number_in_surah": 6,
+      "text_arabic": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+      "text_translation": "For you is your religion, and for me is my religion.\"",
+      "juz": 30,
+      "page": 603,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6213.mp3"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "number": 95,
+  "name_arabic": "سُورَةُ التِّينِ",
+  "name_english": "At-Tin",
+  "name_translation": "The Fig",
+  "revelation_type": "meccan",
+  "ayah_count": 8,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6099,
+      "number_in_surah": 1,
+      "text_arabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلتِّينِ وَٱلزَّيْتُونِ",
+      "text_translation": "By the fig and the olive",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6099.mp3"
+    },
+    {
+      "number": 6100,
+      "number_in_surah": 2,
+      "text_arabic": "وَطُورِ سِينِينَ",
+      "text_translation": "And [by] Mount Sinai",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6100.mp3"
+    },
+    {
+      "number": 6101,
+      "number_in_surah": 3,
+      "text_arabic": "وَهَٰذَا ٱلْبَلَدِ ٱلْأَمِينِ",
+      "text_translation": "And [by] this secure city [Makkah],",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6101.mp3"
+    },
+    {
+      "number": 6102,
+      "number_in_surah": 4,
+      "text_arabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍۢ",
+      "text_translation": "We have certainly created man in the best of stature;",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6102.mp3"
+    },
+    {
+      "number": 6103,
+      "number_in_surah": 5,
+      "text_arabic": "ثُمَّ رَدَدْنَٰهُ أَسْفَلَ سَٰفِلِينَ",
+      "text_translation": "Then We return him to the lowest of the low,",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6103.mp3"
+    },
+    {
+      "number": 6104,
+      "number_in_surah": 6,
+      "text_arabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍۢ",
+      "text_translation": "Except for those who believe and do righteous deeds, for they will have a reward uninterrupted.",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6104.mp3"
+    },
+    {
+      "number": 6105,
+      "number_in_surah": 7,
+      "text_arabic": "فَمَا يُكَذِّبُكَ بَعْدُ بِٱلدِّينِ",
+      "text_translation": "So what yet causes you to deny the Recompense?",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6105.mp3"
+    },
+    {
+      "number": 6106,
+      "number_in_surah": 8,
+      "text_arabic": "أَلَيْسَ ٱللَّهُ بِأَحْكَمِ ٱلْحَٰكِمِينَ",
+      "text_translation": "Is not Allah the most just of judges?",
+      "juz": 30,
+      "page": 597,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6106.mp3"
+    }
+  ]
+}

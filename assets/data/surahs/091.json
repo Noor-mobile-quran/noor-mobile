@@ -1,0 +1,146 @@
+{
+  "number": 91,
+  "name_arabic": "سُورَةُ الشَّمۡسِ",
+  "name_english": "Ash-Shams",
+  "name_translation": "The Sun",
+  "revelation_type": "meccan",
+  "ayah_count": 15,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6044,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلشَّمْسِ وَضُحَىٰهَا",
+      "text_translation": "By the sun and its brightness",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6044.mp3"
+    },
+    {
+      "number": 6045,
+      "number_in_surah": 2,
+      "text_arabic": "وَٱلْقَمَرِ إِذَا تَلَىٰهَا",
+      "text_translation": "And [by] the moon when it follows it",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6045.mp3"
+    },
+    {
+      "number": 6046,
+      "number_in_surah": 3,
+      "text_arabic": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا",
+      "text_translation": "And [by] the day when it displays it",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6046.mp3"
+    },
+    {
+      "number": 6047,
+      "number_in_surah": 4,
+      "text_arabic": "وَٱلَّيْلِ إِذَا يَغْشَىٰهَا",
+      "text_translation": "And [by] the night when it covers it",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6047.mp3"
+    },
+    {
+      "number": 6048,
+      "number_in_surah": 5,
+      "text_arabic": "وَٱلسَّمَآءِ وَمَا بَنَىٰهَا",
+      "text_translation": "And [by] the sky and He who constructed it",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6048.mp3"
+    },
+    {
+      "number": 6049,
+      "number_in_surah": 6,
+      "text_arabic": "وَٱلْأَرْضِ وَمَا طَحَىٰهَا",
+      "text_translation": "And [by] the earth and He who spread it",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6049.mp3"
+    },
+    {
+      "number": 6050,
+      "number_in_surah": 7,
+      "text_arabic": "وَنَفْسٍۢ وَمَا سَوَّىٰهَا",
+      "text_translation": "And [by] the soul and He who proportioned it",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6050.mp3"
+    },
+    {
+      "number": 6051,
+      "number_in_surah": 8,
+      "text_arabic": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَىٰهَا",
+      "text_translation": "And inspired it [with discernment of] its wickedness and its righteousness,",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6051.mp3"
+    },
+    {
+      "number": 6052,
+      "number_in_surah": 9,
+      "text_arabic": "قَدْ أَفْلَحَ مَن زَكَّىٰهَا",
+      "text_translation": "He has succeeded who purifies it,",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6052.mp3"
+    },
+    {
+      "number": 6053,
+      "number_in_surah": 10,
+      "text_arabic": "وَقَدْ خَابَ مَن دَسَّىٰهَا",
+      "text_translation": "And he has failed who instills it [with corruption].",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6053.mp3"
+    },
+    {
+      "number": 6054,
+      "number_in_surah": 11,
+      "text_arabic": "كَذَّبَتْ ثَمُودُ بِطَغْوَىٰهَآ",
+      "text_translation": "Thamud denied [their prophet] by reason of their transgression,",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6054.mp3"
+    },
+    {
+      "number": 6055,
+      "number_in_surah": 12,
+      "text_arabic": "إِذِ ٱنۢبَعَثَ أَشْقَىٰهَا",
+      "text_translation": "When the most wretched of them was sent forth.",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6055.mp3"
+    },
+    {
+      "number": 6056,
+      "number_in_surah": 13,
+      "text_arabic": "فَقَالَ لَهُمْ رَسُولُ ٱللَّهِ نَاقَةَ ٱللَّهِ وَسُقْيَٰهَا",
+      "text_translation": "And the messenger of Allah [Salih] said to them, \"[Do not harm] the she-camel of Allah or [prevent her from] her drink.\"",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6056.mp3"
+    },
+    {
+      "number": 6057,
+      "number_in_surah": 14,
+      "text_arabic": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا",
+      "text_translation": "But they denied him and hamstrung her. So their Lord brought down upon them destruction for their sin and made it equal [upon all of them].",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6057.mp3"
+    },
+    {
+      "number": 6058,
+      "number_in_surah": 15,
+      "text_arabic": "وَلَا يَخَافُ عُقْبَٰهَا",
+      "text_translation": "And He does not fear the consequence thereof.",
+      "juz": 30,
+      "page": 595,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6058.mp3"
+    }
+  ]
+}

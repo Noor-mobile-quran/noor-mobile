@@ -1,0 +1,209 @@
+{
+  "number": 85,
+  "name_arabic": "سُورَةُ البُرُوجِ",
+  "name_english": "Al-Burooj",
+  "name_translation": "The Constellations",
+  "revelation_type": "meccan",
+  "ayah_count": 22,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 5910,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ",
+      "text_translation": "By the sky containing great stars",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5910.mp3"
+    },
+    {
+      "number": 5911,
+      "number_in_surah": 2,
+      "text_arabic": "وَٱلْيَوْمِ ٱلْمَوْعُودِ",
+      "text_translation": "And [by] the promised Day",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5911.mp3"
+    },
+    {
+      "number": 5912,
+      "number_in_surah": 3,
+      "text_arabic": "وَشَاهِدٍۢ وَمَشْهُودٍۢ",
+      "text_translation": "And [by] the witness and what is witnessed,",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5912.mp3"
+    },
+    {
+      "number": 5913,
+      "number_in_surah": 4,
+      "text_arabic": "قُتِلَ أَصْحَٰبُ ٱلْأُخْدُودِ",
+      "text_translation": "Cursed were the companions of the trench",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5913.mp3"
+    },
+    {
+      "number": 5914,
+      "number_in_surah": 5,
+      "text_arabic": "ٱلنَّارِ ذَاتِ ٱلْوَقُودِ",
+      "text_translation": "[Containing] the fire full of fuel,",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5914.mp3"
+    },
+    {
+      "number": 5915,
+      "number_in_surah": 6,
+      "text_arabic": "إِذْ هُمْ عَلَيْهَا قُعُودٌۭ",
+      "text_translation": "When they were sitting near it",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5915.mp3"
+    },
+    {
+      "number": 5916,
+      "number_in_surah": 7,
+      "text_arabic": "وَهُمْ عَلَىٰ مَا يَفْعَلُونَ بِٱلْمُؤْمِنِينَ شُهُودٌۭ",
+      "text_translation": "And they, to what they were doing against the believers, were witnesses.",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5916.mp3"
+    },
+    {
+      "number": 5917,
+      "number_in_surah": 8,
+      "text_arabic": "وَمَا نَقَمُوا۟ مِنْهُمْ إِلَّآ أَن يُؤْمِنُوا۟ بِٱللَّهِ ٱلْعَزِيزِ ٱلْحَمِيدِ",
+      "text_translation": "And they resented them not except because they believed in Allah, the Exalted in Might, the Praiseworthy,",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5917.mp3"
+    },
+    {
+      "number": 5918,
+      "number_in_surah": 9,
+      "text_arabic": "ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍۢ شَهِيدٌ",
+      "text_translation": "To whom belongs the dominion of the heavens and the earth. And Allah, over all things, is Witness.",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5918.mp3"
+    },
+    {
+      "number": 5919,
+      "number_in_surah": 10,
+      "text_arabic": "إِنَّ ٱلَّذِينَ فَتَنُوا۟ ٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَٰتِ ثُمَّ لَمْ يَتُوبُوا۟ فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ ٱلْحَرِيقِ",
+      "text_translation": "Indeed, those who have tortured the believing men and believing women and then have not repented will have the punishment of Hell, and they will have the punishment of the Burning Fire.",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5919.mp3"
+    },
+    {
+      "number": 5920,
+      "number_in_surah": 11,
+      "text_arabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ لَهُمْ جَنَّٰتٌۭ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ ۚ ذَٰلِكَ ٱلْفَوْزُ ٱلْكَبِيرُ",
+      "text_translation": "Indeed, those who have believed and done righteous deeds will have gardens beneath which rivers flow. That is the great attainment.",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5920.mp3"
+    },
+    {
+      "number": 5921,
+      "number_in_surah": 12,
+      "text_arabic": "إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ",
+      "text_translation": "Indeed, the vengeance of your Lord is severe.",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5921.mp3"
+    },
+    {
+      "number": 5922,
+      "number_in_surah": 13,
+      "text_arabic": "إِنَّهُۥ هُوَ يُبْدِئُ وَيُعِيدُ",
+      "text_translation": "Indeed, it is He who originates [creation] and repeats.",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5922.mp3"
+    },
+    {
+      "number": 5923,
+      "number_in_surah": 14,
+      "text_arabic": "وَهُوَ ٱلْغَفُورُ ٱلْوَدُودُ",
+      "text_translation": "And He is the Forgiving, the Affectionate,",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5923.mp3"
+    },
+    {
+      "number": 5924,
+      "number_in_surah": 15,
+      "text_arabic": "ذُو ٱلْعَرْشِ ٱلْمَجِيدُ",
+      "text_translation": "Honorable Owner of the Throne,",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5924.mp3"
+    },
+    {
+      "number": 5925,
+      "number_in_surah": 16,
+      "text_arabic": "فَعَّالٌۭ لِّمَا يُرِيدُ",
+      "text_translation": "Effecter of what He intends.",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5925.mp3"
+    },
+    {
+      "number": 5926,
+      "number_in_surah": 17,
+      "text_arabic": "هَلْ أَتَىٰكَ حَدِيثُ ٱلْجُنُودِ",
+      "text_translation": "Has there reached you the story of the soldiers -",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5926.mp3"
+    },
+    {
+      "number": 5927,
+      "number_in_surah": 18,
+      "text_arabic": "فِرْعَوْنَ وَثَمُودَ",
+      "text_translation": "[Those of] Pharaoh and Thamud?",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5927.mp3"
+    },
+    {
+      "number": 5928,
+      "number_in_surah": 19,
+      "text_arabic": "بَلِ ٱلَّذِينَ كَفَرُوا۟ فِى تَكْذِيبٍۢ",
+      "text_translation": "But they who disbelieve are in [persistent] denial,",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5928.mp3"
+    },
+    {
+      "number": 5929,
+      "number_in_surah": 20,
+      "text_arabic": "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطٌۢ",
+      "text_translation": "While Allah encompasses them from behind.",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5929.mp3"
+    },
+    {
+      "number": 5930,
+      "number_in_surah": 21,
+      "text_arabic": "بَلْ هُوَ قُرْءَانٌۭ مَّجِيدٌۭ",
+      "text_translation": "But this is an honored Qur'an",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5930.mp3"
+    },
+    {
+      "number": 5931,
+      "number_in_surah": 22,
+      "text_arabic": "فِى لَوْحٍۢ مَّحْفُوظٍۭ",
+      "text_translation": "[Inscribed] in a Preserved Slate.",
+      "juz": 30,
+      "page": 590,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5931.mp3"
+    }
+  ]
+}

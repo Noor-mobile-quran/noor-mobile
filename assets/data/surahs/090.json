@@ -1,0 +1,191 @@
+{
+  "number": 90,
+  "name_arabic": "سُورَةُ البَلَدِ",
+  "name_english": "Al-Balad",
+  "name_translation": "The City",
+  "revelation_type": "meccan",
+  "ayah_count": 20,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6024,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لَآ أُقْسِمُ بِهَٰذَا ٱلْبَلَدِ",
+      "text_translation": "I swear by this city, Makkah -",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6024.mp3"
+    },
+    {
+      "number": 6025,
+      "number_in_surah": 2,
+      "text_arabic": "وَأَنتَ حِلٌّۢ بِهَٰذَا ٱلْبَلَدِ",
+      "text_translation": "And you, [O Muhammad], are free of restriction in this city -",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6025.mp3"
+    },
+    {
+      "number": 6026,
+      "number_in_surah": 3,
+      "text_arabic": "وَوَالِدٍۢ وَمَا وَلَدَ",
+      "text_translation": "And [by] the father and that which was born [of him],",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6026.mp3"
+    },
+    {
+      "number": 6027,
+      "number_in_surah": 4,
+      "text_arabic": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِى كَبَدٍ",
+      "text_translation": "We have certainly created man into hardship.",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6027.mp3"
+    },
+    {
+      "number": 6028,
+      "number_in_surah": 5,
+      "text_arabic": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌۭ",
+      "text_translation": "Does he think that never will anyone overcome him?",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6028.mp3"
+    },
+    {
+      "number": 6029,
+      "number_in_surah": 6,
+      "text_arabic": "يَقُولُ أَهْلَكْتُ مَالًۭا لُّبَدًا",
+      "text_translation": "He says, \"I have spent wealth in abundance.\"",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6029.mp3"
+    },
+    {
+      "number": 6030,
+      "number_in_surah": 7,
+      "text_arabic": "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ",
+      "text_translation": "Does he think that no one has seen him?",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6030.mp3"
+    },
+    {
+      "number": 6031,
+      "number_in_surah": 8,
+      "text_arabic": "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ",
+      "text_translation": "Have We not made for him two eyes?",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6031.mp3"
+    },
+    {
+      "number": 6032,
+      "number_in_surah": 9,
+      "text_arabic": "وَلِسَانًۭا وَشَفَتَيْنِ",
+      "text_translation": "And a tongue and two lips?",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6032.mp3"
+    },
+    {
+      "number": 6033,
+      "number_in_surah": 10,
+      "text_arabic": "وَهَدَيْنَٰهُ ٱلنَّجْدَيْنِ",
+      "text_translation": "And have shown him the two ways?",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6033.mp3"
+    },
+    {
+      "number": 6034,
+      "number_in_surah": 11,
+      "text_arabic": "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ",
+      "text_translation": "But he has not broken through the difficult pass.",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6034.mp3"
+    },
+    {
+      "number": 6035,
+      "number_in_surah": 12,
+      "text_arabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ",
+      "text_translation": "And what can make you know what is [breaking through] the difficult pass?",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6035.mp3"
+    },
+    {
+      "number": 6036,
+      "number_in_surah": 13,
+      "text_arabic": "فَكُّ رَقَبَةٍ",
+      "text_translation": "It is the freeing of a slave",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6036.mp3"
+    },
+    {
+      "number": 6037,
+      "number_in_surah": 14,
+      "text_arabic": "أَوْ إِطْعَٰمٌۭ فِى يَوْمٍۢ ذِى مَسْغَبَةٍۢ",
+      "text_translation": "Or feeding on a day of severe hunger",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6037.mp3"
+    },
+    {
+      "number": 6038,
+      "number_in_surah": 15,
+      "text_arabic": "يَتِيمًۭا ذَا مَقْرَبَةٍ",
+      "text_translation": "An orphan of near relationship",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6038.mp3"
+    },
+    {
+      "number": 6039,
+      "number_in_surah": 16,
+      "text_arabic": "أَوْ مِسْكِينًۭا ذَا مَتْرَبَةٍۢ",
+      "text_translation": "Or a needy person in misery",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6039.mp3"
+    },
+    {
+      "number": 6040,
+      "number_in_surah": 17,
+      "text_arabic": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ",
+      "text_translation": "And then being among those who believed and advised one another to patience and advised one another to compassion.",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6040.mp3"
+    },
+    {
+      "number": 6041,
+      "number_in_surah": 18,
+      "text_arabic": "أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلْمَيْمَنَةِ",
+      "text_translation": "Those are the companions of the right.",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6041.mp3"
+    },
+    {
+      "number": 6042,
+      "number_in_surah": 19,
+      "text_arabic": "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا هُمْ أَصْحَٰبُ ٱلْمَشْـَٔمَةِ",
+      "text_translation": "But they who disbelieved in Our signs - those are the companions of the left.",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6042.mp3"
+    },
+    {
+      "number": 6043,
+      "number_in_surah": 20,
+      "text_arabic": "عَلَيْهِمْ نَارٌۭ مُّؤْصَدَةٌۢ",
+      "text_translation": "Over them will be fire closed in.",
+      "juz": 30,
+      "page": 594,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6043.mp3"
+    }
+  ]
+}

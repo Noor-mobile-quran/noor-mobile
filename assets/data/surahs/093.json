@@ -1,0 +1,110 @@
+{
+  "number": 93,
+  "name_arabic": "سُورَةُ الضُّحَىٰ",
+  "name_english": "Ad-Dhuhaa",
+  "name_translation": "The Morning Hours",
+  "revelation_type": "meccan",
+  "ayah_count": 11,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6080,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلضُّحَىٰ",
+      "text_translation": "By the morning brightness",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6080.mp3"
+    },
+    {
+      "number": 6081,
+      "number_in_surah": 2,
+      "text_arabic": "وَٱلَّيْلِ إِذَا سَجَىٰ",
+      "text_translation": "And [by] the night when it covers with darkness,",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6081.mp3"
+    },
+    {
+      "number": 6082,
+      "number_in_surah": 3,
+      "text_arabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+      "text_translation": "Your Lord has not taken leave of you, [O Muhammad], nor has He detested [you].",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6082.mp3"
+    },
+    {
+      "number": 6083,
+      "number_in_surah": 4,
+      "text_arabic": "وَلَلْءَاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ",
+      "text_translation": "And the Hereafter is better for you than the first [life].",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6083.mp3"
+    },
+    {
+      "number": 6084,
+      "number_in_surah": 5,
+      "text_arabic": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+      "text_translation": "And your Lord is going to give you, and you will be satisfied.",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6084.mp3"
+    },
+    {
+      "number": 6085,
+      "number_in_surah": 6,
+      "text_arabic": "أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ",
+      "text_translation": "Did He not find you an orphan and give [you] refuge?",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6085.mp3"
+    },
+    {
+      "number": 6086,
+      "number_in_surah": 7,
+      "text_arabic": "وَوَجَدَكَ ضَآلًّۭا فَهَدَىٰ",
+      "text_translation": "And He found you lost and guided [you],",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6086.mp3"
+    },
+    {
+      "number": 6087,
+      "number_in_surah": 8,
+      "text_arabic": "وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ",
+      "text_translation": "And He found you poor and made [you] self-sufficient.",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6087.mp3"
+    },
+    {
+      "number": 6088,
+      "number_in_surah": 9,
+      "text_arabic": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+      "text_translation": "So as for the orphan, do not oppress [him].",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6088.mp3"
+    },
+    {
+      "number": 6089,
+      "number_in_surah": 10,
+      "text_arabic": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
+      "text_translation": "And as for the petitioner, do not repel [him].",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6089.mp3"
+    },
+    {
+      "number": 6090,
+      "number_in_surah": 11,
+      "text_arabic": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+      "text_translation": "But as for the favor of your Lord, report [it].",
+      "juz": 30,
+      "page": 596,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6090.mp3"
+    }
+  ]
+}

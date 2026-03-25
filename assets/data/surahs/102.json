@@ -1,0 +1,83 @@
+{
+  "number": 102,
+  "name_arabic": "سُورَةُ التَّكَاثُرِ",
+  "name_english": "At-Takaathur",
+  "name_translation": "Competition",
+  "revelation_type": "meccan",
+  "ayah_count": 8,
+  "juz_start": 30,
+  "ayahs": [
+    {
+      "number": 6169,
+      "number_in_surah": 1,
+      "text_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+      "text_translation": "Competition in [worldly] increase diverts you",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6169.mp3"
+    },
+    {
+      "number": 6170,
+      "number_in_surah": 2,
+      "text_arabic": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
+      "text_translation": "Until you visit the graveyards.",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6170.mp3"
+    },
+    {
+      "number": 6171,
+      "number_in_surah": 3,
+      "text_arabic": "كَلَّا سَوْفَ تَعْلَمُونَ",
+      "text_translation": "No! You are going to know.",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6171.mp3"
+    },
+    {
+      "number": 6172,
+      "number_in_surah": 4,
+      "text_arabic": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
+      "text_translation": "Then no! You are going to know.",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6172.mp3"
+    },
+    {
+      "number": 6173,
+      "number_in_surah": 5,
+      "text_arabic": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ",
+      "text_translation": "No! If you only knew with knowledge of certainty...",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6173.mp3"
+    },
+    {
+      "number": 6174,
+      "number_in_surah": 6,
+      "text_arabic": "لَتَرَوُنَّ ٱلْجَحِيمَ",
+      "text_translation": "You will surely see the Hellfire.",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6174.mp3"
+    },
+    {
+      "number": 6175,
+      "number_in_surah": 7,
+      "text_arabic": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ",
+      "text_translation": "Then you will surely see it with the eye of certainty.",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6175.mp3"
+    },
+    {
+      "number": 6176,
+      "number_in_surah": 8,
+      "text_arabic": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ",
+      "text_translation": "Then you will surely be asked that Day about pleasure.",
+      "juz": 30,
+      "page": 600,
+      "audio_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6176.mp3"
+    }
+  ]
+}
