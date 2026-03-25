@@ -10,6 +10,8 @@ import StreakCounter from "../../components/StreakCounter";
 import DailyAyah from "../../components/DailyAyah";
 import ContinueReading from "../../components/ContinueReading";
 import QuickDua from "../../components/QuickDua";
+import KnowledgeDiscovery from "../../components/KnowledgeDiscovery";
+import NarrativeOfDay from "../../components/NarrativeOfDay";
 
 function getApproxHijriDate(): string {
   const gregorian = new Date();
@@ -114,7 +116,16 @@ export default function HomePage() {
         {/* 5. Divider */}
         <OrnamentalDivider />
 
-        {/* 6. Quick Dua — compact */}
+        {/* 6. Knowledge Discovery — contextual entity card */}
+        <KnowledgeDiscovery />
+
+        {/* 7. Story of the Day — rotating narrative arc */}
+        <NarrativeOfDay />
+
+        {/* 8. Divider */}
+        <OrnamentalDivider />
+
+        {/* 8. Quick Dua — compact */}
         <QuickDua />
 
         {/* Browse All Surahs button */}
