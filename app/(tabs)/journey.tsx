@@ -34,44 +34,46 @@ export default function JourneyPage() {
         </Text>
       </View>
 
-      {/* Section tabs */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.tabs}
-      >
-        {SECTIONS.map((section) => (
-          <Pressable
-            key={section.key}
-            onPress={() => setActiveSection(section.key)}
-            style={[
-              styles.tab,
-              {
-                backgroundColor:
-                  activeSection === section.key ? colors.accent : "transparent",
-                borderColor:
-                  activeSection === section.key ? colors.accent : colors.border,
-              },
-            ]}
-            accessibilityRole="tab"
-            accessibilityState={{ selected: activeSection === section.key }}
-            accessibilityLabel={section.label}
-          >
-            <Text
+      {/* Section tabs — fixed height pill bar */}
+      <View style={styles.tabBar}>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.tabs}
+        >
+          {SECTIONS.map((section) => (
+            <Pressable
+              key={section.key}
+              onPress={() => setActiveSection(section.key)}
               style={[
-                styles.tabText,
+                styles.tab,
                 {
-                  color:
-                    activeSection === section.key ? colors.bg : colors.textSecondary,
-                  fontFamily: fonts.latin.medium,
+                  backgroundColor:
+                    activeSection === section.key ? colors.accent : "transparent",
+                  borderColor:
+                    activeSection === section.key ? colors.accent : colors.border,
                 },
               ]}
+              accessibilityRole="tab"
+              accessibilityState={{ selected: activeSection === section.key }}
+              accessibilityLabel={section.label}
             >
-              {section.label}
-            </Text>
-          </Pressable>
-        ))}
-      </ScrollView>
+              <Text
+                style={[
+                  styles.tabText,
+                  {
+                    color:
+                      activeSection === section.key ? colors.bg : colors.textSecondary,
+                    fontFamily: fonts.latin.medium,
+                  },
+                ]}
+              >
+                {section.label}
+              </Text>
+            </Pressable>
+          ))}
+        </ScrollView>
+      </View>
 
       <OrnamentalDivider />
 
@@ -98,21 +100,25 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
   },
+  tabBar: {
+    flexShrink: 0,
+  },
   tabs: {
     paddingHorizontal: 20,
     gap: 8,
-    paddingVertical: 8,
+    alignItems: "center",
   },
   tab: {
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderRadius: 20,
+    paddingHorizontal: 18,
+    height: 36,
+    borderRadius: 18,
     borderWidth: 1,
-    minHeight: 44,
     justifyContent: "center",
+    alignItems: "center",
   },
   tabText: {
-    fontSize: 14,
+    fontSize: 13,
+    lineHeight: 16,
   },
   content: {
     flex: 1,
