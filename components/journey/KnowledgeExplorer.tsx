@@ -690,25 +690,23 @@ function createStyles(colors: any) {
       color: colors.textPrimary,
     },
     categoryBar: {
-      maxHeight: 52,
+      flexShrink: 0,
+      height: 48,
     },
     categoryBarContent: {
       paddingHorizontal: 16,
-      paddingVertical: 8,
-      gap: 8,
-      flexDirection: "row",
       alignItems: "center",
+      gap: 8,
     },
     categoryChip: {
-      paddingHorizontal: 16,
-      paddingVertical: 8,
-      borderRadius: 20,
-      minHeight: 36,
+      paddingHorizontal: 14,
+      height: 32,
+      borderRadius: 16,
       justifyContent: "center",
       alignItems: "center",
     },
     categoryChipActive: {
-      backgroundColor: colors.gold,
+      backgroundColor: colors.accent,
     },
     categoryChipInactive: {
       borderWidth: 1,
@@ -717,10 +715,10 @@ function createStyles(colors: any) {
     },
     categoryChipText: {
       fontFamily: "Inter-Medium",
-      fontSize: 14,
+      fontSize: 12,
     },
     categoryChipTextActive: {
-      color: "#FFFFFF",
+      color: colors.bg,
     },
     categoryChipTextInactive: {
       color: colors.textSecondary,
