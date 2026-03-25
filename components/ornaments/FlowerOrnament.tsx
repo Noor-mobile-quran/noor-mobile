@@ -1,3 +1,4 @@
+import { Platform } from "react-native";
 import Svg, { Circle, Path, G } from "react-native-svg";
 
 interface Props {
@@ -7,8 +8,12 @@ interface Props {
 }
 
 export function FlowerOrnament({ size = 20, color = "#D4A843", opacity = 0.3 }: Props) {
+  const decorativeProps = Platform.OS === "web"
+    ? { "aria-hidden": true as const }
+    : { accessible: false, importantForAccessibility: "no" as const };
+
   return (
-    <Svg width={size} height={size} viewBox="0 0 24 24" opacity={opacity}>
+    <Svg width={size} height={size} viewBox="0 0 24 24" opacity={opacity} {...decorativeProps}>
       <G transform="translate(12,12)">
         {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => (
           <Path

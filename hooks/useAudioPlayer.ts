@@ -13,50 +13,67 @@ export function useAudioPlayer() {
     const reciter = RECITERS.find((r) => r.id === reciterId) ?? RECITERS[0];
     const url = `${reciter.audioBaseUrl}/${ayahNumber}.mp3`;
 
-    if (soundRef.current) {
-      await soundRef.current.unloadAsync();
-    }
-
-    // setAudioModeAsync options are native-only; skip on web to prevent crash
-    if (Platform.OS !== "web") {
-      await Audio.setAudioModeAsync({
-        playsInSilentModeIOS: true,
-        staysActiveInBackground: true,
-      });
-    }
-
-    const { sound } = await Audio.Sound.createAsync(
-      { uri: url },
-      { shouldPlay: true }
-    );
-    soundRef.current = sound;
-    setAudioPlaying(true, ayahNumber);
-
-    sound.setOnPlaybackStatusUpdate((status) => {
-      if (status.isLoaded && status.didJustFinish) {
-        setAudioPlaying(false);
+    try {
+      if (soundRef.current) {
+        await soundRef.current.unloadAsync();
       }
-    });
+
+      // setAudioModeAsync options are native-only; skip on web to prevent crash
+      if (Platform.OS !== "web") {
+        await Audio.setAudioModeAsync({
+          playsInSilentModeIOS: true,
+          staysActiveInBackground: true,
+        });
+      }
+
+      const { sound } = await Audio.Sound.createAsync(
+        { uri: url },
+        { shouldPlay: true }
+      );
+      soundRef.current = sound;
+      setAudioPlaying(true, ayahNumber);
+
+      sound.setOnPlaybackStatusUpdate((status) => {
+        if (status.isLoaded && status.didJustFinish) {
+          setAudioPlaying(false);
+        }
+      });
+    } catch (error) {
+      console.warn("Audio playback failed:", error);
+      setAudioPlaying(false);
+    }
   }, [setAudioPlaying]);
 
   const stop = useCallback(async () => {
-    if (soundRef.current) {
-      await soundRef.current.stopAsync();
-      await soundRef.current.unloadAsync();
-      soundRef.current = null;
+    try {
+      if (soundRef.current) {
+        await soundRef.current.stopAsync();
+        await soundRef.current.unloadAsync();
+        soundRef.current = null;
+      }
+    } catch (error) {
+      console.warn("Audio stop failed:", error);
     }
     setAudioPlaying(false);
   }, [setAudioPlaying]);
 
   const pause = useCallback(async () => {
-    if (soundRef.current) {
-      await soundRef.current.pauseAsync();
+    try {
+      if (soundRef.current) {
+        await soundRef.current.pauseAsync();
+      }
+    } catch (error) {
+      console.warn("Audio pause failed:", error);
     }
   }, []);
 
   const resume = useCallback(async () => {
-    if (soundRef.current) {
-      await soundRef.current.playAsync();
+    try {
+      if (soundRef.current) {
+        await soundRef.current.playAsync();
+      }
+    } catch (error) {
+      console.warn("Audio resume failed:", error);
     }
   }, []);
 

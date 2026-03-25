@@ -65,7 +65,7 @@ export default function SurahIndexPage() {
         <View className="absolute top-3 right-4 opacity-10">
           <ArabicText
             decorative
-            style={{ color: colors.gold, fontSize: 36, lineHeight: 44, textAlign: "right" }}
+            style={{ color: colors.accent, fontSize: 36, lineHeight: 44, textAlign: "right" }}
           >
             {"القرآن"}
           </ArabicText>
@@ -93,7 +93,7 @@ export default function SurahIndexPage() {
 
         <View className="flex-row items-center justify-center gap-3 mt-4">
           <View className="h-px w-12" style={{ backgroundColor: "rgba(212, 168, 67, 0.3)" }} />
-          <StarOrnament size={12} color={colors.gold} opacity={0.5} />
+          <StarOrnament size={12} color={colors.accent} opacity={0.5} />
           <View className="h-px w-12" style={{ backgroundColor: "rgba(212, 168, 67, 0.3)" }} />
         </View>
       </LinearGradient>
@@ -109,8 +109,8 @@ export default function SurahIndexPage() {
               onPress={() => setFilter(f.key)}
               className="px-4 py-2 rounded-full"
               style={{
-                backgroundColor: filter === f.key ? colors.gold : colors.surface,
-                shadowColor: filter === f.key ? colors.gold : "transparent",
+                backgroundColor: filter === f.key ? colors.accent : colors.surface,
+                shadowColor: filter === f.key ? colors.accent : "transparent",
                 shadowOffset: { width: 0, height: 2 },
                 shadowOpacity: filter === f.key ? 0.2 : 0,
                 shadowRadius: 4,
@@ -146,7 +146,7 @@ export default function SurahIndexPage() {
   if (isLoading) {
     return (
       <View className="flex-1 items-center justify-center" style={{ backgroundColor: colors.bg }}>
-        <ActivityIndicator size="large" color={colors.gold} />
+        <ActivityIndicator size="large" color={colors.accent} />
       </View>
     );
   }

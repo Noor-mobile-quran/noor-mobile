@@ -47,7 +47,7 @@ export default function SettingsScreen() {
     >
       {/* Header */}
       <View style={[styles.header, { backgroundColor: colors.forest }]}>
-        <Crescent size={64} color={colors.gold} opacity={0.08} />
+        <Crescent size={64} color={colors.accent} opacity={0.08} />
         <Text style={[styles.headerTitle, { fontFamily: fonts.latin.bold }]}>
           Settings
         </Text>

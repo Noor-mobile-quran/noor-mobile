@@ -85,7 +85,7 @@ export default function TabLayout() {
       screenOptions={{
         headerShown: false,
         animation: reduceMotion ? "none" : "fade",
-        tabBarActiveTintColor: colors.gold,
+        tabBarActiveTintColor: colors.accent,
         tabBarInactiveTintColor: colors.textSecondary,
         tabBarStyle: {
           backgroundColor: isDark ? colors.surface : colors.bg,
@@ -126,14 +126,6 @@ export default function TabLayout() {
         options={{
           title: "Settings",
           tabBarIcon: ({ color }) => <SettingsIcon color={color} size={22} />,
-        }}
-      />
-      {/* progress.tsx exists but is not surfaced as a visible tab */}
-      <Tabs.Screen
-        name="progress"
-        options={{
-          href: null,
-          title: "Progress",
         }}
       />
     </Tabs>

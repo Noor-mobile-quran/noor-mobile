@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Keyboard focus indicators for web accessibility (WCAG 2.1 AA) */
+*:focus-visible {
+  outline: 2px solid #D4A843;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Remove outline for mouse/touch users */
+*:focus:not(:focus-visible) {
+  outline: none;
+}

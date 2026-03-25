@@ -26,11 +26,11 @@ export default function SurahCard({ surah }: Props) {
         {/* Number badge */}
         <View
           className="w-10 h-10 items-center justify-center rounded-lg"
-          style={{ backgroundColor: `${colors.gold}18` }}
+          style={{ backgroundColor: `${colors.accent}18` }}
         >
           <Text
             style={{
-              color: colors.gold,
+              color: colors.accent,
               fontFamily: "Inter-SemiBold",
               fontSize: 14,
             }}
@@ -90,7 +90,7 @@ export default function SurahCard({ surah }: Props) {
                 backgroundColor:
                   surah.revelation_type === "meccan"
                     ? `${colors.forest}18`
-                    : `${colors.gold}18`,
+                    : `${colors.accent}18`,
               }}
             >
               <Text
@@ -98,7 +98,7 @@ export default function SurahCard({ surah }: Props) {
                   color:
                     surah.revelation_type === "meccan"
                       ? colors.forest
-                      : colors.gold,
+                      : colors.accent,
                   fontFamily: "Inter-Medium",
                   fontSize: 11,
                 }}

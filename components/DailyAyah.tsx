@@ -10,7 +10,7 @@ export default function DailyAyah() {
   const { colors } = useTheme();
   const today = new Date();
   const dayOfYear = Math.floor(
-    (today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000
+    (today.getTime() - new Date(today.getFullYear(), 0, 1).getTime()) / 86400000
   );
   const surahNum = (dayOfYear % 114) + 1;
   const { data: surah } = useSurah(surahNum);

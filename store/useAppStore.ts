@@ -48,7 +48,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   setUXMode: (mode) => {
     set((s) => {
       const settings = { ...s.settings, uxMode: mode };
-      storage.setSettings(settings);
+      try { storage.setSettings(settings); } catch (e) { console.warn("Storage write failed:", e); }
       return { settings };
     });
   },
@@ -56,7 +56,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   setTheme: (theme) => {
     set((s) => {
       const settings = { ...s.settings, theme };
-      storage.setSettings(settings);
+      try { storage.setSettings(settings); } catch (e) { console.warn("Storage write failed:", e); }
       return { settings };
     });
   },
@@ -64,7 +64,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   setFontSize: (fontSize) => {
     set((s) => {
       const settings = { ...s.settings, fontSize };
-      storage.setSettings(settings);
+      try { storage.setSettings(settings); } catch (e) { console.warn("Storage write failed:", e); }
       return { settings };
     });
   },
@@ -72,7 +72,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   setTranslationLang: (translationLang) => {
     set((s) => {
       const settings = { ...s.settings, translationLang };
-      storage.setSettings(settings);
+      try { storage.setSettings(settings); } catch (e) { console.warn("Storage write failed:", e); }
       return { settings };
     });
   },
@@ -80,7 +80,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   setReciter: (reciterId) => {
     set((s) => {
       const settings = { ...s.settings, reciterId };
-      storage.setSettings(settings);
+      try { storage.setSettings(settings); } catch (e) { console.warn("Storage write failed:", e); }
       return { settings };
     });
   },
@@ -88,7 +88,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   updateProgress: (partial) => {
     set((s) => {
       const progress = { ...s.progress, ...partial };
-      storage.setProgress(progress);
+      try { storage.setProgress(progress); } catch (e) { console.warn("Storage write failed:", e); }
       return { progress };
     });
   },
@@ -99,7 +99,7 @@ export const useAppStore = create<AppState>((set, get) => ({
 
     if (progress.lastReadDate === today) {
       const updated = { ...progress, lastReadSurah: surah, lastReadAyah: ayah };
-      storage.setProgress(updated);
+      try { storage.setProgress(updated); } catch (e) { console.warn("Storage write failed:", e); }
       set({ progress: updated });
       return;
     }
@@ -116,7 +116,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       currentStreak: newStreak,
       longestStreak: Math.max(newStreak, progress.longestStreak),
     };
-    storage.setProgress(updated);
+    try { storage.setProgress(updated); } catch (e) { console.warn("Storage write failed:", e); }
     set({ progress: updated });
   },
 

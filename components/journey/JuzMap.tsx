@@ -136,14 +136,14 @@ function JuzCard({
   const ringTrackColor = colors.border;
   const ringFillColor =
     completionPercent === 100
-      ? colors.gold
+      ? colors.accent
       : completionPercent > 0
-        ? colors.gold
+        ? colors.accent
         : "transparent";
 
   const cardBg =
     completionPercent === 100
-      ? colors.gold
+      ? colors.accent
       : colors.surfaceElevated;
 
   const textColor =

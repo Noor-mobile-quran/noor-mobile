@@ -120,7 +120,7 @@ export default function SearchResultCard({ result, query }: Props) {
         },
         matchBold: {
           fontFamily: "Inter_600SemiBold",
-          color: colors.gold,
+          color: colors.accent,
         },
         chevron: {
           justifyContent: "center",

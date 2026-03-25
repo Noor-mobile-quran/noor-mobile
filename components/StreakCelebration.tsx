@@ -77,7 +77,7 @@ export function StreakCelebration({ currentStreak }: Props) {
           cx={60}
           cy={60}
           fill="none"
-          stroke={colors.gold}
+          stroke={colors.accent}
           animatedProps={animatedProps}
         />
       </Svg>

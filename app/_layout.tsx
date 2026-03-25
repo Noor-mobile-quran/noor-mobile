@@ -49,6 +49,9 @@ function RootLayoutInner() {
 
   useEffect(() => {
     if (fontsLoaded || fontsError) {
+      if (fontsError) {
+        console.error("Font loading failed:", fontsError);
+      }
       setFontsReady(true);
       if (Platform.OS !== "web") {
         SplashScreen.hideAsync().catch(() => {});

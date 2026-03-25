@@ -41,13 +41,13 @@ export default function HomePage() {
     >
       {/* Hero Section — compact */}
       <LinearGradient
-        colors={isDark ? ["#2D261C", "#1A1410"] : ["#4A3F30", "#2D261C"]}
+        colors={isDark ? [colors.surface, colors.bg] : ["#4A3F30", colors.textPrimary]}
         className="px-6 pb-6 items-center overflow-hidden rounded-b-3xl"
         style={{ paddingTop: insets.top + 12 }}
       >
         {/* Decorative crescent */}
         <View className="absolute top-4 right-6">
-          <Crescent size={56} color={colors.gold} opacity={0.15} />
+          <Crescent size={56} color={colors.accent} opacity={0.15} />
         </View>
 
         {/* Mosque silhouette decoration */}
@@ -62,7 +62,7 @@ export default function HomePage() {
         <ArabicText
           variant="display"
           bold
-          style={{ color: colors.gold, textAlign: "center", fontSize: 36, lineHeight: 48 }}
+          style={{ color: colors.accent, textAlign: "center", fontSize: 36, lineHeight: 48 }}
         >
           {"\u0646\u0648\u0631"}
         </ArabicText>
@@ -86,7 +86,7 @@ export default function HomePage() {
         {/* Ornamental line */}
         <View className="flex-row items-center justify-center gap-3 mt-4">
           <View className="h-px w-12" style={{ backgroundColor: "rgba(212, 168, 67, 0.3)" }} />
-          <StarOrnament size={12} color={colors.gold} opacity={0.5} />
+          <StarOrnament size={12} color={colors.accent} opacity={0.5} />
           <View className="h-px w-12" style={{ backgroundColor: "rgba(212, 168, 67, 0.3)" }} />
         </View>
       </LinearGradient>
@@ -97,7 +97,7 @@ export default function HomePage() {
         <View
           style={{
             borderWidth: 1.5,
-            borderColor: `${colors.gold}40`,
+            borderColor: `${colors.accent}40`,
             borderRadius: 20,
             padding: 2,
           }}
@@ -122,8 +122,8 @@ export default function HomePage() {
           <Pressable
             className="p-4 rounded-xl items-center"
             style={{
-              backgroundColor: colors.gold,
-              shadowColor: colors.gold,
+              backgroundColor: colors.accent,
+              shadowColor: colors.accent,
               shadowOffset: { width: 0, height: 4 },
               shadowOpacity: 0.2,
               shadowRadius: 8,

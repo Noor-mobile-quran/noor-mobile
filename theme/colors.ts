@@ -9,7 +9,6 @@ export interface ThemeColors {
   accent: string;
   accentBright: string;
   forest: string;
-  gold: string;
   border: string;
 }
 
@@ -23,7 +22,6 @@ export const themes: Record<ThemeMode, ThemeColors> = {
     accent: "#D4A843",
     accentBright: "#E8C547",
     forest: "#1B4332",
-    gold: "#D4A843",
     border: "rgba(212, 168, 67, 0.15)",
   },
   dark: {
@@ -35,7 +33,6 @@ export const themes: Record<ThemeMode, ThemeColors> = {
     accent: "#E8C547",
     accentBright: "#D4A843",
     forest: "#1B4332",
-    gold: "#E8C547",
     border: "rgba(232, 197, 71, 0.15)",
   },
   "high-contrast": {
@@ -47,7 +44,6 @@ export const themes: Record<ThemeMode, ThemeColors> = {
     accent: "#FFD700",
     accentBright: "#FFEA00",
     forest: "#00C853",
-    gold: "#FFD700",
     border: "rgba(255, 215, 0, 0.3)",
   },
 };

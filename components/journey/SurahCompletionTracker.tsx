@@ -124,12 +124,17 @@ export function SurahCompletionTracker() {
       </Text>
 
       {/* Progress bar */}
-      <View style={[styles.progressBar, { backgroundColor: colors.border }]}>
+      <View
+        style={[styles.progressBar, { backgroundColor: colors.border }]}
+        accessibilityRole="progressbar"
+        accessibilityValue={{ min: 0, max: 114, now: completedCount }}
+        accessibilityLabel={`Quran completion: ${completedCount} of 114 surahs`}
+      >
         <View
           style={[
             styles.progressFill,
             {
-              backgroundColor: colors.gold,
+              backgroundColor: colors.accent,
               width: `${Math.round(progressRatio * 100)}%`,
             },
           ]}
@@ -139,17 +144,17 @@ export function SurahCompletionTracker() {
       {/* Stats row */}
       <View style={[styles.statsRow, { borderColor: colors.border }]}>
         <View style={styles.statItem}>
-          <Text style={[styles.statValue, { color: colors.gold }]}>{completedCount}</Text>
+          <Text style={[styles.statValue, { color: colors.accent }]}>{completedCount}</Text>
           <Text style={[styles.statLabel, { color: colors.textSecondary }]}>Completed</Text>
         </View>
         <View style={[styles.statDivider, { backgroundColor: colors.border }]} />
         <View style={styles.statItem}>
-          <Text style={[styles.statValue, { color: colors.gold }]}>{total - completedCount}</Text>
+          <Text style={[styles.statValue, { color: colors.accent }]}>{total - completedCount}</Text>
           <Text style={[styles.statLabel, { color: colors.textSecondary }]}>Remaining</Text>
         </View>
         <View style={[styles.statDivider, { backgroundColor: colors.border }]} />
         <View style={styles.statItem}>
-          <Text style={[styles.statValue, { color: colors.gold }]}>{percentComplete}%</Text>
+          <Text style={[styles.statValue, { color: colors.accent }]}>{percentComplete}%</Text>
           <Text style={[styles.statLabel, { color: colors.textSecondary }]}>Complete</Text>
         </View>
       </View>
@@ -161,9 +166,10 @@ export function SurahCompletionTracker() {
             router.push(`/surah/${selectedSurah.number}`);
             setSelectedSurah(null);
           }}
-          style={[styles.tooltip, { backgroundColor: colors.surfaceElevated, borderColor: colors.gold }]}
+          style={[styles.tooltip, { backgroundColor: colors.surfaceElevated, borderColor: colors.accent }]}
+          accessibilityLiveRegion="polite"
         >
-          <Text style={[styles.tooltipArabic, { color: colors.gold }]}>
+          <Text style={[styles.tooltipArabic, { color: colors.accent }]}>
             {selectedSurah.name_arabic}
           </Text>
           <Text style={[styles.tooltipName, { color: colors.textPrimary }]}>
@@ -185,7 +191,7 @@ export function SurahCompletionTracker() {
           return (
             <React.Fragment key={surah.number}>
               {/* Juz boundary marker — full-width row */}
-              {juzStart !== undefined && surah.number > 1 && (
+              {juzStart !== undefined && (
                 <View style={[styles.juzMarker, { width: "100%" }]}>
                   <View style={[styles.juzLine, { backgroundColor: colors.border }]} />
                   <Text style={[styles.juzLabel, { color: colors.textSecondary }]}>
@@ -264,20 +270,20 @@ function SurahCircle({
 
   const borderColor = isCurrent
     ? reduceMotion
-      ? colors.gold
+      ? colors.accent
       : pulseAnim.interpolate({
           inputRange: [0.4, 1],
-          outputRange: ["rgba(212,168,67,0.4)", colors.gold],
+          outputRange: ["rgba(212,168,67,0.4)", colors.accent],
         })
     : isSelected
-      ? colors.gold
+      ? colors.accent
       : colors.border;
 
   // 3-state color: completed = solid gold, current = faint gold, unread = transparent
   const bgColor = isCompleted
-    ? colors.gold
+    ? colors.accent
     : isCurrent
-      ? `${colors.gold}33`
+      ? `${colors.accent}33`
       : "transparent";
 
   return (
@@ -293,7 +299,7 @@ function SurahCircle({
       {/* Crescent indicator above current surah */}
       {isCurrent && (
         <View style={styles.currentIndicator}>
-          <CrescentIndicator size={Math.max(8, size * 0.3)} color={colors.gold} />
+          <CrescentIndicator size={Math.max(8, size * 0.3)} color={colors.accent} />
         </View>
       )}
       <Animated.View

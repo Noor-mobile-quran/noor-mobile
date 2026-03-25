@@ -174,7 +174,7 @@ export default function BookmarksCollection() {
           flex: 1,
         },
         badge: {
-          backgroundColor: colors.gold,
+          backgroundColor: colors.accent,
           borderRadius: 10,
           minWidth: 24,
           height: 24,
@@ -203,8 +203,8 @@ export default function BookmarksCollection() {
           alignItems: "center",
         },
         tabActive: {
-          backgroundColor: colors.gold,
-          borderColor: colors.gold,
+          backgroundColor: colors.accent,
+          borderColor: colors.accent,
         },
         tabText: {
           fontFamily: "Inter_500Medium",
@@ -305,7 +305,7 @@ export default function BookmarksCollection() {
     <ScrollView style={{ flex: 1 }} contentContainerStyle={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <BookmarkIcon size={22} color={colors.gold} filled />
+        <BookmarkIcon size={22} color={colors.accent} filled />
         <Text style={styles.headerTitle}>Bookmarks &amp; Notes</Text>
         <View style={styles.badge}>
           <Text style={styles.badgeText}>{bookmarks.length}</Text>
@@ -337,7 +337,7 @@ export default function BookmarksCollection() {
       {/* List or Empty State */}
       {filtered.length === 0 ? (
         <View style={styles.emptyContainer}>
-          <StarOrnament size={64} color={colors.gold} />
+          <StarOrnament size={64} color={colors.accent} />
           <Text style={styles.emptyText}>
             {activeTab === "with-notes"
               ? "No bookmarks with notes"
@@ -384,7 +384,7 @@ export default function BookmarksCollection() {
                   </Text>
                 </View>
                 <View style={styles.iconCol}>
-                  <BookmarkIcon size={20} color={colors.gold} filled />
+                  <BookmarkIcon size={20} color={colors.accent} filled />
                 </View>
               </View>
 

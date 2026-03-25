@@ -274,6 +274,7 @@ export default function KnowledgeExplorer() {
         showsHorizontalScrollIndicator={false}
         style={styles.categoryBar}
         contentContainerStyle={styles.categoryBarContent}
+        accessibilityRole="tablist"
       >
         {CATEGORIES.map((cat) => (
           <TouchableOpacity
@@ -285,7 +286,7 @@ export default function KnowledgeExplorer() {
                 ? styles.categoryChipActive
                 : styles.categoryChipInactive,
             ]}
-            accessibilityRole="button"
+            accessibilityRole="tab"
             accessibilityState={{ selected: activeCategory === cat.key }}
             accessibilityLabel={`Filter by ${cat.label}`}
           >
@@ -626,7 +627,7 @@ function NarrativeCard({
                         y1={0}
                         x2={12}
                         y2={12}
-                        stroke={colors.gold}
+                        stroke={colors.accent}
                         strokeWidth={2}
                       />
                     )}
@@ -634,7 +635,7 @@ function NarrativeCard({
                       cx={12}
                       cy={12}
                       r={5}
-                      fill={colors.gold}
+                      fill={colors.accent}
                       stroke={colors.surface}
                       strokeWidth={2}
                     />
@@ -644,7 +645,7 @@ function NarrativeCard({
                         y1={12}
                         x2={12}
                         y2={100}
-                        stroke={colors.gold}
+                        stroke={colors.accent}
                         strokeWidth={2}
                       />
                     )}
@@ -795,7 +796,7 @@ function createStyles(colors: any) {
       writingDirection: "rtl",
     },
     typeBadge: {
-      backgroundColor: colors.gold,
+      backgroundColor: colors.accent,
       paddingHorizontal: 8,
       paddingVertical: 2,
       borderRadius: 10,
@@ -815,7 +816,7 @@ function createStyles(colors: any) {
     mentionCount: {
       fontFamily: "Inter-Regular",
       fontSize: 13,
-      color: colors.gold,
+      color: colors.accent,
       marginTop: 6,
     },
     expandedContent: {
@@ -845,7 +846,7 @@ function createStyles(colors: any) {
     surahChip: {
       backgroundColor: colors.surfaceElevated,
       borderWidth: 1,
-      borderColor: colors.gold,
+      borderColor: colors.accent,
       borderRadius: 16,
       paddingHorizontal: 12,
       paddingVertical: 6,
@@ -855,7 +856,7 @@ function createStyles(colors: any) {
     surahChipText: {
       fontFamily: "Inter-Medium",
       fontSize: 13,
-      color: colors.gold,
+      color: colors.accent,
     },
     emptyContainer: {
       paddingVertical: 40,
@@ -887,7 +888,7 @@ function createStyles(colors: any) {
     timelineSurahNum: {
       fontFamily: "Inter-SemiBold",
       fontSize: 13,
-      color: colors.gold,
+      color: colors.accent,
     },
     timelineSummary: {
       fontFamily: "Inter-Regular",

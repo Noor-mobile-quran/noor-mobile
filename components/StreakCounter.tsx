@@ -3,7 +3,8 @@ import { useAppStore } from "../store/useAppStore";
 import { useTheme } from "../theme/ThemeProvider";
 
 export default function StreakCounter() {
-  const { currentStreak, dailyGoal } = useAppStore((s) => s.progress);
+  const currentStreak = useAppStore((s) => s.progress.currentStreak);
+  const dailyGoal = useAppStore((s) => s.progress.dailyGoal);
   const streakVisible = useAppStore((s) => s.streakVisible);
   const toggleStreakVisible = useAppStore((s) => s.toggleStreakVisible);
   const { colors } = useTheme();

@@ -175,7 +175,7 @@ export default function AyahCard({
             <View style={styles.controls}>
               <TouchableOpacity
                 onPress={onPlay}
-                accessibilityLabel={isPlaying ? "Pause recitation" : "Play recitation"}
+                accessibilityLabel={isPlaying ? `Pause recitation for ayah ${ayah.number_in_surah}` : `Play recitation for ayah ${ayah.number_in_surah}`}
                 accessibilityRole="button"
                 accessibilityHint="Double tap to toggle audio playback"
                 style={[
@@ -211,7 +211,7 @@ export default function AyahCard({
               >
                 <BookmarkIcon
                   size={18}
-                  color={isBookmarked ? colors.gold : colors.textSecondary}
+                  color={isBookmarked ? colors.accent : colors.textSecondary}
                   filled={isBookmarked}
                 />
               </TouchableOpacity>
