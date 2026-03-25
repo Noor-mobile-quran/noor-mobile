@@ -1,0 +1,481 @@
+{
+  "themes": [
+    {
+      "id": "tawheed",
+      "name_english": "Oneness of Allah (Tawheed)",
+      "name_arabic": "التوحيد",
+      "description": "The absolute oneness and uniqueness of Allah — the foundation of Islamic faith",
+      "ayahs": [
+        {"surah": 112, "ayah": 1, "key_phrase": "Say: He is Allah, the One"},
+        {"surah": 2, "ayah": 163, "key_phrase": "Your God is one God; there is no deity except Him"},
+        {"surah": 6, "ayah": 102, "key_phrase": "That is Allah, your Lord; there is no deity except Him, the Creator of all things"},
+        {"surah": 21, "ayah": 22, "key_phrase": "Had there been gods besides Allah, both heavens and earth would have been ruined"},
+        {"surah": 59, "ayah": 23, "key_phrase": "He is Allah, other than whom there is no deity — the Sovereign, the Pure"}
+      ],
+      "related_themes": ["faith", "creation", "remembrance_of_allah"]
+    },
+    {
+      "id": "patience",
+      "name_english": "Patience & Perseverance",
+      "name_arabic": "الصبر",
+      "description": "Enduring hardship with faith, trusting Allah's plan",
+      "ayahs": [
+        {"surah": 2, "ayah": 153, "key_phrase": "O you who believe, seek help through patience and prayer"},
+        {"surah": 2, "ayah": 155, "key_phrase": "We will surely test you with something of fear and hunger"},
+        {"surah": 3, "ayah": 200, "key_phrase": "Be patient, endure, remain stationed"},
+        {"surah": 39, "ayah": 10, "key_phrase": "The patient will be given their reward without account"},
+        {"surah": 94, "ayah": 5, "key_phrase": "Indeed, with hardship comes ease"},
+        {"surah": 103, "ayah": 3, "key_phrase": "And advised each other to patience"}
+      ],
+      "related_themes": ["trust_in_allah", "trials", "reward"]
+    },
+    {
+      "id": "gratitude",
+      "name_english": "Gratitude & Thankfulness",
+      "name_arabic": "الشكر",
+      "description": "Being thankful to Allah for His blessings and recognizing His favors",
+      "ayahs": [
+        {"surah": 14, "ayah": 7, "key_phrase": "If you are grateful, I will surely increase you"},
+        {"surah": 2, "ayah": 152, "key_phrase": "Remember Me; I will remember you. Be grateful to Me and do not deny Me"},
+        {"surah": 31, "ayah": 12, "key_phrase": "Be grateful to Allah. Whoever is grateful is grateful for his own soul"},
+        {"surah": 55, "ayah": 13, "key_phrase": "So which of the favors of your Lord would you deny?"},
+        {"surah": 16, "ayah": 18, "key_phrase": "If you should count the favors of Allah, you could not enumerate them"}
+      ],
+      "related_themes": ["remembrance_of_allah", "humility", "patience"]
+    },
+    {
+      "id": "justice",
+      "name_english": "Justice & Equity",
+      "name_arabic": "العدل",
+      "description": "Establishing justice in all affairs — personal, social, and legal",
+      "ayahs": [
+        {"surah": 4, "ayah": 135, "key_phrase": "Be persistently standing firm in justice, witnesses for Allah, even against yourselves"},
+        {"surah": 5, "ayah": 8, "key_phrase": "Do not let the hatred of a people prevent you from being just. Be just; that is nearer to righteousness"},
+        {"surah": 16, "ayah": 90, "key_phrase": "Allah orders justice and good conduct"},
+        {"surah": 49, "ayah": 9, "key_phrase": "Make settlement between them in justice and act justly"},
+        {"surah": 57, "ayah": 25, "key_phrase": "We sent Our messengers with clear proofs, and sent down the Scripture and the balance that people may maintain justice"}
+      ],
+      "related_themes": ["community", "covenant", "trade_ethics", "warfare_ethics"]
+    },
+    {
+      "id": "mercy",
+      "name_english": "Mercy & Compassion",
+      "name_arabic": "الرحمة",
+      "description": "Allah's boundless mercy and the call to be merciful to creation",
+      "ayahs": [
+        {"surah": 6, "ayah": 12, "key_phrase": "Your Lord has decreed upon Himself mercy"},
+        {"surah": 7, "ayah": 156, "key_phrase": "My mercy encompasses all things"},
+        {"surah": 21, "ayah": 107, "key_phrase": "We have not sent you except as a mercy to the worlds"},
+        {"surah": 39, "ayah": 53, "key_phrase": "Do not despair of the mercy of Allah. Indeed, Allah forgives all sins"},
+        {"surah": 1, "ayah": 1, "key_phrase": "In the name of Allah, the Most Gracious, the Most Merciful"}
+      ],
+      "related_themes": ["forgiveness", "repentance", "tawheed"]
+    },
+    {
+      "id": "prayer",
+      "name_english": "Prayer & Worship",
+      "name_arabic": "الصلاة",
+      "description": "Establishing prayer as the pillar of faith and connection to Allah",
+      "ayahs": [
+        {"surah": 2, "ayah": 43, "key_phrase": "Establish prayer and give zakah and bow with those who bow"},
+        {"surah": 29, "ayah": 45, "key_phrase": "Establish prayer. Indeed, prayer prohibits immorality and wrongdoing"},
+        {"surah": 20, "ayah": 14, "key_phrase": "Establish prayer for My remembrance"},
+        {"surah": 4, "ayah": 103, "key_phrase": "Indeed, prayer has been decreed upon the believers a decree of specified times"},
+        {"surah": 73, "ayah": 20, "key_phrase": "Recite what is easy from the Quran"}
+      ],
+      "related_themes": ["remembrance_of_allah", "supplication", "faith"]
+    },
+    {
+      "id": "charity",
+      "name_english": "Charity & Generosity",
+      "name_arabic": "الصدقة والزكاة",
+      "description": "Spending in the way of Allah — zakah, sadaqah, and helping those in need",
+      "ayahs": [
+        {"surah": 2, "ayah": 261, "key_phrase": "The example of those who spend in the way of Allah is like a seed which grows seven ears"},
+        {"surah": 2, "ayah": 267, "key_phrase": "Spend from the good things which you have earned"},
+        {"surah": 57, "ayah": 18, "key_phrase": "The men who give charity and the women who give charity — it will be multiplied for them"},
+        {"surah": 9, "ayah": 60, "key_phrase": "Zakah is for the poor, the needy, those employed to collect it..."},
+        {"surah": 2, "ayah": 274, "key_phrase": "Those who spend their wealth by night and by day, secretly and publicly"}
+      ],
+      "related_themes": ["wealth", "orphans", "community", "trade_ethics"]
+    },
+    {
+      "id": "repentance",
+      "name_english": "Repentance & Turning to Allah",
+      "name_arabic": "التوبة",
+      "description": "Seeking forgiveness from Allah and returning to the straight path",
+      "ayahs": [
+        {"surah": 39, "ayah": 53, "key_phrase": "Say: O My servants who have transgressed against themselves, do not despair of the mercy of Allah"},
+        {"surah": 66, "ayah": 8, "key_phrase": "Turn to Allah with sincere repentance"},
+        {"surah": 9, "ayah": 104, "key_phrase": "Do they not know that Allah accepts repentance from His servants?"},
+        {"surah": 25, "ayah": 70, "key_phrase": "Except for those who repent, believe and do righteous work — Allah will replace their evil deeds with good"},
+        {"surah": 11, "ayah": 3, "key_phrase": "Seek forgiveness of your Lord and repent to Him"}
+      ],
+      "related_themes": ["mercy", "forgiveness", "faith"]
+    },
+    {
+      "id": "day_of_judgment",
+      "name_english": "Day of Judgment",
+      "name_arabic": "يوم القيامة",
+      "description": "The inevitable Day of Reckoning when all souls will be held accountable",
+      "ayahs": [
+        {"surah": 99, "ayah": 7, "key_phrase": "Whoever does an atom's weight of good will see it"},
+        {"surah": 82, "ayah": 1, "key_phrase": "When the sky breaks apart"},
+        {"surah": 56, "ayah": 1, "key_phrase": "When the Event occurs"},
+        {"surah": 101, "ayah": 1, "key_phrase": "The Striking Calamity — what is the Striking Calamity?"},
+        {"surah": 78, "ayah": 17, "key_phrase": "Indeed, the Day of Judgment is an appointed time"}
+      ],
+      "related_themes": ["paradise", "hellfire", "faith", "creation"]
+    },
+    {
+      "id": "paradise",
+      "name_english": "Paradise (Jannah)",
+      "name_arabic": "الجنة",
+      "description": "The eternal reward for the righteous — gardens beneath which rivers flow",
+      "ayahs": [
+        {"surah": 55, "ayah": 46, "key_phrase": "But for he who has feared the standing before his Lord are two gardens"},
+        {"surah": 56, "ayah": 10, "key_phrase": "And the forerunners — they are the ones brought near, in Gardens of Pleasure"},
+        {"surah": 3, "ayah": 185, "key_phrase": "Whoever is removed from the Fire and admitted to Paradise has attained success"},
+        {"surah": 9, "ayah": 72, "key_phrase": "Gardens of perpetual residence beneath which rivers flow"},
+        {"surah": 76, "ayah": 12, "key_phrase": "He rewarded them for their patience with a garden and silk"}
+      ],
+      "related_themes": ["day_of_judgment", "faith", "reward", "patience"]
+    },
+    {
+      "id": "hellfire",
+      "name_english": "Hellfire (Jahannam)",
+      "name_arabic": "جهنم",
+      "description": "The punishment prepared for the disbelievers and the unjust",
+      "ayahs": [
+        {"surah": 2, "ayah": 24, "key_phrase": "Fear the Fire, whose fuel is people and stones, prepared for the disbelievers"},
+        {"surah": 104, "ayah": 4, "key_phrase": "He will surely be thrown into the Crusher"},
+        {"surah": 74, "ayah": 42, "key_phrase": "What put you into Saqar?"},
+        {"surah": 67, "ayah": 7, "key_phrase": "When they are thrown into it, they hear from it a dreadful inhaling"},
+        {"surah": 44, "ayah": 43, "key_phrase": "Indeed, the tree of Zaqqum is food for the sinful"}
+      ],
+      "related_themes": ["day_of_judgment", "hypocrisy", "repentance"]
+    },
+    {
+      "id": "faith",
+      "name_english": "Faith & Belief (Iman)",
+      "name_arabic": "الإيمان",
+      "description": "The nature, pillars, and fruits of true belief in Allah and the unseen",
+      "ayahs": [
+        {"surah": 2, "ayah": 3, "key_phrase": "Who believe in the unseen, establish prayer, and spend out of what We have provided"},
+        {"surah": 49, "ayah": 14, "key_phrase": "The bedouins say 'We believe.' Say: You have not yet believed; rather say 'We have submitted'"},
+        {"surah": 8, "ayah": 2, "key_phrase": "The believers are only those who, when Allah is mentioned, their hearts become fearful"},
+        {"surah": 23, "ayah": 1, "key_phrase": "Successful indeed are the believers"},
+        {"surah": 2, "ayah": 285, "key_phrase": "The Messenger has believed in what was revealed to him from his Lord, and so have the believers"}
+      ],
+      "related_themes": ["tawheed", "prayer", "trust_in_allah"]
+    },
+    {
+      "id": "hypocrisy",
+      "name_english": "Hypocrisy (Nifaq)",
+      "name_arabic": "النفاق",
+      "description": "The dangers of hypocrisy — those who claim faith but harbor disbelief",
+      "ayahs": [
+        {"surah": 2, "ayah": 8, "key_phrase": "Among people are those who say 'We believe' but they are not believers"},
+        {"surah": 63, "ayah": 1, "key_phrase": "When the hypocrites come to you they say 'We testify that you are the Messenger of Allah' — and Allah knows that they are liars"},
+        {"surah": 4, "ayah": 145, "key_phrase": "Indeed, the hypocrites will be in the lowest depths of the Fire"},
+        {"surah": 9, "ayah": 67, "key_phrase": "The hypocrite men and hypocrite women are of one another. They enjoin evil and forbid what is right"},
+        {"surah": 2, "ayah": 14, "key_phrase": "When they meet those who believe, they say 'We believe'; but when alone with their devils, they say 'We are with you'"}
+      ],
+      "related_themes": ["faith", "hellfire", "community"]
+    },
+    {
+      "id": "family",
+      "name_english": "Family & Marriage",
+      "name_arabic": "الأسرة",
+      "description": "Rights and responsibilities within family — marriage, parenting, and kinship",
+      "ayahs": [
+        {"surah": 30, "ayah": 21, "key_phrase": "He created for you from yourselves mates that you may find tranquility in them, and He placed between you affection and mercy"},
+        {"surah": 4, "ayah": 1, "key_phrase": "O mankind, fear your Lord, who created you from one soul and created from it its mate"},
+        {"surah": 31, "ayah": 14, "key_phrase": "We have enjoined upon man care for his parents — his mother carried him in weakness upon weakness"},
+        {"surah": 17, "ayah": 23, "key_phrase": "Do not say to them 'uff' and do not repel them but speak to them a noble word"},
+        {"surah": 66, "ayah": 6, "key_phrase": "Protect yourselves and your families from a Fire"}
+      ],
+      "related_themes": ["women", "orphans", "community"]
+    },
+    {
+      "id": "community",
+      "name_english": "Community & Brotherhood",
+      "name_arabic": "الأمة والإخوة",
+      "description": "Unity of the Muslim ummah, mutual support, and social responsibility",
+      "ayahs": [
+        {"surah": 49, "ayah": 10, "key_phrase": "The believers are but brothers, so make settlement between your brothers"},
+        {"surah": 3, "ayah": 103, "key_phrase": "Hold firmly to the rope of Allah all together and do not become divided"},
+        {"surah": 49, "ayah": 13, "key_phrase": "We made you peoples and tribes that you may know one another. The most noble among you is the most righteous"},
+        {"surah": 3, "ayah": 110, "key_phrase": "You are the best nation produced for mankind. You enjoin what is right and forbid what is wrong"},
+        {"surah": 42, "ayah": 38, "key_phrase": "Those who conduct their affairs by mutual consultation"}
+      ],
+      "related_themes": ["justice", "family", "charity"]
+    },
+    {
+      "id": "creation",
+      "name_english": "Creation & the Universe",
+      "name_arabic": "الخلق",
+      "description": "Allah's creation of the heavens, earth, humanity, and all living things",
+      "ayahs": [
+        {"surah": 21, "ayah": 30, "key_phrase": "The heavens and the earth were a joined entity, and We separated them and made from water every living thing"},
+        {"surah": 51, "ayah": 49, "key_phrase": "And of all things We created two mates; perhaps you will remember"},
+        {"surah": 23, "ayah": 12, "key_phrase": "We created man from an extract of clay"},
+        {"surah": 67, "ayah": 3, "key_phrase": "He who created seven heavens in layers. You do not see any inconsistency in the creation of the Most Merciful"},
+        {"surah": 96, "ayah": 2, "key_phrase": "Created man from a clinging clot"}
+      ],
+      "related_themes": ["tawheed", "nature_signs", "knowledge"]
+    },
+    {
+      "id": "knowledge",
+      "name_english": "Knowledge & Learning",
+      "name_arabic": "العلم",
+      "description": "The pursuit of knowledge as an act of worship and a path to understanding Allah's signs",
+      "ayahs": [
+        {"surah": 96, "ayah": 1, "key_phrase": "Read in the name of your Lord who created"},
+        {"surah": 20, "ayah": 114, "key_phrase": "Say: My Lord, increase me in knowledge"},
+        {"surah": 58, "ayah": 11, "key_phrase": "Allah will raise those who have believed among you and those given knowledge by degrees"},
+        {"surah": 39, "ayah": 9, "key_phrase": "Are those who know equal to those who do not know?"},
+        {"surah": 35, "ayah": 28, "key_phrase": "Only those fear Allah, from among His servants, who have knowledge"}
+      ],
+      "related_themes": ["creation", "nature_signs", "faith"]
+    },
+    {
+      "id": "tongue_speech",
+      "name_english": "The Tongue & Speech",
+      "name_arabic": "اللسان والكلام",
+      "description": "Guarding the tongue, speaking truth, avoiding backbiting, slander, and vain talk",
+      "ayahs": [
+        {"surah": 49, "ayah": 12, "key_phrase": "Avoid much suspicion... and do not spy or backbite each other"},
+        {"surah": 104, "ayah": 1, "key_phrase": "Woe to every slanderer and backbiter"},
+        {"surah": 33, "ayah": 70, "key_phrase": "O you who believe, fear Allah and speak words of appropriate justice"},
+        {"surah": 23, "ayah": 3, "key_phrase": "And they who turn away from ill speech"},
+        {"surah": 17, "ayah": 36, "key_phrase": "Do not pursue that of which you have no knowledge. Indeed, hearing, sight, and the heart will all be questioned"}
+      ],
+      "related_themes": ["hypocrisy", "community", "justice"]
+    },
+    {
+      "id": "wealth",
+      "name_english": "Wealth & Worldly Life",
+      "name_arabic": "المال والدنيا",
+      "description": "The nature of worldly wealth as a test — neither hoarding nor excess",
+      "ayahs": [
+        {"surah": 57, "ayah": 20, "key_phrase": "Know that the life of this world is but amusement and diversion and adornment"},
+        {"surah": 102, "ayah": 1, "key_phrase": "Competition in worldly increase diverts you"},
+        {"surah": 18, "ayah": 46, "key_phrase": "Wealth and children are the adornment of worldly life, but enduring good deeds are better"},
+        {"surah": 9, "ayah": 34, "key_phrase": "Those who hoard gold and silver and do not spend it in the way of Allah — give them tidings of a painful punishment"},
+        {"surah": 28, "ayah": 77, "key_phrase": "Seek the home of the Hereafter through what Allah has given you, and do not forget your share of the world"}
+      ],
+      "related_themes": ["charity", "trade_ethics", "day_of_judgment"]
+    },
+    {
+      "id": "humility",
+      "name_english": "Humility & Modesty",
+      "name_arabic": "التواضع",
+      "description": "Walking humbly on the earth, avoiding arrogance and pride",
+      "ayahs": [
+        {"surah": 25, "ayah": 63, "key_phrase": "The servants of the Most Merciful are those who walk upon the earth in humility"},
+        {"surah": 31, "ayah": 18, "key_phrase": "Do not turn your cheek in contempt toward people and do not walk through the earth exultantly"},
+        {"surah": 17, "ayah": 37, "key_phrase": "Do not walk upon the earth exultantly. You will never tear the earth apart or reach the mountains in height"},
+        {"surah": 4, "ayah": 36, "key_phrase": "Worship Allah and associate nothing with Him, and to parents do good"},
+        {"surah": 7, "ayah": 13, "key_phrase": "It is not for you to be arrogant therein — so get out; indeed, you are of the debased"}
+      ],
+      "related_themes": ["gratitude", "faith", "remembrance_of_allah"]
+    },
+    {
+      "id": "forgiveness",
+      "name_english": "Forgiveness & Pardon",
+      "name_arabic": "العفو والمغفرة",
+      "description": "Allah's forgiveness and the virtue of forgiving others",
+      "ayahs": [
+        {"surah": 42, "ayah": 40, "key_phrase": "The retribution for an evil act is one like it, but whoever pardons and makes reconciliation — his reward is from Allah"},
+        {"surah": 3, "ayah": 134, "key_phrase": "Who restrain anger and who pardon the people — and Allah loves the doers of good"},
+        {"surah": 24, "ayah": 22, "key_phrase": "Let them pardon and overlook. Would you not like that Allah should forgive you?"},
+        {"surah": 42, "ayah": 43, "key_phrase": "Whoever is patient and forgives — indeed, that is of the matters requiring resolve"},
+        {"surah": 2, "ayah": 286, "key_phrase": "Our Lord, do not impose blame upon us if we have forgotten or erred"}
+      ],
+      "related_themes": ["mercy", "repentance", "patience"]
+    },
+    {
+      "id": "covenant",
+      "name_english": "Covenant & Promise",
+      "name_arabic": "العهد والميثاق",
+      "description": "Fulfilling covenants with Allah and with people — the sanctity of promises",
+      "ayahs": [
+        {"surah": 5, "ayah": 1, "key_phrase": "O you who believe, fulfill your contracts"},
+        {"surah": 2, "ayah": 40, "key_phrase": "Fulfill My covenant, and I will fulfill your covenant"},
+        {"surah": 17, "ayah": 34, "key_phrase": "And fulfill every commitment. Indeed, the commitment is ever questioned about"},
+        {"surah": 16, "ayah": 91, "key_phrase": "Fulfill the covenant of Allah when you have taken it, and do not break oaths after their confirmation"},
+        {"surah": 13, "ayah": 20, "key_phrase": "Those who fulfill the covenant of Allah and do not break the contract"}
+      ],
+      "related_themes": ["justice", "faith", "community"]
+    },
+    {
+      "id": "nature_signs",
+      "name_english": "Signs in Nature",
+      "name_arabic": "آيات الله في الطبيعة",
+      "description": "Natural phenomena as signs pointing to Allah's existence and power",
+      "ayahs": [
+        {"surah": 16, "ayah": 68, "key_phrase": "Your Lord inspired to the bee: Take for yourself among the mountains, houses"},
+        {"surah": 3, "ayah": 190, "key_phrase": "In the creation of the heavens and the earth and the alternation of night and day are signs"},
+        {"surah": 30, "ayah": 22, "key_phrase": "Among His signs is the creation of the heavens and the earth and the diversity of your languages and colors"},
+        {"surah": 24, "ayah": 43, "key_phrase": "Do you not see that Allah drives clouds? Then He brings them together, then makes them into a mass"},
+        {"surah": 36, "ayah": 36, "key_phrase": "Exalted is He who created all pairs — from what the earth grows and from themselves and from that which they do not know"}
+      ],
+      "related_themes": ["creation", "tawheed", "knowledge", "gratitude"]
+    },
+    {
+      "id": "prophetic_stories",
+      "name_english": "Stories of the Prophets",
+      "name_arabic": "قصص الأنبياء",
+      "description": "Lessons from the lives of prophets sent by Allah throughout history",
+      "ayahs": [
+        {"surah": 12, "ayah": 111, "key_phrase": "In their stories is a lesson for those of understanding"},
+        {"surah": 21, "ayah": 25, "key_phrase": "We sent not before you any messenger except that We revealed to him: There is no deity except Me, so worship Me"},
+        {"surah": 6, "ayah": 84, "key_phrase": "And We gave him Isaac and Jacob — all of them We guided. And Noah, We guided before"},
+        {"surah": 2, "ayah": 136, "key_phrase": "We believe in Allah and what has been revealed to us and what was revealed to Abraham, Ishmael, Isaac, Jacob"},
+        {"surah": 40, "ayah": 78, "key_phrase": "We have already sent messengers before you. Among them are those We have related to you, and among them are those We have not"}
+      ],
+      "related_themes": ["faith", "patience", "tawheed"]
+    },
+    {
+      "id": "warfare_ethics",
+      "name_english": "Ethics of Warfare & Jihad",
+      "name_arabic": "أخلاق الجهاد",
+      "description": "Rules and ethics of fighting in self-defense — boundaries, proportionality, and peace",
+      "ayahs": [
+        {"surah": 2, "ayah": 190, "key_phrase": "Fight in the way of Allah those who fight you but do not transgress. Indeed, Allah does not like transgressors"},
+        {"surah": 8, "ayah": 61, "key_phrase": "If they incline to peace, then incline to it also and rely upon Allah"},
+        {"surah": 22, "ayah": 39, "key_phrase": "Permission to fight has been given to those who are being fought, because they were wronged"},
+        {"surah": 60, "ayah": 8, "key_phrase": "Allah does not forbid you from being righteous and just toward those who do not fight you"},
+        {"surah": 2, "ayah": 216, "key_phrase": "Fighting has been enjoined upon you while it is hateful to you. Perhaps you hate a thing and it is good for you"}
+      ],
+      "related_themes": ["justice", "community", "covenant"]
+    },
+    {
+      "id": "women",
+      "name_english": "Women & Their Rights",
+      "name_arabic": "حقوق المرأة",
+      "description": "The honor, rights, and roles of women in Islam — inheritance, dignity, and spiritual equality",
+      "ayahs": [
+        {"surah": 4, "ayah": 7, "key_phrase": "For men is a share of what the parents and close relatives leave, and for women is a share"},
+        {"surah": 33, "ayah": 35, "key_phrase": "Indeed, the Muslim men and Muslim women... for them Allah has prepared forgiveness and a great reward"},
+        {"surah": 4, "ayah": 19, "key_phrase": "Live with them in kindness"},
+        {"surah": 9, "ayah": 71, "key_phrase": "The believing men and believing women are allies of one another"},
+        {"surah": 3, "ayah": 195, "key_phrase": "I do not allow the work of any worker among you to be lost, whether male or female"}
+      ],
+      "related_themes": ["family", "justice", "community"]
+    },
+    {
+      "id": "orphans",
+      "name_english": "Care for Orphans",
+      "name_arabic": "رعاية اليتامى",
+      "description": "Protecting the rights of orphans and treating them with kindness and justice",
+      "ayahs": [
+        {"surah": 93, "ayah": 9, "key_phrase": "As for the orphan, do not oppress him"},
+        {"surah": 4, "ayah": 2, "key_phrase": "Give to the orphans their properties and do not substitute the defective for the good"},
+        {"surah": 2, "ayah": 220, "key_phrase": "They ask you about orphans. Say: Improvement for them is best"},
+        {"surah": 107, "ayah": 2, "key_phrase": "That is the one who drives away the orphan"},
+        {"surah": 4, "ayah": 10, "key_phrase": "Those who consume the property of orphans unjustly are only consuming fire into their bellies"}
+      ],
+      "related_themes": ["charity", "justice", "family"]
+    },
+    {
+      "id": "trade_ethics",
+      "name_english": "Trade & Business Ethics",
+      "name_arabic": "أخلاق التجارة",
+      "description": "Honesty in business dealings, prohibition of usury, and fair measurement",
+      "ayahs": [
+        {"surah": 2, "ayah": 275, "key_phrase": "Allah has permitted trade and has forbidden interest (riba)"},
+        {"surah": 83, "ayah": 1, "key_phrase": "Woe to those who give less than due — who, when they take a measure from people, take in full"},
+        {"surah": 4, "ayah": 29, "key_phrase": "Do not consume one another's wealth unjustly but only in lawful business by mutual consent"},
+        {"surah": 11, "ayah": 85, "key_phrase": "Give full measure and weight and do not deprive people of their due"},
+        {"surah": 2, "ayah": 282, "key_phrase": "When you contract a debt for a specified term, write it down"}
+      ],
+      "related_themes": ["justice", "wealth", "covenant"]
+    },
+    {
+      "id": "supplication",
+      "name_english": "Supplication (Du'a)",
+      "name_arabic": "الدعاء",
+      "description": "Calling upon Allah in prayer, need, and gratitude — the essence of worship",
+      "ayahs": [
+        {"surah": 2, "ayah": 186, "key_phrase": "I am near. I respond to the invocation of the supplicant when he calls upon Me"},
+        {"surah": 40, "ayah": 60, "key_phrase": "Call upon Me; I will respond to you"},
+        {"surah": 25, "ayah": 77, "key_phrase": "Say: What would my Lord care for you if not for your supplication?"},
+        {"surah": 3, "ayah": 38, "key_phrase": "Zakariya called upon his Lord: My Lord, grant me from Yourself good offspring"},
+        {"surah": 14, "ayah": 40, "key_phrase": "My Lord, make me an establisher of prayer, and from my descendants. Our Lord, accept my supplication"}
+      ],
+      "related_themes": ["prayer", "remembrance_of_allah", "trust_in_allah"]
+    },
+    {
+      "id": "remembrance_of_allah",
+      "name_english": "Remembrance of Allah (Dhikr)",
+      "name_arabic": "ذكر الله",
+      "description": "Keeping Allah in mind and heart at all times — the tranquility of remembrance",
+      "ayahs": [
+        {"surah": 13, "ayah": 28, "key_phrase": "Verily, in the remembrance of Allah do hearts find rest"},
+        {"surah": 2, "ayah": 152, "key_phrase": "Remember Me, I will remember you"},
+        {"surah": 33, "ayah": 41, "key_phrase": "O you who believe, remember Allah with much remembrance"},
+        {"surah": 18, "ayah": 24, "key_phrase": "And remember your Lord when you forget"},
+        {"surah": 29, "ayah": 45, "key_phrase": "The remembrance of Allah is greater"}
+      ],
+      "related_themes": ["prayer", "supplication", "gratitude", "tawheed"]
+    },
+    {
+      "id": "trust_in_allah",
+      "name_english": "Trust in Allah (Tawakkul)",
+      "name_arabic": "التوكل على الله",
+      "description": "Placing complete reliance on Allah while taking the means available",
+      "ayahs": [
+        {"surah": 3, "ayah": 159, "key_phrase": "When you have decided, then rely upon Allah. Indeed, Allah loves those who rely upon Him"},
+        {"surah": 65, "ayah": 3, "key_phrase": "Whoever relies upon Allah — then He is sufficient for him"},
+        {"surah": 14, "ayah": 12, "key_phrase": "And upon Allah let the believers rely"},
+        {"surah": 8, "ayah": 49, "key_phrase": "Whoever relies upon Allah — then indeed, Allah is Exalted in Might and Wise"},
+        {"surah": 12, "ayah": 67, "key_phrase": "Judgment is only for Allah. Upon Him I have relied, and upon Him let those who would rely, rely"}
+      ],
+      "related_themes": ["patience", "faith", "supplication"]
+    },
+    {
+      "id": "trials",
+      "name_english": "Trials & Tests",
+      "name_arabic": "الابتلاء",
+      "description": "Life as a test from Allah — trials of wealth, health, fear, and loss",
+      "ayahs": [
+        {"surah": 2, "ayah": 155, "key_phrase": "We will surely test you with something of fear, hunger, loss of wealth, lives, and fruits"},
+        {"surah": 67, "ayah": 2, "key_phrase": "He who created death and life to test you — which of you is best in deed"},
+        {"surah": 29, "ayah": 2, "key_phrase": "Do the people think that they will be left to say 'We believe' and they will not be tried?"},
+        {"surah": 21, "ayah": 35, "key_phrase": "Every soul will taste death. And We test you with evil and with good as trial"},
+        {"surah": 18, "ayah": 7, "key_phrase": "Indeed, We have made that which is on the earth adornment for it that We may test them"}
+      ],
+      "related_themes": ["patience", "trust_in_allah", "day_of_judgment"]
+    },
+    {
+      "id": "reward",
+      "name_english": "Reward & Good Deeds",
+      "name_arabic": "الأجر والعمل الصالح",
+      "description": "The promise of immense reward for righteous actions, even the smallest",
+      "ayahs": [
+        {"surah": 99, "ayah": 7, "key_phrase": "Whoever does an atom's weight of good will see it"},
+        {"surah": 39, "ayah": 10, "key_phrase": "Indeed, the patient will be given their reward without account"},
+        {"surah": 16, "ayah": 97, "key_phrase": "Whoever does righteousness, whether male or female, while being a believer — We will surely cause them to live a good life"},
+        {"surah": 18, "ayah": 30, "key_phrase": "Indeed, We will not allow to be lost the reward of any who did well in deeds"},
+        {"surah": 29, "ayah": 7, "key_phrase": "Those who believe and do righteous deeds — We will surely remove from them their misdeeds"}
+      ],
+      "related_themes": ["paradise", "faith", "charity", "patience"]
+    },
+    {
+      "id": "divine_plan",
+      "name_english": "Divine Decree & Wisdom",
+      "name_arabic": "القدر والحكمة",
+      "description": "Allah's perfect wisdom in all affairs — nothing happens without His knowledge and will",
+      "ayahs": [
+        {"surah": 2, "ayah": 216, "key_phrase": "Perhaps you hate a thing and it is good for you; and perhaps you love a thing and it is bad for you. And Allah knows while you do not"},
+        {"surah": 65, "ayah": 3, "key_phrase": "Allah has already set for everything a decreed extent"},
+        {"surah": 54, "ayah": 49, "key_phrase": "Indeed, all things We created with predestination"},
+        {"surah": 9, "ayah": 51, "key_phrase": "Say: Never will we be struck except by what Allah has decreed for us"},
+        {"surah": 57, "ayah": 22, "key_phrase": "No disaster strikes upon the earth or among yourselves except that it is in a register before We bring it into being"}
+      ],
+      "related_themes": ["trust_in_allah", "trials", "patience"]
+    }
+  ]
+}

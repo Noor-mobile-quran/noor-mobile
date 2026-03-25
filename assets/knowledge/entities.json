@@ -1,0 +1,4183 @@
+{
+  "version": "1.0.0",
+  "entity_count": 222,
+  "entities": [
+    {
+      "id": "prophet_adam",
+      "name_english": "Adam",
+      "name_arabic": "آدم",
+      "type": "prophet",
+      "description": "First human and first prophet, created by Allah from clay",
+      "mentioned_in": [
+        2,
+        3,
+        5,
+        7,
+        17,
+        18,
+        19,
+        20,
+        36
+      ],
+      "name_urdu": "آدم علیہ السلام"
+    },
+    {
+      "id": "prophet_idris",
+      "name_english": "Enoch (Idris)",
+      "name_arabic": "إدريس",
+      "type": "prophet",
+      "description": "Early prophet raised to a high station by Allah",
+      "mentioned_in": [
+        19,
+        21
+      ],
+      "name_urdu": "ادریس علیہ السلام"
+    },
+    {
+      "id": "prophet_nuh",
+      "name_english": "Noah (Nuh)",
+      "name_arabic": "نوح",
+      "type": "prophet",
+      "description": "Built the Ark by Allah's command, survived the Great Flood",
+      "mentioned_in": [
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        14,
+        17,
+        21,
+        23,
+        25,
+        26,
+        29,
+        33,
+        37,
+        38,
+        40,
+        42,
+        50,
+        51,
+        53,
+        54,
+        57,
+        66,
+        71
+      ],
+      "name_urdu": "نوح علیہ السلام"
+    },
+    {
+      "id": "prophet_hud",
+      "name_english": "Hud",
+      "name_arabic": "هود",
+      "type": "prophet",
+      "description": "Sent to the people of 'Ad",
+      "mentioned_in": [
+        7,
+        11,
+        26,
+        46
+      ],
+      "name_urdu": "ہود علیہ السلام"
+    },
+    {
+      "id": "prophet_salih",
+      "name_english": "Salih",
+      "name_arabic": "صالح",
+      "type": "prophet",
+      "description": "Sent to the people of Thamud with the she-camel as a sign",
+      "mentioned_in": [
+        7,
+        11,
+        26,
+        27
+      ],
+      "name_urdu": "صالح علیہ السلام"
+    },
+    {
+      "id": "prophet_ibrahim",
+      "name_english": "Abraham (Ibrahim)",
+      "name_arabic": "إبراهيم",
+      "type": "prophet",
+      "description": "Father of monotheism, builder of the Kaaba with his son Ismail",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        6,
+        9,
+        11,
+        12,
+        14,
+        15,
+        16,
+        19,
+        21,
+        22,
+        26,
+        29,
+        33,
+        37,
+        38,
+        42,
+        43,
+        51,
+        53,
+        57,
+        60,
+        87
+      ],
+      "name_urdu": "ابراہیم علیہ السلام"
+    },
+    {
+      "id": "prophet_lut",
+      "name_english": "Lot (Lut)",
+      "name_arabic": "لوط",
+      "type": "prophet",
+      "description": "Nephew of Ibrahim, sent to the people of Sodom",
+      "mentioned_in": [
+        6,
+        7,
+        11,
+        15,
+        21,
+        22,
+        26,
+        27,
+        29,
+        37,
+        38,
+        50,
+        51,
+        54,
+        66
+      ],
+      "name_urdu": "لوط علیہ السلام"
+    },
+    {
+      "id": "prophet_ismail",
+      "name_english": "Ishmael (Ismail)",
+      "name_arabic": "إسماعيل",
+      "type": "prophet",
+      "description": "Son of Ibrahim, helped build the Kaaba, ancestor of Prophet Muhammad",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        6,
+        14,
+        19,
+        21,
+        38
+      ],
+      "name_urdu": "اسماعیل علیہ السلام"
+    },
+    {
+      "id": "prophet_ishaq",
+      "name_english": "Isaac (Ishaq)",
+      "name_arabic": "إسحاق",
+      "type": "prophet",
+      "description": "Son of Ibrahim and Sarah, father of Yaqub",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        6,
+        11,
+        12,
+        14,
+        19,
+        21,
+        29,
+        37,
+        38
+      ],
+      "name_urdu": "اسحاق علیہ السلام"
+    },
+    {
+      "id": "prophet_yaqub",
+      "name_english": "Jacob (Yaqub)",
+      "name_arabic": "يعقوب",
+      "type": "prophet",
+      "description": "Son of Ishaq, also known as Israel, father of the twelve tribes",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        6,
+        11,
+        12,
+        19,
+        21,
+        29,
+        38
+      ],
+      "name_urdu": "یعقوب علیہ السلام"
+    },
+    {
+      "id": "prophet_yusuf",
+      "name_english": "Joseph (Yusuf)",
+      "name_arabic": "يوسف",
+      "type": "prophet",
+      "description": "Son of Yaqub, given the gift of dream interpretation, became ruler of Egypt",
+      "mentioned_in": [
+        6,
+        12,
+        40
+      ],
+      "name_urdu": "یوسف علیہ السلام"
+    },
+    {
+      "id": "prophet_ayyub",
+      "name_english": "Job (Ayyub)",
+      "name_arabic": "أيوب",
+      "type": "prophet",
+      "description": "Known for extraordinary patience through severe trials",
+      "mentioned_in": [
+        4,
+        6,
+        21,
+        38
+      ],
+      "name_urdu": "ایوب علیہ السلام"
+    },
+    {
+      "id": "prophet_shuayb",
+      "name_english": "Shuayb (Jethro)",
+      "name_arabic": "شعيب",
+      "type": "prophet",
+      "description": "Sent to the people of Madyan, preached honest trade",
+      "mentioned_in": [
+        7,
+        11,
+        26,
+        29
+      ],
+      "name_urdu": "شعیب علیہ السلام"
+    },
+    {
+      "id": "prophet_musa",
+      "name_english": "Moses (Musa)",
+      "name_arabic": "موسى",
+      "type": "prophet",
+      "description": "Received the Torah, led the Israelites out of Egypt, spoke directly to Allah",
+      "mentioned_in": [
+        2,
+        5,
+        6,
+        7,
+        10,
+        11,
+        14,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        25,
+        26,
+        27,
+        28,
+        29,
+        32,
+        33,
+        37,
+        40,
+        41,
+        42,
+        43,
+        44,
+        46,
+        51,
+        53,
+        61,
+        79,
+        87
+      ],
+      "name_urdu": "موسیٰ علیہ السلام"
+    },
+    {
+      "id": "prophet_harun",
+      "name_english": "Aaron (Harun)",
+      "name_arabic": "هارون",
+      "type": "prophet",
+      "description": "Brother of Musa, appointed as his helper and minister",
+      "mentioned_in": [
+        2,
+        4,
+        6,
+        7,
+        10,
+        19,
+        20,
+        21,
+        23,
+        25,
+        26,
+        28,
+        37
+      ],
+      "name_urdu": "ہارون علیہ السلام"
+    },
+    {
+      "id": "prophet_dawud",
+      "name_english": "David (Dawud)",
+      "name_arabic": "داود",
+      "type": "prophet",
+      "description": "King and prophet, given the Zabur (Psalms), defeated Goliath",
+      "mentioned_in": [
+        2,
+        4,
+        5,
+        6,
+        17,
+        21,
+        27,
+        34,
+        38
+      ],
+      "name_urdu": "داؤد علیہ السلام"
+    },
+    {
+      "id": "prophet_sulayman",
+      "name_english": "Solomon (Sulayman)",
+      "name_arabic": "سليمان",
+      "type": "prophet",
+      "description": "Son of Dawud, given dominion over jinn, animals, and wind",
+      "mentioned_in": [
+        2,
+        4,
+        6,
+        21,
+        27,
+        34,
+        38
+      ],
+      "name_urdu": "سلیمان علیہ السلام"
+    },
+    {
+      "id": "prophet_ilyas",
+      "name_english": "Elijah (Ilyas)",
+      "name_arabic": "إلياس",
+      "type": "prophet",
+      "description": "Called his people away from idol worship of Baal",
+      "mentioned_in": [
+        6,
+        37
+      ],
+      "name_urdu": "الیاس علیہ السلام"
+    },
+    {
+      "id": "prophet_alyasa",
+      "name_english": "Elisha (Al-Yasa)",
+      "name_arabic": "اليسع",
+      "type": "prophet",
+      "description": "Successor of Ilyas, mentioned among the righteous",
+      "mentioned_in": [
+        6,
+        38
+      ],
+      "name_urdu": "الیسع علیہ السلام"
+    },
+    {
+      "id": "prophet_yunus",
+      "name_english": "Jonah (Yunus)",
+      "name_arabic": "يونس",
+      "type": "prophet",
+      "description": "Swallowed by a whale, his people repented and were saved",
+      "mentioned_in": [
+        4,
+        6,
+        10,
+        21,
+        37,
+        68
+      ],
+      "name_urdu": "یونس علیہ السلام"
+    },
+    {
+      "id": "prophet_zakariyya",
+      "name_english": "Zechariah (Zakariyya)",
+      "name_arabic": "زكريا",
+      "type": "prophet",
+      "description": "Guardian of Maryam, father of Yahya, prayed for a son in old age",
+      "mentioned_in": [
+        3,
+        6,
+        19,
+        21
+      ],
+      "name_urdu": "زکریا علیہ السلام"
+    },
+    {
+      "id": "prophet_yahya",
+      "name_english": "John the Baptist (Yahya)",
+      "name_arabic": "يحيى",
+      "type": "prophet",
+      "description": "Son of Zakariyya, confirmed the word of Allah",
+      "mentioned_in": [
+        3,
+        6,
+        19,
+        21
+      ],
+      "name_urdu": "یحییٰ علیہ السلام"
+    },
+    {
+      "id": "prophet_isa",
+      "name_english": "Jesus (Isa)",
+      "name_arabic": "عيسى",
+      "type": "prophet",
+      "description": "Born of Maryam, performed miracles by Allah's permission, given the Injeel",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        19,
+        33,
+        42,
+        43,
+        57,
+        61
+      ],
+      "name_urdu": "عیسیٰ علیہ السلام"
+    },
+    {
+      "id": "prophet_muhammad",
+      "name_english": "Muhammad",
+      "name_arabic": "محمد",
+      "type": "prophet",
+      "description": "The final prophet and messenger, received the Quran",
+      "mentioned_in": [
+        3,
+        33,
+        47,
+        48
+      ],
+      "name_urdu": "محمد صلی اللہ علیہ وسلم"
+    },
+    {
+      "id": "prophet_dhul_kifl",
+      "name_english": "Dhul-Kifl",
+      "name_arabic": "ذو الكفل",
+      "type": "prophet",
+      "description": "Mentioned among the patient and righteous prophets",
+      "mentioned_in": [
+        21,
+        38
+      ],
+      "name_urdu": "ذوالکفل علیہ السلام"
+    },
+    {
+      "id": "figure_maryam",
+      "name_english": "Mary (Maryam)",
+      "name_arabic": "مريم",
+      "type": "prophet",
+      "description": "Mother of Isa, chosen above all women of the worlds",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        19,
+        21,
+        23,
+        33,
+        43,
+        57,
+        66
+      ],
+      "name_urdu": "مریم علیہا السلام"
+    },
+    {
+      "id": "figure_luqman",
+      "name_english": "Luqman the Wise",
+      "name_arabic": "لقمان",
+      "type": "prophet",
+      "description": "Wise man who gave profound advice to his son",
+      "mentioned_in": [
+        31
+      ],
+      "name_urdu": "لقمان حکیم"
+    },
+    {
+      "id": "figure_dhul_qarnayn",
+      "name_english": "Dhul-Qarnayn",
+      "name_arabic": "ذو القرنين",
+      "type": "prophet",
+      "description": "Righteous ruler who traveled to the ends of the earth and built a barrier against Yajuj and Majuj",
+      "mentioned_in": [
+        18
+      ],
+      "name_urdu": "ذوالقرنین"
+    },
+    {
+      "id": "figure_pharaoh",
+      "name_english": "Pharaoh (Firaun)",
+      "name_arabic": "فرعون",
+      "type": "figure",
+      "description": "Tyrant ruler of Egypt who opposed Musa, drowned in the Red Sea",
+      "mentioned_in": [
+        2,
+        3,
+        7,
+        8,
+        10,
+        11,
+        14,
+        17,
+        20,
+        23,
+        25,
+        26,
+        27,
+        28,
+        29,
+        38,
+        40,
+        43,
+        44,
+        50,
+        51,
+        54,
+        66,
+        69,
+        73,
+        79,
+        85,
+        89
+      ],
+      "name_urdu": "فرعون"
+    },
+    {
+      "id": "figure_haman",
+      "name_english": "Haman",
+      "name_arabic": "هامان",
+      "type": "figure",
+      "description": "Minister of Pharaoh who built the tower",
+      "mentioned_in": [
+        28,
+        29,
+        40
+      ],
+      "name_urdu": "ہامان"
+    },
+    {
+      "id": "figure_qarun",
+      "name_english": "Qarun (Korah)",
+      "name_arabic": "قارون",
+      "type": "figure",
+      "description": "Wealthy Israelite who was arrogant and swallowed by the earth",
+      "mentioned_in": [
+        28,
+        29,
+        40
+      ],
+      "name_urdu": "قارون"
+    },
+    {
+      "id": "figure_jalut",
+      "name_english": "Goliath (Jalut)",
+      "name_arabic": "جالوت",
+      "type": "figure",
+      "description": "Giant warrior defeated by Dawud",
+      "mentioned_in": [
+        2
+      ],
+      "name_urdu": "جالوت"
+    },
+    {
+      "id": "figure_talut",
+      "name_english": "Saul (Talut)",
+      "name_arabic": "طالوت",
+      "type": "figure",
+      "description": "King appointed by Allah to lead the Israelites against Jalut",
+      "mentioned_in": [
+        2
+      ],
+      "name_urdu": "طالوت"
+    },
+    {
+      "id": "figure_uzayr",
+      "name_english": "Ezra (Uzayr)",
+      "name_arabic": "عزير",
+      "type": "figure",
+      "description": "Figure claimed by some as son of God, rebuked in the Quran",
+      "mentioned_in": [
+        9
+      ],
+      "name_urdu": "عزیر"
+    },
+    {
+      "id": "figure_khidr",
+      "name_english": "Al-Khidr (The Green One)",
+      "name_arabic": "الخضر",
+      "type": "figure",
+      "description": "Mysterious servant of Allah whom Musa traveled with to learn hidden wisdom",
+      "mentioned_in": [
+        18
+      ],
+      "name_urdu": "خضر علیہ السلام"
+    },
+    {
+      "id": "figure_iblis",
+      "name_english": "Satan (Iblis/Shaytan)",
+      "name_arabic": "إبليس",
+      "type": "figure",
+      "description": "Refused to prostrate to Adam, vowed to mislead humanity",
+      "mentioned_in": [
+        2,
+        7,
+        15,
+        17,
+        18,
+        20,
+        26,
+        34,
+        35,
+        36,
+        38,
+        43,
+        59
+      ],
+      "name_urdu": "ابلیس / شیطان"
+    },
+    {
+      "id": "figure_bilqis",
+      "name_english": "Queen of Sheba (Bilqis)",
+      "name_arabic": "بلقيس",
+      "type": "figure",
+      "description": "Queen who accepted faith after encountering Sulayman's wisdom",
+      "mentioned_in": [
+        27
+      ],
+      "name_urdu": "ملکہ سبا (بلقیس)"
+    },
+    {
+      "id": "figure_wife_of_pharaoh",
+      "name_english": "Asiya (Wife of Pharaoh)",
+      "name_arabic": "آسية",
+      "type": "figure",
+      "description": "Righteous woman who believed despite Pharaoh, example for believers",
+      "mentioned_in": [
+        28,
+        66
+      ],
+      "name_urdu": "آسیہ (فرعون کی بیوی)"
+    },
+    {
+      "id": "figure_people_of_cave",
+      "name_english": "People of the Cave (Ashab al-Kahf)",
+      "name_arabic": "أصحاب الكهف",
+      "type": "figure",
+      "description": "Young believers who slept in a cave for centuries, protected by Allah",
+      "mentioned_in": [
+        18
+      ],
+      "name_urdu": "اصحاب الکہف"
+    },
+    {
+      "id": "angel_jibril",
+      "name_english": "Gabriel (Jibril)",
+      "name_arabic": "جبريل",
+      "type": "angel",
+      "description": "Angel of revelation, brought the Quran to Prophet Muhammad",
+      "mentioned_in": [
+        2,
+        26,
+        53,
+        66,
+        81,
+        97
+      ],
+      "name_urdu": "جبرائیل علیہ السلام"
+    },
+    {
+      "id": "angel_mikail",
+      "name_english": "Michael (Mikail)",
+      "name_arabic": "ميكائيل",
+      "type": "angel",
+      "description": "Angel responsible for provisions and sustenance",
+      "mentioned_in": [
+        2
+      ],
+      "name_urdu": "میکائیل علیہ السلام"
+    },
+    {
+      "id": "angel_israfil",
+      "name_english": "Israfil",
+      "name_arabic": "إسرافيل",
+      "type": "angel",
+      "description": "Angel who will blow the trumpet on the Day of Judgment",
+      "mentioned_in": [
+        6,
+        23,
+        27,
+        36,
+        39,
+        69,
+        78
+      ],
+      "name_urdu": "اسرافیل علیہ السلام"
+    },
+    {
+      "id": "angel_malik",
+      "name_english": "Malik",
+      "name_arabic": "مالك",
+      "type": "angel",
+      "description": "Guardian angel of Hellfire",
+      "mentioned_in": [
+        43
+      ],
+      "name_urdu": "مالک (جہنم کا داروغہ)"
+    },
+    {
+      "id": "angel_harut_marut",
+      "name_english": "Harut and Marut",
+      "name_arabic": "هاروت وماروت",
+      "type": "angel",
+      "description": "Two angels sent to Babylon as a test, taught magic as a trial",
+      "mentioned_in": [
+        2
+      ],
+      "name_urdu": "ہاروت اور ماروت"
+    },
+    {
+      "id": "angel_malak_al_mawt",
+      "name_english": "Angel of Death",
+      "name_arabic": "ملك الموت",
+      "type": "angel",
+      "description": "Angel who takes the souls at death",
+      "mentioned_in": [
+        6,
+        32,
+        47
+      ],
+      "name_urdu": "ملک الموت"
+    },
+    {
+      "id": "angel_kiraman_katibin",
+      "name_english": "Noble Scribes (Kiraman Katibin)",
+      "name_arabic": "كراماً كاتبين",
+      "type": "angel",
+      "description": "Two angels who record every person's deeds",
+      "mentioned_in": [
+        50,
+        82
+      ],
+      "name_urdu": "کرام الکاتبین"
+    },
+    {
+      "id": "angel_munkar_nakir",
+      "name_english": "Angels of the Grave",
+      "name_arabic": "منكر ونكير",
+      "type": "angel",
+      "description": "Angels who question the dead in their graves",
+      "mentioned_in": [
+        8,
+        47
+      ],
+      "name_urdu": "منکر و نکیر"
+    },
+    {
+      "id": "place_mecca",
+      "name_english": "Mecca (Makkah)",
+      "name_arabic": "مكة",
+      "type": "place",
+      "description": "Sacred city, location of the Kaaba, birthplace of Prophet Muhammad",
+      "mentioned_in": [
+        2,
+        3,
+        5,
+        6,
+        14,
+        22,
+        27,
+        28,
+        29,
+        42,
+        48,
+        90,
+        95,
+        106
+      ],
+      "name_urdu": "مکہ مکرمہ"
+    },
+    {
+      "id": "place_medina",
+      "name_english": "Medina (Yathrib)",
+      "name_arabic": "المدينة",
+      "type": "place",
+      "description": "City of the Prophet, destination of the Hijra",
+      "mentioned_in": [
+        9,
+        33,
+        63
+      ],
+      "name_urdu": "مدینہ منورہ"
+    },
+    {
+      "id": "place_kaaba",
+      "name_english": "The Kaaba (Bayt al-Haram)",
+      "name_arabic": "الكعبة",
+      "type": "place",
+      "description": "Sacred House in Mecca, first house of worship built for mankind",
+      "mentioned_in": [
+        2,
+        3,
+        5,
+        8,
+        14,
+        22,
+        106
+      ],
+      "name_urdu": "کعبہ (بیت اللہ)"
+    },
+    {
+      "id": "place_mount_sinai",
+      "name_english": "Mount Sinai (Tur Sina)",
+      "name_arabic": "طور سيناء",
+      "type": "place",
+      "description": "Mountain where Musa received the Torah and spoke to Allah",
+      "mentioned_in": [
+        2,
+        4,
+        7,
+        19,
+        20,
+        23,
+        28,
+        52,
+        79,
+        95
+      ],
+      "name_urdu": "کوہ طور سینا"
+    },
+    {
+      "id": "place_egypt",
+      "name_english": "Egypt (Misr)",
+      "name_arabic": "مصر",
+      "type": "place",
+      "description": "Land of Pharaoh, setting of the stories of Yusuf and Musa",
+      "mentioned_in": [
+        2,
+        10,
+        12,
+        43
+      ],
+      "name_urdu": "مصر"
+    },
+    {
+      "id": "place_badr",
+      "name_english": "Badr",
+      "name_arabic": "بدر",
+      "type": "place",
+      "description": "Site of the first major battle of Islam",
+      "mentioned_in": [
+        3,
+        8
+      ],
+      "name_urdu": "بدر"
+    },
+    {
+      "id": "place_uhud",
+      "name_english": "Uhud",
+      "name_arabic": "أحد",
+      "type": "place",
+      "description": "Mountain near Medina, site of the second major battle",
+      "mentioned_in": [
+        3
+      ],
+      "name_urdu": "اُحد"
+    },
+    {
+      "id": "place_hunayn",
+      "name_english": "Hunayn",
+      "name_arabic": "حنين",
+      "type": "place",
+      "description": "Valley where a battle took place after the conquest of Mecca",
+      "mentioned_in": [
+        9
+      ],
+      "name_urdu": "حنین"
+    },
+    {
+      "id": "place_arafat",
+      "name_english": "Arafat",
+      "name_arabic": "عرفات",
+      "type": "place",
+      "description": "Plain where pilgrims stand during Hajj",
+      "mentioned_in": [
+        2
+      ],
+      "name_urdu": "عرفات"
+    },
+    {
+      "id": "place_safa_marwa",
+      "name_english": "Safa and Marwa",
+      "name_arabic": "الصفا والمروة",
+      "type": "place",
+      "description": "Two hills between which Hajar ran seeking water, now part of Hajj rites",
+      "mentioned_in": [
+        2
+      ],
+      "name_urdu": "صفا اور مروہ"
+    },
+    {
+      "id": "place_cave_hira",
+      "name_english": "Cave of Hira",
+      "name_arabic": "غار حراء",
+      "type": "place",
+      "description": "Cave where the first revelation was received",
+      "mentioned_in": [
+        96
+      ],
+      "name_urdu": "غار حرا"
+    },
+    {
+      "id": "place_madyan",
+      "name_english": "Madyan",
+      "name_arabic": "مدين",
+      "type": "place",
+      "description": "City of Prophet Shuayb, near the Gulf of Aqaba",
+      "mentioned_in": [
+        7,
+        9,
+        11,
+        20,
+        22,
+        28,
+        29
+      ],
+      "name_urdu": "مدین"
+    },
+    {
+      "id": "place_babylon",
+      "name_english": "Babylon (Babil)",
+      "name_arabic": "بابل",
+      "type": "place",
+      "description": "Ancient city where Harut and Marut were sent",
+      "mentioned_in": [
+        2
+      ],
+      "name_urdu": "بابل"
+    },
+    {
+      "id": "place_jannah",
+      "name_english": "Paradise (Jannah)",
+      "name_arabic": "الجنة",
+      "type": "place",
+      "description": "The eternal garden of reward for the righteous",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        22,
+        23,
+        25,
+        26,
+        29,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        42,
+        43,
+        44,
+        46,
+        47,
+        48,
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        57,
+        59,
+        61,
+        64,
+        66,
+        68,
+        69,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        88,
+        98,
+        101
+      ],
+      "name_urdu": "جنت"
+    },
+    {
+      "id": "place_jahannam",
+      "name_english": "Hellfire (Jahannam)",
+      "name_arabic": "جهنم",
+      "type": "place",
+      "description": "The abode of punishment for the disbelievers and evildoers",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        11,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        29,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        43,
+        44,
+        45,
+        46,
+        48,
+        50,
+        52,
+        55,
+        56,
+        66,
+        67,
+        69,
+        72,
+        73,
+        74,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        84,
+        85,
+        87,
+        88,
+        89,
+        90,
+        92,
+        98,
+        101,
+        104,
+        111
+      ],
+      "name_urdu": "جہنم"
+    },
+    {
+      "id": "place_al_aqsa",
+      "name_english": "Al-Aqsa Mosque",
+      "name_arabic": "المسجد الأقصى",
+      "type": "place",
+      "description": "The farthest mosque, destination of the Night Journey",
+      "mentioned_in": [
+        17
+      ],
+      "name_urdu": "مسجد اقصیٰ"
+    },
+    {
+      "id": "place_iram",
+      "name_english": "Iram of the Pillars",
+      "name_arabic": "إرم ذات العماد",
+      "type": "place",
+      "description": "Lost city of the people of 'Ad",
+      "mentioned_in": [
+        89
+      ],
+      "name_urdu": "ارم ذات العماد"
+    },
+    {
+      "id": "place_hijr",
+      "name_english": "Al-Hijr (Mada'in Salih)",
+      "name_arabic": "الحجر",
+      "type": "place",
+      "description": "Dwelling place of the people of Thamud",
+      "mentioned_in": [
+        15,
+        26
+      ],
+      "name_urdu": "حجر (مدائن صالح)"
+    },
+    {
+      "id": "place_ayka",
+      "name_english": "Al-Ayka",
+      "name_arabic": "الأيكة",
+      "type": "place",
+      "description": "Settlement near Madyan, associated with Prophet Shuayb",
+      "mentioned_in": [
+        15,
+        26,
+        38,
+        50
+      ],
+      "name_urdu": "ایکہ"
+    },
+    {
+      "id": "place_tubba",
+      "name_english": "Tubba",
+      "name_arabic": "تبع",
+      "type": "place",
+      "description": "Ancient kingdom of Yemen mentioned as a destroyed civilization",
+      "mentioned_in": [
+        44,
+        50
+      ],
+      "name_urdu": "تُبّع"
+    },
+    {
+      "id": "place_rass",
+      "name_english": "Ar-Rass",
+      "name_arabic": "الرس",
+      "type": "place",
+      "description": "People mentioned among the destroyed nations",
+      "mentioned_in": [
+        25,
+        50
+      ],
+      "name_urdu": "اصحاب الرّس"
+    },
+    {
+      "id": "attr_ar_rahman",
+      "name_english": "The Most Gracious (Ar-Rahman)",
+      "name_arabic": "الرحمن",
+      "type": "divine_attribute",
+      "description": "The all-encompassing mercy of Allah that covers all creation",
+      "mentioned_in": [
+        1,
+        2,
+        13,
+        17,
+        19,
+        20,
+        21,
+        25,
+        26,
+        27,
+        36,
+        41,
+        43,
+        50,
+        55,
+        59,
+        67,
+        78
+      ],
+      "name_urdu": "الرحمٰن (بے حد مہربان)"
+    },
+    {
+      "id": "attr_ar_rahim",
+      "name_english": "The Most Merciful (Ar-Rahim)",
+      "name_arabic": "الرحيم",
+      "type": "divine_attribute",
+      "description": "The special mercy of Allah reserved for the believers",
+      "mentioned_in": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        26,
+        27,
+        30,
+        33,
+        34,
+        36,
+        39,
+        41,
+        44,
+        46,
+        59,
+        60
+      ],
+      "name_urdu": "الرحیم (رحم کرنے والا)"
+    },
+    {
+      "id": "attr_al_malik",
+      "name_english": "The Sovereign (Al-Malik)",
+      "name_arabic": "الملك",
+      "type": "divine_attribute",
+      "description": "The absolute ruler and king of all existence",
+      "mentioned_in": [
+        3,
+        20,
+        23,
+        59,
+        62,
+        114
+      ],
+      "name_urdu": "المَلِک (بادشاہ)"
+    },
+    {
+      "id": "attr_al_quddus",
+      "name_english": "The Holy (Al-Quddus)",
+      "name_arabic": "القدوس",
+      "type": "divine_attribute",
+      "description": "The pure and perfect, free from all deficiency",
+      "mentioned_in": [
+        59,
+        62
+      ],
+      "name_urdu": "القدوس (پاک ذات)"
+    },
+    {
+      "id": "attr_as_salam",
+      "name_english": "The Source of Peace (As-Salam)",
+      "name_arabic": "السلام",
+      "type": "divine_attribute",
+      "description": "The one free from all defects, the source of peace and safety",
+      "mentioned_in": [
+        59
+      ],
+      "name_urdu": "السلام (سلامتی دینے والا)"
+    },
+    {
+      "id": "attr_al_mumin",
+      "name_english": "The Guardian of Faith (Al-Mu'min)",
+      "name_arabic": "المؤمن",
+      "type": "divine_attribute",
+      "description": "The guarantor of security and faith",
+      "mentioned_in": [
+        59
+      ],
+      "name_urdu": "المؤمن (امان دینے والا)"
+    },
+    {
+      "id": "attr_al_muhaymin",
+      "name_english": "The Protector (Al-Muhaymin)",
+      "name_arabic": "المهيمن",
+      "type": "divine_attribute",
+      "description": "The watcher over all things",
+      "mentioned_in": [
+        59
+      ],
+      "name_urdu": "المہیمن (نگہبان)"
+    },
+    {
+      "id": "attr_al_aziz",
+      "name_english": "The Almighty (Al-Aziz)",
+      "name_arabic": "العزيز",
+      "type": "divine_attribute",
+      "description": "The one who is mighty and powerful, prevailing over all",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        14,
+        22,
+        26,
+        27,
+        29,
+        30,
+        31,
+        34,
+        35,
+        36,
+        38,
+        39,
+        40,
+        41,
+        42,
+        44,
+        45,
+        46,
+        48,
+        54,
+        57,
+        59,
+        60,
+        61,
+        62,
+        85
+      ],
+      "name_urdu": "العزیز (غالب)"
+    },
+    {
+      "id": "attr_al_jabbar",
+      "name_english": "The Compeller (Al-Jabbar)",
+      "name_arabic": "الجبار",
+      "type": "divine_attribute",
+      "description": "The irresistible one who compels all to His will",
+      "mentioned_in": [
+        59
+      ],
+      "name_urdu": "الجبار (زبردست)"
+    },
+    {
+      "id": "attr_al_mutakabbir",
+      "name_english": "The Supreme (Al-Mutakabbir)",
+      "name_arabic": "المتكبر",
+      "type": "divine_attribute",
+      "description": "The one who is above all greatness",
+      "mentioned_in": [
+        59
+      ],
+      "name_urdu": "المتکبر (بڑائی والا)"
+    },
+    {
+      "id": "attr_al_khaliq",
+      "name_english": "The Creator (Al-Khaliq)",
+      "name_arabic": "الخالق",
+      "type": "divine_attribute",
+      "description": "The one who brings everything into existence from nothing",
+      "mentioned_in": [
+        6,
+        13,
+        15,
+        35,
+        36,
+        39,
+        40,
+        59
+      ],
+      "name_urdu": "الخالق (پیدا کرنے والا)"
+    },
+    {
+      "id": "attr_al_bari",
+      "name_english": "The Originator (Al-Bari)",
+      "name_arabic": "البارئ",
+      "type": "divine_attribute",
+      "description": "The one who creates with no precedent",
+      "mentioned_in": [
+        2,
+        59
+      ],
+      "name_urdu": "الباری (بنانے والا)"
+    },
+    {
+      "id": "attr_al_musawwir",
+      "name_english": "The Fashioner (Al-Musawwir)",
+      "name_arabic": "المصور",
+      "type": "divine_attribute",
+      "description": "The one who shapes all forms",
+      "mentioned_in": [
+        3,
+        59
+      ],
+      "name_urdu": "المصوّر (صورت بنانے والا)"
+    },
+    {
+      "id": "attr_al_ghaffar",
+      "name_english": "The Forgiver (Al-Ghaffar)",
+      "name_arabic": "الغفار",
+      "type": "divine_attribute",
+      "description": "The one who forgives abundantly and repeatedly",
+      "mentioned_in": [
+        20,
+        38,
+        39,
+        40,
+        71
+      ],
+      "name_urdu": "الغفّار (بہت بخشنے والا)"
+    },
+    {
+      "id": "attr_al_qahhar",
+      "name_english": "The Subduer (Al-Qahhar)",
+      "name_arabic": "القهار",
+      "type": "divine_attribute",
+      "description": "The one who dominates all and is never overcome",
+      "mentioned_in": [
+        12,
+        13,
+        14,
+        38,
+        39,
+        40
+      ],
+      "name_urdu": "القہّار (سب پر غالب)"
+    },
+    {
+      "id": "attr_al_wahhab",
+      "name_english": "The Bestower (Al-Wahhab)",
+      "name_arabic": "الوهاب",
+      "type": "divine_attribute",
+      "description": "The one who gives generously without return",
+      "mentioned_in": [
+        3,
+        38
+      ],
+      "name_urdu": "الوہّاب (بے حساب دینے والا)"
+    },
+    {
+      "id": "attr_ar_razzaq",
+      "name_english": "The Provider (Ar-Razzaq)",
+      "name_arabic": "الرزاق",
+      "type": "divine_attribute",
+      "description": "The one who provides sustenance to all creation",
+      "mentioned_in": [
+        51
+      ],
+      "name_urdu": "الرزّاق (رزق دینے والا)"
+    },
+    {
+      "id": "attr_al_alim",
+      "name_english": "The All-Knowing (Al-Alim)",
+      "name_arabic": "العليم",
+      "type": "divine_attribute",
+      "description": "The one whose knowledge encompasses all things",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        12,
+        15,
+        21,
+        22,
+        24,
+        26,
+        31,
+        33,
+        34,
+        35,
+        36,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        48,
+        49,
+        51,
+        57,
+        59,
+        60,
+        62,
+        66,
+        67
+      ],
+      "name_urdu": "العلیم (سب جاننے والا)"
+    },
+    {
+      "id": "attr_al_sami",
+      "name_english": "The All-Hearing (As-Sami)",
+      "name_arabic": "السميع",
+      "type": "divine_attribute",
+      "description": "The one who hears all things",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        17,
+        21,
+        22,
+        24,
+        26,
+        29,
+        31,
+        34,
+        40,
+        41,
+        42,
+        44,
+        49,
+        58
+      ],
+      "name_urdu": "السمیع (سب سننے والا)"
+    },
+    {
+      "id": "attr_al_basir",
+      "name_english": "The All-Seeing (Al-Basir)",
+      "name_arabic": "البصير",
+      "type": "divine_attribute",
+      "description": "The one who sees all things",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        8,
+        17,
+        22,
+        31,
+        34,
+        35,
+        40,
+        42,
+        48,
+        49,
+        57,
+        58,
+        60,
+        64,
+        67
+      ],
+      "name_urdu": "البصیر (سب دیکھنے والا)"
+    },
+    {
+      "id": "attr_al_hakam",
+      "name_english": "The Judge (Al-Hakam)",
+      "name_arabic": "الحكم",
+      "type": "divine_attribute",
+      "description": "The final arbiter who judges with absolute justice",
+      "mentioned_in": [
+        6,
+        40
+      ],
+      "name_urdu": "الحَکَم (فیصلہ کرنے والا)"
+    },
+    {
+      "id": "attr_al_adl",
+      "name_english": "The Just (Al-Adl)",
+      "name_arabic": "العدل",
+      "type": "divine_attribute",
+      "description": "The one who is absolutely just in all decrees",
+      "mentioned_in": [
+        6,
+        16,
+        21
+      ],
+      "name_urdu": "العدل (انصاف کرنے والا)"
+    },
+    {
+      "id": "attr_al_latif",
+      "name_english": "The Subtle (Al-Latif)",
+      "name_arabic": "اللطيف",
+      "type": "divine_attribute",
+      "description": "The gentle and subtle one, aware of the finest details",
+      "mentioned_in": [
+        6,
+        12,
+        22,
+        31,
+        33,
+        42,
+        67
+      ],
+      "name_urdu": "اللطیف (باریک بین)"
+    },
+    {
+      "id": "attr_al_khabir",
+      "name_english": "The All-Aware (Al-Khabir)",
+      "name_arabic": "الخبير",
+      "type": "divine_attribute",
+      "description": "The one who is aware of the inner nature of all things",
+      "mentioned_in": [
+        6,
+        11,
+        17,
+        22,
+        25,
+        31,
+        33,
+        34,
+        35,
+        42,
+        49,
+        57,
+        58,
+        59,
+        63,
+        66,
+        67,
+        100
+      ],
+      "name_urdu": "الخبیر (باخبر)"
+    },
+    {
+      "id": "attr_al_halim",
+      "name_english": "The Forbearing (Al-Halim)",
+      "name_arabic": "الحليم",
+      "type": "divine_attribute",
+      "description": "The one who is patient and delays punishment",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        17,
+        22,
+        33,
+        35,
+        64
+      ],
+      "name_urdu": "الحلیم (بردبار)"
+    },
+    {
+      "id": "attr_al_azim",
+      "name_english": "The Magnificent (Al-Azim)",
+      "name_arabic": "العظيم",
+      "type": "divine_attribute",
+      "description": "The immensely great, whose greatness is beyond measure",
+      "mentioned_in": [
+        2,
+        42,
+        56,
+        69
+      ],
+      "name_urdu": "العظیم (بزرگی والا)"
+    },
+    {
+      "id": "attr_al_ghafur",
+      "name_english": "The All-Forgiving (Al-Ghafur)",
+      "name_arabic": "الغفور",
+      "type": "divine_attribute",
+      "description": "The one who forgives completely and abundantly",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        22,
+        24,
+        25,
+        33,
+        34,
+        35,
+        39,
+        41,
+        42,
+        46,
+        48,
+        49,
+        57,
+        58,
+        60,
+        64,
+        67
+      ],
+      "name_urdu": "الغفور (بخشنے والا)"
+    },
+    {
+      "id": "attr_al_shakur",
+      "name_english": "The Appreciative (Ash-Shakur)",
+      "name_arabic": "الشكور",
+      "type": "divine_attribute",
+      "description": "The one who rewards even the smallest good deed abundantly",
+      "mentioned_in": [
+        35,
+        42,
+        64
+      ],
+      "name_urdu": "الشکور (قدردان)"
+    },
+    {
+      "id": "attr_al_ali",
+      "name_english": "The Most High (Al-Ali)",
+      "name_arabic": "العلي",
+      "type": "divine_attribute",
+      "description": "The one who is above all creation in every way",
+      "mentioned_in": [
+        2,
+        4,
+        22,
+        31,
+        34,
+        40,
+        42,
+        87
+      ],
+      "name_urdu": "العلیّ (بلند ترین)"
+    },
+    {
+      "id": "attr_al_kabir",
+      "name_english": "The Most Great (Al-Kabir)",
+      "name_arabic": "الكبير",
+      "type": "divine_attribute",
+      "description": "The one who is greater than everything",
+      "mentioned_in": [
+        4,
+        13,
+        22,
+        31,
+        34,
+        40
+      ],
+      "name_urdu": "الکبیر (سب سے بڑا)"
+    },
+    {
+      "id": "attr_al_hafiz",
+      "name_english": "The Preserver (Al-Hafiz)",
+      "name_arabic": "الحفيظ",
+      "type": "divine_attribute",
+      "description": "The one who guards and preserves all things",
+      "mentioned_in": [
+        11,
+        34,
+        42
+      ],
+      "name_urdu": "الحفیظ (حفاظت کرنے والا)"
+    },
+    {
+      "id": "attr_al_muqit",
+      "name_english": "The Nourisher (Al-Muqit)",
+      "name_arabic": "المقيت",
+      "type": "divine_attribute",
+      "description": "The one who sustains and nourishes all things",
+      "mentioned_in": [
+        4
+      ],
+      "name_urdu": "المقیت (قوت دینے والا)"
+    },
+    {
+      "id": "attr_al_hasib",
+      "name_english": "The Reckoner (Al-Hasib)",
+      "name_arabic": "الحسيب",
+      "type": "divine_attribute",
+      "description": "The one who takes account of all things",
+      "mentioned_in": [
+        4,
+        33
+      ],
+      "name_urdu": "الحسیب (حساب لینے والا)"
+    },
+    {
+      "id": "attr_al_wadud",
+      "name_english": "The Loving (Al-Wadud)",
+      "name_arabic": "الودود",
+      "type": "divine_attribute",
+      "description": "The one full of loving kindness",
+      "mentioned_in": [
+        11,
+        85
+      ],
+      "name_urdu": "الودود (محبت کرنے والا)"
+    },
+    {
+      "id": "attr_al_hakeem",
+      "name_english": "The All-Wise (Al-Hakim)",
+      "name_arabic": "الحكيم",
+      "type": "divine_attribute",
+      "description": "The one whose every decree contains perfect wisdom",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        22,
+        24,
+        27,
+        29,
+        31,
+        34,
+        35,
+        36,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        46,
+        48,
+        51,
+        57,
+        59,
+        60,
+        61,
+        62,
+        66,
+        76
+      ],
+      "name_urdu": "الحکیم (حکمت والا)"
+    },
+    {
+      "id": "attr_al_hayy",
+      "name_english": "The Ever-Living (Al-Hayy)",
+      "name_arabic": "الحي",
+      "type": "divine_attribute",
+      "description": "The one who has no beginning or end to His life",
+      "mentioned_in": [
+        2,
+        3,
+        20,
+        25,
+        40
+      ],
+      "name_urdu": "الحیّ (ہمیشہ زندہ)"
+    },
+    {
+      "id": "attr_al_qayyum",
+      "name_english": "The Self-Subsisting (Al-Qayyum)",
+      "name_arabic": "القيوم",
+      "type": "divine_attribute",
+      "description": "The one who sustains all existence by Himself",
+      "mentioned_in": [
+        2,
+        3,
+        20
+      ],
+      "name_urdu": "القیّوم (قائم رکھنے والا)"
+    },
+    {
+      "id": "attr_an_nur",
+      "name_english": "The Light (An-Nur)",
+      "name_arabic": "النور",
+      "type": "divine_attribute",
+      "description": "The light of the heavens and the earth",
+      "mentioned_in": [
+        24
+      ],
+      "name_urdu": "النور (روشنی)"
+    },
+    {
+      "id": "attr_al_awwal",
+      "name_english": "The First (Al-Awwal)",
+      "name_arabic": "الأول",
+      "type": "divine_attribute",
+      "description": "The one who is before everything",
+      "mentioned_in": [
+        57
+      ],
+      "name_urdu": "الاوّل (سب سے پہلے)"
+    },
+    {
+      "id": "attr_al_akhir",
+      "name_english": "The Last (Al-Akhir)",
+      "name_arabic": "الآخر",
+      "type": "divine_attribute",
+      "description": "The one who remains after all else has perished",
+      "mentioned_in": [
+        57
+      ],
+      "name_urdu": "الآخر (سب سے آخر)"
+    },
+    {
+      "id": "attr_az_zahir",
+      "name_english": "The Manifest (Az-Zahir)",
+      "name_arabic": "الظاهر",
+      "type": "divine_attribute",
+      "description": "The one whose existence is evident from all signs",
+      "mentioned_in": [
+        57
+      ],
+      "name_urdu": "الظاہر (ظاہر)"
+    },
+    {
+      "id": "attr_al_batin",
+      "name_english": "The Hidden (Al-Batin)",
+      "name_arabic": "الباطن",
+      "type": "divine_attribute",
+      "description": "The one whose essence is beyond perception",
+      "mentioned_in": [
+        57
+      ],
+      "name_urdu": "الباطن (پوشیدہ)"
+    },
+    {
+      "id": "attr_al_tawwab",
+      "name_english": "The Acceptor of Repentance (At-Tawwab)",
+      "name_arabic": "التواب",
+      "type": "divine_attribute",
+      "description": "The one who continually accepts repentance",
+      "mentioned_in": [
+        2,
+        4,
+        9,
+        24,
+        49,
+        110
+      ],
+      "name_urdu": "التوّاب (توبہ قبول کرنے والا)"
+    },
+    {
+      "id": "attr_al_afuw",
+      "name_english": "The Pardoner (Al-Afuw)",
+      "name_arabic": "العفو",
+      "type": "divine_attribute",
+      "description": "The one who pardons and erases sins completely",
+      "mentioned_in": [
+        4,
+        22,
+        58
+      ],
+      "name_urdu": "العفوّ (معاف کرنے والا)"
+    },
+    {
+      "id": "attr_ar_rauf",
+      "name_english": "The Compassionate (Ar-Rauf)",
+      "name_arabic": "الرؤوف",
+      "type": "divine_attribute",
+      "description": "The one full of compassion and kindness",
+      "mentioned_in": [
+        2,
+        3,
+        9,
+        16,
+        22,
+        24,
+        57,
+        59
+      ],
+      "name_urdu": "الرؤوف (شفیق)"
+    },
+    {
+      "id": "attr_al_qadir",
+      "name_english": "The All-Powerful (Al-Qadir)",
+      "name_arabic": "القدير",
+      "type": "divine_attribute",
+      "description": "The one with absolute and perfect power over all things",
+      "mentioned_in": [
+        2,
+        3,
+        5,
+        6,
+        16,
+        17,
+        18,
+        22,
+        24,
+        29,
+        30,
+        33,
+        35,
+        36,
+        40,
+        41,
+        42,
+        46,
+        48,
+        57,
+        59,
+        60,
+        64,
+        65,
+        66,
+        67,
+        85,
+        86
+      ],
+      "name_urdu": "القدیر (قدرت والا)"
+    },
+    {
+      "id": "attr_as_samad",
+      "name_english": "The Eternal Refuge (As-Samad)",
+      "name_arabic": "الصمد",
+      "type": "divine_attribute",
+      "description": "The one upon whom all depend, who depends on none",
+      "mentioned_in": [
+        112
+      ],
+      "name_urdu": "الصمد (بے نیاز)"
+    },
+    {
+      "id": "attr_al_wahid",
+      "name_english": "The One (Al-Wahid)",
+      "name_arabic": "الواحد",
+      "type": "divine_attribute",
+      "description": "The uniquely one, without partner or equal",
+      "mentioned_in": [
+        2,
+        4,
+        5,
+        6,
+        9,
+        12,
+        13,
+        14,
+        16,
+        18,
+        29,
+        38,
+        39,
+        40,
+        41
+      ],
+      "name_urdu": "الواحد (ایک)"
+    },
+    {
+      "id": "attr_al_ahad",
+      "name_english": "The Unique (Al-Ahad)",
+      "name_arabic": "الأحد",
+      "type": "divine_attribute",
+      "description": "The absolutely unique, indivisible one",
+      "mentioned_in": [
+        112
+      ],
+      "name_urdu": "الاحد (یکتا)"
+    },
+    {
+      "id": "attr_al_wali",
+      "name_english": "The Protecting Friend (Al-Wali)",
+      "name_arabic": "الولي",
+      "type": "divine_attribute",
+      "description": "The protective friend and ally of the believers",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        7,
+        13,
+        18,
+        42,
+        45
+      ],
+      "name_urdu": "الولیّ (دوست / مددگار)"
+    },
+    {
+      "id": "theme_tawheed",
+      "name_english": "Monotheism (Tawheed)",
+      "name_arabic": "التوحيد",
+      "type": "theme",
+      "description": "The oneness of Allah — the central and most fundamental theme of the Quran",
+      "mentioned_in": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        20,
+        21,
+        22,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        35,
+        36,
+        37,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        46,
+        47,
+        51,
+        52,
+        59,
+        72,
+        112,
+        114
+      ],
+      "name_urdu": "توحید"
+    },
+    {
+      "id": "theme_salah",
+      "name_english": "Prayer (Salah)",
+      "name_arabic": "الصلاة",
+      "type": "theme",
+      "description": "Obligatory and voluntary prayers, the pillar of Islam",
+      "mentioned_in": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        13,
+        14,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        29,
+        30,
+        31,
+        33,
+        35,
+        58,
+        62,
+        70,
+        73,
+        74,
+        87,
+        96,
+        107,
+        108
+      ],
+      "name_urdu": "نماز"
+    },
+    {
+      "id": "theme_sabr",
+      "name_english": "Patience (Sabr)",
+      "name_arabic": "الصبر",
+      "type": "theme",
+      "description": "Endurance, perseverance, and patience in the face of trials",
+      "mentioned_in": [
+        2,
+        3,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        18,
+        20,
+        21,
+        23,
+        25,
+        28,
+        29,
+        31,
+        32,
+        38,
+        39,
+        40,
+        41,
+        42,
+        46,
+        47,
+        70,
+        76,
+        90,
+        103
+      ],
+      "name_urdu": "صبر"
+    },
+    {
+      "id": "theme_shukr",
+      "name_english": "Gratitude (Shukr)",
+      "name_arabic": "الشكر",
+      "type": "theme",
+      "description": "Thankfulness to Allah for His countless blessings",
+      "mentioned_in": [
+        2,
+        3,
+        7,
+        14,
+        16,
+        27,
+        29,
+        31,
+        34,
+        39,
+        46,
+        54,
+        55,
+        56,
+        76
+      ],
+      "name_urdu": "شکر"
+    },
+    {
+      "id": "theme_tawbah",
+      "name_english": "Repentance (Tawbah)",
+      "name_arabic": "التوبة",
+      "type": "theme",
+      "description": "Turning back to Allah in sincere repentance",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        19,
+        20,
+        24,
+        25,
+        28,
+        39,
+        40,
+        42,
+        46,
+        49,
+        50,
+        66,
+        85,
+        110
+      ],
+      "name_urdu": "توبہ"
+    },
+    {
+      "id": "theme_tawakkul",
+      "name_english": "Trust in Allah (Tawakkul)",
+      "name_arabic": "التوكل",
+      "type": "theme",
+      "description": "Reliance and dependence on Allah in all matters",
+      "mentioned_in": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        33,
+        39,
+        42,
+        58,
+        60,
+        64,
+        65
+      ],
+      "name_urdu": "توکل (اللہ پر بھروسہ)"
+    },
+    {
+      "id": "theme_adl",
+      "name_english": "Justice (Adl)",
+      "name_arabic": "العدل",
+      "type": "theme",
+      "description": "Establishing justice and equity in all dealings",
+      "mentioned_in": [
+        4,
+        5,
+        6,
+        7,
+        16,
+        42,
+        49,
+        55,
+        57,
+        60
+      ],
+      "name_urdu": "عدل و انصاف"
+    },
+    {
+      "id": "theme_rahma",
+      "name_english": "Mercy (Rahma)",
+      "name_arabic": "الرحمة",
+      "type": "theme",
+      "description": "Allah's all-encompassing mercy and the call to be merciful",
+      "mentioned_in": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        10,
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        27,
+        28,
+        29,
+        30,
+        33,
+        36,
+        39,
+        40,
+        42,
+        43,
+        44,
+        45,
+        46,
+        48,
+        54,
+        57,
+        76
+      ],
+      "name_urdu": "رحمت"
+    },
+    {
+      "id": "theme_zakat",
+      "name_english": "Charity / Almsgiving (Zakat)",
+      "name_arabic": "الزكاة",
+      "type": "theme",
+      "description": "Obligatory and voluntary giving to purify wealth and help the needy",
+      "mentioned_in": [
+        2,
+        4,
+        5,
+        7,
+        9,
+        19,
+        21,
+        22,
+        23,
+        24,
+        27,
+        30,
+        31,
+        33,
+        41,
+        58,
+        73,
+        98,
+        107
+      ],
+      "name_urdu": "زکوٰۃ / صدقہ"
+    },
+    {
+      "id": "theme_yawm_al_qiyama",
+      "name_english": "Day of Judgment (Yawm al-Qiyama)",
+      "name_arabic": "يوم القيامة",
+      "type": "theme",
+      "description": "The final day when all will be judged and receive their recompense",
+      "mentioned_in": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        27,
+        29,
+        30,
+        32,
+        34,
+        36,
+        37,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        64,
+        66,
+        67,
+        68,
+        69,
+        70,
+        73,
+        74,
+        75,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        86,
+        88,
+        89,
+        99,
+        100,
+        101
+      ],
+      "name_urdu": "یوم القیامہ (قیامت کا دن)"
+    },
+    {
+      "id": "theme_iman",
+      "name_english": "Faith (Iman)",
+      "name_arabic": "الإيمان",
+      "type": "theme",
+      "description": "Belief in Allah, His angels, books, messengers, the Last Day, and divine decree",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        16,
+        22,
+        23,
+        24,
+        29,
+        30,
+        31,
+        33,
+        40,
+        42,
+        47,
+        48,
+        49,
+        57,
+        58,
+        59,
+        60,
+        61,
+        63,
+        64,
+        65,
+        66,
+        85,
+        103
+      ],
+      "name_urdu": "ایمان"
+    },
+    {
+      "id": "theme_nifaq",
+      "name_english": "Hypocrisy (Nifaq)",
+      "name_arabic": "النفاق",
+      "type": "theme",
+      "description": "The danger of hypocrites who outwardly profess faith but conceal disbelief",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        8,
+        9,
+        29,
+        33,
+        47,
+        48,
+        57,
+        59,
+        63,
+        66
+      ],
+      "name_urdu": "نفاق (منافقت)"
+    },
+    {
+      "id": "theme_dhikr",
+      "name_english": "Remembrance of Allah (Dhikr)",
+      "name_arabic": "الذكر",
+      "type": "theme",
+      "description": "Constant remembrance and mention of Allah",
+      "mentioned_in": [
+        2,
+        3,
+        7,
+        8,
+        13,
+        18,
+        20,
+        22,
+        24,
+        29,
+        33,
+        39,
+        43,
+        62,
+        63,
+        73,
+        76,
+        87
+      ],
+      "name_urdu": "ذکر الٰہی"
+    },
+    {
+      "id": "theme_taqwa",
+      "name_english": "God-Consciousness (Taqwa)",
+      "name_arabic": "التقوى",
+      "type": "theme",
+      "description": "Consciousness of Allah, piety, and mindfulness of one's duties",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        16,
+        22,
+        24,
+        33,
+        39,
+        47,
+        49,
+        57,
+        58,
+        59,
+        64,
+        65,
+        91
+      ],
+      "name_urdu": "تقویٰ (خدا خوفی)"
+    },
+    {
+      "id": "theme_ihsan",
+      "name_english": "Excellence (Ihsan)",
+      "name_arabic": "الإحسان",
+      "type": "theme",
+      "description": "Spiritual excellence, worshipping Allah as if seeing Him",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        16,
+        22,
+        28,
+        29,
+        31,
+        33,
+        37,
+        39,
+        46,
+        51,
+        53,
+        55,
+        77
+      ],
+      "name_urdu": "احسان"
+    },
+    {
+      "id": "theme_ilm",
+      "name_english": "Knowledge (Ilm)",
+      "name_arabic": "العلم",
+      "type": "theme",
+      "description": "The pursuit of knowledge and its virtue in Islam",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        6,
+        12,
+        16,
+        17,
+        20,
+        22,
+        27,
+        29,
+        30,
+        34,
+        35,
+        39,
+        58,
+        96
+      ],
+      "name_urdu": "علم"
+    },
+    {
+      "id": "theme_sawm",
+      "name_english": "Fasting (Sawm)",
+      "name_arabic": "الصوم",
+      "type": "theme",
+      "description": "Obligatory fasting in Ramadan and voluntary fasting",
+      "mentioned_in": [
+        2,
+        4,
+        5,
+        33,
+        58,
+        66
+      ],
+      "name_urdu": "روزہ"
+    },
+    {
+      "id": "theme_hajj",
+      "name_english": "Pilgrimage (Hajj)",
+      "name_arabic": "الحج",
+      "type": "theme",
+      "description": "The annual pilgrimage to Mecca, a pillar of Islam",
+      "mentioned_in": [
+        2,
+        3,
+        5,
+        9,
+        22
+      ],
+      "name_urdu": "حج"
+    },
+    {
+      "id": "theme_jihad",
+      "name_english": "Striving in Allah's Cause (Jihad)",
+      "name_arabic": "الجهاد",
+      "type": "theme",
+      "description": "Striving and struggling for the sake of Allah, including self-improvement and defense",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        16,
+        22,
+        25,
+        29,
+        47,
+        49,
+        60,
+        61,
+        66
+      ],
+      "name_urdu": "جہاد فی سبیل اللہ"
+    },
+    {
+      "id": "theme_dawah",
+      "name_english": "Calling to Allah (Da'wah)",
+      "name_arabic": "الدعوة",
+      "type": "theme",
+      "description": "Inviting people to the path of Allah with wisdom and good counsel",
+      "mentioned_in": [
+        2,
+        3,
+        7,
+        12,
+        14,
+        16,
+        22,
+        23,
+        33,
+        41,
+        42,
+        46,
+        61,
+        71,
+        87
+      ],
+      "name_urdu": "دعوت الی اللہ"
+    },
+    {
+      "id": "theme_qadr",
+      "name_english": "Divine Decree (Qadr)",
+      "name_arabic": "القدر",
+      "type": "theme",
+      "description": "Allah's predestination and the wisdom behind divine decree",
+      "mentioned_in": [
+        3,
+        6,
+        7,
+        9,
+        10,
+        13,
+        15,
+        17,
+        22,
+        25,
+        33,
+        35,
+        42,
+        54,
+        57,
+        64,
+        65,
+        97
+      ],
+      "name_urdu": "تقدیر"
+    },
+    {
+      "id": "theme_birr_al_walidayn",
+      "name_english": "Honoring Parents",
+      "name_arabic": "بر الوالدين",
+      "type": "theme",
+      "description": "Kindness, respect, and dutiful care toward parents",
+      "mentioned_in": [
+        2,
+        4,
+        6,
+        17,
+        19,
+        29,
+        31,
+        46
+      ],
+      "name_urdu": "والدین کی خدمت"
+    },
+    {
+      "id": "theme_death",
+      "name_english": "Death and the Afterlife",
+      "name_arabic": "الموت والآخرة",
+      "type": "theme",
+      "description": "The reality of death and what comes after",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        6,
+        16,
+        21,
+        23,
+        29,
+        31,
+        32,
+        39,
+        40,
+        44,
+        45,
+        50,
+        56,
+        62,
+        63,
+        67,
+        75,
+        80,
+        82
+      ],
+      "name_urdu": "موت اور آخرت"
+    },
+    {
+      "id": "theme_rizq",
+      "name_english": "Provision and Sustenance (Rizq)",
+      "name_arabic": "الرزق",
+      "type": "theme",
+      "description": "Allah as the sole provider and the test of wealth and poverty",
+      "mentioned_in": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        22,
+        27,
+        28,
+        29,
+        30,
+        34,
+        35,
+        39,
+        40,
+        42,
+        51,
+        62,
+        65,
+        67
+      ],
+      "name_urdu": "رزق"
+    },
+    {
+      "id": "theme_shura",
+      "name_english": "Consultation (Shura)",
+      "name_arabic": "الشورى",
+      "type": "theme",
+      "description": "Mutual consultation in decision-making",
+      "mentioned_in": [
+        3,
+        42
+      ],
+      "name_urdu": "شورائیت (مشاورت)"
+    },
+    {
+      "id": "theme_amana",
+      "name_english": "Trust and Trustworthiness (Amana)",
+      "name_arabic": "الأمانة",
+      "type": "theme",
+      "description": "Fulfilling trusts and being trustworthy",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        8,
+        23,
+        33,
+        70
+      ],
+      "name_urdu": "امانت داری"
+    },
+    {
+      "id": "theme_fitna",
+      "name_english": "Trials and Tribulations (Fitna)",
+      "name_arabic": "الفتنة",
+      "type": "theme",
+      "description": "Tests and trials as a means of purification",
+      "mentioned_in": [
+        2,
+        3,
+        8,
+        9,
+        20,
+        21,
+        25,
+        29,
+        37,
+        44,
+        47,
+        51,
+        54,
+        64,
+        67,
+        85
+      ],
+      "name_urdu": "آزمائش"
+    },
+    {
+      "id": "theme_istighfar",
+      "name_english": "Seeking Forgiveness (Istighfar)",
+      "name_arabic": "الاستغفار",
+      "type": "theme",
+      "description": "Asking Allah for forgiveness as an act of worship",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        7,
+        11,
+        12,
+        40,
+        47,
+        51,
+        71,
+        73,
+        110
+      ],
+      "name_urdu": "استغفار"
+    },
+    {
+      "id": "theme_akhlaaq",
+      "name_english": "Good Character (Akhlaq)",
+      "name_arabic": "الأخلاق",
+      "type": "theme",
+      "description": "Noble character traits including honesty, generosity, humility, and kindness",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        16,
+        17,
+        23,
+        24,
+        25,
+        31,
+        33,
+        41,
+        42,
+        49,
+        53,
+        68,
+        70
+      ],
+      "name_urdu": "اخلاق حسنہ"
+    },
+    {
+      "id": "theme_dua",
+      "name_english": "Supplication (Du'a)",
+      "name_arabic": "الدعاء",
+      "type": "theme",
+      "description": "Calling upon Allah directly in prayer and supplication",
+      "mentioned_in": [
+        1,
+        2,
+        3,
+        7,
+        10,
+        11,
+        12,
+        14,
+        17,
+        19,
+        20,
+        21,
+        23,
+        25,
+        26,
+        27,
+        28,
+        35,
+        38,
+        40,
+        46,
+        54,
+        60,
+        71
+      ],
+      "name_urdu": "دعا"
+    },
+    {
+      "id": "theme_creation",
+      "name_english": "Signs of Creation",
+      "name_arabic": "آيات الخلق",
+      "type": "theme",
+      "description": "Natural phenomena as signs pointing to Allah's existence and power",
+      "mentioned_in": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        13,
+        14,
+        15,
+        16,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        29,
+        30,
+        31,
+        35,
+        36,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        50,
+        51,
+        55,
+        56,
+        67,
+        71,
+        78,
+        80,
+        86,
+        88
+      ],
+      "name_urdu": "آیات تخلیق (نشانیاں)"
+    },
+    {
+      "id": "theme_riba",
+      "name_english": "Prohibition of Interest (Riba)",
+      "name_arabic": "تحريم الربا",
+      "type": "theme",
+      "description": "Prohibition of usury and interest-based transactions",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        30
+      ],
+      "name_urdu": "سود کی حرمت"
+    },
+    {
+      "id": "theme_nikah",
+      "name_english": "Marriage (Nikah)",
+      "name_arabic": "النكاح",
+      "type": "theme",
+      "description": "Marriage laws, rights of spouses, and family life",
+      "mentioned_in": [
+        2,
+        4,
+        5,
+        24,
+        30,
+        33,
+        60,
+        65,
+        66
+      ],
+      "name_urdu": "نکاح (شادی)"
+    },
+    {
+      "id": "theme_miras",
+      "name_english": "Inheritance (Miras)",
+      "name_arabic": "الميراث",
+      "type": "theme",
+      "description": "Laws of inheritance and distribution of estate",
+      "mentioned_in": [
+        2,
+        4,
+        5
+      ],
+      "name_urdu": "وراثت"
+    },
+    {
+      "id": "theme_dietary_laws",
+      "name_english": "Dietary Laws (Halal/Haram)",
+      "name_arabic": "الحلال والحرام",
+      "type": "theme",
+      "description": "Lawful and unlawful food and drink",
+      "mentioned_in": [
+        2,
+        5,
+        6,
+        16
+      ],
+      "name_urdu": "حلال و حرام"
+    },
+    {
+      "id": "theme_hijab",
+      "name_english": "Modesty and Covering (Hijab)",
+      "name_arabic": "الحجاب والحياء",
+      "type": "theme",
+      "description": "Modesty in dress and behavior for men and women",
+      "mentioned_in": [
+        7,
+        24,
+        33
+      ],
+      "name_urdu": "حجاب اور حیا"
+    },
+    {
+      "id": "theme_ummah",
+      "name_english": "Muslim Community (Ummah)",
+      "name_arabic": "الأمة",
+      "type": "theme",
+      "description": "Unity and brotherhood of the Muslim community",
+      "mentioned_in": [
+        2,
+        3,
+        5,
+        21,
+        23,
+        42,
+        49
+      ],
+      "name_urdu": "امت مسلمہ"
+    },
+    {
+      "id": "theme_amr_bil_maruf",
+      "name_english": "Enjoining Good, Forbidding Evil",
+      "name_arabic": "الأمر بالمعروف والنهي عن المنكر",
+      "type": "theme",
+      "description": "The duty to promote virtue and prevent vice",
+      "mentioned_in": [
+        3,
+        7,
+        9,
+        22,
+        31
+      ],
+      "name_urdu": "امر بالمعروف و نہی عن المنکر"
+    },
+    {
+      "id": "theme_quran",
+      "name_english": "The Quran Itself",
+      "name_arabic": "القرآن",
+      "type": "theme",
+      "description": "Self-referential passages about the Quran's nature, purpose, and inimitability",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        36,
+        38,
+        39,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        50,
+        54,
+        55,
+        56,
+        59,
+        69,
+        73,
+        76,
+        80,
+        84,
+        85,
+        86,
+        97
+      ],
+      "name_urdu": "قرآن مجید"
+    },
+    {
+      "id": "event_creation_adam",
+      "name_english": "Creation of Adam",
+      "name_arabic": "خلق آدم",
+      "type": "event",
+      "description": "Allah created Adam from clay and commanded the angels to prostrate before him",
+      "mentioned_in": [
+        2,
+        7,
+        15,
+        17,
+        18,
+        20,
+        38
+      ],
+      "name_urdu": "تخلیق آدم"
+    },
+    {
+      "id": "event_fall_from_paradise",
+      "name_english": "Fall from Paradise",
+      "name_arabic": "الهبوط من الجنة",
+      "type": "event",
+      "description": "Adam and Hawwa ate from the forbidden tree and were sent to earth",
+      "mentioned_in": [
+        2,
+        7,
+        20
+      ],
+      "name_urdu": "جنت سے اخراج"
+    },
+    {
+      "id": "event_habil_qabil",
+      "name_english": "Story of Cain and Abel (Habil & Qabil)",
+      "name_arabic": "قصة هابيل وقابيل",
+      "type": "event",
+      "description": "The first murder — Qabil killed his brother Habil out of jealousy",
+      "mentioned_in": [
+        5
+      ],
+      "name_urdu": "ہابیل اور قابیل کا واقعہ"
+    },
+    {
+      "id": "event_great_flood",
+      "name_english": "The Great Flood (Tufan)",
+      "name_arabic": "الطوفان",
+      "type": "event",
+      "description": "Nuh's flood that destroyed the disbelievers, only those on the Ark survived",
+      "mentioned_in": [
+        7,
+        10,
+        11,
+        23,
+        25,
+        26,
+        29,
+        37,
+        54,
+        69,
+        71
+      ],
+      "name_urdu": "طوفان نوح"
+    },
+    {
+      "id": "event_fire_of_ibrahim",
+      "name_english": "Ibrahim Cast into the Fire",
+      "name_arabic": "إلقاء إبراهيم في النار",
+      "type": "event",
+      "description": "Ibrahim's people threw him into a great fire, but Allah made it cool and safe",
+      "mentioned_in": [
+        21,
+        29,
+        37
+      ],
+      "name_urdu": "ابراہیم علیہ السلام کا آگ میں ڈالا جانا"
+    },
+    {
+      "id": "event_sacrifice_of_ismail",
+      "name_english": "The Great Sacrifice",
+      "name_arabic": "الذبح العظيم",
+      "type": "event",
+      "description": "Ibrahim's willingness to sacrifice his son, and Allah's substitution of a ram",
+      "mentioned_in": [
+        37
+      ],
+      "name_urdu": "عظیم قربانی"
+    },
+    {
+      "id": "event_building_kaaba",
+      "name_english": "Building of the Kaaba",
+      "name_arabic": "بناء الكعبة",
+      "type": "event",
+      "description": "Ibrahim and Ismail raised the foundations of the Sacred House",
+      "mentioned_in": [
+        2,
+        22
+      ],
+      "name_urdu": "کعبہ کی تعمیر"
+    },
+    {
+      "id": "event_destruction_of_sodom",
+      "name_english": "Destruction of Sodom (People of Lut)",
+      "name_arabic": "هلاك قوم لوط",
+      "type": "event",
+      "description": "Allah rained stones upon the people of Lut for their transgression",
+      "mentioned_in": [
+        7,
+        11,
+        15,
+        26,
+        27,
+        29,
+        37,
+        51,
+        54
+      ],
+      "name_urdu": "قوم لوط کی تباہی"
+    },
+    {
+      "id": "event_destruction_of_ad",
+      "name_english": "Destruction of 'Ad",
+      "name_arabic": "هلاك عاد",
+      "type": "event",
+      "description": "The mighty people of 'Ad destroyed by a furious wind for rejecting Hud",
+      "mentioned_in": [
+        7,
+        11,
+        26,
+        41,
+        46,
+        51,
+        54,
+        69,
+        89
+      ],
+      "name_urdu": "قوم عاد کی تباہی"
+    },
+    {
+      "id": "event_destruction_of_thamud",
+      "name_english": "Destruction of Thamud",
+      "name_arabic": "هلاك ثمود",
+      "type": "event",
+      "description": "Thamud destroyed by a blast after hamstringing the she-camel",
+      "mentioned_in": [
+        7,
+        11,
+        15,
+        17,
+        25,
+        26,
+        27,
+        41,
+        51,
+        54,
+        69,
+        85,
+        89,
+        91
+      ],
+      "name_urdu": "قوم ثمود کی تباہی"
+    },
+    {
+      "id": "event_yusuf_dream",
+      "name_english": "Story of Yusuf (Complete)",
+      "name_arabic": "قصة يوسف",
+      "type": "event",
+      "description": "The comprehensive story of Yusuf: dream, betrayal, prison, rise to power, family reunion",
+      "mentioned_in": [
+        12
+      ],
+      "name_urdu": "قصہ یوسف علیہ السلام"
+    },
+    {
+      "id": "event_exodus",
+      "name_english": "Exodus / Parting of the Sea",
+      "name_arabic": "خروج بني إسرائيل وانشقاق البحر",
+      "type": "event",
+      "description": "Musa led the Israelites out of Egypt, the sea was split, Pharaoh drowned",
+      "mentioned_in": [
+        2,
+        7,
+        10,
+        20,
+        26,
+        28,
+        44
+      ],
+      "name_urdu": "خروج / سمندر کا پھٹنا"
+    },
+    {
+      "id": "event_golden_calf",
+      "name_english": "Worship of the Golden Calf",
+      "name_arabic": "عبادة العجل",
+      "type": "event",
+      "description": "The Israelites worshipped a golden calf while Musa was on Mount Sinai",
+      "mentioned_in": [
+        2,
+        4,
+        7,
+        20
+      ],
+      "name_urdu": "بچھڑے کی پوجا"
+    },
+    {
+      "id": "event_musa_khidr",
+      "name_english": "Journey of Musa and Al-Khidr",
+      "name_arabic": "رحلة موسى والخضر",
+      "type": "event",
+      "description": "Musa's journey with Al-Khidr to learn the hidden wisdom behind seemingly unjust events",
+      "mentioned_in": [
+        18
+      ],
+      "name_urdu": "موسیٰ اور خضر کا سفر"
+    },
+    {
+      "id": "event_people_of_cave",
+      "name_english": "Sleepers of the Cave",
+      "name_arabic": "أصحاب الكهف",
+      "type": "event",
+      "description": "Young believers who fled persecution and slept in a cave for 309 years",
+      "mentioned_in": [
+        18
+      ],
+      "name_urdu": "اصحاب الکہف"
+    },
+    {
+      "id": "event_night_journey",
+      "name_english": "Night Journey and Ascension (Isra & Mi'raj)",
+      "name_arabic": "الإسراء والمعراج",
+      "type": "event",
+      "description": "Prophet Muhammad's miraculous night journey from Mecca to Jerusalem and ascension to the heavens",
+      "mentioned_in": [
+        17,
+        53
+      ],
+      "name_urdu": "اسراء و معراج"
+    },
+    {
+      "id": "event_battle_of_badr",
+      "name_english": "Battle of Badr",
+      "name_arabic": "غزوة بدر",
+      "type": "event",
+      "description": "First major battle of Islam where 313 Muslims defeated over 1000 Quraysh",
+      "mentioned_in": [
+        3,
+        8
+      ],
+      "name_urdu": "غزوہ بدر"
+    },
+    {
+      "id": "event_battle_of_uhud",
+      "name_english": "Battle of Uhud",
+      "name_arabic": "غزوة أحد",
+      "type": "event",
+      "description": "Second major battle where Muslims suffered setback due to archers leaving their posts",
+      "mentioned_in": [
+        3
+      ],
+      "name_urdu": "غزوہ اُحد"
+    },
+    {
+      "id": "event_battle_of_ahzab",
+      "name_english": "Battle of the Trench (Al-Ahzab)",
+      "name_arabic": "غزوة الأحزاب",
+      "type": "event",
+      "description": "The confederates besieged Medina; Allah sent wind and forces to scatter them",
+      "mentioned_in": [
+        33
+      ],
+      "name_urdu": "غزوہ احزاب (خندق)"
+    },
+    {
+      "id": "event_conquest_of_mecca",
+      "name_english": "Conquest of Mecca (Fath Makkah)",
+      "name_arabic": "فتح مكة",
+      "type": "event",
+      "description": "The peaceful conquest of Mecca by the Muslims",
+      "mentioned_in": [
+        48,
+        110
+      ],
+      "name_urdu": "فتح مکہ"
+    },
+    {
+      "id": "event_treaty_of_hudaybiyya",
+      "name_english": "Treaty of Hudaybiyya",
+      "name_arabic": "صلح الحديبية",
+      "type": "event",
+      "description": "Peace treaty that became a clear victory for the Muslims",
+      "mentioned_in": [
+        48
+      ],
+      "name_urdu": "صلح حدیبیہ"
+    },
+    {
+      "id": "event_people_of_elephant",
+      "name_english": "People of the Elephant (Ashab al-Fil)",
+      "name_arabic": "أصحاب الفيل",
+      "type": "event",
+      "description": "Abraha's army with elephants was destroyed by birds when attacking the Kaaba",
+      "mentioned_in": [
+        105
+      ],
+      "name_urdu": "اصحاب الفیل"
+    },
+    {
+      "id": "event_revelation_quran",
+      "name_english": "First Revelation of the Quran",
+      "name_arabic": "نزول القرآن",
+      "type": "event",
+      "description": "The first verses revealed to Prophet Muhammad in the Cave of Hira",
+      "mentioned_in": [
+        2,
+        17,
+        44,
+        96,
+        97
+      ],
+      "name_urdu": "نزول قرآن"
+    },
+    {
+      "id": "event_hijra",
+      "name_english": "The Migration (Hijra)",
+      "name_arabic": "الهجرة",
+      "type": "event",
+      "description": "Prophet Muhammad's migration from Mecca to Medina",
+      "mentioned_in": [
+        8,
+        9,
+        16,
+        22,
+        59,
+        60
+      ],
+      "name_urdu": "ہجرت مدینہ"
+    },
+    {
+      "id": "event_ifk",
+      "name_english": "Incident of Ifk (False Accusation)",
+      "name_arabic": "حادثة الإفك",
+      "type": "event",
+      "description": "False accusation against Aisha (RA), cleared by divine revelation",
+      "mentioned_in": [
+        24
+      ],
+      "name_urdu": "واقعہ افک"
+    },
+    {
+      "id": "event_dawud_jalut",
+      "name_english": "David Defeats Goliath",
+      "name_arabic": "داود يقتل جالوت",
+      "type": "event",
+      "description": "Young Dawud defeated the giant warrior Jalut in battle",
+      "mentioned_in": [
+        2
+      ],
+      "name_urdu": "داؤد کا جالوت کو شکست دینا"
+    },
+    {
+      "id": "event_sulayman_queen_sheba",
+      "name_english": "Sulayman and the Queen of Sheba",
+      "name_arabic": "سليمان وملكة سبأ",
+      "type": "event",
+      "description": "The hoopoe brought news of Sheba, and its queen eventually accepted faith",
+      "mentioned_in": [
+        27
+      ],
+      "name_urdu": "سلیمان اور ملکہ سبا"
+    },
+    {
+      "id": "event_yunus_whale",
+      "name_english": "Yunus and the Whale",
+      "name_arabic": "يونس والحوت",
+      "type": "event",
+      "description": "Yunus was swallowed by a whale after leaving his people, repented in its belly",
+      "mentioned_in": [
+        21,
+        37,
+        68
+      ],
+      "name_urdu": "یونس اور مچھلی"
+    },
+    {
+      "id": "event_birth_of_isa",
+      "name_english": "Miraculous Birth of Isa",
+      "name_arabic": "ولادة عيسى",
+      "type": "event",
+      "description": "Maryam gave birth to Isa under a palm tree without a father",
+      "mentioned_in": [
+        3,
+        19
+      ],
+      "name_urdu": "عیسیٰ علیہ السلام کی ولادت"
+    },
+    {
+      "id": "event_table_spread",
+      "name_english": "The Table Spread (Al-Ma'ida)",
+      "name_arabic": "المائدة",
+      "type": "event",
+      "description": "Isa's disciples asked for a table of food from heaven as a sign",
+      "mentioned_in": [
+        5
+      ],
+      "name_urdu": "مائدہ (آسمانی دسترخوان)"
+    },
+    {
+      "id": "event_yajuj_majuj",
+      "name_english": "Yajuj and Majuj (Gog and Magog)",
+      "name_arabic": "يأجوج ومأجوج",
+      "type": "event",
+      "description": "Destructive peoples sealed behind a barrier by Dhul-Qarnayn, will break free before the Last Day",
+      "mentioned_in": [
+        18,
+        21
+      ],
+      "name_urdu": "یاجوج و ماجوج"
+    },
+    {
+      "id": "event_trumpet_blow",
+      "name_english": "Blowing of the Trumpet",
+      "name_arabic": "النفخ في الصور",
+      "type": "event",
+      "description": "Israfil will blow the trumpet signaling the end of the world and resurrection",
+      "mentioned_in": [
+        6,
+        18,
+        20,
+        23,
+        27,
+        36,
+        39,
+        50,
+        69,
+        74,
+        78,
+        80
+      ],
+      "name_urdu": "صور پھونکا جانا"
+    },
+    {
+      "id": "event_resurrection",
+      "name_english": "The Resurrection (Al-Ba'th)",
+      "name_arabic": "البعث",
+      "type": "event",
+      "description": "All humans will be resurrected from their graves for judgment",
+      "mentioned_in": [
+        6,
+        16,
+        17,
+        20,
+        22,
+        23,
+        30,
+        36,
+        37,
+        46,
+        50,
+        56,
+        64,
+        75,
+        80,
+        82,
+        84,
+        99,
+        100
+      ],
+      "name_urdu": "قیامت / دوبارہ اٹھایا جانا"
+    },
+    {
+      "id": "event_reckoning",
+      "name_english": "The Reckoning (Al-Hisab)",
+      "name_arabic": "الحساب",
+      "type": "event",
+      "description": "Each soul will be given their record and judged for their deeds",
+      "mentioned_in": [
+        2,
+        3,
+        13,
+        14,
+        17,
+        21,
+        23,
+        38,
+        39,
+        40,
+        69,
+        78,
+        84,
+        88,
+        99,
+        101
+      ],
+      "name_urdu": "حساب کتاب"
+    },
+    {
+      "id": "event_crossing_sirat",
+      "name_english": "Crossing the Bridge (As-Sirat)",
+      "name_arabic": "الصراط",
+      "type": "event",
+      "description": "All people will cross a bridge over Hellfire on the Day of Judgment",
+      "mentioned_in": [
+        1,
+        19,
+        36,
+        37
+      ],
+      "name_urdu": "پل صراط"
+    },
+    {
+      "id": "event_destruction_saba",
+      "name_english": "Flood of the Dam (Sayl al-Arim)",
+      "name_arabic": "سيل العرم",
+      "type": "event",
+      "description": "The dam of Ma'rib broke, destroying the civilization of Saba",
+      "mentioned_in": [
+        34
+      ],
+      "name_urdu": "سیل عرم (بند کا ٹوٹنا)"
+    },
+    {
+      "id": "ruling_salah",
+      "name_english": "Establishing Prayer (Salah)",
+      "name_arabic": "إقامة الصلاة",
+      "type": "ruling",
+      "description": "The five daily prayers, their times, and conditions",
+      "mentioned_in": [
+        2,
+        4,
+        5,
+        11,
+        17,
+        20,
+        24,
+        29,
+        30,
+        62,
+        73,
+        98,
+        107
+      ],
+      "name_urdu": "نماز کے احکام"
+    },
+    {
+      "id": "ruling_zakat",
+      "name_english": "Obligatory Charity (Zakat)",
+      "name_arabic": "فريضة الزكاة",
+      "type": "ruling",
+      "description": "Mandatory charity as percentage of wealth, categories of recipients",
+      "mentioned_in": [
+        2,
+        9,
+        24,
+        58,
+        73,
+        98
+      ],
+      "name_urdu": "زکوٰۃ کے احکام"
+    },
+    {
+      "id": "ruling_fasting",
+      "name_english": "Fasting in Ramadan",
+      "name_arabic": "صيام رمضان",
+      "type": "ruling",
+      "description": "Rules and exemptions for Ramadan fasting",
+      "mentioned_in": [
+        2
+      ],
+      "name_urdu": "رمضان کے روزے"
+    },
+    {
+      "id": "ruling_hajj_umrah",
+      "name_english": "Hajj and Umrah Rites",
+      "name_arabic": "مناسك الحج والعمرة",
+      "type": "ruling",
+      "description": "Pilgrimage rituals, obligations, and prohibitions during ihram",
+      "mentioned_in": [
+        2,
+        3,
+        5,
+        22
+      ],
+      "name_urdu": "حج و عمرہ کے مناسک"
+    },
+    {
+      "id": "ruling_wudu",
+      "name_english": "Ablution (Wudu & Tayammum)",
+      "name_arabic": "الوضوء والتيمم",
+      "type": "ruling",
+      "description": "Ritual purification before prayer, including dry ablution",
+      "mentioned_in": [
+        4,
+        5
+      ],
+      "name_urdu": "وضو اور تیمم"
+    },
+    {
+      "id": "ruling_dietary",
+      "name_english": "Dietary Restrictions",
+      "name_arabic": "المحرمات من الطعام",
+      "type": "ruling",
+      "description": "Prohibition of pork, blood, carrion, and improperly slaughtered animals",
+      "mentioned_in": [
+        2,
+        5,
+        6,
+        16
+      ],
+      "name_urdu": "کھانے پینے کی پابندیاں"
+    },
+    {
+      "id": "ruling_alcohol",
+      "name_english": "Prohibition of Alcohol (Khamr)",
+      "name_arabic": "تحريم الخمر",
+      "type": "ruling",
+      "description": "Progressive prohibition of intoxicants and gambling",
+      "mentioned_in": [
+        2,
+        4,
+        5
+      ],
+      "name_urdu": "شراب کی حرمت"
+    },
+    {
+      "id": "ruling_inheritance",
+      "name_english": "Inheritance Laws",
+      "name_arabic": "أحكام الميراث",
+      "type": "ruling",
+      "description": "Detailed shares for heirs including parents, spouses, and children",
+      "mentioned_in": [
+        4
+      ],
+      "name_urdu": "وراثت کے قوانین"
+    },
+    {
+      "id": "ruling_marriage",
+      "name_english": "Marriage Laws",
+      "name_arabic": "أحكام الزواج",
+      "type": "ruling",
+      "description": "Rules of marriage including mahr, consent, and prohibited relationships",
+      "mentioned_in": [
+        2,
+        4,
+        5,
+        24,
+        33
+      ],
+      "name_urdu": "نکاح کے احکام"
+    },
+    {
+      "id": "ruling_divorce",
+      "name_english": "Divorce (Talaq)",
+      "name_arabic": "أحكام الطلاق",
+      "type": "ruling",
+      "description": "Rules governing divorce, iddah (waiting period), and reconciliation",
+      "mentioned_in": [
+        2,
+        4,
+        33,
+        65
+      ],
+      "name_urdu": "طلاق کے احکام"
+    },
+    {
+      "id": "ruling_testimony",
+      "name_english": "Testimony and Witnesses",
+      "name_arabic": "الشهادة",
+      "type": "ruling",
+      "description": "Rules for bearing witness and the importance of truthful testimony",
+      "mentioned_in": [
+        2,
+        4,
+        5,
+        24,
+        65
+      ],
+      "name_urdu": "گواہی کے احکام"
+    },
+    {
+      "id": "ruling_qisas",
+      "name_english": "Retribution (Qisas)",
+      "name_arabic": "القصاص",
+      "type": "ruling",
+      "description": "Laws of just retribution for murder and bodily harm, with option to forgive",
+      "mentioned_in": [
+        2,
+        4,
+        5,
+        17
+      ],
+      "name_urdu": "قصاص"
+    },
+    {
+      "id": "ruling_hudud",
+      "name_english": "Criminal Punishments (Hudud)",
+      "name_arabic": "الحدود",
+      "type": "ruling",
+      "description": "Fixed punishments for theft, adultery, and false accusation",
+      "mentioned_in": [
+        4,
+        5,
+        24
+      ],
+      "name_urdu": "حدود (سزائیں)"
+    },
+    {
+      "id": "ruling_riba_prohibition",
+      "name_english": "Prohibition of Usury (Riba)",
+      "name_arabic": "تحريم الربا",
+      "type": "ruling",
+      "description": "Absolute prohibition of interest-based lending and borrowing",
+      "mentioned_in": [
+        2,
+        3,
+        30
+      ],
+      "name_urdu": "سود کی حرمت"
+    },
+    {
+      "id": "ruling_contracts",
+      "name_english": "Contracts and Debts",
+      "name_arabic": "العقود والديون",
+      "type": "ruling",
+      "description": "Writing down debts, fulfilling contracts, and fair trade",
+      "mentioned_in": [
+        2,
+        5
+      ],
+      "name_urdu": "معاملات اور قرضے"
+    },
+    {
+      "id": "ruling_jihad_rules",
+      "name_english": "Rules of Warfare",
+      "name_arabic": "أحكام القتال",
+      "type": "ruling",
+      "description": "When fighting is permitted, treatment of prisoners, peace treaties",
+      "mentioned_in": [
+        2,
+        4,
+        8,
+        9,
+        22,
+        47,
+        48,
+        60
+      ],
+      "name_urdu": "جہاد کے احکام"
+    },
+    {
+      "id": "ruling_oaths",
+      "name_english": "Oaths and Vows",
+      "name_arabic": "الأيمان والنذور",
+      "type": "ruling",
+      "description": "Rulings on making, breaking, and atoning for oaths",
+      "mentioned_in": [
+        2,
+        5,
+        16,
+        66
+      ],
+      "name_urdu": "قسم اور نذر"
+    },
+    {
+      "id": "ruling_modesty",
+      "name_english": "Modesty and Dress Code",
+      "name_arabic": "أحكام اللباس والحياء",
+      "type": "ruling",
+      "description": "Lowering the gaze, covering, and rules of modest dress",
+      "mentioned_in": [
+        7,
+        24,
+        33
+      ],
+      "name_urdu": "لباس اور پردے کے احکام"
+    },
+    {
+      "id": "ruling_sadaqah",
+      "name_english": "Voluntary Charity (Sadaqah)",
+      "name_arabic": "الصدقة",
+      "type": "ruling",
+      "description": "Voluntary giving, its virtue, and etiquette (not followed by reminders)",
+      "mentioned_in": [
+        2,
+        4,
+        9,
+        57,
+        58,
+        63,
+        64
+      ],
+      "name_urdu": "صدقہ (نفلی خیرات)"
+    },
+    {
+      "id": "ruling_kaffarah",
+      "name_english": "Expiation (Kaffarah)",
+      "name_arabic": "الكفارة",
+      "type": "ruling",
+      "description": "Atonement for broken oaths, accidental killing, or zihar",
+      "mentioned_in": [
+        4,
+        5,
+        58
+      ],
+      "name_urdu": "کفارہ"
+    },
+    {
+      "id": "figure_people_of_ad",
+      "name_english": "People of 'Ad",
+      "name_arabic": "عاد",
+      "type": "event",
+      "description": "Mighty ancient civilization destroyed for rejecting Prophet Hud",
+      "mentioned_in": [
+        7,
+        9,
+        11,
+        14,
+        22,
+        25,
+        26,
+        29,
+        38,
+        40,
+        41,
+        46,
+        50,
+        51,
+        53,
+        54,
+        69,
+        89
+      ],
+      "name_urdu": "قوم عاد"
+    },
+    {
+      "id": "figure_people_of_thamud",
+      "name_english": "People of Thamud",
+      "name_arabic": "ثمود",
+      "type": "event",
+      "description": "Rock-dwelling civilization destroyed for rejecting Prophet Salih",
+      "mentioned_in": [
+        7,
+        9,
+        11,
+        14,
+        15,
+        17,
+        22,
+        25,
+        26,
+        27,
+        29,
+        38,
+        40,
+        41,
+        50,
+        51,
+        53,
+        54,
+        69,
+        85,
+        89,
+        91
+      ],
+      "name_urdu": "قوم ثمود"
+    },
+    {
+      "id": "figure_bani_israel",
+      "name_english": "Children of Israel (Bani Israel)",
+      "name_arabic": "بني إسرائيل",
+      "type": "event",
+      "description": "The Israelites — their covenant, blessings, trials, and transgressions",
+      "mentioned_in": [
+        2,
+        3,
+        5,
+        7,
+        10,
+        17,
+        20,
+        26,
+        27,
+        32,
+        40,
+        44,
+        45,
+        46,
+        61
+      ],
+      "name_urdu": "بنی اسرائیل"
+    },
+    {
+      "id": "figure_quraysh",
+      "name_english": "Quraysh",
+      "name_arabic": "قريش",
+      "type": "event",
+      "description": "The Prophet Muhammad's tribe in Mecca",
+      "mentioned_in": [
+        106
+      ],
+      "name_urdu": "قریش"
+    },
+    {
+      "id": "figure_people_of_saba",
+      "name_english": "People of Saba (Sheba)",
+      "name_arabic": "سبأ",
+      "type": "event",
+      "description": "Prosperous civilization of Yemen blessed then punished for ingratitude",
+      "mentioned_in": [
+        27,
+        34
+      ],
+      "name_urdu": "قوم سبا"
+    },
+    {
+      "id": "figure_abu_lahab",
+      "name_english": "Abu Lahab",
+      "name_arabic": "أبو لهب",
+      "type": "event",
+      "description": "Uncle of the Prophet who opposed Islam, condemned in the Quran",
+      "mentioned_in": [
+        111
+      ],
+      "name_urdu": "ابو لہب"
+    },
+    {
+      "id": "event_creation_of_heavens_earth",
+      "name_english": "Creation of the Heavens and Earth",
+      "name_arabic": "خلق السماوات والأرض",
+      "type": "event",
+      "description": "Allah created the heavens and earth in six periods",
+      "mentioned_in": [
+        2,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15,
+        16,
+        21,
+        25,
+        29,
+        31,
+        32,
+        36,
+        39,
+        41,
+        42,
+        43,
+        46,
+        50,
+        51,
+        57,
+        64,
+        65,
+        67,
+        71
+      ],
+      "name_urdu": "آسمانوں اور زمین کی تخلیق"
+    },
+    {
+      "id": "event_creation_of_jinn",
+      "name_english": "Creation of the Jinn",
+      "name_arabic": "خلق الجن",
+      "type": "event",
+      "description": "Allah created jinn from smokeless fire before humans",
+      "mentioned_in": [
+        6,
+        7,
+        15,
+        18,
+        34,
+        46,
+        51,
+        55,
+        72
+      ],
+      "name_urdu": "جنات کی تخلیق"
+    },
+    {
+      "id": "event_covenant_of_humanity",
+      "name_english": "Primordial Covenant (Mithaq)",
+      "name_arabic": "الميثاق",
+      "type": "event",
+      "description": "Allah took a covenant from all souls of Adam's descendants before creation",
+      "mentioned_in": [
+        7,
+        33
+      ],
+      "name_urdu": "عہد الست (میثاق)"
+    }
+  ]
+}

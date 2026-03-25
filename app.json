@@ -1,9 +1,11 @@
 {
   "expo": {
-    "name": "noor-mobile",
+    "name": "Noor",
     "slug": "noor-mobile",
     "version": "1.0.0",
+    "description": "Your Daily Quran Companion",
     "orientation": "portrait",
+    "scheme": "noor",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {

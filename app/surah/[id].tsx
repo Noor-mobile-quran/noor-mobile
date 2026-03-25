@@ -8,6 +8,7 @@ import {
   StyleSheet,
 } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
+import Svg, { Path } from "react-native-svg";
 import { useSurah } from "../../hooks/useQuranData";
 import { useAppStore } from "../../store/useAppStore";
 import { useAudioPlayer } from "../../hooks/useAudioPlayer";
@@ -130,9 +131,14 @@ export default function ReadingScreen() {
             style={[styles.navButton, { borderColor: colors.border }]}
             accessibilityLabel="Previous Surah"
           >
-            <Text style={[styles.navText, { color: colors.accent, fontFamily: fonts.latin.medium }]}>
-              ← Previous Surah
-            </Text>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+              <Svg width={14} height={14} viewBox="0 0 24 24">
+                <Path d="M15 18l-6-6 6-6" stroke={colors.accent} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+              </Svg>
+              <Text style={[styles.navText, { color: colors.accent, fontFamily: fonts.latin.medium }]}>
+                Previous Surah
+              </Text>
+            </View>
           </TouchableOpacity>
         ) : (
           <View />
@@ -143,9 +149,14 @@ export default function ReadingScreen() {
             style={[styles.navButton, { borderColor: colors.border }]}
             accessibilityLabel="Next Surah"
           >
-            <Text style={[styles.navText, { color: colors.accent, fontFamily: fonts.latin.medium }]}>
-              Next Surah →
-            </Text>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+              <Text style={[styles.navText, { color: colors.accent, fontFamily: fonts.latin.medium }]}>
+                Next Surah
+              </Text>
+              <Svg width={14} height={14} viewBox="0 0 24 24">
+                <Path d="M9 18l6-6-6-6" stroke={colors.accent} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+              </Svg>
+            </View>
           </TouchableOpacity>
         ) : (
           <View />

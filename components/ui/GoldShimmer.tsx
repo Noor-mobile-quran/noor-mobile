@@ -1,10 +1,11 @@
-import { useEffect } from "react";
-import { type ViewProps } from "react-native";
+import { useEffect, useState } from "react";
+import { AccessibilityInfo, type ViewProps } from "react-native";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withRepeat,
   withTiming,
+  cancelAnimation,
   Easing,
 } from "react-native-reanimated";
 import { useTheme } from "../../theme/ThemeProvider";
@@ -24,17 +25,28 @@ export function GoldShimmer({
   const { colors } = useTheme();
   const shimmerPosition = useSharedValue(0);
 
+  const [reduceMotion, setReduceMotion] = useState(false);
   useEffect(() => {
-    if (isReadingContext) return; // No animation on reading screens
+    AccessibilityInfo.isReduceMotionEnabled().then(setReduceMotion);
+    const sub = AccessibilityInfo.addEventListener('reduceMotionChanged', setReduceMotion);
+    return () => sub.remove();
+  }, []);
+
+  useEffect(() => {
+    if (isReadingContext || reduceMotion) {
+      cancelAnimation(shimmerPosition);
+      shimmerPosition.value = 0;
+      return;
+    }
     shimmerPosition.value = withRepeat(
       withTiming(1, { duration: 3000, easing: Easing.inOut(Easing.ease) }),
       -1,
       true
     );
-  }, [isReadingContext, shimmerPosition]);
+  }, [isReadingContext, reduceMotion, shimmerPosition]);
 
   const animatedStyle = useAnimatedStyle(() => {
-    if (isReadingContext) {
+    if (isReadingContext || reduceMotion) {
       return { opacity: 1 }; // Static gold, no shimmer
     }
     return {

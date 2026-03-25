@@ -1,0 +1,3089 @@
+{
+  "version": "1.0.0",
+  "description": "Quran Knowledge HyperGraph — Hyperedge mappings connecting ayahs to referenced entities, themes, and semantic tags",
+  "entity_prefixes": {
+    "prophet_": "Prophets and messengers",
+    "attr_": "Names/attributes of Allah",
+    "theme_": "Thematic categories",
+    "place_": "Geographic locations",
+    "event_": "Historical events",
+    "ruling_": "Legal rulings (ahkam)",
+    "concept_": "Theological/philosophical concepts",
+    "angel_": "Angels",
+    "group_": "Peoples and nations",
+    "scripture_": "Previous scriptures",
+    "figure_": "Non-prophet figures"
+  },
+  "hyperedges": [
+    {
+      "id": "he_001_001",
+      "surah": 1,
+      "ayah": 1,
+      "surah_name": "Al-Fatihah",
+      "description": "Bismillah — Opening invocation establishing Allah's mercy as the gateway to all action",
+      "entities": ["attr_ar_rahman", "attr_ar_raheem", "concept_basmala", "theme_mercy"],
+      "themes": ["mercy", "divine_attributes", "worship"],
+      "semantic_tags": ["opening", "daily_recitation", "foundational"]
+    },
+    {
+      "id": "he_001_002",
+      "surah": 1,
+      "ayah": 2,
+      "surah_name": "Al-Fatihah",
+      "description": "All praise belongs to Allah, Lord of all worlds",
+      "entities": ["attr_rabb_al_alameen", "theme_praise", "theme_tawheed", "concept_lordship"],
+      "themes": ["praise", "tawheed", "sovereignty"],
+      "semantic_tags": ["daily_recitation", "foundational", "salah"]
+    },
+    {
+      "id": "he_001_005",
+      "surah": 1,
+      "ayah": 5,
+      "surah_name": "Al-Fatihah",
+      "description": "You alone we worship, You alone we ask for help — essence of tawheed in worship",
+      "entities": ["theme_tawheed", "concept_ibadah", "concept_tawakkul", "theme_worship"],
+      "themes": ["tawheed", "worship", "reliance_on_allah"],
+      "semantic_tags": ["daily_recitation", "foundational", "salah", "memorization"]
+    },
+    {
+      "id": "he_001_006",
+      "surah": 1,
+      "ayah": 6,
+      "surah_name": "Al-Fatihah",
+      "description": "Guide us to the straight path",
+      "entities": ["concept_sirat_al_mustaqeem", "theme_guidance", "concept_dua"],
+      "themes": ["guidance", "supplication"],
+      "semantic_tags": ["daily_recitation", "salah", "memorization", "dua"]
+    },
+    {
+      "id": "he_001_007",
+      "surah": 1,
+      "ayah": 7,
+      "surah_name": "Al-Fatihah",
+      "description": "Path of those favored, not of those who earned anger nor of those who went astray",
+      "entities": ["concept_sirat_al_mustaqeem", "theme_guidance", "theme_warning", "group_blessed", "group_misguided"],
+      "themes": ["guidance", "warning", "reward_punishment"],
+      "semantic_tags": ["daily_recitation", "salah"]
+    },
+    {
+      "id": "he_002_002",
+      "surah": 2,
+      "ayah": 2,
+      "surah_name": "Al-Baqarah",
+      "description": "This is the Book about which there is no doubt, a guidance for the God-conscious",
+      "entities": ["scripture_quran", "theme_guidance", "concept_taqwa", "theme_certainty"],
+      "themes": ["guidance", "scripture", "taqwa"],
+      "semantic_tags": ["foundational", "quran_description"]
+    },
+    {
+      "id": "he_002_030",
+      "surah": 2,
+      "ayah": 30,
+      "surah_name": "Al-Baqarah",
+      "description": "Allah tells angels He will place a khalifah (vicegerent) on earth — creation of Adam",
+      "entities": ["prophet_adam", "angel_general", "concept_khalifah", "event_creation_adam", "place_earth", "theme_divine_wisdom"],
+      "themes": ["creation", "divine_plan", "human_purpose"],
+      "semantic_tags": ["narrative", "creation_story", "cross_surah"]
+    },
+    {
+      "id": "he_002_031",
+      "surah": 2,
+      "ayah": 31,
+      "surah_name": "Al-Baqarah",
+      "description": "Allah taught Adam the names of all things — knowledge granted to humanity",
+      "entities": ["prophet_adam", "angel_general", "theme_divine_knowledge", "concept_knowledge", "event_creation_adam"],
+      "themes": ["knowledge", "human_distinction", "creation"],
+      "semantic_tags": ["narrative", "creation_story"]
+    },
+    {
+      "id": "he_002_034",
+      "surah": 2,
+      "ayah": 34,
+      "surah_name": "Al-Baqarah",
+      "description": "Angels prostrate to Adam; Iblis refuses out of arrogance",
+      "entities": ["prophet_adam", "angel_general", "figure_iblis", "event_prostration_adam", "theme_arrogance", "concept_obedience"],
+      "themes": ["obedience", "arrogance", "divine_command"],
+      "semantic_tags": ["narrative", "creation_story", "cross_surah"]
+    },
+    {
+      "id": "he_002_035",
+      "surah": 2,
+      "ayah": 35,
+      "surah_name": "Al-Baqarah",
+      "description": "Adam and his wife placed in the Garden, warned about the tree",
+      "entities": ["prophet_adam", "figure_hawwa", "place_jannah", "concept_forbidden_tree", "theme_divine_test"],
+      "themes": ["divine_test", "obedience", "paradise"],
+      "semantic_tags": ["narrative", "creation_story"]
+    },
+    {
+      "id": "he_002_037",
+      "surah": 2,
+      "ayah": 37,
+      "surah_name": "Al-Baqarah",
+      "description": "Adam received words of repentance from his Lord, and Allah accepted his repentance",
+      "entities": ["prophet_adam", "attr_at_tawwab", "theme_repentance", "theme_mercy", "concept_tawbah"],
+      "themes": ["repentance", "mercy", "forgiveness"],
+      "semantic_tags": ["narrative", "hope", "tawbah"]
+    },
+    {
+      "id": "he_002_102",
+      "surah": 2,
+      "ayah": 102,
+      "surah_name": "Al-Baqarah",
+      "description": "Story of Harut and Marut — angels in Babylon teaching magic as a test",
+      "entities": ["angel_harut", "angel_marut", "place_babylon", "prophet_sulayman", "theme_magic", "theme_divine_test"],
+      "themes": ["divine_test", "magic", "warning"],
+      "semantic_tags": ["narrative", "cross_surah"]
+    },
+    {
+      "id": "he_002_115",
+      "surah": 2,
+      "ayah": 115,
+      "surah_name": "Al-Baqarah",
+      "description": "To Allah belongs the east and the west; wherever you turn, there is the Face of Allah",
+      "entities": ["theme_tawheed", "attr_al_wasi", "attr_al_aleem", "concept_divine_omnipresence"],
+      "themes": ["tawheed", "divine_attributes", "universality"],
+      "semantic_tags": ["contemplation", "qiblah"]
+    },
+    {
+      "id": "he_002_124",
+      "surah": 2,
+      "ayah": 124,
+      "surah_name": "Al-Baqarah",
+      "description": "Ibrahim tested by his Lord with commands — made leader of mankind",
+      "entities": ["prophet_ibrahim", "concept_imamah", "theme_divine_test", "theme_leadership"],
+      "themes": ["prophethood", "divine_test", "leadership"],
+      "semantic_tags": ["narrative", "cross_surah"]
+    },
+    {
+      "id": "he_002_125",
+      "surah": 2,
+      "ayah": 125,
+      "surah_name": "Al-Baqarah",
+      "description": "The Kaaba as a place of return and security; Maqam Ibrahim as a place of prayer",
+      "entities": ["prophet_ibrahim", "prophet_ismail", "place_kaaba", "place_maqam_ibrahim", "ruling_salah", "concept_sanctuary"],
+      "themes": ["worship", "pilgrimage", "sacred_spaces"],
+      "semantic_tags": ["hajj", "cross_surah", "ruling"]
+    },
+    {
+      "id": "he_002_127",
+      "surah": 2,
+      "ayah": 127,
+      "surah_name": "Al-Baqarah",
+      "description": "Ibrahim and Ismail raising the foundations of the Kaaba with a prayer for acceptance",
+      "entities": ["prophet_ibrahim", "prophet_ismail", "place_kaaba", "concept_dua", "event_building_kaaba"],
+      "themes": ["worship", "construction", "supplication"],
+      "semantic_tags": ["narrative", "hajj", "dua"]
+    },
+    {
+      "id": "he_002_143",
+      "surah": 2,
+      "ayah": 143,
+      "surah_name": "Al-Baqarah",
+      "description": "Muslims made a middle/just nation, witnesses over humanity; change of qiblah",
+      "entities": ["concept_ummah_wasat", "ruling_qiblah", "place_kaaba", "theme_justice", "concept_witness"],
+      "themes": ["justice", "community", "worship"],
+      "semantic_tags": ["ruling", "identity", "qiblah"]
+    },
+    {
+      "id": "he_002_144",
+      "surah": 2,
+      "ayah": 144,
+      "surah_name": "Al-Baqarah",
+      "description": "Turn your face toward al-Masjid al-Haram — the qiblah change to Mecca",
+      "entities": ["place_masjid_al_haram", "place_kaaba", "ruling_qiblah", "event_qiblah_change"],
+      "themes": ["worship", "divine_command"],
+      "semantic_tags": ["ruling", "qiblah", "salah"]
+    },
+    {
+      "id": "he_002_153",
+      "surah": 2,
+      "ayah": 153,
+      "surah_name": "Al-Baqarah",
+      "description": "Seek help through patience and prayer; Allah is with the patient",
+      "entities": ["theme_patience", "ruling_salah", "concept_divine_companionship", "theme_perseverance"],
+      "themes": ["patience", "worship", "divine_support"],
+      "semantic_tags": ["comfort", "daily_recitation", "trial"]
+    },
+    {
+      "id": "he_002_155",
+      "surah": 2,
+      "ayah": 155,
+      "surah_name": "Al-Baqarah",
+      "description": "Testing through fear, hunger, loss of wealth, lives, and fruits — glad tidings for the patient",
+      "entities": ["theme_patience", "theme_divine_test", "concept_trial", "theme_perseverance"],
+      "themes": ["trial", "patience", "divine_wisdom"],
+      "semantic_tags": ["comfort", "trial", "sabr"]
+    },
+    {
+      "id": "he_002_156",
+      "surah": 2,
+      "ayah": 156,
+      "surah_name": "Al-Baqarah",
+      "description": "Inna lillahi wa inna ilayhi raji'un — To Allah we belong and to Him we return",
+      "entities": ["theme_patience", "concept_inna_lillahi", "theme_submission", "concept_return_to_allah"],
+      "themes": ["patience", "submission", "death"],
+      "semantic_tags": ["daily_recitation", "comfort", "memorization", "funeral"]
+    },
+    {
+      "id": "he_002_163",
+      "surah": 2,
+      "ayah": 163,
+      "surah_name": "Al-Baqarah",
+      "description": "Your God is one God — there is no deity except Him, the Most Merciful",
+      "entities": ["theme_tawheed", "attr_ar_rahman", "attr_ar_raheem", "concept_oneness"],
+      "themes": ["tawheed", "divine_attributes"],
+      "semantic_tags": ["foundational", "creed"]
+    },
+    {
+      "id": "he_002_177",
+      "surah": 2,
+      "ayah": 177,
+      "surah_name": "Al-Baqarah",
+      "description": "Comprehensive definition of righteousness (birr) — belief, charity, prayer, patience",
+      "entities": ["theme_righteousness", "ruling_salah", "ruling_zakat", "theme_patience", "concept_iman", "scripture_torah", "scripture_injil", "angel_general"],
+      "themes": ["righteousness", "worship", "charity", "faith"],
+      "semantic_tags": ["comprehensive", "ruling", "ethics"]
+    },
+    {
+      "id": "he_002_183",
+      "surah": 2,
+      "ayah": 183,
+      "surah_name": "Al-Baqarah",
+      "description": "Fasting prescribed for believers as it was prescribed for those before — attaining taqwa",
+      "entities": ["ruling_fasting", "concept_taqwa", "theme_worship"],
+      "themes": ["fasting", "taqwa", "worship"],
+      "semantic_tags": ["ruling", "ramadan", "pillar_of_islam"]
+    },
+    {
+      "id": "he_002_185",
+      "surah": 2,
+      "ayah": 185,
+      "surah_name": "Al-Baqarah",
+      "description": "Ramadan is the month the Quran was revealed — guidance for mankind",
+      "entities": ["event_quran_revelation", "scripture_quran", "ruling_fasting", "theme_guidance", "concept_ramadan"],
+      "themes": ["revelation", "fasting", "guidance"],
+      "semantic_tags": ["ramadan", "ruling", "quran_description"]
+    },
+    {
+      "id": "he_002_186",
+      "surah": 2,
+      "ayah": 186,
+      "surah_name": "Al-Baqarah",
+      "description": "When My servants ask about Me — I am near, I respond to the caller when he calls",
+      "entities": ["attr_al_qareeb", "concept_dua", "theme_divine_nearness", "theme_mercy"],
+      "themes": ["supplication", "divine_nearness", "mercy"],
+      "semantic_tags": ["dua", "comfort", "daily_recitation", "hope"]
+    },
+    {
+      "id": "he_002_196",
+      "surah": 2,
+      "ayah": 196,
+      "surah_name": "Al-Baqarah",
+      "description": "Complete Hajj and Umrah for Allah — detailed pilgrimage rulings",
+      "entities": ["ruling_hajj", "ruling_umrah", "place_kaaba", "concept_ihram", "ruling_sacrifice"],
+      "themes": ["pilgrimage", "worship"],
+      "semantic_tags": ["ruling", "hajj", "pillar_of_islam"]
+    },
+    {
+      "id": "he_002_219",
+      "surah": 2,
+      "ayah": 219,
+      "surah_name": "Al-Baqarah",
+      "description": "They ask about wine and gambling — sin greater than benefit; early prohibition stage",
+      "entities": ["ruling_intoxicants", "ruling_gambling", "theme_prohibition", "theme_gradual_legislation"],
+      "themes": ["prohibition", "gradual_legislation"],
+      "semantic_tags": ["ruling", "ethics"]
+    },
+    {
+      "id": "he_002_238",
+      "surah": 2,
+      "ayah": 238,
+      "surah_name": "Al-Baqarah",
+      "description": "Guard strictly your prayers, especially the middle prayer; stand before Allah devoutly",
+      "entities": ["ruling_salah", "concept_khushu", "theme_worship"],
+      "themes": ["worship", "prayer"],
+      "semantic_tags": ["ruling", "salah", "daily_recitation"]
+    },
+    {
+      "id": "he_002_255",
+      "surah": 2,
+      "ayah": 255,
+      "surah_name": "Al-Baqarah",
+      "description": "Ayat al-Kursi — The Throne Verse describing Allah's absolute sovereignty, knowledge, and power",
+      "entities": ["attr_al_hayy", "attr_al_qayyum", "theme_tawheed", "theme_divine_knowledge", "theme_divine_power", "concept_throne", "concept_intercession"],
+      "themes": ["tawheed", "divine_attributes", "sovereignty"],
+      "semantic_tags": ["protection", "memorization", "daily_recitation"]
+    },
+    {
+      "id": "he_002_256",
+      "surah": 2,
+      "ayah": 256,
+      "surah_name": "Al-Baqarah",
+      "description": "No compulsion in religion — truth has become clear from error",
+      "entities": ["concept_religious_freedom", "theme_guidance", "concept_taghut", "theme_truth"],
+      "themes": ["freedom", "truth", "guidance"],
+      "semantic_tags": ["foundational", "ethics", "dawah"]
+    },
+    {
+      "id": "he_002_261",
+      "surah": 2,
+      "ayah": 261,
+      "surah_name": "Al-Baqarah",
+      "description": "Parable of spending in Allah's cause — like a grain producing seven ears of 100 grains each",
+      "entities": ["theme_charity", "concept_multiplication_reward", "theme_generosity"],
+      "themes": ["charity", "reward", "generosity"],
+      "semantic_tags": ["parable", "charity", "motivation"]
+    },
+    {
+      "id": "he_002_267",
+      "surah": 2,
+      "ayah": 267,
+      "surah_name": "Al-Baqarah",
+      "description": "Spend from the good things you have earned — do not give what you yourself would not accept",
+      "entities": ["ruling_charity", "theme_sincerity", "theme_generosity"],
+      "themes": ["charity", "sincerity"],
+      "semantic_tags": ["ruling", "ethics"]
+    },
+    {
+      "id": "he_002_275",
+      "surah": 2,
+      "ayah": 275,
+      "surah_name": "Al-Baqarah",
+      "description": "Those who consume riba (usury) will not stand except as one driven to madness by Satan",
+      "entities": ["ruling_riba", "figure_shaytan", "theme_prohibition", "theme_economic_justice"],
+      "themes": ["economic_justice", "prohibition"],
+      "semantic_tags": ["ruling", "finance", "warning"]
+    },
+    {
+      "id": "he_002_282",
+      "surah": 2,
+      "ayah": 282,
+      "surah_name": "Al-Baqarah",
+      "description": "The longest ayah — detailed rulings on debt contracts, witnesses, and documentation",
+      "entities": ["ruling_contracts", "ruling_witnesses", "ruling_debt", "theme_justice", "theme_economic_justice"],
+      "themes": ["justice", "economic_law", "documentation"],
+      "semantic_tags": ["ruling", "longest_ayah", "finance"]
+    },
+    {
+      "id": "he_002_284",
+      "surah": 2,
+      "ayah": 284,
+      "surah_name": "Al-Baqarah",
+      "description": "To Allah belongs all in the heavens and earth; He holds you accountable for what is in your souls",
+      "entities": ["theme_divine_knowledge", "concept_accountability", "attr_al_qadeer", "theme_sovereignty"],
+      "themes": ["sovereignty", "accountability", "divine_knowledge"],
+      "semantic_tags": ["contemplation", "akhirah"]
+    },
+    {
+      "id": "he_002_285",
+      "surah": 2,
+      "ayah": 285,
+      "surah_name": "Al-Baqarah",
+      "description": "The Messenger believes in what was revealed to him — belief in Allah, angels, scriptures, messengers",
+      "entities": ["concept_iman", "angel_general", "scripture_quran", "theme_belief", "concept_no_distinction_messengers"],
+      "themes": ["faith", "creed", "messengers"],
+      "semantic_tags": ["daily_recitation", "memorization", "creed"]
+    },
+    {
+      "id": "he_002_286",
+      "surah": 2,
+      "ayah": 286,
+      "surah_name": "Al-Baqarah",
+      "description": "Allah does not burden a soul beyond its capacity — powerful closing dua of Baqarah",
+      "entities": ["theme_mercy", "concept_divine_justice", "concept_dua", "theme_ease", "concept_burden"],
+      "themes": ["mercy", "justice", "supplication"],
+      "semantic_tags": ["daily_recitation", "memorization", "comfort", "dua"]
+    },
+    {
+      "id": "he_003_007",
+      "surah": 3,
+      "ayah": 7,
+      "surah_name": "Ali Imran",
+      "description": "Muhkam and mutashabih verses — clear and allegorical; only Allah knows the full interpretation",
+      "entities": ["scripture_quran", "concept_muhkam_mutashabih", "theme_divine_knowledge", "concept_tafsir"],
+      "themes": ["quran_sciences", "divine_knowledge"],
+      "semantic_tags": ["quran_description", "scholarly"]
+    },
+    {
+      "id": "he_003_014",
+      "surah": 3,
+      "ayah": 14,
+      "surah_name": "Ali Imran",
+      "description": "Beautified for people is the love of desires — women, children, gold, horses, cattle, crops",
+      "entities": ["theme_worldly_temptation", "concept_dunya", "theme_warning"],
+      "themes": ["worldly_attachment", "warning", "akhirah"],
+      "semantic_tags": ["contemplation", "zuhd"]
+    },
+    {
+      "id": "he_003_026",
+      "surah": 3,
+      "ayah": 26,
+      "surah_name": "Ali Imran",
+      "description": "Say: O Allah, Owner of sovereignty — You give kingship and remove it at will",
+      "entities": ["attr_malik_al_mulk", "theme_sovereignty", "theme_divine_power", "concept_dua"],
+      "themes": ["sovereignty", "divine_power", "supplication"],
+      "semantic_tags": ["dua", "daily_recitation"]
+    },
+    {
+      "id": "he_003_033",
+      "surah": 3,
+      "ayah": 33,
+      "surah_name": "Ali Imran",
+      "description": "Allah chose Adam, Nuh, family of Ibrahim, and family of Imran above all creation",
+      "entities": ["prophet_adam", "prophet_nuh", "prophet_ibrahim", "group_family_imran", "concept_divine_selection"],
+      "themes": ["prophethood", "divine_selection"],
+      "semantic_tags": ["narrative", "cross_surah"]
+    },
+    {
+      "id": "he_003_036",
+      "surah": 3,
+      "ayah": 36,
+      "surah_name": "Ali Imran",
+      "description": "Mother of Maryam dedicates her child to Allah's service",
+      "entities": ["figure_maryam", "figure_wife_imran", "concept_dedication", "theme_devotion"],
+      "themes": ["devotion", "parenthood", "worship"],
+      "semantic_tags": ["narrative", "maryam_story"]
+    },
+    {
+      "id": "he_003_042",
+      "surah": 3,
+      "ayah": 42,
+      "surah_name": "Ali Imran",
+      "description": "Angels say: O Maryam, Allah has chosen you and purified you above the women of all worlds",
+      "entities": ["figure_maryam", "angel_general", "concept_divine_selection", "theme_purity"],
+      "themes": ["divine_selection", "purity", "women_in_quran"],
+      "semantic_tags": ["narrative", "maryam_story", "cross_surah"]
+    },
+    {
+      "id": "he_003_045",
+      "surah": 3,
+      "ayah": 45,
+      "surah_name": "Ali Imran",
+      "description": "Angels announce to Maryam a Word from Allah — his name is the Messiah, Isa son of Maryam",
+      "entities": ["prophet_isa", "figure_maryam", "angel_general", "concept_kalimatullah", "concept_messiah"],
+      "themes": ["prophethood", "miraculous_birth"],
+      "semantic_tags": ["narrative", "cross_surah", "isa_story"]
+    },
+    {
+      "id": "he_003_049",
+      "surah": 3,
+      "ayah": 49,
+      "surah_name": "Ali Imran",
+      "description": "Isa's miracles — healing blind and leper, giving life to clay bird, raising dead by Allah's permission",
+      "entities": ["prophet_isa", "concept_miracles", "theme_divine_power", "group_bani_israel"],
+      "themes": ["miracles", "prophethood"],
+      "semantic_tags": ["narrative", "isa_story", "cross_surah"]
+    },
+    {
+      "id": "he_003_054",
+      "surah": 3,
+      "ayah": 54,
+      "surah_name": "Ali Imran",
+      "description": "They plotted, and Allah planned — Allah is the best of planners",
+      "entities": ["prophet_isa", "attr_khayr_al_makireen", "theme_divine_plan", "event_plot_against_isa"],
+      "themes": ["divine_plan", "protection"],
+      "semantic_tags": ["narrative", "isa_story"]
+    },
+    {
+      "id": "he_003_064",
+      "surah": 3,
+      "ayah": 64,
+      "surah_name": "Ali Imran",
+      "description": "Call to People of the Book — come to a common word between us: worship Allah alone",
+      "entities": ["group_ahl_al_kitab", "theme_tawheed", "concept_interfaith_dialogue", "theme_dawah"],
+      "themes": ["tawheed", "interfaith", "dawah"],
+      "semantic_tags": ["dawah", "dialogue"]
+    },
+    {
+      "id": "he_003_097",
+      "surah": 3,
+      "ayah": 97,
+      "surah_name": "Ali Imran",
+      "description": "In it are clear signs — Maqam Ibrahim; whoever enters it is safe; Hajj is a duty",
+      "entities": ["place_kaaba", "place_maqam_ibrahim", "prophet_ibrahim", "ruling_hajj", "concept_sanctuary"],
+      "themes": ["pilgrimage", "sacred_spaces"],
+      "semantic_tags": ["ruling", "hajj", "pillar_of_islam"]
+    },
+    {
+      "id": "he_003_103",
+      "surah": 3,
+      "ayah": 103,
+      "surah_name": "Ali Imran",
+      "description": "Hold firmly to the rope of Allah together and do not become divided",
+      "entities": ["concept_unity", "concept_rope_of_allah", "theme_brotherhood", "theme_guidance"],
+      "themes": ["unity", "community", "guidance"],
+      "semantic_tags": ["community", "foundational"]
+    },
+    {
+      "id": "he_003_110",
+      "surah": 3,
+      "ayah": 110,
+      "surah_name": "Ali Imran",
+      "description": "You are the best nation produced for mankind — commanding good, forbidding evil, believing in Allah",
+      "entities": ["concept_khayr_ummah", "ruling_amr_bil_maruf", "ruling_nahi_anil_munkar", "concept_iman"],
+      "themes": ["community", "ethics", "faith"],
+      "semantic_tags": ["identity", "ruling", "dawah"]
+    },
+    {
+      "id": "he_003_133",
+      "surah": 3,
+      "ayah": 133,
+      "surah_name": "Ali Imran",
+      "description": "Race to forgiveness from your Lord and a Paradise as wide as the heavens and earth",
+      "entities": ["place_jannah", "theme_forgiveness", "concept_taqwa", "theme_akhirah"],
+      "themes": ["forgiveness", "paradise", "taqwa"],
+      "semantic_tags": ["motivation", "akhirah"]
+    },
+    {
+      "id": "he_003_134",
+      "surah": 3,
+      "ayah": 134,
+      "surah_name": "Ali Imran",
+      "description": "Those who spend in ease and hardship, restrain anger, pardon people — Allah loves the doers of good",
+      "entities": ["theme_charity", "theme_anger_management", "theme_forgiveness", "concept_ihsan"],
+      "themes": ["charity", "character", "ihsan"],
+      "semantic_tags": ["ethics", "character"]
+    },
+    {
+      "id": "he_003_159",
+      "surah": 3,
+      "ayah": 159,
+      "surah_name": "Ali Imran",
+      "description": "By mercy from Allah you were lenient with them — consult them, then rely on Allah",
+      "entities": ["theme_mercy", "concept_shura", "concept_tawakkul", "theme_leadership"],
+      "themes": ["leadership", "consultation", "mercy"],
+      "semantic_tags": ["governance", "prophetic_model"]
+    },
+    {
+      "id": "he_003_169",
+      "surah": 3,
+      "ayah": 169,
+      "surah_name": "Ali Imran",
+      "description": "Do not think those killed in Allah's cause are dead — they are alive, sustained by their Lord",
+      "entities": ["concept_shaheed", "theme_afterlife", "theme_divine_provision", "event_uhud"],
+      "themes": ["martyrdom", "afterlife", "divine_provision"],
+      "semantic_tags": ["comfort", "akhirah", "battle"]
+    },
+    {
+      "id": "he_003_185",
+      "surah": 3,
+      "ayah": 185,
+      "surah_name": "Ali Imran",
+      "description": "Every soul shall taste death; you will be paid in full on the Day of Resurrection",
+      "entities": ["concept_death", "theme_akhirah", "concept_accountability", "theme_worldly_temptation"],
+      "themes": ["death", "akhirah", "accountability"],
+      "semantic_tags": ["contemplation", "daily_recitation"]
+    },
+    {
+      "id": "he_003_190",
+      "surah": 3,
+      "ayah": 190,
+      "surah_name": "Ali Imran",
+      "description": "In the creation of heavens and earth and alternation of night and day are signs for people of understanding",
+      "entities": ["theme_creation_signs", "concept_ulu_al_albab", "theme_contemplation"],
+      "themes": ["creation", "contemplation", "intellect"],
+      "semantic_tags": ["contemplation", "science_faith"]
+    },
+    {
+      "id": "he_003_191",
+      "surah": 3,
+      "ayah": 191,
+      "surah_name": "Ali Imran",
+      "description": "Those who remember Allah standing, sitting, and lying down, and reflect on creation",
+      "entities": ["concept_dhikr", "theme_contemplation", "theme_creation_signs", "concept_tafakkur"],
+      "themes": ["remembrance", "contemplation"],
+      "semantic_tags": ["daily_recitation", "contemplation", "dhikr"]
+    },
+    {
+      "id": "he_004_001",
+      "surah": 4,
+      "ayah": 1,
+      "surah_name": "An-Nisa",
+      "description": "O mankind, be conscious of your Lord who created you from a single soul and from it its mate",
+      "entities": ["concept_taqwa", "concept_creation_pairs", "theme_human_unity", "prophet_adam"],
+      "themes": ["creation", "unity", "taqwa"],
+      "semantic_tags": ["foundational", "family"]
+    },
+    {
+      "id": "he_004_011",
+      "surah": 4,
+      "ayah": 11,
+      "surah_name": "An-Nisa",
+      "description": "Detailed inheritance law — shares for children, parents; Allah instructs you concerning your children",
+      "entities": ["ruling_inheritance", "theme_justice", "theme_family_law"],
+      "themes": ["inheritance", "justice", "family_law"],
+      "semantic_tags": ["ruling", "finance", "family"]
+    },
+    {
+      "id": "he_004_023",
+      "surah": 4,
+      "ayah": 23,
+      "surah_name": "An-Nisa",
+      "description": "Prohibited marriages — list of women forbidden for marriage due to kinship and affinity",
+      "entities": ["ruling_marriage", "ruling_prohibited_relations", "theme_family_law"],
+      "themes": ["marriage", "family_law"],
+      "semantic_tags": ["ruling", "family"]
+    },
+    {
+      "id": "he_004_029",
+      "surah": 4,
+      "ayah": 29,
+      "surah_name": "An-Nisa",
+      "description": "Do not consume one another's wealth unjustly; do not kill yourselves — Allah is merciful",
+      "entities": ["ruling_trade", "theme_economic_justice", "ruling_prohibition_suicide", "theme_mercy"],
+      "themes": ["economic_justice", "sanctity_of_life"],
+      "semantic_tags": ["ruling", "ethics", "finance"]
+    },
+    {
+      "id": "he_004_034",
+      "surah": 4,
+      "ayah": 34,
+      "surah_name": "An-Nisa",
+      "description": "Men are caretakers of women by what Allah has given — roles and responsibilities in family",
+      "entities": ["concept_qawwamah", "ruling_family_roles", "theme_family_law"],
+      "themes": ["family", "responsibilities"],
+      "semantic_tags": ["ruling", "family", "gender_roles"]
+    },
+    {
+      "id": "he_004_036",
+      "surah": 4,
+      "ayah": 36,
+      "surah_name": "An-Nisa",
+      "description": "Worship Allah alone, be good to parents, relatives, orphans, neighbors, travelers — comprehensive ethics",
+      "entities": ["theme_tawheed", "ruling_parental_respect", "ruling_orphan_care", "ruling_neighbor_rights", "theme_charity"],
+      "themes": ["worship", "social_ethics", "charity"],
+      "semantic_tags": ["ruling", "ethics", "comprehensive"]
+    },
+    {
+      "id": "he_004_058",
+      "surah": 4,
+      "ayah": 58,
+      "surah_name": "An-Nisa",
+      "description": "Allah commands you to return trusts and to judge between people with justice",
+      "entities": ["ruling_trusts", "ruling_justice", "theme_justice", "concept_amanah"],
+      "themes": ["justice", "trustworthiness", "governance"],
+      "semantic_tags": ["ruling", "ethics", "governance"]
+    },
+    {
+      "id": "he_004_059",
+      "surah": 4,
+      "ayah": 59,
+      "surah_name": "An-Nisa",
+      "description": "Obey Allah, the Messenger, and those in authority; refer disputes to Allah and the Messenger",
+      "entities": ["concept_obedience", "concept_authority", "ruling_dispute_resolution", "theme_governance"],
+      "themes": ["obedience", "governance", "jurisprudence"],
+      "semantic_tags": ["ruling", "governance", "foundational"]
+    },
+    {
+      "id": "he_004_082",
+      "surah": 4,
+      "ayah": 82,
+      "surah_name": "An-Nisa",
+      "description": "Do they not reflect upon the Quran? If it were from other than Allah, they would find many contradictions",
+      "entities": ["scripture_quran", "concept_quran_inimitability", "theme_contemplation"],
+      "themes": ["quran_miracle", "contemplation"],
+      "semantic_tags": ["quran_description", "dawah"]
+    },
+    {
+      "id": "he_004_135",
+      "surah": 4,
+      "ayah": 135,
+      "surah_name": "An-Nisa",
+      "description": "Be persistently standing firm in justice as witnesses to Allah, even against yourselves",
+      "entities": ["theme_justice", "concept_witness", "concept_impartiality"],
+      "themes": ["justice", "ethics"],
+      "semantic_tags": ["ruling", "ethics", "foundational"]
+    },
+    {
+      "id": "he_004_157",
+      "surah": 4,
+      "ayah": 157,
+      "surah_name": "An-Nisa",
+      "description": "They did not kill him nor crucify him, but it was made to appear so — Isa was raised to Allah",
+      "entities": ["prophet_isa", "event_crucifixion_denial", "theme_divine_protection", "group_bani_israel"],
+      "themes": ["prophethood", "divine_protection"],
+      "semantic_tags": ["narrative", "isa_story", "creed"]
+    },
+    {
+      "id": "he_004_171",
+      "surah": 4,
+      "ayah": 171,
+      "surah_name": "An-Nisa",
+      "description": "Isa is a messenger of Allah, His Word bestowed on Maryam, and a spirit from Him — do not say 'trinity'",
+      "entities": ["prophet_isa", "figure_maryam", "concept_kalimatullah", "theme_tawheed", "group_ahl_al_kitab"],
+      "themes": ["tawheed", "christology", "creed"],
+      "semantic_tags": ["creed", "interfaith", "isa_story"]
+    },
+    {
+      "id": "he_005_001",
+      "surah": 5,
+      "ayah": 1,
+      "surah_name": "Al-Ma'idah",
+      "description": "O believers, fulfill your contracts — lawful and unlawful food categories",
+      "entities": ["ruling_contracts", "ruling_halal_food", "concept_amanah"],
+      "themes": ["contracts", "dietary_law"],
+      "semantic_tags": ["ruling", "foundational"]
+    },
+    {
+      "id": "he_005_003",
+      "surah": 5,
+      "ayah": 3,
+      "surah_name": "Al-Ma'idah",
+      "description": "Today I have completed your religion and perfected My favor — Islam as the chosen religion",
+      "entities": ["concept_din_completion", "theme_divine_favor", "concept_islam", "event_farewell_pilgrimage"],
+      "themes": ["religion_completion", "divine_favor"],
+      "semantic_tags": ["foundational", "historic", "creed"]
+    },
+    {
+      "id": "he_005_006",
+      "surah": 5,
+      "ayah": 6,
+      "surah_name": "Al-Ma'idah",
+      "description": "Detailed description of wudu (ablution) and tayammum — purification before prayer",
+      "entities": ["ruling_wudu", "ruling_tayammum", "ruling_salah", "concept_taharah"],
+      "themes": ["purification", "worship"],
+      "semantic_tags": ["ruling", "salah"]
+    },
+    {
+      "id": "he_005_008",
+      "surah": 5,
+      "ayah": 8,
+      "surah_name": "Al-Ma'idah",
+      "description": "Be persistently standing firm for Allah as witnesses in justice; hatred must not prevent you from being just",
+      "entities": ["theme_justice", "concept_witness", "concept_impartiality", "concept_taqwa"],
+      "themes": ["justice", "taqwa", "ethics"],
+      "semantic_tags": ["ruling", "ethics", "foundational"]
+    },
+    {
+      "id": "he_005_027",
+      "surah": 5,
+      "ayah": 27,
+      "surah_name": "Al-Ma'idah",
+      "description": "Story of Adam's two sons — first murder, Habil and Qabil",
+      "entities": ["figure_habil", "figure_qabil", "prophet_adam", "event_first_murder", "theme_jealousy"],
+      "themes": ["murder", "jealousy", "warning"],
+      "semantic_tags": ["narrative", "ethics"]
+    },
+    {
+      "id": "he_005_032",
+      "surah": 5,
+      "ayah": 32,
+      "surah_name": "Al-Ma'idah",
+      "description": "Whoever kills a soul — as if he killed all mankind; whoever saves one — as if he saved all mankind",
+      "entities": ["concept_sanctity_of_life", "group_bani_israel", "theme_justice"],
+      "themes": ["sanctity_of_life", "justice"],
+      "semantic_tags": ["ethics", "foundational", "frequently_quoted"]
+    },
+    {
+      "id": "he_005_038",
+      "surah": 5,
+      "ayah": 38,
+      "surah_name": "Al-Ma'idah",
+      "description": "The male thief and female thief — cut their hands as recompense; a deterrent from Allah",
+      "entities": ["ruling_theft_punishment", "theme_justice", "concept_hudud"],
+      "themes": ["criminal_law", "justice"],
+      "semantic_tags": ["ruling", "hudud"]
+    },
+    {
+      "id": "he_005_044",
+      "surah": 5,
+      "ayah": 44,
+      "surah_name": "Al-Ma'idah",
+      "description": "We revealed the Torah with guidance and light — whoever does not judge by what Allah revealed...",
+      "entities": ["scripture_torah", "theme_justice", "concept_divine_legislation", "theme_governance"],
+      "themes": ["scripture", "governance", "justice"],
+      "semantic_tags": ["ruling", "interfaith"]
+    },
+    {
+      "id": "he_005_048",
+      "surah": 5,
+      "ayah": 48,
+      "surah_name": "Al-Ma'idah",
+      "description": "We revealed the Quran confirming previous scriptures — for each a law and a way; compete in goodness",
+      "entities": ["scripture_quran", "scripture_torah", "scripture_injil", "concept_religious_plurality", "theme_guidance"],
+      "themes": ["scripture", "diversity", "competition_in_good"],
+      "semantic_tags": ["interfaith", "quran_description"]
+    },
+    {
+      "id": "he_005_090",
+      "surah": 5,
+      "ayah": 90,
+      "surah_name": "Al-Ma'idah",
+      "description": "Wine, gambling, idols, divining arrows are an abomination of Satan's work — avoid them",
+      "entities": ["ruling_intoxicants", "ruling_gambling", "ruling_idolatry", "figure_shaytan", "theme_prohibition"],
+      "themes": ["prohibition", "purity"],
+      "semantic_tags": ["ruling", "final_prohibition"]
+    },
+    {
+      "id": "he_005_110",
+      "surah": 5,
+      "ayah": 110,
+      "surah_name": "Al-Ma'idah",
+      "description": "Allah recounts favors to Isa — miracles of speaking in cradle, birds of clay, healing, and Torah/Injil",
+      "entities": ["prophet_isa", "figure_maryam", "concept_miracles", "scripture_torah", "scripture_injil", "concept_holy_spirit"],
+      "themes": ["prophethood", "miracles", "divine_favor"],
+      "semantic_tags": ["narrative", "isa_story", "cross_surah"]
+    },
+    {
+      "id": "he_005_116",
+      "surah": 5,
+      "ayah": 116,
+      "surah_name": "Al-Ma'idah",
+      "description": "Allah asks Isa: Did you tell people to take you and your mother as deities? Isa denies",
+      "entities": ["prophet_isa", "figure_maryam", "theme_tawheed", "concept_accountability"],
+      "themes": ["tawheed", "accountability"],
+      "semantic_tags": ["isa_story", "creed", "akhirah"]
+    },
+    {
+      "id": "he_006_012",
+      "surah": 6,
+      "ayah": 12,
+      "surah_name": "Al-An'am",
+      "description": "Say: To whom belongs what is in the heavens and earth? Say: To Allah, who prescribed mercy upon Himself",
+      "entities": ["attr_ar_rahman", "theme_mercy", "theme_sovereignty"],
+      "themes": ["mercy", "sovereignty"],
+      "semantic_tags": ["creed", "comfort"]
+    },
+    {
+      "id": "he_006_059",
+      "surah": 6,
+      "ayah": 59,
+      "surah_name": "Al-An'am",
+      "description": "With Him are the keys of the unseen — He knows what is on land and sea, every leaf that falls",
+      "entities": ["attr_al_aleem", "concept_ghayb", "theme_divine_knowledge", "theme_divine_power"],
+      "themes": ["divine_knowledge", "unseen"],
+      "semantic_tags": ["contemplation", "creed"]
+    },
+    {
+      "id": "he_006_075",
+      "surah": 6,
+      "ayah": 75,
+      "surah_name": "Al-An'am",
+      "description": "Ibrahim shown the kingdom of heavens and earth — his journey to monotheism through star, moon, sun",
+      "entities": ["prophet_ibrahim", "theme_tawheed", "concept_contemplation", "theme_creation_signs"],
+      "themes": ["tawheed", "contemplation", "prophethood"],
+      "semantic_tags": ["narrative", "ibrahim_story"]
+    },
+    {
+      "id": "he_006_083",
+      "surah": 6,
+      "ayah": 83,
+      "surah_name": "Al-An'am",
+      "description": "Ibrahim's argument against his people — Allah raised him in rank",
+      "entities": ["prophet_ibrahim", "theme_dawah", "theme_divine_elevation"],
+      "themes": ["prophethood", "argumentation"],
+      "semantic_tags": ["narrative", "ibrahim_story"]
+    },
+    {
+      "id": "he_006_084",
+      "surah": 6,
+      "ayah": 84,
+      "surah_name": "Al-An'am",
+      "description": "A chain of prophets: Ishaq, Yaqub, Nuh, Dawud, Sulayman, Ayyub, Yusuf, Musa, Harun",
+      "entities": ["prophet_ishaq", "prophet_yaqub", "prophet_nuh", "prophet_dawud", "prophet_sulayman", "prophet_ayyub", "prophet_yusuf", "prophet_musa", "prophet_harun"],
+      "themes": ["prophethood", "divine_selection"],
+      "semantic_tags": ["narrative", "prophets_list", "cross_surah"]
+    },
+    {
+      "id": "he_006_085",
+      "surah": 6,
+      "ayah": 85,
+      "surah_name": "Al-An'am",
+      "description": "Zakariyya, Yahya, Isa, Ilyas — all among the righteous",
+      "entities": ["prophet_zakariyya", "prophet_yahya", "prophet_isa", "prophet_ilyas", "theme_righteousness"],
+      "themes": ["prophethood", "righteousness"],
+      "semantic_tags": ["narrative", "prophets_list"]
+    },
+    {
+      "id": "he_006_086",
+      "surah": 6,
+      "ayah": 86,
+      "surah_name": "Al-An'am",
+      "description": "Ismail, Al-Yasa, Yunus, Lut — all favored above the worlds",
+      "entities": ["prophet_ismail", "prophet_alyasa", "prophet_yunus", "prophet_lut"],
+      "themes": ["prophethood", "divine_selection"],
+      "semantic_tags": ["narrative", "prophets_list"]
+    },
+    {
+      "id": "he_006_151",
+      "surah": 6,
+      "ayah": 151,
+      "surah_name": "Al-An'am",
+      "description": "Ten commandments of Islam — shirk, parents, killing children, shameful deeds, killing, orphans' wealth",
+      "entities": ["theme_tawheed", "ruling_parental_respect", "ruling_prohibition_infanticide", "ruling_prohibition_zina", "concept_sanctity_of_life", "ruling_orphan_care"],
+      "themes": ["commandments", "ethics", "rulings"],
+      "semantic_tags": ["ruling", "comprehensive", "ethics"]
+    },
+    {
+      "id": "he_006_162",
+      "surah": 6,
+      "ayah": 162,
+      "surah_name": "Al-An'am",
+      "description": "Say: My prayer, my sacrifice, my life, my death are for Allah, Lord of the worlds",
+      "entities": ["theme_tawheed", "concept_ibadah", "theme_complete_submission"],
+      "themes": ["worship", "tawheed", "submission"],
+      "semantic_tags": ["daily_recitation", "creed"]
+    },
+    {
+      "id": "he_007_011",
+      "surah": 7,
+      "ayah": 11,
+      "surah_name": "Al-A'raf",
+      "description": "We created you, fashioned you, then told angels to prostrate to Adam — Iblis refused",
+      "entities": ["prophet_adam", "angel_general", "figure_iblis", "event_prostration_adam", "theme_arrogance"],
+      "themes": ["creation", "arrogance", "obedience"],
+      "semantic_tags": ["narrative", "creation_story", "cross_surah"]
+    },
+    {
+      "id": "he_007_023",
+      "surah": 7,
+      "ayah": 23,
+      "surah_name": "Al-A'raf",
+      "description": "Adam and his wife say: Our Lord, we have wronged ourselves — if You do not forgive us, we will be lost",
+      "entities": ["prophet_adam", "figure_hawwa", "concept_dua", "theme_repentance"],
+      "themes": ["repentance", "supplication"],
+      "semantic_tags": ["dua", "tawbah", "creation_story"]
+    },
+    {
+      "id": "he_007_026",
+      "surah": 7,
+      "ayah": 26,
+      "surah_name": "Al-A'raf",
+      "description": "O children of Adam, We have given you clothing to cover and adorn — but the clothing of taqwa is best",
+      "entities": ["prophet_adam", "concept_taqwa", "ruling_modesty", "theme_inner_virtue"],
+      "themes": ["modesty", "taqwa", "inner_virtue"],
+      "semantic_tags": ["ethics", "clothing"]
+    },
+    {
+      "id": "he_007_054",
+      "surah": 7,
+      "ayah": 54,
+      "surah_name": "Al-A'raf",
+      "description": "Your Lord is Allah who created the heavens and earth in six days, then rose over the Throne",
+      "entities": ["concept_creation_six_days", "concept_throne", "attr_rabb", "theme_sovereignty"],
+      "themes": ["creation", "sovereignty"],
+      "semantic_tags": ["creed", "contemplation"]
+    },
+    {
+      "id": "he_007_056",
+      "surah": 7,
+      "ayah": 56,
+      "surah_name": "Al-A'raf",
+      "description": "Do not cause corruption on earth after its reformation; call upon Him in fear and hope",
+      "entities": ["ruling_environmental_ethics", "concept_dua", "theme_balance", "theme_hope_fear"],
+      "themes": ["environmental_ethics", "supplication"],
+      "semantic_tags": ["ethics", "environment", "dua"]
+    },
+    {
+      "id": "he_007_073",
+      "surah": 7,
+      "ayah": 73,
+      "surah_name": "Al-A'raf",
+      "description": "Salih and the she-camel of Allah sent to Thamud as a sign",
+      "entities": ["prophet_salih", "group_thamud", "concept_she_camel", "concept_miracles"],
+      "themes": ["prophethood", "divine_signs", "warning"],
+      "semantic_tags": ["narrative", "destroyed_nations"]
+    },
+    {
+      "id": "he_007_085",
+      "surah": 7,
+      "ayah": 85,
+      "surah_name": "Al-A'raf",
+      "description": "Shu'ayb sent to Madyan — give full measure, do not cause corruption",
+      "entities": ["prophet_shuayb", "group_madyan", "ruling_fair_trade", "theme_economic_justice"],
+      "themes": ["economic_justice", "prophethood"],
+      "semantic_tags": ["narrative", "destroyed_nations", "ethics"]
+    },
+    {
+      "id": "he_007_143",
+      "surah": 7,
+      "ayah": 143,
+      "surah_name": "Al-A'raf",
+      "description": "Musa asks to see Allah; the mountain crumbles; Musa falls unconscious and repents",
+      "entities": ["prophet_musa", "place_mount_sinai", "theme_divine_majesty", "concept_divine_vision"],
+      "themes": ["prophethood", "divine_majesty"],
+      "semantic_tags": ["narrative", "musa_story"]
+    },
+    {
+      "id": "he_007_156",
+      "surah": 7,
+      "ayah": 156,
+      "surah_name": "Al-A'raf",
+      "description": "My mercy encompasses all things — it is for those with taqwa who give zakat and believe",
+      "entities": ["attr_ar_rahman", "theme_mercy", "concept_taqwa", "ruling_zakat"],
+      "themes": ["mercy", "taqwa"],
+      "semantic_tags": ["comfort", "hope"]
+    },
+    {
+      "id": "he_007_172",
+      "surah": 7,
+      "ayah": 172,
+      "surah_name": "Al-A'raf",
+      "description": "Covenant of Alast — when Allah took from Adam's progeny their testimony: Am I not your Lord?",
+      "entities": ["prophet_adam", "concept_covenant_alast", "theme_tawheed", "concept_fitrah"],
+      "themes": ["tawheed", "covenant", "human_nature"],
+      "semantic_tags": ["creed", "foundational", "metaphysical"]
+    },
+    {
+      "id": "he_007_180",
+      "surah": 7,
+      "ayah": 180,
+      "surah_name": "Al-A'raf",
+      "description": "To Allah belong the Most Beautiful Names — call upon Him by them",
+      "entities": ["concept_asma_al_husna", "concept_dua", "theme_divine_attributes"],
+      "themes": ["divine_attributes", "supplication"],
+      "semantic_tags": ["dhikr", "dua", "daily_recitation"]
+    },
+    {
+      "id": "he_007_199",
+      "surah": 7,
+      "ayah": 199,
+      "surah_name": "Al-A'raf",
+      "description": "Take what is given freely, enjoin what is good, turn away from the ignorant",
+      "entities": ["ruling_amr_bil_maruf", "theme_tolerance", "theme_wisdom"],
+      "themes": ["ethics", "dawah", "tolerance"],
+      "semantic_tags": ["prophetic_model", "ethics"]
+    },
+    {
+      "id": "he_008_017",
+      "surah": 8,
+      "ayah": 17,
+      "surah_name": "Al-Anfal",
+      "description": "You did not throw when you threw, but it was Allah who threw — divine intervention at Badr",
+      "entities": ["event_badr", "theme_divine_intervention", "concept_tawakkul"],
+      "themes": ["divine_intervention", "battle"],
+      "semantic_tags": ["narrative", "battle_badr"]
+    },
+    {
+      "id": "he_008_041",
+      "surah": 8,
+      "ayah": 41,
+      "surah_name": "Al-Anfal",
+      "description": "Distribution of war spoils — one-fifth for Allah, Messenger, relatives, orphans, poor, traveler",
+      "entities": ["ruling_war_spoils", "event_badr", "ruling_orphan_care", "ruling_charity"],
+      "themes": ["war_ethics", "distribution"],
+      "semantic_tags": ["ruling", "battle"]
+    },
+    {
+      "id": "he_009_005",
+      "surah": 9,
+      "ayah": 5,
+      "surah_name": "At-Tawbah",
+      "description": "When the sacred months have passed — context of treaty violations and conditions for peace",
+      "entities": ["concept_sacred_months", "ruling_warfare", "concept_treaty", "theme_repentance"],
+      "themes": ["warfare", "treaty", "repentance"],
+      "semantic_tags": ["ruling", "contextual"]
+    },
+    {
+      "id": "he_009_028",
+      "surah": 9,
+      "ayah": 28,
+      "surah_name": "At-Tawbah",
+      "description": "Polytheists are spiritually impure — they shall not approach al-Masjid al-Haram after this year",
+      "entities": ["place_masjid_al_haram", "concept_ritual_purity", "ruling_access_haram"],
+      "themes": ["sacred_spaces", "purity"],
+      "semantic_tags": ["ruling", "hajj"]
+    },
+    {
+      "id": "he_009_036",
+      "surah": 9,
+      "ayah": 36,
+      "surah_name": "At-Tawbah",
+      "description": "The number of months with Allah is twelve — four are sacred; do not wrong yourselves therein",
+      "entities": ["concept_sacred_months", "concept_islamic_calendar", "theme_time"],
+      "themes": ["calendar", "sacred_time"],
+      "semantic_tags": ["ruling", "calendar"]
+    },
+    {
+      "id": "he_009_060",
+      "surah": 9,
+      "ayah": 60,
+      "surah_name": "At-Tawbah",
+      "description": "The eight categories of zakat recipients — poor, needy, collectors, new Muslims, slaves, debtors, in Allah's cause, travelers",
+      "entities": ["ruling_zakat", "theme_charity", "theme_social_welfare"],
+      "themes": ["zakat", "social_welfare"],
+      "semantic_tags": ["ruling", "pillar_of_islam", "comprehensive"]
+    },
+    {
+      "id": "he_009_103",
+      "surah": 9,
+      "ayah": 103,
+      "surah_name": "At-Tawbah",
+      "description": "Take from their wealth a charity to purify them — your prayers are a comfort for them",
+      "entities": ["ruling_zakat", "concept_tazkiyah", "theme_purification", "ruling_salah"],
+      "themes": ["charity", "purification"],
+      "semantic_tags": ["ruling", "zakat"]
+    },
+    {
+      "id": "he_009_111",
+      "surah": 9,
+      "ayah": 111,
+      "surah_name": "At-Tawbah",
+      "description": "Allah has purchased from the believers their lives in exchange for Paradise",
+      "entities": ["place_jannah", "concept_jihad", "concept_divine_transaction", "scripture_torah", "scripture_injil", "scripture_quran"],
+      "themes": ["sacrifice", "paradise", "covenant"],
+      "semantic_tags": ["motivation", "akhirah"]
+    },
+    {
+      "id": "he_009_128",
+      "surah": 9,
+      "ayah": 128,
+      "surah_name": "At-Tawbah",
+      "description": "There has come to you a Messenger from among yourselves — grieved by your suffering, caring, merciful",
+      "entities": ["concept_prophet_character", "attr_rauf", "attr_raheem", "theme_mercy"],
+      "themes": ["prophetic_character", "mercy"],
+      "semantic_tags": ["prophetic_model", "comfort"]
+    },
+    {
+      "id": "he_010_057",
+      "surah": 10,
+      "ayah": 57,
+      "surah_name": "Yunus",
+      "description": "O mankind, there has come to you instruction from your Lord, healing for hearts, guidance, and mercy",
+      "entities": ["scripture_quran", "theme_guidance", "theme_mercy", "concept_shifa"],
+      "themes": ["guidance", "healing", "mercy"],
+      "semantic_tags": ["quran_description", "comfort"]
+    },
+    {
+      "id": "he_010_062",
+      "surah": 10,
+      "ayah": 62,
+      "surah_name": "Yunus",
+      "description": "Indeed the allies of Allah — no fear upon them nor shall they grieve",
+      "entities": ["concept_awliya_allah", "theme_divine_friendship", "concept_iman", "concept_taqwa"],
+      "themes": ["divine_friendship", "faith"],
+      "semantic_tags": ["comfort", "hope"]
+    },
+    {
+      "id": "he_010_090",
+      "surah": 10,
+      "ayah": 90,
+      "surah_name": "Yunus",
+      "description": "Pharaoh drowning — declares belief at point of death; his body preserved as a sign",
+      "entities": ["figure_firaun", "prophet_musa", "event_red_sea_crossing", "theme_divine_punishment", "concept_delayed_repentance"],
+      "themes": ["punishment", "warning", "preservation_of_signs"],
+      "semantic_tags": ["narrative", "musa_story", "warning"]
+    },
+    {
+      "id": "he_011_006",
+      "surah": 11,
+      "ayah": 6,
+      "surah_name": "Hud",
+      "description": "There is no creature on earth except that its provision is guaranteed by Allah",
+      "entities": ["attr_ar_razzaq", "theme_divine_provision", "concept_rizq"],
+      "themes": ["divine_provision", "trust"],
+      "semantic_tags": ["comfort", "tawakkul"]
+    },
+    {
+      "id": "he_011_040",
+      "surah": 11,
+      "ayah": 40,
+      "surah_name": "Hud",
+      "description": "Nuh's ark — the oven gushes forth water; embark two of each kind, your family, and the believers",
+      "entities": ["prophet_nuh", "event_great_flood", "concept_ark", "theme_divine_salvation"],
+      "themes": ["salvation", "divine_punishment"],
+      "semantic_tags": ["narrative", "nuh_story"]
+    },
+    {
+      "id": "he_011_042",
+      "surah": 11,
+      "ayah": 42,
+      "surah_name": "Hud",
+      "description": "Nuh calls to his son to board the ark; the son refuses, seeks refuge on a mountain, and drowns",
+      "entities": ["prophet_nuh", "figure_son_of_nuh", "event_great_flood", "theme_divine_decree"],
+      "themes": ["family_trials", "divine_decree"],
+      "semantic_tags": ["narrative", "nuh_story", "emotional"]
+    },
+    {
+      "id": "he_011_061",
+      "surah": 11,
+      "ayah": 61,
+      "surah_name": "Hud",
+      "description": "To Thamud — their brother Salih: worship Allah, He produced you from earth and settled you therein",
+      "entities": ["prophet_salih", "group_thamud", "theme_tawheed", "concept_stewardship"],
+      "themes": ["prophethood", "tawheed", "stewardship"],
+      "semantic_tags": ["narrative", "destroyed_nations"]
+    },
+    {
+      "id": "he_011_069",
+      "surah": 11,
+      "ayah": 69,
+      "surah_name": "Hud",
+      "description": "Ibrahim's angel guests bring news of Ishaq — Ibrahim's wife Sarah laughs in wonder",
+      "entities": ["prophet_ibrahim", "figure_sarah", "prophet_ishaq", "angel_general", "concept_miraculous_birth"],
+      "themes": ["prophethood", "miraculous_birth"],
+      "semantic_tags": ["narrative", "ibrahim_story"]
+    },
+    {
+      "id": "he_011_082",
+      "surah": 11,
+      "ayah": 82,
+      "surah_name": "Hud",
+      "description": "The destruction of Lut's people — stones of baked clay rained upon them",
+      "entities": ["prophet_lut", "group_people_of_lut", "event_destruction_sodom", "theme_divine_punishment"],
+      "themes": ["punishment", "warning"],
+      "semantic_tags": ["narrative", "destroyed_nations"]
+    },
+    {
+      "id": "he_012_003",
+      "surah": 12,
+      "ayah": 3,
+      "surah_name": "Yusuf",
+      "description": "We relate to you the best of stories through this Quran",
+      "entities": ["prophet_yusuf", "scripture_quran", "concept_ahsan_al_qasas"],
+      "themes": ["narrative", "quran_description"],
+      "semantic_tags": ["quran_description", "yusuf_story"]
+    },
+    {
+      "id": "he_012_004",
+      "surah": 12,
+      "ayah": 4,
+      "surah_name": "Yusuf",
+      "description": "Yusuf tells his father about the dream — eleven stars, the sun, and the moon prostrating to him",
+      "entities": ["prophet_yusuf", "prophet_yaqub", "concept_dream_interpretation", "theme_prophecy"],
+      "themes": ["dreams", "prophethood"],
+      "semantic_tags": ["narrative", "yusuf_story"]
+    },
+    {
+      "id": "he_012_018",
+      "surah": 12,
+      "ayah": 18,
+      "surah_name": "Yusuf",
+      "description": "Yaqub says: Rather your souls have enticed you — beautiful patience, and Allah is the one sought for help",
+      "entities": ["prophet_yaqub", "prophet_yusuf", "concept_sabr_jameel", "theme_patience"],
+      "themes": ["patience", "trust"],
+      "semantic_tags": ["narrative", "yusuf_story", "sabr"]
+    },
+    {
+      "id": "he_012_040",
+      "surah": 12,
+      "ayah": 40,
+      "surah_name": "Yusuf",
+      "description": "Yusuf preaches tawheed in prison — authority belongs only to Allah; He commands worship of Him alone",
+      "entities": ["prophet_yusuf", "theme_tawheed", "theme_dawah", "place_prison"],
+      "themes": ["tawheed", "dawah", "adversity"],
+      "semantic_tags": ["narrative", "yusuf_story"]
+    },
+    {
+      "id": "he_012_053",
+      "surah": 12,
+      "ayah": 53,
+      "surah_name": "Yusuf",
+      "description": "The soul commands evil except for those on whom my Lord has mercy — nafs al-ammarah",
+      "entities": ["concept_nafs", "concept_nafs_ammarah", "theme_mercy", "theme_self_discipline"],
+      "themes": ["self_discipline", "mercy", "psychology"],
+      "semantic_tags": ["contemplation", "character"]
+    },
+    {
+      "id": "he_012_064",
+      "surah": 12,
+      "ayah": 64,
+      "surah_name": "Yusuf",
+      "description": "Yaqub entrusts Binyamin — Allah is the best guardian and most merciful of the merciful",
+      "entities": ["prophet_yaqub", "attr_khayr_hafidh", "attr_arham_ar_rahimeen", "concept_tawakkul"],
+      "themes": ["trust", "mercy", "parenthood"],
+      "semantic_tags": ["narrative", "yusuf_story", "dua"]
+    },
+    {
+      "id": "he_012_086",
+      "surah": 12,
+      "ayah": 86,
+      "surah_name": "Yusuf",
+      "description": "Yaqub says: I complain of my suffering and grief only to Allah — I know from Allah what you do not know",
+      "entities": ["prophet_yaqub", "concept_dua", "theme_patience", "theme_hope"],
+      "themes": ["patience", "supplication", "hope"],
+      "semantic_tags": ["narrative", "yusuf_story", "emotional", "dua"]
+    },
+    {
+      "id": "he_012_087",
+      "surah": 12,
+      "ayah": 87,
+      "surah_name": "Yusuf",
+      "description": "Do not despair of relief from Allah — no one despairs of Allah's mercy except the disbelieving",
+      "entities": ["theme_hope", "attr_ar_rahman", "concept_rawh_allah"],
+      "themes": ["hope", "mercy"],
+      "semantic_tags": ["comfort", "daily_recitation", "hope"]
+    },
+    {
+      "id": "he_012_092",
+      "surah": 12,
+      "ayah": 92,
+      "surah_name": "Yusuf",
+      "description": "Yusuf forgives his brothers — no blame upon you today; Allah will forgive you",
+      "entities": ["prophet_yusuf", "theme_forgiveness", "theme_mercy", "concept_reconciliation"],
+      "themes": ["forgiveness", "mercy", "family"],
+      "semantic_tags": ["narrative", "yusuf_story", "ethics"]
+    },
+    {
+      "id": "he_012_111",
+      "surah": 12,
+      "ayah": 111,
+      "surah_name": "Yusuf",
+      "description": "In their stories is a lesson for people of understanding — the Quran is not fabricated",
+      "entities": ["concept_quranic_narratives", "concept_ulu_al_albab", "scripture_quran"],
+      "themes": ["quran_miracle", "lessons"],
+      "semantic_tags": ["quran_description", "contemplation"]
+    },
+    {
+      "id": "he_013_028",
+      "surah": 13,
+      "ayah": 28,
+      "surah_name": "Ar-Ra'd",
+      "description": "Those who believe — their hearts find rest in the remembrance of Allah; surely in Allah's remembrance hearts find comfort",
+      "entities": ["concept_dhikr", "theme_tranquility", "concept_iman"],
+      "themes": ["remembrance", "tranquility", "faith"],
+      "semantic_tags": ["daily_recitation", "memorization", "comfort", "dhikr"]
+    },
+    {
+      "id": "he_014_007",
+      "surah": 14,
+      "ayah": 7,
+      "surah_name": "Ibrahim",
+      "description": "If you are grateful, I will surely increase you; but if you deny, My punishment is severe",
+      "entities": ["concept_shukr", "theme_gratitude", "theme_increase", "theme_warning"],
+      "themes": ["gratitude", "divine_promise"],
+      "semantic_tags": ["daily_recitation", "motivation"]
+    },
+    {
+      "id": "he_014_024",
+      "surah": 14,
+      "ayah": 24,
+      "surah_name": "Ibrahim",
+      "description": "Parable of a good word like a good tree — firm root, branches reaching the sky, fruit every season",
+      "entities": ["concept_kalimah_tayyibah", "theme_truth", "concept_parable"],
+      "themes": ["truth", "faith"],
+      "semantic_tags": ["parable", "contemplation"]
+    },
+    {
+      "id": "he_014_035",
+      "surah": 14,
+      "ayah": 35,
+      "surah_name": "Ibrahim",
+      "description": "Ibrahim's dua: Make this city secure and keep me and my sons from worshipping idols",
+      "entities": ["prophet_ibrahim", "place_mecca", "concept_dua", "theme_tawheed"],
+      "themes": ["supplication", "tawheed", "parenthood"],
+      "semantic_tags": ["dua", "ibrahim_story"]
+    },
+    {
+      "id": "he_014_040",
+      "surah": 14,
+      "ayah": 40,
+      "surah_name": "Ibrahim",
+      "description": "Ibrahim's dua: My Lord, make me an establisher of prayer, and from my descendants; accept my supplication",
+      "entities": ["prophet_ibrahim", "ruling_salah", "concept_dua", "theme_legacy"],
+      "themes": ["supplication", "worship", "parenthood"],
+      "semantic_tags": ["dua", "ibrahim_story", "salah"]
+    },
+    {
+      "id": "he_015_009",
+      "surah": 15,
+      "ayah": 9,
+      "surah_name": "Al-Hijr",
+      "description": "Indeed, it is We who sent down the reminder (Quran), and it is We who will preserve it",
+      "entities": ["scripture_quran", "concept_quran_preservation", "theme_divine_protection"],
+      "themes": ["quran_preservation", "divine_protection"],
+      "semantic_tags": ["foundational", "quran_description"]
+    },
+    {
+      "id": "he_015_029",
+      "surah": 15,
+      "ayah": 29,
+      "surah_name": "Al-Hijr",
+      "description": "When I have fashioned him and breathed into him of My spirit, fall down in prostration to him",
+      "entities": ["prophet_adam", "concept_divine_spirit", "event_creation_adam", "angel_general"],
+      "themes": ["creation", "human_dignity"],
+      "semantic_tags": ["narrative", "creation_story"]
+    },
+    {
+      "id": "he_016_018",
+      "surah": 16,
+      "ayah": 18,
+      "surah_name": "An-Nahl",
+      "description": "If you tried to count Allah's blessings, you could not enumerate them — Allah is Forgiving, Merciful",
+      "entities": ["theme_gratitude", "attr_al_ghafur", "attr_ar_raheem", "concept_blessings"],
+      "themes": ["gratitude", "divine_attributes"],
+      "semantic_tags": ["contemplation", "gratitude"]
+    },
+    {
+      "id": "he_016_068",
+      "surah": 16,
+      "ayah": 68,
+      "surah_name": "An-Nahl",
+      "description": "Your Lord inspired the bee to build hives and eat from fruits — honey as healing for people",
+      "entities": ["concept_divine_inspiration", "concept_honey_healing", "theme_creation_signs"],
+      "themes": ["creation_signs", "healing", "divine_wisdom"],
+      "semantic_tags": ["science_faith", "contemplation"]
+    },
+    {
+      "id": "he_016_090",
+      "surah": 16,
+      "ayah": 90,
+      "surah_name": "An-Nahl",
+      "description": "Allah commands justice, excellence (ihsan), and giving to relatives; forbids indecency, evil, and transgression",
+      "entities": ["ruling_justice", "concept_ihsan", "ruling_family_rights", "theme_ethics"],
+      "themes": ["justice", "ihsan", "ethics"],
+      "semantic_tags": ["ruling", "comprehensive", "khutbah"]
+    },
+    {
+      "id": "he_016_097",
+      "surah": 16,
+      "ayah": 97,
+      "surah_name": "An-Nahl",
+      "description": "Whoever does righteousness, male or female, while being a believer — We will give them a good life",
+      "entities": ["theme_righteousness", "concept_iman", "concept_gender_equality", "theme_good_life"],
+      "themes": ["righteousness", "equality", "reward"],
+      "semantic_tags": ["motivation", "ethics"]
+    },
+    {
+      "id": "he_016_125",
+      "surah": 16,
+      "ayah": 125,
+      "surah_name": "An-Nahl",
+      "description": "Invite to the way of your Lord with wisdom and beautiful preaching; argue in the best manner",
+      "entities": ["theme_dawah", "concept_hikmah", "concept_maw'idha_hasanah"],
+      "themes": ["dawah", "wisdom", "dialogue"],
+      "semantic_tags": ["dawah", "ethics", "prophetic_model"]
+    },
+    {
+      "id": "he_017_001",
+      "surah": 17,
+      "ayah": 1,
+      "surah_name": "Al-Isra",
+      "description": "Glory to He who took His servant on a night journey from al-Masjid al-Haram to al-Masjid al-Aqsa",
+      "entities": ["event_isra_miraj", "place_masjid_al_haram", "place_masjid_al_aqsa", "theme_divine_power"],
+      "themes": ["miracles", "sacred_spaces"],
+      "semantic_tags": ["narrative", "foundational", "isra_miraj"]
+    },
+    {
+      "id": "he_017_023",
+      "surah": 17,
+      "ayah": 23,
+      "surah_name": "Al-Isra",
+      "description": "Your Lord decrees worship Him alone and excellence to parents — do not say 'uff' to them",
+      "entities": ["theme_tawheed", "ruling_parental_respect", "concept_ihsan", "theme_family"],
+      "themes": ["tawheed", "family", "respect"],
+      "semantic_tags": ["ruling", "ethics", "family"]
+    },
+    {
+      "id": "he_017_032",
+      "surah": 17,
+      "ayah": 32,
+      "surah_name": "Al-Isra",
+      "description": "Do not approach unlawful sexual intercourse — it is an immorality and an evil way",
+      "entities": ["ruling_prohibition_zina", "theme_chastity", "theme_prohibition"],
+      "themes": ["chastity", "prohibition"],
+      "semantic_tags": ["ruling", "ethics"]
+    },
+    {
+      "id": "he_017_036",
+      "surah": 17,
+      "ayah": 36,
+      "surah_name": "Al-Isra",
+      "description": "Do not pursue what you have no knowledge of — hearing, sight, and heart will all be questioned",
+      "entities": ["concept_accountability", "theme_knowledge", "ruling_verification"],
+      "themes": ["accountability", "knowledge", "ethics"],
+      "semantic_tags": ["ruling", "ethics"]
+    },
+    {
+      "id": "he_017_044",
+      "surah": 17,
+      "ayah": 44,
+      "surah_name": "Al-Isra",
+      "description": "The seven heavens and earth and everything in them glorify Him — there is nothing that does not glorify Him",
+      "entities": ["concept_tasbih", "theme_universal_worship", "theme_creation_signs"],
+      "themes": ["worship", "creation"],
+      "semantic_tags": ["contemplation", "tasbih"]
+    },
+    {
+      "id": "he_017_070",
+      "surah": 17,
+      "ayah": 70,
+      "surah_name": "Al-Isra",
+      "description": "We have honored the children of Adam and carried them on land and sea and preferred them over much of creation",
+      "entities": ["prophet_adam", "concept_human_dignity", "theme_divine_honor"],
+      "themes": ["human_dignity", "divine_honor"],
+      "semantic_tags": ["foundational", "ethics"]
+    },
+    {
+      "id": "he_017_078",
+      "surah": 17,
+      "ayah": 78,
+      "surah_name": "Al-Isra",
+      "description": "Establish prayer at the decline of the sun until dark of night, and the Quran at dawn — the Fajr recitation is witnessed",
+      "entities": ["ruling_salah", "ruling_salah_times", "concept_fajr_quran"],
+      "themes": ["worship", "prayer"],
+      "semantic_tags": ["ruling", "salah"]
+    },
+    {
+      "id": "he_017_082",
+      "surah": 17,
+      "ayah": 82,
+      "surah_name": "Al-Isra",
+      "description": "We send down from the Quran that which is a healing and mercy for the believers",
+      "entities": ["scripture_quran", "concept_shifa", "theme_mercy", "theme_healing"],
+      "themes": ["healing", "mercy", "quran_description"],
+      "semantic_tags": ["ruqyah", "comfort"]
+    },
+    {
+      "id": "he_017_088",
+      "surah": 17,
+      "ayah": 88,
+      "surah_name": "Al-Isra",
+      "description": "If mankind and jinn gathered to produce the like of this Quran, they could not produce its like",
+      "entities": ["scripture_quran", "concept_quran_inimitability", "concept_jinn"],
+      "themes": ["quran_miracle", "challenge"],
+      "semantic_tags": ["quran_description", "dawah"]
+    },
+    {
+      "id": "he_018_010",
+      "surah": 18,
+      "ayah": 10,
+      "surah_name": "Al-Kahf",
+      "description": "The youth of the cave seek refuge — Our Lord, give us mercy and guide our affairs",
+      "entities": ["group_ashab_al_kahf", "concept_dua", "theme_refuge", "theme_faith"],
+      "themes": ["faith", "refuge", "supplication"],
+      "semantic_tags": ["narrative", "kahf_story", "dua"]
+    },
+    {
+      "id": "he_018_023",
+      "surah": 18,
+      "ayah": 23,
+      "surah_name": "Al-Kahf",
+      "description": "Do not say about anything: I will do that tomorrow — except with 'if Allah wills' (insha'Allah)",
+      "entities": ["concept_inshallah", "concept_tawakkul", "theme_divine_will"],
+      "themes": ["reliance_on_allah", "etiquette"],
+      "semantic_tags": ["daily_recitation", "etiquette"]
+    },
+    {
+      "id": "he_018_028",
+      "surah": 18,
+      "ayah": 28,
+      "surah_name": "Al-Kahf",
+      "description": "Keep yourself patient with those who call upon their Lord morning and evening; do not let your eyes pass beyond them",
+      "entities": ["theme_patience", "concept_companionship", "theme_humility"],
+      "themes": ["patience", "companionship", "humility"],
+      "semantic_tags": ["ethics", "prophetic_model"]
+    },
+    {
+      "id": "he_018_046",
+      "surah": 18,
+      "ayah": 46,
+      "surah_name": "Al-Kahf",
+      "description": "Wealth and children are adornment of this life, but lasting good deeds are better in reward with your Lord",
+      "entities": ["concept_dunya", "concept_baqiyat_as_salihat", "theme_akhirah"],
+      "themes": ["worldly_attachment", "akhirah", "good_deeds"],
+      "semantic_tags": ["contemplation", "friday_recitation"]
+    },
+    {
+      "id": "he_018_060",
+      "surah": 18,
+      "ayah": 60,
+      "surah_name": "Al-Kahf",
+      "description": "Musa and his young companion journey to the junction of two seas to meet Al-Khidr",
+      "entities": ["prophet_musa", "figure_khidr", "place_junction_two_seas", "concept_seeking_knowledge"],
+      "themes": ["knowledge", "journey"],
+      "semantic_tags": ["narrative", "khidr_story"]
+    },
+    {
+      "id": "he_018_066",
+      "surah": 18,
+      "ayah": 66,
+      "surah_name": "Al-Kahf",
+      "description": "Musa asks Khidr: May I follow you to learn what you have been taught of right guidance?",
+      "entities": ["prophet_musa", "figure_khidr", "concept_seeking_knowledge", "theme_humility"],
+      "themes": ["knowledge", "humility"],
+      "semantic_tags": ["narrative", "khidr_story"]
+    },
+    {
+      "id": "he_018_083",
+      "surah": 18,
+      "ayah": 83,
+      "surah_name": "Al-Kahf",
+      "description": "They ask about Dhul-Qarnayn — a righteous king who traveled east and west establishing justice",
+      "entities": ["figure_dhul_qarnayn", "theme_justice", "theme_power"],
+      "themes": ["governance", "justice", "power"],
+      "semantic_tags": ["narrative", "dhul_qarnayn_story"]
+    },
+    {
+      "id": "he_018_094",
+      "surah": 18,
+      "ayah": 94,
+      "surah_name": "Al-Kahf",
+      "description": "Dhul-Qarnayn builds a barrier against Ya'juj and Ma'juj (Gog and Magog)",
+      "entities": ["figure_dhul_qarnayn", "group_yajuj_majuj", "concept_barrier", "theme_protection"],
+      "themes": ["protection", "eschatology"],
+      "semantic_tags": ["narrative", "dhul_qarnayn_story", "end_times"]
+    },
+    {
+      "id": "he_018_109",
+      "surah": 18,
+      "ayah": 109,
+      "surah_name": "Al-Kahf",
+      "description": "If the sea were ink for the words of my Lord, the sea would be exhausted before the words of my Lord",
+      "entities": ["theme_divine_knowledge", "concept_divine_infinity", "theme_divine_power"],
+      "themes": ["divine_knowledge", "divine_infinity"],
+      "semantic_tags": ["contemplation", "friday_recitation"]
+    },
+    {
+      "id": "he_018_110",
+      "surah": 18,
+      "ayah": 110,
+      "surah_name": "Al-Kahf",
+      "description": "Say: I am a human like you, revealed to me is that your God is one God — worship Him and associate none",
+      "entities": ["theme_tawheed", "concept_ikhlas", "concept_good_deeds", "theme_sincerity"],
+      "themes": ["tawheed", "sincerity", "worship"],
+      "semantic_tags": ["foundational", "friday_recitation"]
+    },
+    {
+      "id": "he_019_016",
+      "surah": 19,
+      "ayah": 16,
+      "surah_name": "Maryam",
+      "description": "Mention in the Book, Maryam — when she withdrew from her family to a place in the east",
+      "entities": ["figure_maryam", "theme_devotion", "theme_seclusion"],
+      "themes": ["devotion", "women_in_quran"],
+      "semantic_tags": ["narrative", "maryam_story"]
+    },
+    {
+      "id": "he_019_019",
+      "surah": 19,
+      "ayah": 19,
+      "surah_name": "Maryam",
+      "description": "The angel appears to Maryam: I am a messenger from your Lord to give you a pure son",
+      "entities": ["figure_maryam", "angel_jibril", "prophet_isa", "concept_miraculous_birth"],
+      "themes": ["miraculous_birth", "prophethood"],
+      "semantic_tags": ["narrative", "maryam_story", "isa_story"]
+    },
+    {
+      "id": "he_019_030",
+      "surah": 19,
+      "ayah": 30,
+      "surah_name": "Maryam",
+      "description": "Isa speaks from the cradle: I am the servant of Allah — He gave me the Scripture and made me a prophet",
+      "entities": ["prophet_isa", "figure_maryam", "concept_miracles", "scripture_injil"],
+      "themes": ["miracles", "prophethood"],
+      "semantic_tags": ["narrative", "isa_story", "miraculous"]
+    },
+    {
+      "id": "he_019_054",
+      "surah": 19,
+      "ayah": 54,
+      "surah_name": "Maryam",
+      "description": "Mention in the Book, Ismail — he was true to his promise, a messenger and prophet",
+      "entities": ["prophet_ismail", "theme_truthfulness", "theme_prophethood"],
+      "themes": ["prophethood", "character"],
+      "semantic_tags": ["narrative", "prophets_list"]
+    },
+    {
+      "id": "he_019_058",
+      "surah": 19,
+      "ayah": 58,
+      "surah_name": "Maryam",
+      "description": "These are the prophets Allah blessed — from Adam, Nuh, Ibrahim, Israel; when recited to them they prostrated weeping",
+      "entities": ["prophet_adam", "prophet_nuh", "prophet_ibrahim", "prophet_yaqub", "concept_prostration_gratitude"],
+      "themes": ["prophethood", "gratitude"],
+      "semantic_tags": ["narrative", "cross_surah", "prophets_list"]
+    },
+    {
+      "id": "he_020_002",
+      "surah": 20,
+      "ayah": 2,
+      "surah_name": "Ta-Ha",
+      "description": "We have not sent down the Quran upon you to cause you distress",
+      "entities": ["scripture_quran", "theme_ease", "theme_mercy"],
+      "themes": ["mercy", "ease"],
+      "semantic_tags": ["comfort", "quran_description"]
+    },
+    {
+      "id": "he_020_014",
+      "surah": 20,
+      "ayah": 14,
+      "surah_name": "Ta-Ha",
+      "description": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance",
+      "entities": ["theme_tawheed", "ruling_salah", "concept_dhikr"],
+      "themes": ["tawheed", "worship"],
+      "semantic_tags": ["foundational", "creed"]
+    },
+    {
+      "id": "he_020_025",
+      "surah": 20,
+      "ayah": 25,
+      "surah_name": "Ta-Ha",
+      "description": "Musa's dua: My Lord, expand my chest, ease my task, untie the knot from my tongue",
+      "entities": ["prophet_musa", "concept_dua", "theme_confidence", "theme_eloquence"],
+      "themes": ["supplication", "prophetic_preparation"],
+      "semantic_tags": ["dua", "musa_story", "memorization"]
+    },
+    {
+      "id": "he_020_114",
+      "surah": 20,
+      "ayah": 114,
+      "surah_name": "Ta-Ha",
+      "description": "Say: My Lord, increase me in knowledge — dua for seeking knowledge",
+      "entities": ["concept_dua", "concept_knowledge", "theme_learning"],
+      "themes": ["knowledge", "supplication"],
+      "semantic_tags": ["dua", "daily_recitation", "knowledge"]
+    },
+    {
+      "id": "he_021_030",
+      "surah": 21,
+      "ayah": 30,
+      "surah_name": "Al-Anbiya",
+      "description": "The heavens and earth were a joined entity and We separated them; We made every living thing from water",
+      "entities": ["concept_creation_from_water", "theme_creation_signs", "concept_big_bang_parallel"],
+      "themes": ["creation", "science_parallels"],
+      "semantic_tags": ["science_faith", "contemplation"]
+    },
+    {
+      "id": "he_021_035",
+      "surah": 21,
+      "ayah": 35,
+      "surah_name": "Al-Anbiya",
+      "description": "Every soul shall taste death; We test you with evil and good as trial, and to Us you will be returned",
+      "entities": ["concept_death", "theme_divine_test", "theme_akhirah"],
+      "themes": ["death", "trial", "return_to_allah"],
+      "semantic_tags": ["contemplation", "trial"]
+    },
+    {
+      "id": "he_021_069",
+      "surah": 21,
+      "ayah": 69,
+      "surah_name": "Al-Anbiya",
+      "description": "We said: O fire, be cool and safe for Ibrahim — the fire miracle",
+      "entities": ["prophet_ibrahim", "event_fire_miracle", "theme_divine_protection", "concept_miracles"],
+      "themes": ["miracles", "divine_protection"],
+      "semantic_tags": ["narrative", "ibrahim_story"]
+    },
+    {
+      "id": "he_021_083",
+      "surah": 21,
+      "ayah": 83,
+      "surah_name": "Al-Anbiya",
+      "description": "Ayyub calls to his Lord: Adversity has touched me, and You are the most merciful of the merciful",
+      "entities": ["prophet_ayyub", "concept_dua", "theme_patience", "attr_arham_ar_rahimeen"],
+      "themes": ["patience", "supplication", "trial"],
+      "semantic_tags": ["dua", "narrative", "sabr"]
+    },
+    {
+      "id": "he_021_087",
+      "surah": 21,
+      "ayah": 87,
+      "surah_name": "Al-Anbiya",
+      "description": "Dhun-Nun (Yunus) in the belly of the whale — La ilaha illa Anta, Subhanaka, inni kuntu minadh-dhalimeen",
+      "entities": ["prophet_yunus", "concept_dua", "event_whale", "theme_repentance"],
+      "themes": ["repentance", "supplication", "distress"],
+      "semantic_tags": ["dua", "memorization", "daily_recitation"]
+    },
+    {
+      "id": "he_021_107",
+      "surah": 21,
+      "ayah": 107,
+      "surah_name": "Al-Anbiya",
+      "description": "We have not sent you except as a mercy to the worlds",
+      "entities": ["concept_prophet_as_mercy", "theme_mercy", "concept_universality"],
+      "themes": ["mercy", "prophethood", "universality"],
+      "semantic_tags": ["foundational", "prophetic_model", "frequently_quoted"]
+    },
+    {
+      "id": "he_022_027",
+      "surah": 22,
+      "ayah": 27,
+      "surah_name": "Al-Hajj",
+      "description": "Proclaim to people the Hajj — they will come on foot and on every lean camel",
+      "entities": ["ruling_hajj", "place_kaaba", "prophet_ibrahim", "concept_pilgrimage"],
+      "themes": ["pilgrimage", "worship"],
+      "semantic_tags": ["ruling", "hajj", "pillar_of_islam"]
+    },
+    {
+      "id": "he_022_034",
+      "surah": 22,
+      "ayah": 34,
+      "surah_name": "Al-Hajj",
+      "description": "For every nation We made a rite of sacrifice — your God is one God, submit to Him",
+      "entities": ["ruling_sacrifice", "concept_qurbani", "theme_tawheed", "concept_universal_worship"],
+      "themes": ["sacrifice", "worship", "tawheed"],
+      "semantic_tags": ["ruling", "hajj", "eid"]
+    },
+    {
+      "id": "he_022_037",
+      "surah": 22,
+      "ayah": 37,
+      "surah_name": "Al-Hajj",
+      "description": "It is not their meat or blood that reaches Allah — but it is your taqwa that reaches Him",
+      "entities": ["ruling_sacrifice", "concept_taqwa", "concept_sincerity"],
+      "themes": ["sincerity", "taqwa"],
+      "semantic_tags": ["ruling", "hajj", "eid", "foundational"]
+    },
+    {
+      "id": "he_022_078",
+      "surah": 22,
+      "ayah": 78,
+      "surah_name": "Al-Hajj",
+      "description": "Strive for Allah as He deserves — He named you Muslims; the Messenger is witness over you",
+      "entities": ["concept_jihad", "concept_islam_naming", "concept_witness"],
+      "themes": ["striving", "identity", "prophethood"],
+      "semantic_tags": ["foundational", "identity"]
+    },
+    {
+      "id": "he_023_001",
+      "surah": 23,
+      "ayah": 1,
+      "surah_name": "Al-Mu'minun",
+      "description": "Successful indeed are the believers",
+      "entities": ["concept_falah", "concept_iman", "theme_success"],
+      "themes": ["faith", "success"],
+      "semantic_tags": ["foundational", "motivation"]
+    },
+    {
+      "id": "he_023_012",
+      "surah": 23,
+      "ayah": 12,
+      "surah_name": "Al-Mu'minun",
+      "description": "We created man from an extract of clay — stages of embryonic development",
+      "entities": ["concept_creation_stages", "concept_embryology", "theme_creation_signs"],
+      "themes": ["creation", "embryology"],
+      "semantic_tags": ["science_faith", "contemplation"]
+    },
+    {
+      "id": "he_023_115",
+      "surah": 23,
+      "ayah": 115,
+      "surah_name": "Al-Mu'minun",
+      "description": "Did you think We created you uselessly and that to Us you would not be returned?",
+      "entities": ["concept_purpose_of_creation", "theme_accountability", "theme_akhirah"],
+      "themes": ["purpose", "accountability"],
+      "semantic_tags": ["contemplation", "akhirah"]
+    },
+    {
+      "id": "he_024_002",
+      "surah": 24,
+      "ayah": 2,
+      "surah_name": "An-Nur",
+      "description": "The fornicatress and fornicator — lash each one a hundred lashes; let not pity prevent you in Allah's religion",
+      "entities": ["ruling_zina_punishment", "concept_hudud", "theme_justice"],
+      "themes": ["criminal_law", "justice"],
+      "semantic_tags": ["ruling", "hudud"]
+    },
+    {
+      "id": "he_024_030",
+      "surah": 24,
+      "ayah": 30,
+      "surah_name": "An-Nur",
+      "description": "Tell believing men to lower their gaze and guard their modesty — purer for them",
+      "entities": ["ruling_lowering_gaze", "ruling_modesty", "theme_chastity"],
+      "themes": ["modesty", "chastity"],
+      "semantic_tags": ["ruling", "gender_ethics"]
+    },
+    {
+      "id": "he_024_031",
+      "surah": 24,
+      "ayah": 31,
+      "surah_name": "An-Nur",
+      "description": "Tell believing women to lower their gaze, guard their modesty, and not display adornment except what is apparent",
+      "entities": ["ruling_hijab", "ruling_modesty", "ruling_lowering_gaze", "theme_chastity"],
+      "themes": ["modesty", "hijab", "chastity"],
+      "semantic_tags": ["ruling", "gender_ethics"]
+    },
+    {
+      "id": "he_024_035",
+      "surah": 24,
+      "ayah": 35,
+      "surah_name": "An-Nur",
+      "description": "Ayat an-Nur — Allah is the Light of the heavens and earth; parable of the niche, lamp, and olive oil",
+      "entities": ["attr_an_nur", "concept_parable", "theme_divine_light", "concept_guidance"],
+      "themes": ["divine_light", "guidance", "parable"],
+      "semantic_tags": ["contemplation", "memorization", "mystical"]
+    },
+    {
+      "id": "he_024_036",
+      "surah": 24,
+      "ayah": 36,
+      "surah_name": "An-Nur",
+      "description": "In houses which Allah has ordered to be raised — He is remembered therein morning and evening",
+      "entities": ["concept_masjid", "concept_dhikr", "theme_worship"],
+      "themes": ["worship", "sacred_spaces"],
+      "semantic_tags": ["masjid", "contemplation"]
+    },
+    {
+      "id": "he_024_061",
+      "surah": 24,
+      "ayah": 61,
+      "surah_name": "An-Nur",
+      "description": "No blame on the blind, lame, or sick — social inclusion and greeting etiquette (As-Salamu Alaykum)",
+      "entities": ["ruling_social_etiquette", "concept_salam", "theme_inclusion", "concept_disability_rights"],
+      "themes": ["inclusion", "etiquette"],
+      "semantic_tags": ["ruling", "ethics", "accessibility"]
+    },
+    {
+      "id": "he_025_001",
+      "surah": 25,
+      "ayah": 1,
+      "surah_name": "Al-Furqan",
+      "description": "Blessed is He who sent down the Criterion (Furqan) to His servant as a warning to the worlds",
+      "entities": ["scripture_quran", "concept_furqan", "theme_guidance"],
+      "themes": ["revelation", "guidance"],
+      "semantic_tags": ["quran_description"]
+    },
+    {
+      "id": "he_025_063",
+      "surah": 25,
+      "ayah": 63,
+      "surah_name": "Al-Furqan",
+      "description": "The servants of the Most Merciful walk upon earth gently; when the ignorant address them, they say 'Peace'",
+      "entities": ["concept_ibad_ar_rahman", "theme_humility", "theme_gentleness", "concept_peace"],
+      "themes": ["character", "humility", "gentleness"],
+      "semantic_tags": ["ethics", "character"]
+    },
+    {
+      "id": "he_025_074",
+      "surah": 25,
+      "ayah": 74,
+      "surah_name": "Al-Furqan",
+      "description": "Our Lord, grant us from our spouses and offspring comfort of eyes and make us leaders of the righteous",
+      "entities": ["concept_dua", "theme_family", "theme_leadership", "concept_qurrat_ayn"],
+      "themes": ["family", "supplication", "righteous_leadership"],
+      "semantic_tags": ["dua", "family", "daily_recitation"]
+    },
+    {
+      "id": "he_026_080",
+      "surah": 26,
+      "ayah": 80,
+      "surah_name": "Ash-Shu'ara",
+      "description": "Ibrahim says: When I am ill, it is He who cures me",
+      "entities": ["prophet_ibrahim", "attr_ash_shafi", "theme_healing", "concept_tawakkul"],
+      "themes": ["healing", "trust"],
+      "semantic_tags": ["dua", "ibrahim_story", "healing"]
+    },
+    {
+      "id": "he_027_016",
+      "surah": 27,
+      "ayah": 16,
+      "surah_name": "An-Naml",
+      "description": "Sulayman inherited from Dawud and was taught the language of birds",
+      "entities": ["prophet_sulayman", "prophet_dawud", "concept_miracles", "concept_animal_communication"],
+      "themes": ["prophethood", "miracles", "wisdom"],
+      "semantic_tags": ["narrative", "sulayman_story"]
+    },
+    {
+      "id": "he_027_030",
+      "surah": 27,
+      "ayah": 30,
+      "surah_name": "An-Naml",
+      "description": "Sulayman's letter to Queen of Sheba opens with Bismillah ar-Rahman ar-Raheem",
+      "entities": ["prophet_sulayman", "figure_queen_sheba", "concept_basmala", "concept_diplomacy"],
+      "themes": ["diplomacy", "dawah"],
+      "semantic_tags": ["narrative", "sulayman_story"]
+    },
+    {
+      "id": "he_027_062",
+      "surah": 27,
+      "ayah": 62,
+      "surah_name": "An-Naml",
+      "description": "Who responds to the desperate when he calls upon Him and removes hardship?",
+      "entities": ["attr_al_mujeeb", "concept_dua", "theme_divine_response"],
+      "themes": ["supplication", "divine_response"],
+      "semantic_tags": ["dua", "comfort"]
+    },
+    {
+      "id": "he_028_077",
+      "surah": 28,
+      "ayah": 77,
+      "surah_name": "Al-Qasas",
+      "description": "Seek the home of the Hereafter with what Allah has given you, but do not forget your share of the world",
+      "entities": ["theme_akhirah", "concept_balance", "theme_worldly_engagement"],
+      "themes": ["balance", "akhirah", "worldly_life"],
+      "semantic_tags": ["ethics", "balance"]
+    },
+    {
+      "id": "he_029_002",
+      "surah": 29,
+      "ayah": 2,
+      "surah_name": "Al-Ankabut",
+      "description": "Do people think they will say 'we believe' and not be tested?",
+      "entities": ["concept_iman", "theme_divine_test", "concept_trial"],
+      "themes": ["trial", "faith"],
+      "semantic_tags": ["contemplation", "trial"]
+    },
+    {
+      "id": "he_029_045",
+      "surah": 29,
+      "ayah": 45,
+      "surah_name": "Al-Ankabut",
+      "description": "Recite what has been revealed of the Book and establish prayer — prayer prevents indecency and wrongdoing",
+      "entities": ["ruling_salah", "scripture_quran", "concept_salah_prevention"],
+      "themes": ["worship", "prayer", "ethics"],
+      "semantic_tags": ["ruling", "salah", "foundational"]
+    },
+    {
+      "id": "he_029_046",
+      "surah": 29,
+      "ayah": 46,
+      "surah_name": "Al-Ankabut",
+      "description": "Do not argue with People of the Book except in the best manner — our God and your God is one",
+      "entities": ["group_ahl_al_kitab", "theme_interfaith_dialogue", "theme_tawheed"],
+      "themes": ["interfaith", "dawah", "tawheed"],
+      "semantic_tags": ["dialogue", "ethics"]
+    },
+    {
+      "id": "he_030_021",
+      "surah": 30,
+      "ayah": 21,
+      "surah_name": "Ar-Rum",
+      "description": "Among His signs — He created for you mates from yourselves, placed love and mercy between you",
+      "entities": ["concept_marriage", "theme_love", "theme_mercy", "theme_creation_signs"],
+      "themes": ["marriage", "love", "creation_signs"],
+      "semantic_tags": ["family", "contemplation", "nikah"]
+    },
+    {
+      "id": "he_030_022",
+      "surah": 30,
+      "ayah": 22,
+      "surah_name": "Ar-Rum",
+      "description": "Among His signs — creation of heavens and earth, diversity of languages and colors",
+      "entities": ["theme_creation_signs", "concept_diversity", "theme_divine_power"],
+      "themes": ["creation_signs", "diversity"],
+      "semantic_tags": ["contemplation", "science_faith"]
+    },
+    {
+      "id": "he_031_012",
+      "surah": 31,
+      "ayah": 12,
+      "surah_name": "Luqman",
+      "description": "We gave Luqman wisdom — be grateful to Allah; whoever is grateful is grateful for himself",
+      "entities": ["figure_luqman", "concept_hikmah", "theme_gratitude"],
+      "themes": ["wisdom", "gratitude"],
+      "semantic_tags": ["narrative", "luqman_story"]
+    },
+    {
+      "id": "he_031_013",
+      "surah": 31,
+      "ayah": 13,
+      "surah_name": "Luqman",
+      "description": "Luqman advises his son: O my son, do not associate anything with Allah — shirk is a great injustice",
+      "entities": ["figure_luqman", "theme_tawheed", "ruling_prohibition_shirk", "theme_parenthood"],
+      "themes": ["tawheed", "parenthood", "wisdom"],
+      "semantic_tags": ["narrative", "luqman_story", "ethics"]
+    },
+    {
+      "id": "he_031_014",
+      "surah": 31,
+      "ayah": 14,
+      "surah_name": "Luqman",
+      "description": "We commanded man concerning his parents — his mother carried him in weakness upon weakness, weaning at two years",
+      "entities": ["ruling_parental_respect", "concept_motherhood", "theme_family", "ruling_breastfeeding"],
+      "themes": ["family", "respect", "motherhood"],
+      "semantic_tags": ["ruling", "family", "ethics"]
+    },
+    {
+      "id": "he_031_017",
+      "surah": 31,
+      "ayah": 17,
+      "surah_name": "Luqman",
+      "description": "Luqman: Establish prayer, enjoin good, forbid evil, be patient over what befalls you",
+      "entities": ["figure_luqman", "ruling_salah", "ruling_amr_bil_maruf", "theme_patience"],
+      "themes": ["worship", "ethics", "patience"],
+      "semantic_tags": ["narrative", "luqman_story", "comprehensive"]
+    },
+    {
+      "id": "he_031_018",
+      "surah": 31,
+      "ayah": 18,
+      "surah_name": "Luqman",
+      "description": "Luqman: Do not turn your cheek in contempt or walk through the earth arrogantly",
+      "entities": ["figure_luqman", "theme_humility", "ruling_etiquette", "theme_arrogance"],
+      "themes": ["humility", "character"],
+      "semantic_tags": ["narrative", "luqman_story", "ethics"]
+    },
+    {
+      "id": "he_031_034",
+      "surah": 31,
+      "ayah": 34,
+      "surah_name": "Luqman",
+      "description": "Five keys of the unseen — the Hour, rain, womb, tomorrow, death — only Allah knows",
+      "entities": ["concept_ghayb", "theme_divine_knowledge", "concept_five_keys"],
+      "themes": ["divine_knowledge", "unseen"],
+      "semantic_tags": ["creed", "contemplation"]
+    },
+    {
+      "id": "he_033_021",
+      "surah": 33,
+      "ayah": 21,
+      "surah_name": "Al-Ahzab",
+      "description": "In the Messenger of Allah there is a beautiful example for those who hope in Allah and the Last Day",
+      "entities": ["concept_uswah_hasanah", "concept_prophetic_model", "theme_hope"],
+      "themes": ["prophetic_model", "character"],
+      "semantic_tags": ["foundational", "prophetic_model"]
+    },
+    {
+      "id": "he_033_033",
+      "surah": 33,
+      "ayah": 33,
+      "surah_name": "Al-Ahzab",
+      "description": "Abide in your homes, do not display yourselves — addressing the Prophet's wives (Mothers of Believers)",
+      "entities": ["group_mothers_of_believers", "ruling_modesty", "concept_ahl_al_bayt"],
+      "themes": ["modesty", "prophetic_household"],
+      "semantic_tags": ["ruling", "prophetic_household"]
+    },
+    {
+      "id": "he_033_035",
+      "surah": 33,
+      "ayah": 35,
+      "surah_name": "Al-Ahzab",
+      "description": "Comprehensive description of Muslim men and women — submitting, believing, devout, truthful, patient, humble, charitable, fasting, guarding modesty, remembering Allah",
+      "entities": ["concept_gender_equality", "theme_righteousness", "concept_dhikr", "ruling_fasting", "ruling_charity"],
+      "themes": ["equality", "righteousness", "comprehensive"],
+      "semantic_tags": ["comprehensive", "gender_equality"]
+    },
+    {
+      "id": "he_033_040",
+      "surah": 33,
+      "ayah": 40,
+      "surah_name": "Al-Ahzab",
+      "description": "Muhammad is not the father of any of your men, but the Messenger of Allah and the Seal of the Prophets",
+      "entities": ["concept_khatam_an_nabiyyin", "theme_prophethood"],
+      "themes": ["prophethood", "finality"],
+      "semantic_tags": ["creed", "foundational"]
+    },
+    {
+      "id": "he_033_041",
+      "surah": 33,
+      "ayah": 41,
+      "surah_name": "Al-Ahzab",
+      "description": "O you who believe, remember Allah with much remembrance",
+      "entities": ["concept_dhikr", "concept_iman", "theme_remembrance"],
+      "themes": ["remembrance", "worship"],
+      "semantic_tags": ["dhikr", "daily_recitation"]
+    },
+    {
+      "id": "he_033_056",
+      "surah": 33,
+      "ayah": 56,
+      "surah_name": "Al-Ahzab",
+      "description": "Allah and His angels send blessings upon the Prophet — O believers, send salawat upon him",
+      "entities": ["concept_salawat", "angel_general", "theme_prophetic_honor"],
+      "themes": ["prophetic_honor", "worship"],
+      "semantic_tags": ["daily_recitation", "salawat", "dhikr"]
+    },
+    {
+      "id": "he_033_072",
+      "surah": 33,
+      "ayah": 72,
+      "surah_name": "Al-Ahzab",
+      "description": "We offered the trust to heavens, earth, mountains — they refused; man undertook it; he is unjust and ignorant",
+      "entities": ["concept_amanah", "concept_human_responsibility", "theme_divine_trust"],
+      "themes": ["trust", "human_nature"],
+      "semantic_tags": ["contemplation", "metaphysical"]
+    },
+    {
+      "id": "he_034_013",
+      "surah": 34,
+      "ayah": 13,
+      "surah_name": "Saba",
+      "description": "They made for Sulayman whatever he wished — arches, statues, basins, anchored cooking pots — jinn workers",
+      "entities": ["prophet_sulayman", "concept_jinn", "theme_divine_power", "concept_craftsmanship"],
+      "themes": ["prophethood", "power"],
+      "semantic_tags": ["narrative", "sulayman_story"]
+    },
+    {
+      "id": "he_035_028",
+      "surah": 35,
+      "ayah": 28,
+      "surah_name": "Fatir",
+      "description": "Only those who have knowledge truly fear Allah among His servants",
+      "entities": ["concept_khashyah", "concept_knowledge", "concept_ulama"],
+      "themes": ["knowledge", "consciousness"],
+      "semantic_tags": ["knowledge", "scholarly"]
+    },
+    {
+      "id": "he_036_001",
+      "surah": 36,
+      "ayah": 1,
+      "surah_name": "Ya-Sin",
+      "description": "Ya-Sin — opening of the 'Heart of the Quran'",
+      "entities": ["scripture_quran", "concept_huruf_muqattaat"],
+      "themes": ["quran_mysteries"],
+      "semantic_tags": ["foundational", "recitation"]
+    },
+    {
+      "id": "he_036_009",
+      "surah": 36,
+      "ayah": 9,
+      "surah_name": "Ya-Sin",
+      "description": "We placed before and behind them barriers and covered their sight — they do not see",
+      "entities": ["theme_divine_decree", "concept_spiritual_blindness", "theme_warning"],
+      "themes": ["divine_decree", "warning"],
+      "semantic_tags": ["contemplation", "yasin"]
+    },
+    {
+      "id": "he_036_036",
+      "surah": 36,
+      "ayah": 36,
+      "surah_name": "Ya-Sin",
+      "description": "Glory to Him who created all pairs — from what the earth grows, from themselves, and from what they do not know",
+      "entities": ["concept_creation_pairs", "theme_creation_signs", "theme_divine_power"],
+      "themes": ["creation", "pairs"],
+      "semantic_tags": ["science_faith", "contemplation"]
+    },
+    {
+      "id": "he_036_058",
+      "surah": 36,
+      "ayah": 58,
+      "surah_name": "Ya-Sin",
+      "description": "Peace — a word from a Merciful Lord (Salamun qawlam min Rabbir Raheem)",
+      "entities": ["place_jannah", "attr_ar_raheem", "concept_salam"],
+      "themes": ["paradise", "peace", "mercy"],
+      "semantic_tags": ["akhirah", "comfort", "yasin"]
+    },
+    {
+      "id": "he_036_078",
+      "surah": 36,
+      "ayah": 78,
+      "surah_name": "Ya-Sin",
+      "description": "Who will give life to bones when they are decayed? Say: He who produced them the first time — He knows every creation",
+      "entities": ["concept_resurrection", "theme_divine_power", "concept_creation_argument"],
+      "themes": ["resurrection", "divine_power"],
+      "semantic_tags": ["akhirah", "dawah", "yasin"]
+    },
+    {
+      "id": "he_036_082",
+      "surah": 36,
+      "ayah": 82,
+      "surah_name": "Ya-Sin",
+      "description": "His command when He wills a thing is only that He says 'Be' — and it is (Kun fayakun)",
+      "entities": ["concept_kun_fayakun", "theme_divine_power", "attr_al_qadeer"],
+      "themes": ["divine_power", "creation"],
+      "semantic_tags": ["creed", "foundational", "yasin"]
+    },
+    {
+      "id": "he_037_100",
+      "surah": 37,
+      "ayah": 100,
+      "surah_name": "As-Saffat",
+      "description": "Ibrahim's dua: My Lord, grant me a righteous son",
+      "entities": ["prophet_ibrahim", "concept_dua", "theme_parenthood"],
+      "themes": ["supplication", "parenthood"],
+      "semantic_tags": ["dua", "ibrahim_story"]
+    },
+    {
+      "id": "he_037_102",
+      "surah": 37,
+      "ayah": 102,
+      "surah_name": "As-Saffat",
+      "description": "Ibrahim tells his son about the dream of sacrifice; the son says: Do as you are commanded — the great trial",
+      "entities": ["prophet_ibrahim", "prophet_ismail", "event_sacrifice_trial", "theme_divine_test", "theme_submission"],
+      "themes": ["sacrifice", "submission", "trial"],
+      "semantic_tags": ["narrative", "ibrahim_story", "eid_al_adha"]
+    },
+    {
+      "id": "he_037_107",
+      "surah": 37,
+      "ayah": 107,
+      "surah_name": "As-Saffat",
+      "description": "We ransomed him with a great sacrifice — the divine substitution of a ram for Ismail",
+      "entities": ["prophet_ismail", "prophet_ibrahim", "event_ransom", "ruling_sacrifice"],
+      "themes": ["sacrifice", "divine_mercy"],
+      "semantic_tags": ["narrative", "ibrahim_story", "eid_al_adha"]
+    },
+    {
+      "id": "he_038_026",
+      "surah": 38,
+      "ayah": 26,
+      "surah_name": "Sad",
+      "description": "O Dawud, We made you a vicegerent on earth — judge between people with truth, do not follow desire",
+      "entities": ["prophet_dawud", "concept_khalifah", "theme_justice", "ruling_judiciary"],
+      "themes": ["governance", "justice"],
+      "semantic_tags": ["ruling", "governance"]
+    },
+    {
+      "id": "he_039_009",
+      "surah": 39,
+      "ayah": 9,
+      "surah_name": "Az-Zumar",
+      "description": "Are those who know equal to those who do not know? Only people of understanding will remember",
+      "entities": ["concept_knowledge", "concept_ulu_al_albab", "theme_knowledge"],
+      "themes": ["knowledge", "intellect"],
+      "semantic_tags": ["knowledge", "contemplation"]
+    },
+    {
+      "id": "he_039_010",
+      "surah": 39,
+      "ayah": 10,
+      "surah_name": "Az-Zumar",
+      "description": "Say: O My servants who have believed, fear your Lord — for those who do good in this world is good, and the earth of Allah is spacious",
+      "entities": ["concept_taqwa", "concept_hijrah", "theme_patience"],
+      "themes": ["taqwa", "perseverance"],
+      "semantic_tags": ["motivation", "migration"]
+    },
+    {
+      "id": "he_039_053",
+      "surah": 39,
+      "ayah": 53,
+      "surah_name": "Az-Zumar",
+      "description": "O My servants who have transgressed against themselves, do not despair of Allah's mercy — He forgives all sins",
+      "entities": ["theme_mercy", "theme_forgiveness", "attr_al_ghafur", "concept_tawbah"],
+      "themes": ["mercy", "forgiveness", "hope"],
+      "semantic_tags": ["daily_recitation", "comfort", "hope", "memorization"]
+    },
+    {
+      "id": "he_040_060",
+      "surah": 40,
+      "ayah": 60,
+      "surah_name": "Ghafir",
+      "description": "Your Lord says: Call upon Me, I will respond to you — those too arrogant to worship Me will enter Hell humiliated",
+      "entities": ["concept_dua", "attr_al_mujeeb", "theme_arrogance", "theme_worship"],
+      "themes": ["supplication", "worship", "warning"],
+      "semantic_tags": ["dua", "foundational"]
+    },
+    {
+      "id": "he_041_034",
+      "surah": 41,
+      "ayah": 34,
+      "surah_name": "Fussilat",
+      "description": "Repel evil with what is better — then the one between you and whom was enmity becomes a close friend",
+      "entities": ["theme_forgiveness", "concept_ihsan", "theme_conflict_resolution"],
+      "themes": ["forgiveness", "excellence", "relationships"],
+      "semantic_tags": ["ethics", "character"]
+    },
+    {
+      "id": "he_041_053",
+      "surah": 41,
+      "ayah": 53,
+      "surah_name": "Fussilat",
+      "description": "We will show them Our signs in the horizons and in themselves until it becomes clear that this is the truth",
+      "entities": ["theme_creation_signs", "concept_self_reflection", "theme_truth"],
+      "themes": ["creation_signs", "truth"],
+      "semantic_tags": ["science_faith", "contemplation"]
+    },
+    {
+      "id": "he_042_011",
+      "surah": 42,
+      "ayah": 11,
+      "surah_name": "Ash-Shura",
+      "description": "There is nothing like unto Him — He is the All-Hearing, All-Seeing",
+      "entities": ["attr_as_sami", "attr_al_baseer", "concept_divine_transcendence", "theme_tawheed"],
+      "themes": ["tawheed", "divine_attributes"],
+      "semantic_tags": ["creed", "foundational"]
+    },
+    {
+      "id": "he_042_038",
+      "surah": 42,
+      "ayah": 38,
+      "surah_name": "Ash-Shura",
+      "description": "Their affairs are decided by consultation among themselves — shura",
+      "entities": ["concept_shura", "theme_governance", "concept_consultation"],
+      "themes": ["governance", "consultation"],
+      "semantic_tags": ["ruling", "governance"]
+    },
+    {
+      "id": "he_044_003",
+      "surah": 44,
+      "ayah": 3,
+      "surah_name": "Ad-Dukhan",
+      "description": "We sent it down on a blessed night — the Night of Decree",
+      "entities": ["event_quran_revelation", "concept_laylat_al_qadr", "scripture_quran"],
+      "themes": ["revelation", "blessed_time"],
+      "semantic_tags": ["ramadan", "quran_description"]
+    },
+    {
+      "id": "he_046_015",
+      "surah": 46,
+      "ayah": 15,
+      "surah_name": "Al-Ahqaf",
+      "description": "We commanded man to be good to parents — mother carries and nurses 30 months; dua at age 40 for gratitude",
+      "entities": ["ruling_parental_respect", "concept_motherhood", "concept_dua", "theme_gratitude"],
+      "themes": ["family", "gratitude", "parenthood"],
+      "semantic_tags": ["ruling", "family", "dua"]
+    },
+    {
+      "id": "he_047_007",
+      "surah": 47,
+      "ayah": 7,
+      "surah_name": "Muhammad",
+      "description": "O you who believe, if you support Allah, He will support you and plant your feet firmly",
+      "entities": ["concept_divine_support", "concept_iman", "theme_perseverance"],
+      "themes": ["divine_support", "faith"],
+      "semantic_tags": ["motivation", "foundational"]
+    },
+    {
+      "id": "he_048_001",
+      "surah": 48,
+      "ayah": 1,
+      "surah_name": "Al-Fath",
+      "description": "We have given you a clear conquest (Treaty of Hudaybiyah)",
+      "entities": ["event_hudaybiyah", "concept_fath", "theme_divine_plan"],
+      "themes": ["victory", "divine_plan"],
+      "semantic_tags": ["narrative", "historic"]
+    },
+    {
+      "id": "he_048_029",
+      "surah": 48,
+      "ayah": 29,
+      "surah_name": "Al-Fath",
+      "description": "Muhammad is the Messenger of Allah; those with him are firm against disbelievers, merciful among themselves; their mark is on their faces from prostration",
+      "entities": ["concept_prophet_character", "concept_sahaba", "theme_brotherhood", "ruling_salah"],
+      "themes": ["prophetic_model", "community", "worship"],
+      "semantic_tags": ["prophetic_model", "community"]
+    },
+    {
+      "id": "he_049_006",
+      "surah": 49,
+      "ayah": 6,
+      "surah_name": "Al-Hujurat",
+      "description": "O believers, if a sinful person brings you a report, investigate — lest you harm a people in ignorance",
+      "entities": ["ruling_verification", "concept_tathabbut", "theme_justice"],
+      "themes": ["verification", "justice", "ethics"],
+      "semantic_tags": ["ruling", "ethics", "media_literacy"]
+    },
+    {
+      "id": "he_049_010",
+      "surah": 49,
+      "ayah": 10,
+      "surah_name": "Al-Hujurat",
+      "description": "The believers are but brothers — make reconciliation between your brothers and fear Allah",
+      "entities": ["concept_brotherhood", "ruling_reconciliation", "concept_taqwa"],
+      "themes": ["brotherhood", "reconciliation"],
+      "semantic_tags": ["community", "ethics", "foundational"]
+    },
+    {
+      "id": "he_049_011",
+      "surah": 49,
+      "ayah": 11,
+      "surah_name": "Al-Hujurat",
+      "description": "Do not mock others, do not defame, do not call by offensive nicknames",
+      "entities": ["ruling_prohibition_mockery", "ruling_prohibition_defamation", "theme_dignity"],
+      "themes": ["dignity", "ethics", "community"],
+      "semantic_tags": ["ruling", "ethics"]
+    },
+    {
+      "id": "he_049_012",
+      "surah": 49,
+      "ayah": 12,
+      "surah_name": "Al-Hujurat",
+      "description": "Avoid suspicion, do not spy, do not backbite — would one of you eat the flesh of his dead brother?",
+      "entities": ["ruling_prohibition_suspicion", "ruling_prohibition_spying", "ruling_prohibition_backbiting"],
+      "themes": ["ethics", "community", "dignity"],
+      "semantic_tags": ["ruling", "ethics"]
+    },
+    {
+      "id": "he_049_013",
+      "surah": 49,
+      "ayah": 13,
+      "surah_name": "Al-Hujurat",
+      "description": "O mankind, We created you from male and female, made you nations and tribes to know one another — the most noble is the most righteous",
+      "entities": ["concept_human_equality", "concept_diversity", "concept_taqwa", "theme_social_justice"],
+      "themes": ["equality", "diversity", "taqwa"],
+      "semantic_tags": ["foundational", "frequently_quoted", "ethics"]
+    },
+    {
+      "id": "he_050_016",
+      "surah": 50,
+      "ayah": 16,
+      "surah_name": "Qaf",
+      "description": "We are closer to him than his jugular vein — Allah's absolute nearness",
+      "entities": ["attr_al_qareeb", "theme_divine_nearness", "concept_divine_knowledge"],
+      "themes": ["divine_nearness", "knowledge"],
+      "semantic_tags": ["contemplation", "comfort", "frequently_quoted"]
+    },
+    {
+      "id": "he_051_056",
+      "surah": 51,
+      "ayah": 56,
+      "surah_name": "Adh-Dhariyat",
+      "description": "I did not create jinn and mankind except to worship Me",
+      "entities": ["concept_purpose_of_creation", "concept_ibadah", "concept_jinn", "theme_tawheed"],
+      "themes": ["purpose", "worship", "tawheed"],
+      "semantic_tags": ["foundational", "creed", "frequently_quoted"]
+    },
+    {
+      "id": "he_053_039",
+      "surah": 53,
+      "ayah": 39,
+      "surah_name": "An-Najm",
+      "description": "Man will not have except what he strives for, and his effort will be seen, then fully rewarded",
+      "entities": ["concept_personal_responsibility", "concept_effort", "theme_accountability"],
+      "themes": ["effort", "accountability", "reward"],
+      "semantic_tags": ["motivation", "ethics"]
+    },
+    {
+      "id": "he_054_017",
+      "surah": 54,
+      "ayah": 17,
+      "surah_name": "Al-Qamar",
+      "description": "We have made the Quran easy for remembrance — is there anyone who will remember? (Repeated 4 times)",
+      "entities": ["scripture_quran", "concept_quran_ease", "concept_dhikr"],
+      "themes": ["quran_description", "remembrance"],
+      "semantic_tags": ["quran_description", "memorization", "motivation"]
+    },
+    {
+      "id": "he_055_013",
+      "surah": 55,
+      "ayah": 13,
+      "surah_name": "Ar-Rahman",
+      "description": "So which of the favors of your Lord would you deny? (Repeated 31 times)",
+      "entities": ["attr_ar_rahman", "theme_gratitude", "concept_divine_blessings"],
+      "themes": ["mercy", "gratitude", "blessings"],
+      "semantic_tags": ["contemplation", "gratitude", "recitation"]
+    },
+    {
+      "id": "he_055_026",
+      "surah": 55,
+      "ayah": 26,
+      "surah_name": "Ar-Rahman",
+      "description": "Everyone upon the earth will perish, and there will remain the Face of your Lord, Owner of Majesty and Honor",
+      "entities": ["concept_fana", "attr_dhul_jalal_wal_ikram", "theme_divine_permanence"],
+      "themes": ["divine_permanence", "death"],
+      "semantic_tags": ["contemplation", "akhirah"]
+    },
+    {
+      "id": "he_056_010",
+      "surah": 56,
+      "ayah": 10,
+      "surah_name": "Al-Waqi'ah",
+      "description": "The forerunners, the forerunners — those are the ones brought near in Gardens of Pleasure",
+      "entities": ["concept_sabiqun", "place_jannah", "theme_reward"],
+      "themes": ["akhirah", "reward"],
+      "semantic_tags": ["akhirah", "motivation"]
+    },
+    {
+      "id": "he_056_077",
+      "surah": 56,
+      "ayah": 77,
+      "surah_name": "Al-Waqi'ah",
+      "description": "It is a noble Quran, in a guarded Book — none touch it except the purified",
+      "entities": ["scripture_quran", "concept_lawh_mahfuz", "concept_ritual_purity"],
+      "themes": ["quran_description", "purity"],
+      "semantic_tags": ["quran_description", "adab"]
+    },
+    {
+      "id": "he_057_003",
+      "surah": 57,
+      "ayah": 3,
+      "surah_name": "Al-Hadid",
+      "description": "He is the First and the Last, the Manifest and the Hidden — He has knowledge of all things",
+      "entities": ["attr_al_awwal", "attr_al_akhir", "attr_az_zahir", "attr_al_batin", "theme_divine_attributes"],
+      "themes": ["divine_attributes", "tawheed"],
+      "semantic_tags": ["creed", "dhikr", "contemplation"]
+    },
+    {
+      "id": "he_057_004",
+      "surah": 57,
+      "ayah": 4,
+      "surah_name": "Al-Hadid",
+      "description": "He created the heavens and earth in six days, rose over the Throne — He is with you wherever you are",
+      "entities": ["concept_creation_six_days", "concept_throne", "concept_divine_omnipresence", "theme_divine_nearness"],
+      "themes": ["creation", "divine_nearness"],
+      "semantic_tags": ["creed", "contemplation"]
+    },
+    {
+      "id": "he_057_020",
+      "surah": 57,
+      "ayah": 20,
+      "surah_name": "Al-Hadid",
+      "description": "Know that worldly life is play, amusement, adornment, boasting, and competition in wealth and children",
+      "entities": ["concept_dunya", "theme_worldly_temptation", "concept_akhirah_comparison"],
+      "themes": ["worldly_attachment", "akhirah"],
+      "semantic_tags": ["contemplation", "zuhd"]
+    },
+    {
+      "id": "he_058_011",
+      "surah": 58,
+      "ayah": 11,
+      "surah_name": "Al-Mujadilah",
+      "description": "Allah will raise those who believe and those who have been given knowledge by degrees",
+      "entities": ["concept_knowledge", "concept_iman", "theme_elevation"],
+      "themes": ["knowledge", "faith", "elevation"],
+      "semantic_tags": ["knowledge", "motivation"]
+    },
+    {
+      "id": "he_059_007",
+      "surah": 59,
+      "ayah": 7,
+      "surah_name": "Al-Hashr",
+      "description": "What the Messenger gives you, take it; what he forbids you, abstain from it — fear Allah",
+      "entities": ["concept_prophetic_authority", "concept_obedience", "concept_taqwa"],
+      "themes": ["obedience", "prophethood"],
+      "semantic_tags": ["foundational", "jurisprudence"]
+    },
+    {
+      "id": "he_059_022",
+      "surah": 59,
+      "ayah": 22,
+      "surah_name": "Al-Hashr",
+      "description": "He is Allah — there is no deity except Him, Knower of the unseen and witnessed, the Most Merciful",
+      "entities": ["attr_ar_rahman", "attr_ar_raheem", "concept_ghayb", "theme_tawheed"],
+      "themes": ["tawheed", "divine_attributes"],
+      "semantic_tags": ["creed", "daily_recitation", "asma_al_husna"]
+    },
+    {
+      "id": "he_059_023",
+      "surah": 59,
+      "ayah": 23,
+      "surah_name": "Al-Hashr",
+      "description": "He is Allah — the Sovereign, the Holy, the Source of Peace, the Bestower of Security, the Guardian, the Almighty, the Compeller, the Supreme",
+      "entities": ["attr_al_malik", "attr_al_quddus", "attr_as_salam", "attr_al_mumin", "attr_al_muhaymin", "attr_al_aziz", "attr_al_jabbar", "attr_al_mutakabbir"],
+      "themes": ["divine_attributes", "tawheed"],
+      "semantic_tags": ["asma_al_husna", "daily_recitation", "memorization"]
+    },
+    {
+      "id": "he_059_024",
+      "surah": 59,
+      "ayah": 24,
+      "surah_name": "Al-Hashr",
+      "description": "He is Allah — the Creator, the Originator, the Fashioner; to Him belong the Most Beautiful Names",
+      "entities": ["attr_al_khaliq", "attr_al_bari", "attr_al_musawwir", "concept_asma_al_husna"],
+      "themes": ["divine_attributes", "creation"],
+      "semantic_tags": ["asma_al_husna", "daily_recitation"]
+    },
+    {
+      "id": "he_060_008",
+      "surah": 60,
+      "ayah": 8,
+      "surah_name": "Al-Mumtahanah",
+      "description": "Allah does not forbid you from being kind and just to those who do not fight you — He loves the just",
+      "entities": ["concept_interfaith_kindness", "theme_justice", "theme_coexistence"],
+      "themes": ["justice", "coexistence", "kindness"],
+      "semantic_tags": ["ethics", "interfaith"]
+    },
+    {
+      "id": "he_061_004",
+      "surah": 61,
+      "ayah": 4,
+      "surah_name": "As-Saff",
+      "description": "Allah loves those who fight in His cause in a row as though they are a single solid structure",
+      "entities": ["concept_unity", "theme_solidarity", "concept_jihad"],
+      "themes": ["unity", "solidarity"],
+      "semantic_tags": ["community", "motivation"]
+    },
+    {
+      "id": "he_062_009",
+      "surah": 62,
+      "ayah": 9,
+      "surah_name": "Al-Jumu'ah",
+      "description": "When the call to prayer on Friday is proclaimed, hasten to the remembrance of Allah and leave trade",
+      "entities": ["ruling_jummah", "ruling_salah", "concept_dhikr"],
+      "themes": ["worship", "friday_prayer"],
+      "semantic_tags": ["ruling", "friday", "salah"]
+    },
+    {
+      "id": "he_063_009",
+      "surah": 63,
+      "ayah": 9,
+      "surah_name": "Al-Munafiqun",
+      "description": "O believers, do not let your wealth or children divert you from the remembrance of Allah",
+      "entities": ["concept_dhikr", "theme_worldly_temptation", "theme_priority"],
+      "themes": ["remembrance", "priorities"],
+      "semantic_tags": ["warning", "contemplation"]
+    },
+    {
+      "id": "he_064_016",
+      "surah": 64,
+      "ayah": 16,
+      "surah_name": "At-Taghabun",
+      "description": "Fear Allah as much as you are able, listen, obey, spend — it is better for yourselves",
+      "entities": ["concept_taqwa", "concept_istita'ah", "ruling_charity"],
+      "themes": ["taqwa", "charity", "capacity"],
+      "semantic_tags": ["ruling", "foundational"]
+    },
+    {
+      "id": "he_065_002",
+      "surah": 65,
+      "ayah": 2,
+      "surah_name": "At-Talaq",
+      "description": "Whoever fears Allah — He will make for him a way out and provide for him from where he does not expect",
+      "entities": ["concept_taqwa", "concept_tawakkul", "theme_divine_provision", "attr_ar_razzaq"],
+      "themes": ["taqwa", "provision", "trust"],
+      "semantic_tags": ["comfort", "daily_recitation", "tawakkul"]
+    },
+    {
+      "id": "he_065_003",
+      "surah": 65,
+      "ayah": 3,
+      "surah_name": "At-Talaq",
+      "description": "Whoever relies upon Allah — He is sufficient for him; Allah will accomplish His purpose",
+      "entities": ["concept_tawakkul", "concept_divine_sufficiency"],
+      "themes": ["trust", "reliance_on_allah"],
+      "semantic_tags": ["comfort", "tawakkul"]
+    },
+    {
+      "id": "he_066_006",
+      "surah": 66,
+      "ayah": 6,
+      "surah_name": "At-Tahrim",
+      "description": "O believers, protect yourselves and your families from a Fire whose fuel is people and stones",
+      "entities": ["concept_family_responsibility", "place_jahannam", "theme_akhirah", "theme_tarbiyah"],
+      "themes": ["family", "akhirah", "education"],
+      "semantic_tags": ["ruling", "family", "warning"]
+    },
+    {
+      "id": "he_067_001",
+      "surah": 67,
+      "ayah": 1,
+      "surah_name": "Al-Mulk",
+      "description": "Blessed is He in whose hand is the dominion, and He has power over all things",
+      "entities": ["attr_al_malik", "theme_sovereignty", "theme_divine_power"],
+      "themes": ["sovereignty", "divine_power"],
+      "semantic_tags": ["daily_recitation", "protection"]
+    },
+    {
+      "id": "he_067_002",
+      "surah": 67,
+      "ayah": 2,
+      "surah_name": "Al-Mulk",
+      "description": "He who created death and life to test which of you is best in deed",
+      "entities": ["concept_death", "concept_life", "theme_divine_test", "concept_ihsan"],
+      "themes": ["purpose", "test", "good_deeds"],
+      "semantic_tags": ["contemplation", "foundational"]
+    },
+    {
+      "id": "he_068_004",
+      "surah": 68,
+      "ayah": 4,
+      "surah_name": "Al-Qalam",
+      "description": "And indeed, you are of a great moral character",
+      "entities": ["concept_prophet_character", "concept_khuluq_azeem"],
+      "themes": ["prophetic_character"],
+      "semantic_tags": ["prophetic_model", "character"]
+    },
+    {
+      "id": "he_071_010",
+      "surah": 71,
+      "ayah": 10,
+      "surah_name": "Nuh",
+      "description": "I said: Seek forgiveness of your Lord — He is ever a Perpetual Forgiver; He will send rain, give wealth, children, gardens, rivers",
+      "entities": ["prophet_nuh", "concept_istighfar", "attr_al_ghaffar", "theme_divine_provision"],
+      "themes": ["forgiveness", "provision"],
+      "semantic_tags": ["dua", "istighfar", "narrative"]
+    },
+    {
+      "id": "he_072_001",
+      "surah": 72,
+      "ayah": 1,
+      "surah_name": "Al-Jinn",
+      "description": "Say: It was revealed to me that a group of jinn listened and said: We have heard an amazing Quran",
+      "entities": ["concept_jinn", "scripture_quran", "theme_guidance"],
+      "themes": ["jinn", "quran_miracle"],
+      "semantic_tags": ["narrative", "quran_description"]
+    },
+    {
+      "id": "he_073_001",
+      "surah": 73,
+      "ayah": 1,
+      "surah_name": "Al-Muzzammil",
+      "description": "O you wrapped in garments, stand the night in prayer except a little",
+      "entities": ["ruling_tahajjud", "concept_qiyam_al_layl", "theme_worship"],
+      "themes": ["night_prayer", "worship"],
+      "semantic_tags": ["ruling", "tahajjud"]
+    },
+    {
+      "id": "he_073_020",
+      "surah": 73,
+      "ayah": 20,
+      "surah_name": "Al-Muzzammil",
+      "description": "Read what is easy from the Quran; establish prayer, give zakat, lend Allah a goodly loan",
+      "entities": ["scripture_quran", "ruling_salah", "ruling_zakat", "concept_qard_hasanah"],
+      "themes": ["worship", "charity"],
+      "semantic_tags": ["ruling", "comprehensive"]
+    },
+    {
+      "id": "he_076_008",
+      "surah": 76,
+      "ayah": 8,
+      "surah_name": "Al-Insan",
+      "description": "They give food out of love for Him to the poor, orphan, and captive",
+      "entities": ["theme_charity", "ruling_orphan_care", "concept_altruism", "concept_ikhlas"],
+      "themes": ["charity", "altruism", "sincerity"],
+      "semantic_tags": ["ethics", "charity"]
+    },
+    {
+      "id": "he_078_001",
+      "surah": 78,
+      "ayah": 1,
+      "surah_name": "An-Naba",
+      "description": "About what are they asking one another? About the great news (Day of Judgment)",
+      "entities": ["concept_day_of_judgment", "theme_akhirah", "concept_naba_azeem"],
+      "themes": ["akhirah", "resurrection"],
+      "semantic_tags": ["akhirah", "contemplation"]
+    },
+    {
+      "id": "he_082_006",
+      "surah": 82,
+      "ayah": 6,
+      "surah_name": "Al-Infitar",
+      "description": "O mankind, what has deceived you concerning your Lord, the Generous?",
+      "entities": ["attr_al_kareem", "theme_accountability", "concept_self_deception"],
+      "themes": ["accountability", "divine_generosity"],
+      "semantic_tags": ["contemplation", "warning"]
+    },
+    {
+      "id": "he_084_006",
+      "surah": 84,
+      "ayah": 6,
+      "surah_name": "Al-Inshiqaq",
+      "description": "O mankind, you are laboring toward your Lord with exertion and will meet Him",
+      "entities": ["concept_return_to_allah", "theme_effort", "theme_accountability"],
+      "themes": ["return_to_allah", "effort"],
+      "semantic_tags": ["contemplation", "motivation"]
+    },
+    {
+      "id": "he_087_001",
+      "surah": 87,
+      "ayah": 1,
+      "surah_name": "Al-A'la",
+      "description": "Glorify the name of your Lord, the Most High",
+      "entities": ["attr_al_ala", "concept_tasbih", "theme_worship"],
+      "themes": ["worship", "glorification"],
+      "semantic_tags": ["salah", "daily_recitation"]
+    },
+    {
+      "id": "he_089_027",
+      "surah": 89,
+      "ayah": 27,
+      "surah_name": "Al-Fajr",
+      "description": "O reassured soul, return to your Lord well-pleased and pleasing — enter My Paradise",
+      "entities": ["concept_nafs_mutmainnah", "place_jannah", "theme_peace", "concept_return_to_allah"],
+      "themes": ["peace", "paradise", "spiritual_station"],
+      "semantic_tags": ["comfort", "akhirah", "funeral"]
+    },
+    {
+      "id": "he_091_007",
+      "surah": 91,
+      "ayah": 7,
+      "surah_name": "Ash-Shams",
+      "description": "By the soul and He who proportioned it, then inspired it with its wickedness and righteousness",
+      "entities": ["concept_nafs", "concept_fitrah", "theme_moral_choice"],
+      "themes": ["human_nature", "moral_choice"],
+      "semantic_tags": ["contemplation", "psychology"]
+    },
+    {
+      "id": "he_091_009",
+      "surah": 91,
+      "ayah": 9,
+      "surah_name": "Ash-Shams",
+      "description": "He has succeeded who purifies it, and he has failed who corrupts it",
+      "entities": ["concept_tazkiyah", "concept_nafs", "theme_purification"],
+      "themes": ["purification", "success"],
+      "semantic_tags": ["contemplation", "self_improvement"]
+    },
+    {
+      "id": "he_093_001",
+      "surah": 93,
+      "ayah": 1,
+      "surah_name": "Ad-Duha",
+      "description": "By the morning brightness — your Lord has not forsaken you nor is He displeased",
+      "entities": ["theme_comfort", "theme_divine_care", "concept_hope"],
+      "themes": ["comfort", "hope"],
+      "semantic_tags": ["comfort", "daily_recitation"]
+    },
+    {
+      "id": "he_093_005",
+      "surah": 93,
+      "ayah": 5,
+      "surah_name": "Ad-Duha",
+      "description": "And your Lord is going to give you, and you will be satisfied",
+      "entities": ["theme_divine_promise", "theme_hope", "theme_satisfaction"],
+      "themes": ["hope", "divine_promise"],
+      "semantic_tags": ["comfort", "hope"]
+    },
+    {
+      "id": "he_094_005",
+      "surah": 94,
+      "ayah": 5,
+      "surah_name": "Ash-Sharh",
+      "description": "For indeed, with hardship comes ease (Inna ma'al usri yusra)",
+      "entities": ["theme_ease", "concept_divine_promise", "theme_hardship"],
+      "themes": ["ease", "hope", "divine_promise"],
+      "semantic_tags": ["daily_recitation", "memorization", "comfort", "frequently_quoted"]
+    },
+    {
+      "id": "he_095_004",
+      "surah": 95,
+      "ayah": 4,
+      "surah_name": "At-Tin",
+      "description": "We created man in the best form (ahsan taqweem)",
+      "entities": ["concept_ahsan_taqweem", "concept_human_dignity", "theme_creation"],
+      "themes": ["human_dignity", "creation"],
+      "semantic_tags": ["foundational", "contemplation"]
+    },
+    {
+      "id": "he_096_001",
+      "surah": 96,
+      "ayah": 1,
+      "surah_name": "Al-Alaq",
+      "description": "Read in the name of your Lord who created — first revelation to the Prophet",
+      "entities": ["event_first_revelation", "concept_knowledge", "concept_reading", "attr_al_khaliq"],
+      "themes": ["revelation", "knowledge", "reading"],
+      "semantic_tags": ["foundational", "historic", "knowledge"]
+    },
+    {
+      "id": "he_097_001",
+      "surah": 97,
+      "ayah": 1,
+      "surah_name": "Al-Qadr",
+      "description": "We sent it down on the Night of Power",
+      "entities": ["event_quran_revelation", "concept_laylat_al_qadr", "scripture_quran"],
+      "themes": ["revelation", "blessed_night"],
+      "semantic_tags": ["ramadan", "foundational"]
+    },
+    {
+      "id": "he_097_003",
+      "surah": 97,
+      "ayah": 3,
+      "surah_name": "Al-Qadr",
+      "description": "The Night of Power is better than a thousand months",
+      "entities": ["concept_laylat_al_qadr", "theme_divine_blessing", "angel_general"],
+      "themes": ["blessed_night", "worship"],
+      "semantic_tags": ["ramadan", "motivation", "memorization"]
+    },
+    {
+      "id": "he_098_005",
+      "surah": 98,
+      "ayah": 5,
+      "surah_name": "Al-Bayyinah",
+      "description": "They were commanded only to worship Allah sincerely, establish prayer, and give zakat — the right religion",
+      "entities": ["theme_tawheed", "concept_ikhlas", "ruling_salah", "ruling_zakat"],
+      "themes": ["worship", "sincerity"],
+      "semantic_tags": ["foundational", "creed"]
+    },
+    {
+      "id": "he_099_007",
+      "surah": 99,
+      "ayah": 7,
+      "surah_name": "Az-Zalzalah",
+      "description": "Whoever does an atom's weight of good will see it; whoever does an atom's weight of evil will see it",
+      "entities": ["concept_accountability", "theme_akhirah", "concept_divine_justice"],
+      "themes": ["accountability", "akhirah", "justice"],
+      "semantic_tags": ["foundational", "memorization", "frequently_quoted"]
+    },
+    {
+      "id": "he_100_006",
+      "surah": 100,
+      "ayah": 6,
+      "surah_name": "Al-Adiyat",
+      "description": "Indeed mankind is ungrateful to his Lord — and he is a witness to that",
+      "entities": ["theme_ingratitude", "concept_self_awareness", "theme_accountability"],
+      "themes": ["ingratitude", "accountability"],
+      "semantic_tags": ["contemplation", "warning"]
+    },
+    {
+      "id": "he_102_001",
+      "surah": 102,
+      "ayah": 1,
+      "surah_name": "At-Takathur",
+      "description": "Competition for more distracts you — until you visit the graves",
+      "entities": ["concept_takathur", "theme_worldly_temptation", "concept_death"],
+      "themes": ["worldly_attachment", "warning"],
+      "semantic_tags": ["contemplation", "zuhd"]
+    },
+    {
+      "id": "he_103_001",
+      "surah": 103,
+      "ayah": 1,
+      "surah_name": "Al-Asr",
+      "description": "By time, indeed mankind is in loss — except those who believe, do good, enjoin truth, and enjoin patience",
+      "entities": ["concept_time", "concept_iman", "theme_good_deeds", "theme_truth", "theme_patience"],
+      "themes": ["time", "faith", "ethics", "patience"],
+      "semantic_tags": ["foundational", "memorization", "comprehensive", "frequently_quoted"]
+    },
+    {
+      "id": "he_104_001",
+      "surah": 104,
+      "ayah": 1,
+      "surah_name": "Al-Humazah",
+      "description": "Woe to every scorner and mocker who collects wealth and counts it — thinking it will make him immortal",
+      "entities": ["theme_warning", "ruling_prohibition_mockery", "concept_wealth_obsession"],
+      "themes": ["warning", "character"],
+      "semantic_tags": ["warning", "ethics"]
+    },
+    {
+      "id": "he_105_001",
+      "surah": 105,
+      "ayah": 1,
+      "surah_name": "Al-Fil",
+      "description": "Have you not considered how your Lord dealt with the companions of the elephant?",
+      "entities": ["event_year_of_elephant", "group_ashab_al_fil", "place_kaaba", "theme_divine_protection"],
+      "themes": ["divine_protection", "history"],
+      "semantic_tags": ["narrative", "historic"]
+    },
+    {
+      "id": "he_107_001",
+      "surah": 107,
+      "ayah": 1,
+      "surah_name": "Al-Ma'un",
+      "description": "Have you seen the one who denies the religion? He repels the orphan and does not encourage feeding the poor",
+      "entities": ["ruling_orphan_care", "theme_charity", "theme_hypocrisy", "concept_din"],
+      "themes": ["charity", "hypocrisy", "social_ethics"],
+      "semantic_tags": ["ethics", "warning"]
+    },
+    {
+      "id": "he_108_001",
+      "surah": 108,
+      "ayah": 1,
+      "surah_name": "Al-Kawthar",
+      "description": "We have given you al-Kawthar — so pray to your Lord and sacrifice",
+      "entities": ["concept_kawthar", "ruling_salah", "ruling_sacrifice", "theme_divine_blessing"],
+      "themes": ["blessing", "worship"],
+      "semantic_tags": ["daily_recitation", "eid"]
+    },
+    {
+      "id": "he_109_001",
+      "surah": 109,
+      "ayah": 1,
+      "surah_name": "Al-Kafirun",
+      "description": "Say: O disbelievers, I do not worship what you worship — to you your religion, to me mine",
+      "entities": ["theme_tawheed", "concept_religious_freedom", "concept_tolerance"],
+      "themes": ["tawheed", "religious_freedom"],
+      "semantic_tags": ["daily_recitation", "memorization", "creed"]
+    },
+    {
+      "id": "he_110_001",
+      "surah": 110,
+      "ayah": 1,
+      "surah_name": "An-Nasr",
+      "description": "When the victory of Allah comes and the conquest — people enter Islam in multitudes",
+      "entities": ["event_conquest_mecca", "concept_istighfar", "theme_victory"],
+      "themes": ["victory", "repentance"],
+      "semantic_tags": ["historic", "narrative"]
+    },
+    {
+      "id": "he_111_001",
+      "surah": 111,
+      "ayah": 1,
+      "surah_name": "Al-Masad",
+      "description": "May the hands of Abu Lahab be ruined — his wealth and gain will not avail him",
+      "entities": ["figure_abu_lahab", "theme_warning", "concept_divine_justice"],
+      "themes": ["warning", "justice"],
+      "semantic_tags": ["historic", "warning"]
+    },
+    {
+      "id": "he_112_001",
+      "surah": 112,
+      "ayah": 1,
+      "surah_name": "Al-Ikhlas",
+      "description": "Say: He is Allah, the One — the eternal refuge; He neither begets nor is begotten; there is nothing comparable",
+      "entities": ["attr_al_ahad", "attr_as_samad", "theme_tawheed", "concept_divine_uniqueness"],
+      "themes": ["tawheed", "divine_attributes"],
+      "semantic_tags": ["daily_recitation", "memorization", "foundational", "creed", "protection"]
+    },
+    {
+      "id": "he_113_001",
+      "surah": 113,
+      "ayah": 1,
+      "surah_name": "Al-Falaq",
+      "description": "Say: I seek refuge in the Lord of daybreak — from the evil of what He has created, darkness, envy",
+      "entities": ["concept_isti'adhah", "theme_protection", "concept_evil_eye", "theme_refuge"],
+      "themes": ["protection", "refuge"],
+      "semantic_tags": ["daily_recitation", "memorization", "protection", "ruqyah"]
+    },
+    {
+      "id": "he_114_001",
+      "surah": 114,
+      "ayah": 1,
+      "surah_name": "An-Nas",
+      "description": "Say: I seek refuge in the Lord of mankind — from the evil of the retreating whisperer who whispers in hearts",
+      "entities": ["concept_isti'adhah", "figure_shaytan", "concept_waswas", "theme_protection"],
+      "themes": ["protection", "refuge"],
+      "semantic_tags": ["daily_recitation", "memorization", "protection", "ruqyah"]
+    }
+  ]
+}

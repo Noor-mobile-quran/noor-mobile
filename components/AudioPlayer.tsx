@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 import { View, Text, Pressable, AccessibilityInfo } from "react-native";
+import Svg, { Path, Rect, Line } from "react-native-svg";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -21,7 +22,7 @@ export function AudioPlayer() {
   const { stop, pause, resume } = useAudioPlayer();
   const { data: surahList } = useSurahList();
 
-  const isPausedRef = useRef(false);
+  const [isPaused, setIsPaused] = useState(false);
 
   // Slide-up entrance animation
   const translateY = useSharedValue(100);
@@ -46,7 +47,7 @@ export function AudioPlayer() {
 
   // Animated progress bar (subtle repeating shimmer to indicate playback)
   useEffect(() => {
-    if (audioPlaying && !isPausedRef.current) {
+    if (audioPlaying && !isPaused) {
       progressWidth.value = 0;
       progressWidth.value = withRepeat(
         withTiming(1, { duration: 4000, easing: Easing.linear }),
@@ -69,17 +70,17 @@ export function AudioPlayer() {
   }
 
   const handlePlayPause = async () => {
-    if (isPausedRef.current) {
-      isPausedRef.current = false;
+    if (isPaused) {
+      setIsPaused(false);
       await resume();
     } else {
-      isPausedRef.current = true;
+      setIsPaused(true);
       await pause();
     }
   };
 
   const handleStop = async () => {
-    isPausedRef.current = false;
+    setIsPaused(false);
     await stop();
   };
 
@@ -166,17 +167,19 @@ export function AudioPlayer() {
             alignItems: "center",
           }}
           accessibilityRole="button"
-          accessibilityLabel={isPausedRef.current ? "Resume" : "Pause"}
+          accessibilityLabel={isPaused ? "Resume" : "Pause"}
+          accessibilityHint="Double tap to toggle audio playback"
         >
-          <Text
-            style={{
-              fontSize: iconSize,
-              color: colors.bg,
-              fontWeight: "700",
-            }}
-          >
-            {isPausedRef.current ? "▶" : "❚❚"}
-          </Text>
+          {isPaused ? (
+            <Svg width={iconSize} height={iconSize} viewBox="0 0 24 24">
+              <Path d="M8 5v14l11-7z" fill={colors.bg} />
+            </Svg>
+          ) : (
+            <Svg width={iconSize} height={iconSize} viewBox="0 0 24 24">
+              <Rect x={6} y={4} width={4} height={16} rx={1} fill={colors.bg} />
+              <Rect x={14} y={4} width={4} height={16} rx={1} fill={colors.bg} />
+            </Svg>
+          )}
         </Pressable>
 
         {/* Stop / Close */}
@@ -191,16 +194,12 @@ export function AudioPlayer() {
           }}
           accessibilityRole="button"
           accessibilityLabel="Stop audio"
+          accessibilityHint="Double tap to stop and close audio player"
         >
-          <Text
-            style={{
-              fontSize: iconSize,
-              color: colors.textSecondary,
-              fontWeight: "700",
-            }}
-          >
-            ✕
-          </Text>
+          <Svg width={iconSize} height={iconSize} viewBox="0 0 24 24">
+            <Line x1={6} y1={6} x2={18} y2={18} stroke={colors.textSecondary} strokeWidth={2.5} strokeLinecap="round" />
+            <Line x1={18} y1={6} x2={6} y2={18} stroke={colors.textSecondary} strokeWidth={2.5} strokeLinecap="round" />
+          </Svg>
         </Pressable>
       </View>
     </Animated.View>
