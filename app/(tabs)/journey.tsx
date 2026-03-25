@@ -13,11 +13,11 @@ import {
 
 type Section = "completion" | "juz" | "bookmarks" | "explore";
 
-const SECTIONS: { key: Section; label: string }[] = [
-  { key: "completion", label: "Completion" },
-  { key: "juz", label: "Juz Map" },
-  { key: "bookmarks", label: "Bookmarks" },
-  { key: "explore", label: "Explore" },
+const SECTIONS: { key: Section; label: string; desc: string }[] = [
+  { key: "completion", label: "Completion", desc: "Track your progress through all 114 surahs" },
+  { key: "juz", label: "Juz Map", desc: "30 parts of the Quran \u2014 read 1 per day" },
+  { key: "bookmarks", label: "Bookmarks", desc: "Ayahs you\u2019ve saved for reflection" },
+  { key: "explore", label: "Explore", desc: "Discover prophets, themes, and stories across the Quran" },
 ];
 
 export default function JourneyPage() {
@@ -75,6 +75,16 @@ export default function JourneyPage() {
         </ScrollView>
       </View>
 
+      {/* Section description */}
+      <Text
+        style={[
+          styles.sectionDesc,
+          { color: colors.textSecondary },
+        ]}
+      >
+        {SECTIONS.find((s) => s.key === activeSection)?.desc}
+      </Text>
+
       <OrnamentalDivider />
 
       {/* Active section content */}
@@ -119,6 +129,13 @@ const styles = StyleSheet.create({
   tabText: {
     fontSize: 13,
     lineHeight: 16,
+  },
+  sectionDesc: {
+    fontFamily: "Inter-Regular",
+    fontSize: 11,
+    paddingHorizontal: 20,
+    paddingTop: 6,
+    paddingBottom: 2,
   },
   content: {
     flex: 1,

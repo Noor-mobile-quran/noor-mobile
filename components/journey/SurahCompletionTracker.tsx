@@ -20,6 +20,22 @@ import type { SurahMeta } from "../../types";
 const COLUMNS_MOBILE = 8;
 const COLUMNS_DESKTOP = 11;
 
+/* ── Help icon SVG ── */
+function HelpIcon({ size = 16, color = "#6B5B45" }: { size?: number; color?: string }) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path
+        d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z"
+        fill={color}
+      />
+      <Path
+        d="M12 16a1 1 0 100-2 1 1 0 000 2zm1-4.5V12h-2v-.5a3 3 0 113-3h-2a1 1 0 00-1 1v.5"
+        fill={color}
+      />
+    </Svg>
+  );
+}
+
 /* ── Tiny crescent SVG for "last read" indicator ── */
 function CrescentIndicator({ size = 10, color = "#D4A843" }: { size?: number; color?: string }) {
   return (
@@ -51,8 +67,18 @@ export function SurahCompletionTracker() {
   const { data: surahs } = useSurahList();
   const completedSurahs = useAppStore((s) => s.progress.completedSurahs);
   const lastReadSurah = useAppStore((s) => s.progress.lastReadSurah);
+  const completionGuideShown = useAppStore((s) => s.completionGuideShown);
+  const setCompletionGuideShown = useAppStore((s) => s.setCompletionGuideShown);
+  const [showGuide, setShowGuide] = useState(!completionGuideShown);
   const [reduceMotion, setReduceMotion] = useState(true);
   const [selectedSurah, setSelectedSurah] = useState<SurahMeta | null>(null);
+
+  // Mark guide as shown on first render
+  useEffect(() => {
+    if (!completionGuideShown) {
+      setCompletionGuideShown(true);
+    }
+  }, [completionGuideShown, setCompletionGuideShown]);
 
   useEffect(() => {
     try {
@@ -113,12 +139,23 @@ export function SurahCompletionTracker() {
 
   return (
     <ScrollView style={{ flex: 1 }} contentContainerStyle={[styles.container, { backgroundColor: colors.surface }]}>
-      <Text
-        style={[styles.header, { color: colors.textPrimary }]}
-        accessibilityRole="header"
-      >
-        Quran Completion
-      </Text>
+      <View style={styles.headerRow}>
+        <Text
+          style={[styles.header, { color: colors.textPrimary }]}
+          accessibilityRole="header"
+        >
+          Quran Completion
+        </Text>
+        <Pressable
+          onPress={() => setShowGuide((v) => !v)}
+          accessibilityLabel={showGuide ? "Hide guide" : "Show guide"}
+          accessibilityRole="button"
+          hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+          style={styles.helpButton}
+        >
+          <HelpIcon size={16} color={colors.textSecondary} />
+        </Pressable>
+      </View>
       <Text style={[styles.fraction, { color: colors.textSecondary }]}>
         {completedCount} / {total} Surahs
       </Text>
@@ -158,6 +195,13 @@ export function SurahCompletionTracker() {
           <Text style={[styles.statLabel, { color: colors.textSecondary }]}>Complete</Text>
         </View>
       </View>
+
+      {/* Guide text — shows on first visit or when "?" is tapped */}
+      {showGuide && (
+        <Text style={[styles.guideText, { color: colors.textSecondary }]}>
+          Each circle is a surah. Tap to see its name, tap again to read. Gold = completed. Your goal: fill all 114.
+        </Text>
+      )}
 
       {/* Selected surah tooltip */}
       {selectedSurah && (
@@ -337,10 +381,27 @@ const styles = StyleSheet.create({
     padding: 16,
     paddingBottom: 32,
   },
+  headerRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
   header: {
     fontFamily: "Inter-SemiBold",
     fontSize: 18,
     marginBottom: 2,
+  },
+  helpButton: {
+    width: 44,
+    height: 44,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  guideText: {
+    fontFamily: "Inter-Regular",
+    fontSize: 12,
+    lineHeight: 18,
+    marginBottom: 12,
   },
   fraction: {
     fontFamily: "Inter-Regular",

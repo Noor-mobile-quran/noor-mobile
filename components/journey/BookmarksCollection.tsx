@@ -288,10 +288,20 @@ export default function BookmarksCollection() {
           paddingVertical: 48,
         },
         emptyText: {
-          fontFamily: "Inter_400Regular",
-          fontSize: 15,
-          color: colors.textSecondary,
+          fontFamily: "Inter_500Medium",
+          fontSize: 16,
+          color: colors.textPrimary,
           marginTop: 16,
+          textAlign: "center",
+        },
+        emptySubtext: {
+          fontFamily: "Inter_400Regular",
+          fontSize: 13,
+          color: colors.textSecondary,
+          marginTop: 8,
+          textAlign: "center",
+          lineHeight: 19,
+          paddingHorizontal: 24,
         },
       }),
     [colors]
@@ -337,12 +347,17 @@ export default function BookmarksCollection() {
       {/* List or Empty State */}
       {filtered.length === 0 ? (
         <View style={styles.emptyContainer}>
-          <StarOrnament size={64} color={colors.accent} />
+          <BookmarkIcon size={32} color={colors.accent} filled={false} />
           <Text style={styles.emptyText}>
             {activeTab === "with-notes"
               ? "No bookmarks with notes"
-              : "No bookmarks yet"}
+              : "Save ayahs that speak to your heart"}
           </Text>
+          {activeTab !== "with-notes" && (
+            <Text style={styles.emptySubtext}>
+              While reading, tap the bookmark icon on any ayah to save it here
+            </Text>
+          )}
         </View>
       ) : (
         filtered.map((bm) => {

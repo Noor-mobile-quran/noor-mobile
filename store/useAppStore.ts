@@ -26,6 +26,8 @@ interface AppState {
   audioPlaying: boolean;
   currentAudioAyah: number | null;
   streakVisible: boolean;
+  completionGuideShown: boolean;
+  explorerGuideShown: boolean;
 
   setUXMode: (mode: UXMode) => void;
   setTheme: (theme: ThemeMode) => void;
@@ -36,6 +38,8 @@ interface AppState {
   recordReading: (surah: number, ayah: number) => void;
   setAudioPlaying: (playing: boolean, ayah?: number | null) => void;
   toggleStreakVisible: () => void;
+  setCompletionGuideShown: (shown: boolean) => void;
+  dismissExplorerGuide: () => void;
 }
 
 export const useAppStore = create<AppState>((set, get) => ({
@@ -44,6 +48,8 @@ export const useAppStore = create<AppState>((set, get) => ({
   audioPlaying: false,
   currentAudioAyah: null,
   streakVisible: true,
+  completionGuideShown: false,
+  explorerGuideShown: false,
 
   setUXMode: (mode) => {
     set((s) => {
@@ -126,5 +132,13 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   toggleStreakVisible: () => {
     set((s) => ({ streakVisible: !s.streakVisible }));
+  },
+
+  setCompletionGuideShown: (shown) => {
+    set({ completionGuideShown: shown });
+  },
+
+  dismissExplorerGuide: () => {
+    set({ explorerGuideShown: true });
   },
 }));

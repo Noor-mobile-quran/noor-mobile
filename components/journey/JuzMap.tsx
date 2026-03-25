@@ -101,7 +101,7 @@ export function JuzMap() {
         Juz Overview
       </Text>
       <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
-        30 Parts of the Quran
+        The Quran is divided into 30 Juz (parts). Read 1 Juz per day to complete in a month.
       </Text>
 
       <View style={styles.grid}>
@@ -233,7 +233,8 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontFamily: "Inter-Regular",
-    fontSize: 14,
+    fontSize: 12,
+    lineHeight: 18,
     marginBottom: 16,
   },
   grid: {

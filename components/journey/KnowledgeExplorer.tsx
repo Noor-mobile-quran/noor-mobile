@@ -6,6 +6,7 @@ import {
   FlatList,
   ScrollView,
   TouchableOpacity,
+  Pressable,
   StyleSheet,
   Platform,
   AccessibilityInfo,
@@ -15,6 +16,7 @@ import {
 import { useRouter } from "expo-router";
 import Svg, { Path, Circle, Line } from "react-native-svg";
 import { useTheme } from "../../theme/ThemeProvider";
+import { useAppStore } from "../../store/useAppStore";
 
 const entities = require("../../assets/knowledge/entities.json");
 const themes = require("../../assets/knowledge/themes.json");
@@ -125,6 +127,8 @@ function configureExpandAnimation() {
 export default function KnowledgeExplorer() {
   const { colors } = useTheme();
   const router = useRouter();
+  const explorerGuideShown = useAppStore((s) => s.explorerGuideShown);
+  const dismissExplorerGuide = useAppStore((s) => s.dismissExplorerGuide);
   const [activeCategory, setActiveCategory] = useState<CategoryKey>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [expandedId, setExpandedId] = useState<string | null>(null);
@@ -328,6 +332,23 @@ export default function KnowledgeExplorer() {
         renderItem={renderEntityCard}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
+        ListHeaderComponent={
+          !explorerGuideShown ? (
+            <View style={styles.introCard}>
+              <Text style={styles.introText}>
+                Explore 222 Quranic entities — prophets, angels, places, themes, and more. Tap any entity to see which surahs mention it.
+              </Text>
+              <Pressable
+                onPress={dismissExplorerGuide}
+                style={styles.introButton}
+                accessibilityRole="button"
+                accessibilityLabel="Dismiss intro guide"
+              >
+                <Text style={styles.introButtonText}>Got it</Text>
+              </Pressable>
+            </View>
+          ) : null
+        }
         ListEmptyComponent={
           <View style={styles.emptyContainer}>
             <Text style={styles.emptyText}>No results found</Text>
@@ -896,6 +917,32 @@ function createStyles(colors: any) {
       color: colors.textSecondary,
       marginTop: 2,
       lineHeight: 19,
+    },
+    introCard: {
+      backgroundColor: colors.surface,
+      borderRadius: 14,
+      padding: 16,
+      marginBottom: 12,
+      borderWidth: 1,
+      borderColor: colors.border,
+    },
+    introText: {
+      fontFamily: "Inter-Regular",
+      fontSize: 14,
+      color: colors.textPrimary,
+      lineHeight: 21,
+    },
+    introButton: {
+      alignSelf: "flex-end",
+      marginTop: 10,
+      minHeight: 44,
+      justifyContent: "center",
+      paddingHorizontal: 12,
+    },
+    introButtonText: {
+      fontFamily: "Inter-Medium",
+      fontSize: 14,
+      color: colors.textSecondary,
     },
   });
 }
