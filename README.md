@@ -1,134 +1,79 @@
 <h1 align="center">نور</h1>
 
-<h2 align="center">Noor — Your Daily Quran Companion</h2>
+<h3 align="center">Your Daily Quran Companion</h3>
 
 <p align="center">
-  A daily Quran companion that turns occasional reading into a lifelong habit — through beauty, not pressure.
+  Beautiful. Reverent. Personal.<br/>
+  The Quran app that feels like opening a mushaf — not a productivity tool.
 </p>
 
 ---
 
-## Features
+### Read the Quran your way
 
-### Reading
+Noor gives you three reading modes designed around how you actually read:
 
-- Complete Quran — all 114 surahs with Arabic text and English translation
-- 3 UX modes: Serene (distraction-free), Immersive (audio-forward), Study (side-by-side with tafsir)
-- Configurable font sizes for comfortable extended reading
+- **Serene** — Clean, distraction-free. Just you and the Quran. Perfect for your daily reading on the commute.
+- **Immersive** — Dark, atmospheric, with auto-advancing audio recitation. Made for deep reading at Fajr.
+- **Study** — Side-by-side translation, inline notes, bookmarks. For your weekend tafsir sessions.
 
-### Engagement
+### Hear it beautifully recited
 
-- Daily reading streaks to build consistency
-- Daily featured ayah on the home screen
-- Progress tracking by juz and surah
-- Bookmarks with personal notes and reflections
-- Reading goals to guide your journey
+Choose from 6 world-renowned reciters including Mishary Al-Afasy, Abdul Basit, Sudais, Maher Al-Muaiqly, Husary, and Minshawi. Play ayah-by-ayah or let it flow continuously.
 
-### Design
+### Read in your language
 
-- Islamic SVG ornaments (crescent, star, geometric patterns)
-- Amiri calligraphy for Arabic text
-- Warm gold, cream, and earth palette
-- 3 themes: Light, Dark, and High Contrast
+Full Quran in Arabic with English and Urdu translations. Switch between languages anytime. Arabic text rendered in beautiful Amiri calligraphy with proper diacritical marks.
 
-### Accessibility
+### Explore deeper
 
-- WCAG 2.1 AA compliant
-- Full RTL Arabic with screen reader support
-- 44px minimum touch targets
-- High contrast mode for low-vision readers
+Noor includes a one-of-a-kind **Knowledge Explorer** — 222 Quranic entities (prophets, angels, places, themes, events, divine attributes) mapped across surahs. Follow the story of Yusuf (AS) across 7 surahs. Trace every mention of patience in the Quran. No other app does this.
 
-### Performance
+### Track your journey
 
-- ~15–20MB app size
-- All Quran data bundled offline — no internet required to read
-- Audio recitation streams on-demand
-- <2s cold start load time
+- See your Quran completion at a glance — all 114 surahs on one screen
+- Track progress through 30 Juz with visual progress rings
+- Save bookmarks with personal reflections
+- Search any word across all 6,236 ayahs
 
----
+### Share what moves you
 
-## Design Principles
+Long-press any ayah to share a beautiful card with Arabic text, translation, and surah reference — perfect for WhatsApp, Instagram, or your family group chat.
 
-1. **Sacred content, sacred space** — the UI serves the Quran, never competes with it. No clutter, no distractions.
-2. **Typography is the interface** — Amiri + Inter, generous whitespace, proper RTL. The text is the design.
-3. **Habit through beauty, not pressure** — gentle encouragement, never guilt. A missed day is met with a warm return.
-4. **Warm minimalism** — cream, gold, and earth palette with intentional Islamic ornaments. Clean but never cold.
-5. **Adapt to the reader** — 3 UX modes, configurable fonts, light/dark/high-contrast. The app reshapes around you.
+### Designed with intention
+
+Noor's warm cream, gold, and forest green palette was designed to feel reverent — like holding a real mushaf. No neon colors. No gamified badges. No guilt trips about missed days. Just beauty that invites you back.
+
+Light mode, dark mode, and high contrast. Adjustable font sizes. Full accessibility support.
 
 ---
 
-## Color Palette
+### Get started
 
-| Color         | Hex       | Usage                                    |
-|---------------|-----------|------------------------------------------|
-| Cream         | `#FFF9ED` | Light background                         |
-| Gold          | `#D4A843` | Primary accent                           |
-| Forest Green  | `#1B4332` | Deep accent (Kaaba/Prophet's dome inspired) |
-| Sand          | `#D4B896` | Secondary text                           |
-| Earth         | `#2D261C` | Headings                                 |
-| Midnight      | `#1A1410` | Dark mode background                     |
-
----
-
-## Tech Stack
-
-| Technology              | Purpose                    |
-|-------------------------|----------------------------|
-| Expo SDK 55             | React Native framework     |
-| React Native 0.76       | Mobile UI                  |
-| TypeScript 5.9          | Type safety                |
-| NativeWind 4            | Tailwind CSS for RN        |
-| Zustand 5               | State management           |
-| MMKV                    | Fast persistent storage    |
-| expo-av                 | Audio recitation           |
-| react-native-svg        | Islamic ornaments          |
-| React Native Reanimated | Animations                 |
-| TanStack Query          | Data fetching              |
-
----
-
-## Quick Start
-
-```bash
+```
 git clone https://github.com/varunmoka7/noor-mobile.git
 cd noor-mobile && npm install
 npx expo start
 ```
 
-Scan the QR code with Expo Go on your phone.
+Scan the QR code with [Expo Go](https://expo.dev/go) on your phone, or press `w` to open in your browser.
 
 ---
 
-## Project Structure
+### Built with
 
-```
-app/           — Expo Router pages (tabs + reading view)
-components/    — React Native components
-├── ornaments/ — SVG Islamic ornaments (Crescent, Star, Flower)
-└── ui/        — Shared primitives (ArabicText, GoldShimmer)
-theme/         — Color tokens, typography, ThemeProvider
-store/         — Zustand state management
-hooks/         — Data fetching + audio player
-assets/        — Fonts (Amiri, Inter) + Quran JSON data
-types/         — TypeScript interfaces
-```
+Expo + React Native (iOS, Android, Web) | TypeScript | Amiri + Inter typography | Hand-crafted SVG Islamic ornaments
 
 ---
 
-## Contributing
+### Contributing
 
-Noor welcomes contributions from developers, designers, and anyone who cares about making the Quran more accessible. Please read the [Contributing Guide](CONTRIBUTING.md) before submitting a pull request.
+Noor is open source and welcomes contributions from anyone who cares about making the Quran more accessible. Whether you're a developer, designer, Arabic linguist, or Islamic studies student — there's a place for you here.
 
----
-
-## License
+### License
 
 MIT
 
----
+### Acknowledgments
 
-## Acknowledgments
-
-- [Al-Quran Cloud API](https://alquran.cloud/api) — Quran text and audio data
-- [Amiri](https://www.amirifont.org) — Arabic calligraphy typeface by Khaled Hosny
-- [Inter](https://rsms.me/inter/) — UI typeface by Rasmus Andersson
+[Al-Quran Cloud API](https://alquran.cloud/api) for Quran text and audio | [Amiri](https://www.amirifont.org) typeface by Khaled Hosny | [Inter](https://rsms.me/inter/) typeface by Rasmus Andersson
