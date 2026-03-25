@@ -1,7 +1,5 @@
-import { MMKV } from "react-native-mmkv";
+import { Platform } from "react-native";
 import type { Bookmark, UserProgress, UserSettings } from "../types";
-
-const mmkv = new MMKV({ id: "noor-storage" });
 
 const KEYS = {
   settings: "noor-settings",
@@ -9,8 +7,28 @@ const KEYS = {
   bookmarks: "noor-bookmarks",
 } as const;
 
+// MMKV is not available on web — use localStorage as fallback
+interface KVStore {
+  getString(key: string): string | undefined;
+  set(key: string, value: string): void;
+}
+
+function createStore(): KVStore {
+  if (Platform.OS === "web") {
+    return {
+      getString: (key: string) => localStorage.getItem(key) ?? undefined,
+      set: (key: string, value: string) => localStorage.setItem(key, value),
+    };
+  }
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { MMKV } = require("react-native-mmkv");
+  return new MMKV({ id: "noor-storage" });
+}
+
+const store = createStore();
+
 function getJSON<T>(key: string): T | null {
-  const raw = mmkv.getString(key);
+  const raw = store.getString(key);
   if (!raw) return null;
   try {
     return JSON.parse(raw) as T;
@@ -20,7 +38,7 @@ function getJSON<T>(key: string): T | null {
 }
 
 function setJSON<T>(key: string, value: T): void {
-  mmkv.set(key, JSON.stringify(value));
+  store.set(key, JSON.stringify(value));
 }
 
 export const storage = {
