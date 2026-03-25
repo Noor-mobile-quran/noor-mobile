@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { AccessibilityInfo, View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { AccessibilityInfo, View, Text, Pressable, TouchableOpacity, StyleSheet } from "react-native";
 import Animated, {
   Easing,
   useAnimatedStyle,
@@ -124,12 +124,10 @@ export default function AyahCard({
 
   return (
     <Animated.View style={enterStyle}>
-    <TouchableOpacity
-      activeOpacity={0.9}
+    <Pressable
       onPress={() => {
         if (!isImmersive) setShowControls((prev) => !prev);
       }}
-      accessibilityRole="button"
       accessibilityLabel={`Ayah ${ayah.number_in_surah}. Tap for controls.`}
     >
       <View
@@ -255,7 +253,7 @@ export default function AyahCard({
             : ayah.text_translation}
         </Text>
       </View>
-    </TouchableOpacity>
+    </Pressable>
     </Animated.View>
   );
 }
