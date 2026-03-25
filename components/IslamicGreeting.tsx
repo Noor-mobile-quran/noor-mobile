@@ -1,22 +1,31 @@
 import { View, Text } from "react-native";
 import { ArabicText } from "./ui/ArabicText";
 import { useTheme } from "../theme/ThemeProvider";
+import { useI18n } from "../hooks/useI18n";
 
 export default function IslamicGreeting() {
   const { colors } = useTheme();
+  const { t, isUrdu } = useI18n();
   const hour = new Date().getHours();
 
-  let greeting: { arabic: string; english: string };
+  let greetingArabic: string;
+  let greetingKey: string;
 
   if (hour >= 4 && hour < 12) {
-    greeting = { arabic: "صباح الخير", english: "Good Morning" };
+    greetingArabic = "صباح الخير";
+    greetingKey = "goodMorning";
   } else if (hour >= 12 && hour < 17) {
-    greeting = { arabic: "مساء النور", english: "Good Afternoon" };
+    greetingArabic = "مساء النور";
+    greetingKey = "goodAfternoon";
   } else if (hour >= 17 && hour < 21) {
-    greeting = { arabic: "مساء الخير", english: "Good Evening" };
+    greetingArabic = "مساء الخير";
+    greetingKey = "goodEvening";
   } else {
-    greeting = { arabic: "تصبح على خير", english: "Good Night" };
+    greetingArabic = "تصبح على خير";
+    greetingKey = "goodNight";
   }
+
+  const greetingLabel = t(greetingKey);
 
   return (
     <View className="items-center">
@@ -24,17 +33,19 @@ export default function IslamicGreeting() {
         variant="body"
         style={{ color: colors.gold, textAlign: "center", fontSize: 18, lineHeight: 28 }}
       >
-        {greeting.arabic}
+        {greetingArabic}
       </ArabicText>
       <Text
         style={{
           color: colors.textSecondary,
-          fontFamily: "Inter-Regular",
+          fontFamily: isUrdu ? "Amiri_400Regular" : "Inter-Regular",
           fontSize: 12,
           marginTop: 2,
+          ...(isUrdu && { writingDirection: "rtl" as const, textAlign: "right" as const }),
         }}
+        {...(isUrdu && { accessibilityLanguage: "ur" })}
       >
-        {greeting.english}
+        {greetingLabel}
       </Text>
     </View>
   );
