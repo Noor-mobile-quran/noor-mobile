@@ -3,6 +3,7 @@ import {
   AccessibilityInfo,
   Platform,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -301,7 +302,7 @@ export default function BookmarksCollection() {
   // -----------------------------------------------------------------------
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={{ flex: 1 }} contentContainerStyle={styles.container}>
       {/* Header */}
       <View style={styles.header}>
         <BookmarkIcon size={22} color={colors.gold} filled />
@@ -421,6 +422,6 @@ export default function BookmarksCollection() {
           );
         })
       )}
-    </View>
+    </ScrollView>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { View, Text, StyleSheet, Pressable } from "react-native";
+import { View, Text, ScrollView, StyleSheet, Pressable } from "react-native";
 import { useRouter } from "expo-router";
 import Svg, { Circle } from "react-native-svg";
 import { useTheme } from "../../theme/ThemeProvider";
@@ -93,7 +93,7 @@ export function JuzMap() {
   if (!surahs) return null;
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.surface }]}>
+    <ScrollView style={{ flex: 1 }} contentContainerStyle={[styles.container, { backgroundColor: colors.surface }]}>
       <Text
         style={[styles.header, { color: colors.textPrimary }]}
         accessibilityRole="header"
@@ -116,7 +116,7 @@ export function JuzMap() {
           />
         ))}
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
