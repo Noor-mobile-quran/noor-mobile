@@ -20,6 +20,8 @@ export default function SurahCard({ surah }: Props) {
           borderRightWidth: 2,
           borderRightColor: colors.border,
         }}
+        accessibilityRole="button"
+        accessibilityLabel={`Surah ${surah.number}, ${surah.name_english}, ${surah.name_translation}, ${surah.ayah_count} ayahs, ${surah.revelation_type === "meccan" ? "Meccan" : "Medinan"}`}
       >
         {/* Number badge */}
         <View

@@ -26,6 +26,9 @@ export default function QuickDua() {
       onPress={next}
       className="p-5 rounded-2xl items-center"
       style={{ backgroundColor: colors.surface }}
+      accessibilityRole="button"
+      accessibilityLabel={`Daily Dhikr: ${dua.meaning}. Tap for next.`}
+      accessibilityHint="Double tap to show the next dhikr"
     >
       <Text
         style={{

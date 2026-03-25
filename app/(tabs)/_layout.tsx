@@ -1,6 +1,7 @@
+import { useEffect, useState } from "react";
+import { AccessibilityInfo } from "react-native";
 import { Tabs } from "expo-router";
 import { useTheme } from "../../theme/ThemeProvider";
-import { Crescent, StarOrnament } from "../../components/ornaments";
 import Svg, { Path } from "react-native-svg";
 
 function HomeIcon({ color, size }: { color: string; size: number }) {
@@ -68,11 +69,22 @@ function SettingsIcon({ color, size }: { color: string; size: number }) {
 
 export default function TabLayout() {
   const { colors, isDark } = useTheme();
+  const [reduceMotion, setReduceMotion] = useState(false);
+
+  useEffect(() => {
+    AccessibilityInfo.isReduceMotionEnabled().then(setReduceMotion);
+    const sub = AccessibilityInfo.addEventListener(
+      "reduceMotionChanged",
+      setReduceMotion,
+    );
+    return () => sub.remove();
+  }, []);
 
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
+        animation: reduceMotion ? "none" : "fade",
         tabBarActiveTintColor: colors.gold,
         tabBarInactiveTintColor: colors.textSecondary,
         tabBarStyle: {
@@ -114,6 +126,14 @@ export default function TabLayout() {
         options={{
           title: "Settings",
           tabBarIcon: ({ color }) => <SettingsIcon color={color} size={22} />,
+        }}
+      />
+      {/* progress.tsx exists but is not surfaced as a visible tab */}
+      <Tabs.Screen
+        name="progress"
+        options={{
+          href: null,
+          title: "Progress",
         }}
       />
     </Tabs>

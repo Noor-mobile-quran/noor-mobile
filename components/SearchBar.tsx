@@ -33,6 +33,8 @@ export default function SearchBar({ onSearch }: Props) {
       autoCapitalize="none"
       autoCorrect={false}
       returnKeyType="search"
+      accessibilityLabel="Search surahs"
+      accessibilityRole="search"
     />
   );
 }

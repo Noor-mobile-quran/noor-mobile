@@ -20,7 +20,10 @@ export default function DailyAyah() {
 
   return (
     <Link href={`/surah/${surahNum}`} asChild>
-      <Pressable>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={`Ayah of the Day from ${surah.name_english}, Ayah ${ayah.number_in_surah}. Tap to read.`}
+      >
         <LinearGradient
           colors={["#1B4332", "#143226", "#0D1F18"]}
           className="rounded-2xl overflow-hidden p-8"

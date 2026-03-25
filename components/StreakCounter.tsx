@@ -11,6 +11,8 @@ export default function StreakCounter() {
     <View
       className="p-6 rounded-2xl items-center overflow-hidden"
       style={{ backgroundColor: colors.surface }}
+      accessibilityRole="summary"
+      accessibilityLabel={`Reading streak: ${currentStreak} days. Best: ${longestStreak}. Daily goal: ${dailyGoal} ayahs.`}
     >
       <View className="absolute top-2 right-3">
         <Crescent size={40} color={colors.gold} opacity={0.1} />

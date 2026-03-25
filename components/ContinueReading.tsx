@@ -18,6 +18,8 @@ export default function ContinueReading() {
       <Pressable
         className="p-5 rounded-xl"
         style={{ backgroundColor: colors.surface }}
+        accessibilityRole="button"
+        accessibilityLabel={`Continue reading ${surah.name_english}, Ayah ${lastReadAyah}`}
       >
         <Text
           style={{
