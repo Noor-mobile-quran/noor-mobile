@@ -2,18 +2,21 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   View,
   Text,
+  ScrollView,
   StyleSheet,
   Pressable,
   AccessibilityInfo,
   Platform,
   Animated,
+  useWindowDimensions,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { useTheme } from "../../theme/ThemeProvider";
 import { useAppStore } from "../../store/useAppStore";
 import { useSurahList } from "../../hooks/useQuranData";
 
-const COLUMNS = 11;
+const COLUMNS_MOBILE = 8;
+const COLUMNS_DESKTOP = 11;
 
 export function SurahCompletionTracker() {
   const { colors } = useTheme();
@@ -43,10 +46,14 @@ export function SurahCompletionTracker() {
   const total = 114;
   const progressRatio = completedCount / total;
 
+  const { width } = useWindowDimensions();
+  const columns = width < 600 ? COLUMNS_MOBILE : COLUMNS_DESKTOP;
+  const circleSize = Math.min(36, Math.floor((width - 64) / columns) - 8);
+
   if (!surahs) return null;
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.surface }]}>
+    <ScrollView style={{ flex: 1 }} contentContainerStyle={[styles.container, { backgroundColor: colors.surface }]}>
       <Text
         style={[styles.header, { color: colors.textPrimary }]}
         accessibilityRole="header"
@@ -70,7 +77,7 @@ export function SurahCompletionTracker() {
       </View>
 
       <View style={styles.grid}>
-        {surahs.map((surah) => {
+        {surahs.slice(0, 114).map((surah) => {
           const isCompleted = completedSurahs.includes(surah.number);
           const isCurrent = surah.number === lastReadSurah;
 
@@ -83,12 +90,14 @@ export function SurahCompletionTracker() {
               isCurrent={isCurrent}
               reduceMotion={reduceMotion}
               colors={colors}
+              size={circleSize}
+              columnWidth={`${100 / columns}%`}
               onPress={() => router.push(`/surah/${surah.number}`)}
             />
           );
         })}
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
@@ -99,6 +108,8 @@ function SurahCircle({
   isCurrent,
   reduceMotion,
   colors,
+  size,
+  columnWidth,
   onPress,
 }: {
   surah: number;
@@ -107,6 +118,8 @@ function SurahCircle({
   isCurrent: boolean;
   reduceMotion: boolean;
   colors: ReturnType<typeof useTheme>["colors"];
+  size: number;
+  columnWidth: string;
   onPress: () => void;
 }) {
   const pulseAnim = useRef(new Animated.Value(1)).current;
@@ -150,12 +163,16 @@ function SurahCircle({
       accessibilityLabel={`Surah ${surah}, ${nameEnglish}${
         isCompleted ? ", completed" : isCurrent ? ", current" : ""
       }`}
-      style={styles.circleWrapper}
+      style={[styles.circleWrapper, { width: columnWidth as unknown as number }]}
     >
       <Animated.View
         style={[
-          styles.circle,
           {
+            width: size,
+            height: size,
+            borderRadius: size / 2,
+            alignItems: "center",
+            justifyContent: "center",
             backgroundColor: isCompleted ? colors.gold : "transparent",
             borderColor: borderColor,
             borderWidth: isCurrent ? 2.5 : 1.5,
@@ -163,13 +180,12 @@ function SurahCircle({
         ]}
       >
         <Text
-          style={[
-            styles.circleText,
-            {
-              color: isCompleted ? colors.bg : colors.textSecondary,
-              fontFamily: "Inter-Medium",
-            },
-          ]}
+          style={{
+            fontSize: Math.max(9, size * 0.35),
+            textAlign: "center",
+            color: isCompleted ? colors.bg : colors.textSecondary,
+            fontFamily: "Inter-Medium",
+          }}
         >
           {surah}
         </Text>
@@ -178,13 +194,11 @@ function SurahCircle({
   );
 }
 
-const CIRCLE_SIZE = 28;
-
 const styles = StyleSheet.create({
   container: {
     borderRadius: 16,
     padding: 16,
-    marginBottom: 16,
+    paddingBottom: 32,
   },
   header: {
     fontFamily: "Inter-SemiBold",
@@ -212,21 +226,8 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   circleWrapper: {
-    minWidth: 44,
     minHeight: 44,
     alignItems: "center",
     justifyContent: "center",
-    width: `${100 / COLUMNS}%` as unknown as number,
-  },
-  circle: {
-    width: CIRCLE_SIZE,
-    height: CIRCLE_SIZE,
-    borderRadius: CIRCLE_SIZE / 2,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  circleText: {
-    fontSize: 10,
-    textAlign: "center",
   },
 });

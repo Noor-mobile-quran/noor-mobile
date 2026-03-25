@@ -11,6 +11,7 @@ import { ArabicText } from "./ui/ArabicText";
 import { StarOrnament } from "./ornaments";
 import { useTheme } from "../theme/ThemeProvider";
 import { fonts } from "../theme/typography";
+import ShareButton from "./ShareButton";
 import type { Ayah } from "../types";
 import type { UXMode } from "../types";
 
@@ -22,6 +23,8 @@ interface Props {
   isBookmarked: boolean;
   uxMode?: UXMode;
   translationLang?: string;
+  surahName?: string;
+  surahNameArabic?: string;
 }
 
 function PlayIcon({ size, color }: { size: number; color: string }) {
@@ -62,6 +65,8 @@ export default function AyahCard({
   isBookmarked,
   uxMode = "serene",
   translationLang,
+  surahName,
+  surahNameArabic,
 }: Props) {
   const { colors } = useTheme();
   const [showControls, setShowControls] = useState(false);
@@ -210,6 +215,14 @@ export default function AyahCard({
                   filled={isBookmarked}
                 />
               </TouchableOpacity>
+              {surahName && (
+                <ShareButton
+                  ayah={ayah}
+                  surahName={surahName}
+                  surahNameArabic={surahNameArabic ?? ""}
+                  translationLang={translationLang}
+                />
+              )}
             </View>
           )}
         </View>

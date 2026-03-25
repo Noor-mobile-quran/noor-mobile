@@ -72,9 +72,7 @@ export default function ReadingScreen() {
       );
       if (idx >= 0 && idx < surah.ayahs.length - 1) {
         const nextAyah = surah.ayahs[idx + 1];
-        if (nextAyah.audio_url) {
-          play(nextAyah.audio_url, nextAyah.number_in_surah);
-        }
+        play(nextAyah.number_in_surah);
       }
     }
   }, [isImmersive, audioPlaying, currentAudioAyah, surah, play]);
@@ -123,9 +121,7 @@ export default function ReadingScreen() {
   const surahBookmarkCount = bookmarks.filter((b) => b.surah === surahNum).length;
 
   const playAyah = useCallback(
-    async (ayahNumber: number, audioUrl?: string) => {
-      if (!audioUrl) return;
-
+    async (ayahNumber: number) => {
       if (audioPlaying && currentAudioAyah === ayahNumber) {
         autoAdvanceRef.current = false;
         await stop();
@@ -133,7 +129,7 @@ export default function ReadingScreen() {
         return;
       }
 
-      await play(audioUrl, ayahNumber);
+      await play(ayahNumber);
     },
     [audioPlaying, currentAudioAyah, play, stop]
   );
@@ -144,11 +140,13 @@ export default function ReadingScreen() {
         <AyahCard
           ayah={item}
           isPlaying={audioPlaying && currentAudioAyah === item.number_in_surah}
-          onPlay={() => playAyah(item.number_in_surah, item.audio_url)}
+          onPlay={() => playAyah(item.number_in_surah)}
           onBookmark={() => toggleBookmark(item.number_in_surah)}
           isBookmarked={isBookmarked(item.number_in_surah)}
           uxMode={uxMode}
           translationLang={translationLang}
+          surahName={surah?.name_english}
+          surahNameArabic={surah?.name_arabic}
         />
         {isStudy && (
           <NotesInput

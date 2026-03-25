@@ -2,12 +2,17 @@ import { useRef, useCallback } from "react";
 import { Platform } from "react-native";
 import { Audio } from "expo-av";
 import { useAppStore } from "../store/useAppStore";
+import { RECITERS } from "../data/reciters";
 
 export function useAudioPlayer() {
   const soundRef = useRef<Audio.Sound | null>(null);
   const setAudioPlaying = useAppStore((s) => s.setAudioPlaying);
 
-  const play = useCallback(async (url: string, ayahNumber: number) => {
+  const play = useCallback(async (ayahNumber: number) => {
+    const reciterId = useAppStore.getState().settings.reciterId;
+    const reciter = RECITERS.find((r) => r.id === reciterId) ?? RECITERS[0];
+    const url = `${reciter.audioBaseUrl}/${ayahNumber}.mp3`;
+
     if (soundRef.current) {
       await soundRef.current.unloadAsync();
     }

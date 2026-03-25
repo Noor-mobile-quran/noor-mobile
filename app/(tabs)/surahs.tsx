@@ -3,11 +3,13 @@ import { View, Text, FlatList, Pressable, ActivityIndicator } from "react-native
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useSurahList } from "../../hooks/useQuranData";
+import { useQuranSearch } from "../../hooks/useQuranSearch";
 import { useTheme } from "../../theme/ThemeProvider";
 import { StarOrnament } from "../../components/ornaments";
 import { ArabicText } from "../../components/ui/ArabicText";
 import SurahCard from "../../components/SurahCard";
 import SearchBar from "../../components/SearchBar";
+import SearchResultCard from "../../components/SearchResultCard";
 import type { SurahMeta } from "../../types";
 
 type Filter = "all" | "meccan" | "medinan";
@@ -18,6 +20,14 @@ export default function SurahIndexPage() {
   const [filter, setFilter] = useState<Filter>("all");
   const { colors, isDark } = useTheme();
   const insets = useSafeAreaInsets();
+  const { setQuery: setAyahQuery, results: ayahResults, query: ayahQuery } = useQuranSearch();
+
+  const handleSearch = (text: string) => {
+    setSearch(text);
+    setAyahQuery(text);
+  };
+
+  const showAyahResults = ayahQuery.length >= 3 && ayahResults.length > 0;
 
   const filtered = useMemo(() => {
     if (!surahs) return [];
@@ -90,7 +100,7 @@ export default function SurahIndexPage() {
 
       {/* Search + Filters */}
       <View className="px-4 pt-5 gap-4">
-        <SearchBar onSearch={setSearch} />
+        <SearchBar onSearch={handleSearch} />
 
         <View className="flex-row gap-2">
           {filters.map((f) => (
@@ -164,6 +174,29 @@ export default function SurahIndexPage() {
             Try a different search term
           </Text>
         </View>
+      }
+      ListFooterComponent={
+        showAyahResults ? (
+          <View style={{ paddingHorizontal: 16, paddingTop: 8, paddingBottom: 24 }}>
+            <Text
+              style={{
+                color: colors.textSecondary,
+                fontFamily: "Inter_600SemiBold",
+                fontSize: 14,
+                marginBottom: 10,
+              }}
+            >
+              Ayah matches ({ayahResults.length}{ayahResults.length >= 50 ? "+" : ""})
+            </Text>
+            {ayahResults.map((r) => (
+              <SearchResultCard
+                key={`${r.surah}-${r.ayah}`}
+                result={r}
+                query={ayahQuery}
+              />
+            ))}
+          </View>
+        ) : null
       }
       contentContainerStyle={{ paddingBottom: 24, backgroundColor: colors.bg }}
       style={{ backgroundColor: colors.bg }}

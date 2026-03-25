@@ -4,6 +4,7 @@ import { useTheme } from "../../theme/ThemeProvider";
 import { fonts, fontSizes } from "../../theme/typography";
 import { ArabicText } from "../../components/ui/ArabicText";
 import { Crescent, StarOrnament, OrnamentalDivider } from "../../components/ornaments";
+import { RECITERS } from "../../data/reciters";
 import type { ThemeMode, UXMode } from "../../types";
 
 const LANG_OPTIONS: { value: string; label: string; labelNative: string }[] = [
@@ -37,6 +38,7 @@ export default function SettingsScreen() {
   const setFontSize = useAppStore((s) => s.setFontSize);
   const setUXMode = useAppStore((s) => s.setUXMode);
   const setTranslationLang = useAppStore((s) => s.setTranslationLang);
+  const setReciter = useAppStore((s) => s.setReciter);
 
   return (
     <ScrollView
@@ -310,6 +312,83 @@ export default function SettingsScreen() {
           </View>
         </View>
 
+        {/* Reciter */}
+        <View style={[styles.card, { backgroundColor: colors.surface }]}>
+          <Text
+            style={[
+              styles.cardTitle,
+              { color: colors.textSecondary, fontFamily: fonts.latin.semiBold },
+            ]}
+          >
+            RECITER
+          </Text>
+          <View style={styles.modeList}>
+            {RECITERS.map((reciter) => {
+              const isActive = settings.reciterId === reciter.id;
+              return (
+                <TouchableOpacity
+                  key={reciter.id}
+                  onPress={() => setReciter(reciter.id)}
+                  style={[
+                    styles.reciterCard,
+                    {
+                      backgroundColor: isActive ? `${colors.accent}15` : "transparent",
+                      borderColor: isActive ? colors.accent : colors.border,
+                      borderWidth: 1,
+                    },
+                  ]}
+                  accessibilityLabel={`${reciter.name_english}, ${reciter.style}`}
+                  accessibilityState={{ selected: isActive }}
+                >
+                  <View style={styles.modeTextContainer}>
+                    <Text
+                      style={[
+                        styles.modeLabel,
+                        {
+                          color: isActive ? colors.accent : colors.textPrimary,
+                          fontFamily: fonts.latin.medium,
+                        },
+                      ]}
+                    >
+                      {reciter.name_english}
+                    </Text>
+                    <Text
+                      style={{
+                        fontFamily: fonts.arabic.regular,
+                        fontSize: 16,
+                        color: isActive ? colors.accent : colors.textSecondary,
+                        writingDirection: "rtl",
+                        marginTop: 2,
+                      }}
+                      accessibilityLanguage="ar"
+                    >
+                      {reciter.name_arabic}
+                    </Text>
+                  </View>
+                  <View
+                    style={[
+                      styles.styleBadge,
+                      {
+                        backgroundColor: isActive ? colors.accent : colors.bg,
+                      },
+                    ]}
+                  >
+                    <Text
+                      style={{
+                        fontFamily: fonts.latin.medium,
+                        fontSize: 11,
+                        color: isActive ? "#FFFFFF" : colors.textSecondary,
+                      }}
+                    >
+                      {reciter.style}
+                    </Text>
+                  </View>
+                </TouchableOpacity>
+              );
+            })}
+          </View>
+        </View>
+
         {/* Footer */}
         <View style={styles.footer}>
           <OrnamentalDivider width="compact" />
@@ -437,5 +516,18 @@ const styles = StyleSheet.create({
   footerText: {
     fontSize: 12,
     opacity: 0.6,
+  },
+  reciterCard: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+    padding: 14,
+    borderRadius: 12,
+    minHeight: 44,
+  },
+  styleBadge: {
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 10,
   },
 });
