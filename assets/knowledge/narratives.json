@@ -1,430 +1,423 @@
 {
+  "version": "1.0.0",
+  "description": "Cross-surah narrative arcs mapping stories that span multiple surahs in the Quran",
   "narratives": [
     {
       "id": "story_of_adam",
       "title_english": "The Story of Adam",
       "title_arabic": "قصة آدم",
-      "description": "The creation of the first human, the angels' prostration, Iblis's refusal, and the descent from Paradise",
-      "chapters": [
-        {
-          "title": "Creation & the Angels' Prostration",
-          "ayahs": [{"surah": 2, "ayah_start": 30, "ayah_end": 34}],
-          "summary": "Allah tells the angels He will place a vicegerent on earth. He teaches Adam the names of all things and commands the angels to prostrate — Iblis refuses out of arrogance."
-        },
-        {
-          "title": "The Forbidden Tree",
-          "ayahs": [{"surah": 2, "ayah_start": 35, "ayah_end": 36}, {"surah": 7, "ayah_start": 19, "ayah_end": 22}],
-          "summary": "Adam and his wife dwell in Paradise but are deceived by Shaytan into eating from the forbidden tree."
-        },
-        {
-          "title": "Repentance & Descent",
-          "ayahs": [{"surah": 2, "ayah_start": 37, "ayah_end": 39}, {"surah": 7, "ayah_start": 23, "ayah_end": 25}],
-          "summary": "Adam repents and Allah accepts his repentance. Adam and his wife are sent to earth with guidance."
-        },
-        {
-          "title": "The Two Sons (Habil & Qabil)",
-          "ayahs": [{"surah": 5, "ayah_start": 27, "ayah_end": 31}],
-          "summary": "The story of Adam's two sons — one offering is accepted and the other is not, leading to the first murder on earth."
-        }
+      "title_urdu": "آدم علیہ السلام کی کہانی",
+      "description": "The creation of the first human, the angels' prostration, Iblis's refusal, the forbidden tree, and the descent to earth",
+      "entities_involved": ["prophet_adam", "figure_iblis", "angel_jibril"],
+      "surah_sequence": [
+        { "surah": 2, "ayah_range": [30, 34], "summary": "Allah tells the angels He will place a khalifah on earth; teaches Adam the names; commands prostration — Iblis refuses" },
+        { "surah": 2, "ayah_range": [35, 36], "summary": "Adam and his wife placed in Paradise; warned about the forbidden tree; Shaytan causes them to slip" },
+        { "surah": 2, "ayah_range": [37, 39], "summary": "Adam receives words of repentance; Allah accepts; they are sent to earth with guidance" },
+        { "surah": 7, "ayah_range": [11, 18], "summary": "Detailed account of Iblis's refusal and his vow to mislead humanity from every direction" },
+        { "surah": 7, "ayah_range": [19, 25], "summary": "Shaytan whispers to Adam and his wife; they eat from the tree; their shame is exposed; they repent" },
+        { "surah": 7, "ayah_range": [26, 27], "summary": "Clothing of taqwa is best; warning not to let Shaytan deceive as he did your parents" },
+        { "surah": 15, "ayah_range": [26, 44], "summary": "Creation from clay, breathing of the spirit, Iblis's arrogance, his respite until the Day" },
+        { "surah": 17, "ayah_range": [61, 65], "summary": "Iblis refuses to prostrate to one created from clay; given respite; vows to mislead Adam's offspring" },
+        { "surah": 18, "ayah_range": [50, 50], "summary": "Iblis was of the jinn; he disobeyed — will you take him and his offspring as allies?" },
+        { "surah": 20, "ayah_range": [115, 123], "summary": "Adam forgot his covenant; Shaytan whispered; the tree of eternity; Adam disobeyed then was guided" },
+        { "surah": 38, "ayah_range": [71, 85], "summary": "Creation from clay; Iblis's arrogance; expelled; granted respite; swears to mislead all except the devoted" },
+        { "surah": 5, "ayah_range": [27, 31], "summary": "The story of Adam's two sons — Habil and Qabil; the first murder; the crow teaches burial" }
       ],
-      "key_lessons": ["repentance", "humility", "trials", "divine_plan"]
-    },
-    {
-      "id": "story_of_nuh",
-      "title_english": "The Story of Prophet Nuh (Noah)",
-      "title_arabic": "قصة نوح",
-      "description": "Nuh's 950-year mission of patient preaching, the great flood, and the salvation of believers",
-      "chapters": [
-        {
-          "title": "The Long Preaching",
-          "ayahs": [{"surah": 71, "ayah_start": 1, "ayah_end": 20}],
-          "summary": "Nuh calls his people to worship Allah alone for centuries, but they refuse and put their fingers in their ears."
-        },
-        {
-          "title": "Building the Ark",
-          "ayahs": [{"surah": 11, "ayah_start": 36, "ayah_end": 39}],
-          "summary": "Allah commands Nuh to build the ark. The disbelievers mock him as he constructs it."
-        },
-        {
-          "title": "The Great Flood",
-          "ayahs": [{"surah": 11, "ayah_start": 40, "ayah_end": 44}],
-          "summary": "The oven bursts forth with water. Nuh's son refuses to board and perishes. The ark settles on Mount Judi."
-        },
-        {
-          "title": "A Father's Grief",
-          "ayahs": [{"surah": 11, "ayah_start": 45, "ayah_end": 48}],
-          "summary": "Nuh asks Allah about his son. Allah teaches him that his son was not of his family in faith."
-        }
-      ],
-      "key_lessons": ["patience", "trust_in_allah", "faith", "divine_plan"]
+      "themes": ["theme_creation", "theme_arrogance", "theme_repentance", "theme_divine_test"]
     },
     {
       "id": "story_of_ibrahim",
       "title_english": "The Story of Prophet Ibrahim (Abraham)",
       "title_arabic": "قصة إبراهيم",
-      "description": "Ibrahim's search for truth, his confrontation with idolatry, the trial of sacrificing his son, and building the Ka'bah",
-      "chapters": [
-        {
-          "title": "Seeking the Truth",
-          "ayahs": [{"surah": 6, "ayah_start": 74, "ayah_end": 79}],
-          "summary": "Ibrahim observes the stars, moon, and sun, rejecting each as they set, until he declares his devotion to the One Creator."
-        },
-        {
-          "title": "Confronting His Father & People",
-          "ayahs": [{"surah": 21, "ayah_start": 51, "ayah_end": 67}, {"surah": 19, "ayah_start": 41, "ayah_end": 48}],
-          "summary": "Ibrahim smashes the idols and challenges his people. They throw him into a fire, but Allah makes the fire cool and safe."
-        },
-        {
-          "title": "The Sacrifice",
-          "ayahs": [{"surah": 37, "ayah_start": 100, "ayah_end": 111}],
-          "summary": "Ibrahim sees in a dream that he must sacrifice his son. Both submit to Allah's will, and Allah replaces the son with a great sacrifice."
-        },
-        {
-          "title": "Building the Ka'bah",
-          "ayahs": [{"surah": 2, "ayah_start": 125, "ayah_end": 129}],
-          "summary": "Ibrahim and Isma'il raise the foundations of the Ka'bah in Mecca and pray for their descendants."
-        },
-        {
-          "title": "Ibrahim's Guests",
-          "ayahs": [{"surah": 51, "ayah_start": 24, "ayah_end": 34}, {"surah": 11, "ayah_start": 69, "ayah_end": 76}],
-          "summary": "Angels visit Ibrahim with glad tidings of a son. They reveal they are sent to destroy the people of Lut."
-        }
+      "title_urdu": "ابراہیم علیہ السلام کی کہانی",
+      "description": "Ibrahim's search for truth, confrontation with idolatry, the fire miracle, sacrifice of his son, and building the Ka'bah",
+      "entities_involved": ["prophet_ibrahim", "prophet_ismail", "prophet_ishaq", "figure_iblis"],
+      "surah_sequence": [
+        { "surah": 6, "ayah_range": [74, 79], "summary": "Ibrahim observes the stars, moon, and sun — rejects each as they set; declares devotion to the One Creator" },
+        { "surah": 6, "ayah_range": [80, 83], "summary": "Ibrahim argues with his people about idols; Allah raises his rank and grants him proof" },
+        { "surah": 19, "ayah_range": [41, 50], "summary": "Ibrahim confronts his father Azar about idol worship; warned of punishment; leaves his people" },
+        { "surah": 21, "ayah_range": [51, 70], "summary": "Ibrahim smashes the idols; challenged to prove it; thrown into the fire which Allah makes cool and safe" },
+        { "surah": 26, "ayah_range": [69, 89], "summary": "Ibrahim recounts his journey to truth; the One who created, guides, feeds, heals, causes death and gives life" },
+        { "surah": 29, "ayah_range": [16, 27], "summary": "Ibrahim calls his people; they attempt to burn him; Allah saves him; he emigrates" },
+        { "surah": 37, "ayah_range": [83, 98], "summary": "Ibrahim breaks the idols; his people build a furnace; he is thrown in but saved" },
+        { "surah": 37, "ayah_range": [99, 111], "summary": "Ibrahim prays for a righteous son; dreams of sacrificing him; both submit; Allah ransoms with a great sacrifice" },
+        { "surah": 51, "ayah_range": [24, 34], "summary": "Ibrahim's honored angel guests; glad tidings of a learned son; they reveal their mission to destroy Lut's people" },
+        { "surah": 11, "ayah_range": [69, 76], "summary": "Angels visit Ibrahim; Sarah laughs at news of Ishaq; Ibrahim pleads for Lut's people" },
+        { "surah": 2, "ayah_range": [124, 129], "summary": "Ibrahim tested and made a leader; with Ismail raises the foundations of the Ka'bah; prays for Mecca" },
+        { "surah": 14, "ayah_range": [35, 41], "summary": "Ibrahim's comprehensive dua: security for Mecca, distance from idols, prayer, forgiveness" },
+        { "surah": 22, "ayah_range": [26, 29], "summary": "Ibrahim shown the site of the Ka'bah; commanded to proclaim Hajj to mankind" },
+        { "surah": 2, "ayah_range": [258, 260], "summary": "Ibrahim's debates: the king who argued about giving life; Ibrahim asks Allah to show how He gives life to the dead" },
+        { "surah": 60, "ayah_range": [4, 6], "summary": "Ibrahim as a model — he disassociated from his people's idolatry except his prayer for his father" }
       ],
-      "key_lessons": ["tawheed", "trust_in_allah", "patience", "repentance"]
+      "themes": ["theme_tawheed", "theme_sacrifice", "theme_divine_test", "theme_trust"]
     },
     {
       "id": "story_of_musa",
       "title_english": "The Story of Prophet Musa (Moses) & Pharaoh",
       "title_arabic": "قصة موسى وفرعون",
-      "description": "The most frequently told story in the Quran — Musa's birth, mission to Pharaoh, the Exodus, and Sinai",
-      "chapters": [
-        {
-          "title": "Birth & Rescue",
-          "ayahs": [{"surah": 28, "ayah_start": 7, "ayah_end": 13}, {"surah": 20, "ayah_start": 38, "ayah_end": 40}],
-          "summary": "Musa's mother places him in the river to save him from Pharaoh's decree. He is raised in Pharaoh's palace."
-        },
-        {
-          "title": "Flight to Madyan",
-          "ayahs": [{"surah": 28, "ayah_start": 14, "ayah_end": 28}],
-          "summary": "Musa accidentally kills a man, flees to Madyan, helps two women water their flock, and marries one of them."
-        },
-        {
-          "title": "The Burning Bush",
-          "ayahs": [{"surah": 20, "ayah_start": 9, "ayah_end": 24}, {"surah": 28, "ayah_start": 29, "ayah_end": 35}],
-          "summary": "At the valley of Tuwa, Allah speaks to Musa from the burning bush, grants him signs (the staff and the glowing hand), and commands him to go to Pharaoh."
-        },
-        {
-          "title": "Confronting Pharaoh",
-          "ayahs": [{"surah": 7, "ayah_start": 103, "ayah_end": 126}, {"surah": 26, "ayah_start": 10, "ayah_end": 51}],
-          "summary": "Musa and Harun confront Pharaoh. The sorcerers are defeated, believe, and face Pharaoh's wrath."
-        },
-        {
-          "title": "The Exodus & Parting of the Sea",
-          "ayahs": [{"surah": 26, "ayah_start": 52, "ayah_end": 68}, {"surah": 20, "ayah_start": 77, "ayah_end": 80}],
-          "summary": "Allah commands Musa to lead the Israelites by night. The sea parts, they cross safely, and Pharaoh drowns."
-        },
-        {
-          "title": "Mount Sinai & the Golden Calf",
-          "ayahs": [{"surah": 7, "ayah_start": 142, "ayah_end": 154}, {"surah": 20, "ayah_start": 83, "ayah_end": 98}],
-          "summary": "Musa receives the Torah on Mount Sinai for 40 nights. Meanwhile, his people worship a golden calf made by Samiri."
-        },
-        {
-          "title": "Musa & Khidr",
-          "ayahs": [{"surah": 18, "ayah_start": 60, "ayah_end": 82}],
-          "summary": "Musa journeys with Khidr who performs puzzling acts — damaging a boat, killing a youth, rebuilding a wall — each with divine wisdom."
-        }
+      "title_urdu": "موسیٰ علیہ السلام اور فرعون کی کہانی",
+      "description": "The most frequently told story in the Quran — Musa's birth, mission to Pharaoh, the Exodus, Mount Sinai, and the golden calf",
+      "entities_involved": ["prophet_musa", "prophet_harun", "figure_pharaoh", "figure_haman", "figure_bani_israel"],
+      "surah_sequence": [
+        { "surah": 28, "ayah_range": [3, 13], "summary": "Musa's birth; mother inspired to place him in the river; Pharaoh's wife adopts him; his mother nurses him" },
+        { "surah": 20, "ayah_range": [38, 40], "summary": "Musa cast into the river as a baby; raised in Pharaoh's household by Allah's decree" },
+        { "surah": 28, "ayah_range": [14, 21], "summary": "Musa reaches maturity; accidentally kills a man; flees Egypt when warned of a plot against him" },
+        { "surah": 28, "ayah_range": [22, 28], "summary": "Musa arrives in Madyan; helps two women water their flock; marries and stays for years" },
+        { "surah": 20, "ayah_range": [9, 24], "summary": "At the valley of Tuwa, Allah speaks from the burning bush; reveals the staff and glowing hand miracles; commands him to go to Pharaoh" },
+        { "surah": 28, "ayah_range": [29, 35], "summary": "Musa sees a fire; Allah speaks; grants signs; Musa requests Harun as support" },
+        { "surah": 26, "ayah_range": [10, 33], "summary": "Musa and Harun sent to Pharaoh; show signs; Pharaoh calls him a madman" },
+        { "surah": 7, "ayah_range": [103, 126], "summary": "Musa confronts Pharaoh with signs; contest with sorcerers; sorcerers believe; Pharaoh threatens them" },
+        { "surah": 20, "ayah_range": [56, 73], "summary": "Pharaoh calls Musa a sorcerer; the great gathering; sorcerers' staffs become snakes; Musa's staff swallows them; sorcerers prostrate in faith" },
+        { "surah": 10, "ayah_range": [75, 86], "summary": "Musa sent to Pharaoh; the sorcerers believe; Pharaoh's persecution; Musa tells his people to trust in Allah" },
+        { "surah": 7, "ayah_range": [130, 136], "summary": "The plagues sent upon Egypt: flood, locusts, lice, frogs, blood — Pharaoh's people refuse to believe" },
+        { "surah": 26, "ayah_range": [52, 68], "summary": "Allah commands Musa to travel by night with His servants; they reach the sea; Pharaoh pursues" },
+        { "surah": 20, "ayah_range": [77, 79], "summary": "Strike the sea with your staff — a dry path appears; the Israelites cross; Pharaoh follows" },
+        { "surah": 10, "ayah_range": [90, 92], "summary": "Pharaoh drowning declares belief; too late — his body preserved as a sign for future generations" },
+        { "surah": 7, "ayah_range": [138, 141], "summary": "After crossing, Israelites encounter idol worshippers; ask Musa for an idol; he refuses" },
+        { "surah": 7, "ayah_range": [142, 147], "summary": "Musa spends 40 nights on Mount Sinai; receives the Torah; asks to see Allah; the mountain crumbles" },
+        { "surah": 7, "ayah_range": [148, 154], "summary": "The golden calf worship in Musa's absence; his anger; throws the tablets; confronts Harun" },
+        { "surah": 20, "ayah_range": [83, 98], "summary": "Samiri makes the golden calf; people worship it; Musa returns furious; Samiri's punishment" },
+        { "surah": 2, "ayah_range": [51, 61], "summary": "The Israelites told to enter the land; they refuse; demand specific food; wandering in the desert" },
+        { "surah": 5, "ayah_range": [20, 26], "summary": "Musa tells his people to enter the Holy Land; they refuse — 40 years lost in the wilderness" }
       ],
-      "key_lessons": ["patience", "trust_in_allah", "justice", "knowledge", "humility"]
+      "themes": ["theme_liberation", "theme_divine_power", "theme_patience", "theme_trust", "theme_justice"]
     },
     {
       "id": "story_of_yusuf",
       "title_english": "The Story of Prophet Yusuf (Joseph)",
       "title_arabic": "قصة يوسف",
-      "description": "The best of stories — Yusuf's journey from a dream to a well, from prison to kingship in Egypt",
-      "chapters": [
-        {
-          "title": "The Dream",
-          "ayahs": [{"surah": 12, "ayah_start": 4, "ayah_end": 6}],
-          "summary": "Young Yusuf tells his father Ya'qub about his dream of eleven stars, the sun, and the moon prostrating to him."
-        },
-        {
-          "title": "The Brothers' Betrayal",
-          "ayahs": [{"surah": 12, "ayah_start": 7, "ayah_end": 18}],
-          "summary": "Yusuf's brothers plot against him out of jealousy, throw him into a well, and bring a false blood-stained shirt to their father."
-        },
-        {
-          "title": "Sold into Slavery",
-          "ayahs": [{"surah": 12, "ayah_start": 19, "ayah_end": 22}],
-          "summary": "A caravan finds Yusuf and sells him in Egypt. The minister's household takes him in."
-        },
-        {
-          "title": "The Minister's Wife",
-          "ayahs": [{"surah": 12, "ayah_start": 23, "ayah_end": 34}],
-          "summary": "The minister's wife attempts to seduce Yusuf. He resists, is falsely accused, and is imprisoned."
-        },
-        {
-          "title": "Prison & Interpreting Dreams",
-          "ayahs": [{"surah": 12, "ayah_start": 35, "ayah_end": 49}],
-          "summary": "In prison, Yusuf interprets dreams for two inmates and later for the king — seven fat cows devoured by seven lean ones."
-        },
-        {
-          "title": "Rise to Power",
-          "ayahs": [{"surah": 12, "ayah_start": 50, "ayah_end": 57}],
-          "summary": "The king summons Yusuf, clears his name, and appoints him over the storehouses of Egypt."
-        },
-        {
-          "title": "Reunion with Brothers",
-          "ayahs": [{"surah": 12, "ayah_start": 58, "ayah_end": 93}],
-          "summary": "Yusuf's brothers come to Egypt during the famine, not recognizing him. After tests of character, he reveals himself and forgives them."
-        },
-        {
-          "title": "Family Reunited",
-          "ayahs": [{"surah": 12, "ayah_start": 94, "ayah_end": 101}],
-          "summary": "Ya'qub regains his sight upon receiving Yusuf's shirt. The entire family comes to Egypt, fulfilling the childhood dream."
-        }
+      "title_urdu": "یوسف علیہ السلام کی کہانی",
+      "description": "The best of stories — Yusuf's journey from a prophetic dream through betrayal, slavery, prison, to power and family reunion in Egypt",
+      "entities_involved": ["prophet_yusuf", "prophet_yaqub"],
+      "surah_sequence": [
+        { "surah": 12, "ayah_range": [1, 3], "summary": "Introduction — We relate to you the best of stories through this Quran" },
+        { "surah": 12, "ayah_range": [4, 6], "summary": "Young Yusuf tells his father about the dream of eleven stars, the sun, and the moon prostrating to him" },
+        { "surah": 12, "ayah_range": [7, 18], "summary": "Brothers plot out of jealousy; throw him in a well; bring false bloodied shirt to Ya'qub; 'beautiful patience'" },
+        { "surah": 12, "ayah_range": [19, 22], "summary": "A caravan finds and sells Yusuf; bought by the Egyptian minister; raised in his household" },
+        { "surah": 12, "ayah_range": [23, 29], "summary": "The minister's wife tries to seduce Yusuf; he resists; shirt torn from behind proves his innocence" },
+        { "surah": 12, "ayah_range": [30, 34], "summary": "Women of the city gossip; she invites them; they cut their hands upon seeing Yusuf's beauty; he prefers prison" },
+        { "surah": 12, "ayah_range": [35, 42], "summary": "In prison, Yusuf preaches tawheed; interprets dreams of two inmates — one freed, one executed" },
+        { "surah": 12, "ayah_range": [43, 49], "summary": "The king's dream of seven fat and seven lean cows; Yusuf interprets from prison; foretells famine" },
+        { "surah": 12, "ayah_range": [50, 57], "summary": "Yusuf's name cleared; appointed over Egypt's storehouses; begins his governance" },
+        { "surah": 12, "ayah_range": [58, 68], "summary": "Brothers come to Egypt for grain; Yusuf recognizes them; demands they bring their youngest brother" },
+        { "surah": 12, "ayah_range": [69, 82], "summary": "Binyamin comes; Yusuf hides a cup in his bag; brothers tested; Binyamin stays behind" },
+        { "surah": 12, "ayah_range": [83, 87], "summary": "Ya'qub's grief — complains only to Allah; 'Do not despair of Allah's mercy'" },
+        { "surah": 12, "ayah_range": [88, 93], "summary": "Brothers return desperate; Yusuf reveals himself; 'No blame upon you today'; sends shirt to cure Ya'qub's blindness" },
+        { "surah": 12, "ayah_range": [94, 101], "summary": "Ya'qub regains sight; family travels to Egypt; they prostrate — the dream fulfilled; Yusuf's grateful dua" },
+        { "surah": 12, "ayah_range": [102, 111], "summary": "Conclusion — lessons for people of understanding; the Quran is not fabricated but a confirmation" }
       ],
-      "key_lessons": ["patience", "forgiveness", "trust_in_allah", "divine_plan"]
+      "themes": ["theme_patience", "theme_forgiveness", "theme_divine_plan", "theme_trust"]
     },
     {
-      "id": "story_of_dawud_sulaiman",
-      "title_english": "The Stories of Dawud & Sulaiman (David & Solomon)",
-      "title_arabic": "قصة داود وسليمان",
-      "description": "Father and son prophets blessed with wisdom, kingdom, and power over nature",
-      "chapters": [
-        {
-          "title": "Dawud Defeats Jalut (Goliath)",
-          "ayahs": [{"surah": 2, "ayah_start": 249, "ayah_end": 251}],
-          "summary": "The young Dawud kills Jalut in battle. Allah gives him the kingdom and wisdom."
-        },
-        {
-          "title": "Dawud's Gifts",
-          "ayahs": [{"surah": 34, "ayah_start": 10, "ayah_end": 11}, {"surah": 21, "ayah_start": 78, "ayah_end": 80}],
-          "summary": "Mountains and birds glorify Allah with Dawud. He is taught to make armor from iron."
-        },
-        {
-          "title": "Dawud's Test",
-          "ayahs": [{"surah": 38, "ayah_start": 21, "ayah_end": 26}],
-          "summary": "Two disputants come to Dawud. He realizes it is a test from Allah, falls in prostration, and repents."
-        },
-        {
-          "title": "Sulaiman's Kingdom",
-          "ayahs": [{"surah": 27, "ayah_start": 15, "ayah_end": 19}, {"surah": 34, "ayah_start": 12, "ayah_end": 14}],
-          "summary": "Sulaiman commands the wind, jinn, and understands the speech of birds and ants. His vast kingdom serves Allah's purpose."
-        },
-        {
-          "title": "Sulaiman & the Queen of Sheba",
-          "ayahs": [{"surah": 27, "ayah_start": 20, "ayah_end": 44}],
-          "summary": "A hoopoe brings news of Sheba. Sulaiman invites the queen to Islam. Her throne is brought in the blink of an eye. She submits to Allah."
-        }
-      ],
-      "key_lessons": ["gratitude", "humility", "knowledge", "justice"]
-    },
-    {
-      "id": "story_of_isa_maryam",
+      "id": "story_of_isa",
       "title_english": "The Story of Isa & Maryam (Jesus & Mary)",
       "title_arabic": "قصة عيسى ومريم",
-      "description": "The miraculous birth of Isa to the virgin Maryam, his mission, and his nature as a prophet",
-      "chapters": [
-        {
-          "title": "The Family of Imran & Maryam's Dedication",
-          "ayahs": [{"surah": 3, "ayah_start": 35, "ayah_end": 37}],
-          "summary": "Maryam's mother dedicates her unborn child to Allah's service. Zakariya is appointed her guardian. He finds provisions with her from Allah."
-        },
-        {
-          "title": "Zakariya's Prayer for a Son",
-          "ayahs": [{"surah": 19, "ayah_start": 2, "ayah_end": 11}, {"surah": 3, "ayah_start": 38, "ayah_end": 41}],
-          "summary": "Inspired by Maryam's provisions, the elderly Zakariya prays for a son and is granted Yahya (John)."
-        },
-        {
-          "title": "The Annunciation",
-          "ayahs": [{"surah": 19, "ayah_start": 16, "ayah_end": 21}, {"surah": 3, "ayah_start": 45, "ayah_end": 47}],
-          "summary": "The angel Jibril appears to Maryam and announces that she will bear a pure son — Isa, the Messiah."
-        },
-        {
-          "title": "The Miraculous Birth",
-          "ayahs": [{"surah": 19, "ayah_start": 22, "ayah_end": 26}],
-          "summary": "Maryam gives birth alone beneath a palm tree. She is told to shake it for fresh dates and to drink from the stream."
-        },
-        {
-          "title": "Isa Speaks from the Cradle",
-          "ayahs": [{"surah": 19, "ayah_start": 27, "ayah_end": 33}],
-          "summary": "Maryam brings the baby to her people. They accuse her, but the infant Isa speaks, declaring himself a servant of Allah."
-        },
-        {
-          "title": "Isa's Mission & Miracles",
-          "ayahs": [{"surah": 3, "ayah_start": 49, "ayah_end": 51}, {"surah": 5, "ayah_start": 110, "ayah_end": 115}],
-          "summary": "Isa heals the blind, cures lepers, raises the dead by Allah's permission, and creates a bird from clay."
-        },
-        {
-          "title": "Isa's Nature & Ascension",
-          "ayahs": [{"surah": 4, "ayah_start": 157, "ayah_end": 159}, {"surah": 3, "ayah_start": 55, "ayah_end": 56}],
-          "summary": "Allah clarifies that Isa was not killed or crucified — it was made to appear so. Allah raised him to Himself."
-        }
+      "title_urdu": "عیسیٰ اور مریم علیہم السلام کی کہانی",
+      "description": "The miraculous birth of Isa to the virgin Maryam, his prophetic mission, miracles, and ascension",
+      "entities_involved": ["prophet_isa", "figure_maryam", "prophet_zakariyya", "prophet_yahya", "angel_jibril"],
+      "surah_sequence": [
+        { "surah": 3, "ayah_range": [33, 37], "summary": "Allah chose the family of Imran; Maryam's mother dedicates her; Zakariya appointed guardian; divine provisions" },
+        { "surah": 3, "ayah_range": [38, 41], "summary": "Zakariya prays for a son; granted Yahya; given the sign of three days without speech" },
+        { "surah": 19, "ayah_range": [2, 11], "summary": "Zakariya's prayer — old and grey; granted Yahya with wisdom and tenderness from childhood" },
+        { "surah": 3, "ayah_range": [42, 44], "summary": "Angels tell Maryam she is chosen and purified above all women of the worlds" },
+        { "surah": 3, "ayah_range": [45, 48], "summary": "Angels announce the Messiah, Isa son of Maryam — distinguished in this world and the Hereafter" },
+        { "surah": 19, "ayah_range": [16, 21], "summary": "Maryam withdraws; Jibril appears as a man; announces a pure son; she is amazed" },
+        { "surah": 19, "ayah_range": [22, 26], "summary": "Maryam conceives and gives birth alone under a palm tree; told to shake for dates and drink from the stream" },
+        { "surah": 19, "ayah_range": [27, 33], "summary": "Maryam brings baby to her people; they accuse her; infant Isa speaks from the cradle declaring he is Allah's servant" },
+        { "surah": 3, "ayah_range": [49, 51], "summary": "Isa's miracles — heals blind, cures leprosy, raises dead, creates bird from clay — all by Allah's permission" },
+        { "surah": 5, "ayah_range": [110, 115], "summary": "Allah recounts His favors to Isa; disciples ask for a table spread from heaven as a sign" },
+        { "surah": 3, "ayah_range": [52, 54], "summary": "Isa senses disbelief; asks who are his helpers for Allah; the disciples declare faith; the plotters plan" },
+        { "surah": 4, "ayah_range": [157, 159], "summary": "They did not kill or crucify Isa — it was made to appear so; Allah raised him to Himself" },
+        { "surah": 3, "ayah_range": [55, 58], "summary": "Allah tells Isa He will take and raise him; purify him from disbelievers; followers will prevail until the Day" },
+        { "surah": 4, "ayah_range": [171, 172], "summary": "Isa is a messenger and Word of Allah bestowed upon Maryam; do not say trinity — Allah is One" },
+        { "surah": 5, "ayah_range": [116, 118], "summary": "On the Day of Judgment — Allah asks Isa if he told people to worship him; Isa denies and submits" },
+        { "surah": 43, "ayah_range": [57, 65], "summary": "Isa is no more than a servant favored by Allah; made an example for the Children of Israel; a sign of the Hour" }
       ],
-      "key_lessons": ["tawheed", "faith", "patience", "trust_in_allah"]
+      "themes": ["theme_tawheed", "theme_miraculous_birth", "theme_prophethood", "theme_faith"]
     },
     {
-      "id": "story_of_dhul_qarnayn",
-      "title_english": "The Story of Dhul-Qarnayn",
-      "title_arabic": "قصة ذو القرنين",
-      "description": "A righteous ruler who traveled to the ends of the earth and built a barrier against Gog and Magog",
-      "chapters": [
-        {
-          "title": "Journey to the West",
-          "ayahs": [{"surah": 18, "ayah_start": 83, "ayah_end": 86}],
-          "summary": "Dhul-Qarnayn travels to where the sun sets and finds a people. He punishes the wrongdoers and rewards the righteous."
-        },
-        {
-          "title": "Journey to the East",
-          "ayahs": [{"surah": 18, "ayah_start": 89, "ayah_end": 91}],
-          "summary": "He reaches the place of the rising sun and finds a people with no shelter from it."
-        },
-        {
-          "title": "The Barrier Against Gog & Magog",
-          "ayahs": [{"surah": 18, "ayah_start": 93, "ayah_end": 98}],
-          "summary": "A people suffering from Ya'juj and Ma'juj ask for help. Dhul-Qarnayn builds a massive barrier of iron and copper, declaring it is a mercy from Allah."
-        }
+      "id": "story_of_nuh",
+      "title_english": "The Story of Prophet Nuh (Noah)",
+      "title_arabic": "قصة نوح",
+      "title_urdu": "نوح علیہ السلام کی کہانی",
+      "description": "Nuh's 950-year mission, patient preaching, building the ark, the great flood, and the aftermath",
+      "entities_involved": ["prophet_nuh", "figure_iblis"],
+      "surah_sequence": [
+        { "surah": 71, "ayah_range": [1, 20], "summary": "Nuh calls his people day and night for centuries; they refuse, put fingers in ears, cover themselves" },
+        { "surah": 71, "ayah_range": [21, 28], "summary": "Nuh reports their stubbornness; asks for no disbeliever to remain; prays for forgiveness for believers" },
+        { "surah": 23, "ayah_range": [23, 30], "summary": "Nuh sent to his people; chiefs call him a madman; he persists; told to build the ark" },
+        { "surah": 11, "ayah_range": [25, 35], "summary": "Nuh warns his people; chiefs reject him as mere mortal with lowly followers; he argues patiently" },
+        { "surah": 11, "ayah_range": [36, 39], "summary": "Allah tells Nuh no more will believe; commanded to build the ark; mocked by passersby" },
+        { "surah": 11, "ayah_range": [40, 44], "summary": "The oven bursts; Nuh boards pairs of each species, family, and believers; the great flood; ark settles on Mount Judi" },
+        { "surah": 11, "ayah_range": [42, 43], "summary": "Nuh's son refuses to board — seeks refuge on a mountain; waves separate them; his son drowns" },
+        { "surah": 11, "ayah_range": [45, 48], "summary": "Nuh grieves for his son; Allah tells him his son was not of his family in faith; Nuh repents" },
+        { "surah": 26, "ayah_range": [105, 122], "summary": "Nuh's people called him a liar; he persists; they threaten stoning; Allah saves him and believers in the laden ship" },
+        { "surah": 29, "ayah_range": [14, 15], "summary": "Nuh remained among his people 950 years; the flood seized them while they were wrongdoers" },
+        { "surah": 54, "ayah_range": [9, 17], "summary": "Nuh's people denied; he called to his Lord; gates of heaven opened with rain; earth burst with springs" }
       ],
-      "key_lessons": ["justice", "gratitude", "humility", "divine_plan"]
+      "themes": ["theme_patience", "theme_perseverance", "theme_divine_punishment", "theme_salvation"]
     },
     {
       "id": "story_of_ashab_al_kahf",
       "title_english": "The People of the Cave",
       "title_arabic": "قصة أصحاب الكهف",
-      "description": "Young believers who fled persecution and slept in a cave for 309 years by Allah's decree",
-      "chapters": [
-        {
-          "title": "The Flight to the Cave",
-          "ayahs": [{"surah": 18, "ayah_start": 9, "ayah_end": 16}],
-          "summary": "Young men who believed in Allah flee from their idolatrous society and take refuge in a cave, trusting in Allah's mercy."
-        },
-        {
-          "title": "The Deep Sleep",
-          "ayahs": [{"surah": 18, "ayah_start": 17, "ayah_end": 18}],
-          "summary": "Allah causes them to sleep for 309 years. The sun passes their cave without disturbing them. Their dog stretches at the entrance."
-        },
-        {
-          "title": "The Awakening",
-          "ayahs": [{"surah": 18, "ayah_start": 19, "ayah_end": 22}],
-          "summary": "They awaken thinking they slept only a day. One goes to the city for food and discovers centuries have passed. People dispute their number."
-        },
-        {
-          "title": "The Lesson",
-          "ayahs": [{"surah": 18, "ayah_start": 25, "ayah_end": 26}],
-          "summary": "Allah reveals they remained 309 years. The story teaches that Allah's promise is true and the Hour is coming."
-        }
+      "title_urdu": "اصحاب کہف کی کہانی",
+      "description": "Young believers who fled persecution, slept in a cave for 309 years, and awakened to a changed world",
+      "entities_involved": ["figure_people_of_cave"],
+      "surah_sequence": [
+        { "surah": 18, "ayah_range": [9, 12], "summary": "Introduction — the companions of the cave and the inscription are among Allah's wondrous signs" },
+        { "surah": 18, "ayah_range": [13, 16], "summary": "They were youths who believed; fled from their people's shirk; took refuge in the cave seeking Allah's mercy" },
+        { "surah": 18, "ayah_range": [17, 18], "summary": "The sun passes their cave without disturbing them; they turn side to side; their dog stretches at the entrance" },
+        { "surah": 18, "ayah_range": [19, 20], "summary": "They awaken thinking they slept a day; one sent to the city for food; discovers the world has changed" },
+        { "surah": 18, "ayah_range": [21, 22], "summary": "Their discovery; people dispute their number — three, five, or seven; say my Lord knows best" },
+        { "surah": 18, "ayah_range": [25, 26], "summary": "They remained 309 years; Allah knows best the unseen of the heavens and earth" }
       ],
-      "key_lessons": ["faith", "trust_in_allah", "patience", "divine_plan"]
+      "themes": ["theme_faith", "theme_refuge", "theme_divine_power", "theme_youth"]
     },
     {
-      "id": "luqmans_advice",
-      "title_english": "Luqman's Wisdom to His Son",
-      "title_arabic": "وصايا لقمان لابنه",
-      "description": "Timeless parental wisdom from Luqman the Wise — a guide to faith, character, and conduct",
-      "chapters": [
-        {
-          "title": "The Foundation: Tawheed",
-          "ayahs": [{"surah": 31, "ayah_start": 13, "ayah_end": 13}],
-          "summary": "Luqman advises his son: Do not associate anything with Allah. Indeed, associating others with Him is a great injustice."
-        },
-        {
-          "title": "Honor Your Parents",
-          "ayahs": [{"surah": 31, "ayah_start": 14, "ayah_end": 15}],
-          "summary": "Be grateful to Allah and to your parents. But if they urge you to associate with Allah what you have no knowledge of, do not obey them — yet still keep their company in this world with kindness."
-        },
-        {
-          "title": "Allah Sees Everything",
-          "ayahs": [{"surah": 31, "ayah_start": 16, "ayah_end": 16}],
-          "summary": "Even something as small as a mustard seed, hidden in a rock or in the heavens or earth — Allah will bring it forth."
-        },
-        {
-          "title": "Prayer, Patience, and Character",
-          "ayahs": [{"surah": 31, "ayah_start": 17, "ayah_end": 19}],
-          "summary": "Establish prayer, enjoin good, forbid evil, be patient. Do not turn your cheek in contempt or walk arrogantly — Allah does not love the boastful. Be moderate in your pace and lower your voice."
-        }
+      "id": "story_of_dhul_qarnayn",
+      "title_english": "Dhul-Qarnayn's Journeys",
+      "title_arabic": "رحلات ذو القرنين",
+      "title_urdu": "ذوالقرنین کے سفر",
+      "description": "A righteous ruler who traveled east, west, and to the barrier against Gog and Magog",
+      "entities_involved": ["figure_dhul_qarnayn"],
+      "surah_sequence": [
+        { "surah": 18, "ayah_range": [83, 86], "summary": "They ask about Dhul-Qarnayn; Allah established him; travels to the setting sun; punishes wrongdoers, rewards righteous" },
+        { "surah": 18, "ayah_range": [89, 91], "summary": "Journey to the rising of the sun; finds a people with no shelter" },
+        { "surah": 18, "ayah_range": [92, 98], "summary": "Between two mountains; people plagued by Ya'juj and Ma'juj; builds iron and copper barrier; 'this is a mercy from my Lord'" },
+        { "surah": 21, "ayah_range": [96, 97], "summary": "When Ya'juj and Ma'juj are let loose — they descend from every elevation; the true promise approaches" }
       ],
-      "key_lessons": ["tawheed", "humility", "patience", "family", "prayer"]
+      "themes": ["theme_justice", "theme_power", "theme_divine_plan", "theme_eschatology"]
+    },
+    {
+      "id": "story_of_musa_khidr",
+      "title_english": "Musa and Al-Khidr",
+      "title_arabic": "قصة موسى والخضر",
+      "title_urdu": "موسیٰ اور خضر علیہم السلام کی کہانی",
+      "description": "Musa journeys to learn hidden wisdom from Khidr — three perplexing acts with divine reasons",
+      "entities_involved": ["prophet_musa", "figure_khidr"],
+      "surah_sequence": [
+        { "surah": 18, "ayah_range": [60, 65], "summary": "Musa and his companion journey to the junction of two seas; forget their fish; find Khidr — a servant granted knowledge" },
+        { "surah": 18, "ayah_range": [66, 70], "summary": "Musa asks to follow; Khidr warns about patience; sets the condition — do not question until I explain" },
+        { "surah": 18, "ayah_range": [71, 73], "summary": "First test: Khidr damages a boat; Musa objects; Khidr reminds the condition" },
+        { "surah": 18, "ayah_range": [74, 76], "summary": "Second test: Khidr kills a youth; Musa is horrified; last warning" },
+        { "surah": 18, "ayah_range": [77, 78], "summary": "Third test: Khidr rebuilds a wall for free in unwelcoming town; Musa objects; they must part" },
+        { "surah": 18, "ayah_range": [79, 82], "summary": "Khidr reveals: boat — a tyrant king seizing ships; youth — would drive parents to disbelief; wall — hid treasure for orphans. 'I did not do it of my own accord'" }
+      ],
+      "themes": ["theme_divine_wisdom", "theme_knowledge", "theme_patience", "theme_humility"]
+    },
+    {
+      "id": "battle_narratives",
+      "title_english": "The Battles of Early Islam",
+      "title_arabic": "غزوات الإسلام",
+      "title_urdu": "ابتدائی اسلام کی جنگیں",
+      "description": "Badr, Uhud, the Confederates, Hudaybiyya, and the Conquest of Mecca — the military and diplomatic turning points",
+      "entities_involved": ["prophet_muhammad", "figure_quraysh"],
+      "surah_sequence": [
+        { "surah": 8, "ayah_range": [5, 19], "summary": "Battle of Badr: believers set out; Allah promises help; angels descend; 'You did not throw when you threw — Allah threw'" },
+        { "surah": 8, "ayah_range": [41, 48], "summary": "Distribution of Badr spoils; Allah's planning vs. enemies; Shaytan deserts disbelievers" },
+        { "surah": 8, "ayah_range": [65, 66], "summary": "If 20 patient believers, they overcome 200; if 100, they overcome 1,000" },
+        { "surah": 3, "ayah_range": [121, 129], "summary": "Battle of Uhud: archers positioned; early success; archers leave post; tide turns" },
+        { "surah": 3, "ayah_range": [140, 148], "summary": "Uhud aftermath: wounds alternate; those who fled forgiven; lessons in perseverance" },
+        { "surah": 3, "ayah_range": [152, 155], "summary": "Archer disobedience; Allah tests hearts; Shaytan caused them to slip; Allah pardoned them" },
+        { "surah": 3, "ayah_range": [169, 175], "summary": "Martyrs of Uhud alive with their Lord; do not fear those who threaten" },
+        { "surah": 33, "ayah_range": [9, 20], "summary": "Battle of Ahzab: armies surround Medina; wind and unseen forces rout the enemy; the trench stands" },
+        { "surah": 33, "ayah_range": [21, 27], "summary": "Prophet as beautiful model during Ahzab; treachery of Banu Qurayza; siege and resolution" },
+        { "surah": 48, "ayah_range": [1, 10], "summary": "Treaty of Hudaybiyya declared a clear victory; pledge under the tree; Allah well-pleased" },
+        { "surah": 48, "ayah_range": [18, 26], "summary": "The pledge; Allah sent tranquility; restrained hands; the Hudaybiyya vision will be fulfilled" },
+        { "surah": 48, "ayah_range": [27, 29], "summary": "Vision confirmed — entering al-Masjid al-Haram safely; description of Prophet and companions" },
+        { "surah": 110, "ayah_range": [1, 3], "summary": "Conquest of Mecca: victory of Allah; people enter Islam in multitudes; glorify and seek forgiveness" },
+        { "surah": 9, "ayah_range": [25, 27], "summary": "Battle of Hunayn: initial confidence in numbers fails; Allah sends tranquility; the tide turns" }
+      ],
+      "themes": ["theme_trust", "theme_perseverance", "theme_divine_intervention", "theme_victory"]
+    },
+    {
+      "id": "destroyed_nations",
+      "title_english": "The Destruction of Ancient Peoples",
+      "title_arabic": "هلاك الأمم السابقة",
+      "title_urdu": "قدیم قوموں کی تباہی",
+      "description": "The recurring pattern of prophetic warning, rejection, and divine punishment upon 'Ad, Thamud, Lut's people, Madyan, and others",
+      "entities_involved": ["prophet_hud", "prophet_salih", "prophet_lut", "prophet_shuayb", "figure_people_of_ad", "figure_people_of_thamud"],
+      "surah_sequence": [
+        { "surah": 7, "ayah_range": [65, 72], "summary": "'Ad — Prophet Hud warns against idolatry; they demand punishment; devastating wind destroys them" },
+        { "surah": 11, "ayah_range": [50, 60], "summary": "'Ad — Hud calls to worship Allah alone; they are seized by the blast" },
+        { "surah": 26, "ayah_range": [123, 140], "summary": "'Ad — Hud warns the people who build monuments; they reject; destroyed" },
+        { "surah": 46, "ayah_range": [21, 26], "summary": "'Ad in al-Ahqaf; they see the cloud of punishment approaching; everything destroyed except dwellings" },
+        { "surah": 69, "ayah_range": [6, 8], "summary": "'Ad destroyed by furious screaming wind; seven nights and eight days; prostrate like hollow palm trunks" },
+        { "surah": 7, "ayah_range": [73, 79], "summary": "Thamud — Salih and the she-camel; they hamstring her; earthquake seizes them" },
+        { "surah": 11, "ayah_range": [61, 68], "summary": "Thamud — Salih tells them to seek forgiveness; they hamstring she-camel; three days then the blast" },
+        { "surah": 26, "ayah_range": [141, 159], "summary": "Thamud warned through she-camel; hamstrung; punishment overtook them" },
+        { "surah": 91, "ayah_range": [11, 15], "summary": "Thamud denied; the most wicked rose up; hamstrung her; Allah destroyed them" },
+        { "surah": 7, "ayah_range": [80, 84], "summary": "People of Lut — unprecedented sin; rained with stones" },
+        { "surah": 11, "ayah_range": [77, 83], "summary": "People of Lut — angels visit; cities overturned at dawn; stones of baked clay" },
+        { "surah": 26, "ayah_range": [160, 175], "summary": "People of Lut — reject Lut; rained with evil rain" },
+        { "surah": 15, "ayah_range": [61, 77], "summary": "People of Lut — angels come; dawn punishment; cities overturned; marked stones rain" },
+        { "surah": 7, "ayah_range": [85, 93], "summary": "Madyan — Shu'ayb warns against cheating; earthquake seizes them" },
+        { "surah": 11, "ayah_range": [84, 95], "summary": "Madyan — Shu'ayb calls for just weights; blast from sky destroys them" },
+        { "surah": 29, "ayah_range": [36, 40], "summary": "Summary: We destroyed 'Ad, Thamud, Qarun, Pharaoh — each seized for their sin" }
+      ],
+      "themes": ["theme_divine_punishment", "theme_justice", "theme_warning", "theme_prophethood"]
+    },
+    {
+      "id": "story_of_sulayman",
+      "title_english": "The Kingdom of Sulayman (Solomon)",
+      "title_arabic": "مملكة سليمان",
+      "title_urdu": "سلیمان علیہ السلام کی سلطنت",
+      "description": "Sulayman's command over jinn, wind, and animals; the hoopoe; the Queen of Sheba; his death",
+      "entities_involved": ["prophet_sulayman", "prophet_dawud", "figure_bilqis"],
+      "surah_sequence": [
+        { "surah": 27, "ayah_range": [15, 19], "summary": "Sulayman inherits Dawud; taught language of birds; armies of jinn, men, and birds; the ant's warning" },
+        { "surah": 27, "ayah_range": [20, 28], "summary": "The hoopoe absent; returns with news of Sheba — a queen with a great throne who worships the sun" },
+        { "surah": 27, "ayah_range": [29, 35], "summary": "Sulayman sends a letter beginning with Bismillah; invites the Queen to Islam" },
+        { "surah": 27, "ayah_range": [36, 44], "summary": "Queen sends gift; Sulayman refuses; throne transported instantly; she enters palace of glass; submits to Allah" },
+        { "surah": 34, "ayah_range": [12, 14], "summary": "Wind subservient; copper fountain; jinn work; when he died, only a worm eating his staff revealed it" },
+        { "surah": 38, "ayah_range": [30, 40], "summary": "Sulayman's test with horses; prayer for unmatched kingdom; wind and shayatin subjugated" },
+        { "surah": 21, "ayah_range": [78, 82], "summary": "Dawud and Sulayman judging the field; understanding given to Sulayman; shayatin dive for him" },
+        { "surah": 2, "ayah_range": [102, 102], "summary": "Sulayman did not disbelieve — but the shayatin did; magic taught; Harut and Marut" }
+      ],
+      "themes": ["theme_gratitude", "theme_wisdom", "theme_power", "theme_dawah"]
+    },
+    {
+      "id": "pharaohs_downfall",
+      "title_english": "Pharaoh's Downfall",
+      "title_arabic": "سقوط فرعون",
+      "title_urdu": "فرعون کا زوال",
+      "description": "The arc of Pharaoh's tyranny — from oppression through the plagues to his drowning and body preservation",
+      "entities_involved": ["figure_pharaoh", "figure_haman", "prophet_musa", "figure_wife_of_pharaoh"],
+      "surah_sequence": [
+        { "surah": 28, "ayah_range": [3, 6], "summary": "Pharaoh exalted himself; divided people; slaughtered sons; Allah wills to favor the oppressed" },
+        { "surah": 40, "ayah_range": [23, 29], "summary": "Musa sent with signs; a believing man from Pharaoh's family speaks up secretly" },
+        { "surah": 40, "ayah_range": [36, 37], "summary": "Pharaoh tells Haman to build a tower to reach heavens — his arrogance" },
+        { "surah": 43, "ayah_range": [51, 56], "summary": "Pharaoh boasts about the kingdom of Egypt; belittles Musa" },
+        { "surah": 7, "ayah_range": [130, 136], "summary": "Plagues: drought, flood, locusts, lice, frogs, blood — each time they promise then break it" },
+        { "surah": 79, "ayah_range": [17, 26], "summary": "Musa sent to Pharaoh; he proclaims 'I am your most exalted lord'; Allah seizes him" },
+        { "surah": 44, "ayah_range": [17, 33], "summary": "Musa told to march by night; Pharaoh pursues; they left gardens, springs, noble positions" },
+        { "surah": 26, "ayah_range": [52, 68], "summary": "The exodus; Pharaoh mobilizes army; sea struck; Israelites cross; Pharaoh follows" },
+        { "surah": 10, "ayah_range": [90, 92], "summary": "Pharaoh drowning declares belief — too late; body preserved as a sign" },
+        { "surah": 28, "ayah_range": [38, 42], "summary": "Pharaoh and Haman's fate — arrogant; seized and thrown into the sea; leaders calling to the Fire" },
+        { "surah": 66, "ayah_range": [11, 11], "summary": "Pharaoh's wife Asiya believed; prayed for home in Paradise near Allah — a model for believers" }
+      ],
+      "themes": ["theme_arrogance", "theme_divine_punishment", "theme_liberation", "theme_divine_power"]
+    },
+    {
+      "id": "day_of_judgment",
+      "title_english": "The Day of Judgment Sequence",
+      "title_arabic": "أحداث يوم القيامة",
+      "title_urdu": "یوم القیامت کے واقعات",
+      "description": "The trumpet, resurrection, reckoning, the scales, and the final destinations of Paradise and Hellfire",
+      "entities_involved": ["angel_israfil", "angel_jibril"],
+      "surah_sequence": [
+        { "surah": 81, "ayah_range": [1, 14], "summary": "Cosmic upheaval: sun folded, stars scattered, mountains moved, seas set on fire; every soul will know what it brought" },
+        { "surah": 82, "ayah_range": [1, 5], "summary": "Sky breaks apart, stars scatter, oceans erupt, graves overturned" },
+        { "surah": 99, "ayah_range": [1, 8], "summary": "Earth shakes; brings forth burdens; people proceed in groups; atom's weight of good or evil seen" },
+        { "surah": 39, "ayah_range": [68, 68], "summary": "Trumpet blown — all fall unconscious; blown again — they stand looking" },
+        { "surah": 36, "ayah_range": [51, 54], "summary": "Trumpet blown; from graves they rush; 'Who raised us?'; 'This is what the Most Merciful promised'" },
+        { "surah": 50, "ayah_range": [20, 22], "summary": "Trumpet — Day of warning; every soul comes with a driver and a witness" },
+        { "surah": 78, "ayah_range": [17, 20], "summary": "Day of Sorting — trumpet; multitudes arrive; sky opened as gates; mountains moved as mirage" },
+        { "surah": 69, "ayah_range": [13, 18], "summary": "Single blast; earth and mountains crushed; heaven split; angels at edges; eight carry the Throne" },
+        { "surah": 23, "ayah_range": [99, 104], "summary": "At death, barrier until resurrection; trumpet; lineage won't help; scales weighed" },
+        { "surah": 21, "ayah_range": [47, 47], "summary": "Scales of justice — no soul wronged even mustard seed weight" },
+        { "surah": 101, "ayah_range": [1, 11], "summary": "The Striking Calamity — people like scattered moths; mountains like wool; heavy scales: pleasant life; light: the Abyss" },
+        { "surah": 56, "ayah_range": [1, 14], "summary": "Three groups: companions of right, left, and the forerunners nearest to Allah" },
+        { "surah": 56, "ayah_range": [15, 40], "summary": "Forerunners in Gardens of Pleasure — adorned couches; fruits, meat; companions of pure beauty" },
+        { "surah": 56, "ayah_range": [41, 56], "summary": "Companions of left — scorching fire; boiling water; shade of black smoke" },
+        { "surah": 55, "ayah_range": [46, 78], "summary": "Those who feared their Lord — two gardens; flowing springs; fruits in pairs; silk; 'Which favors would you deny?'" },
+        { "surah": 76, "ayah_range": [12, 22], "summary": "Paradise: gardens, silk, silver vessels, ginger drink, green garments; 'This is your reward'" },
+        { "surah": 39, "ayah_range": [71, 75], "summary": "Disbelievers driven to Hell in groups; believers to Paradise; gates opened; 'Peace be upon you'; angels glorifying" }
+      ],
+      "themes": ["theme_akhirah", "theme_accountability", "theme_divine_justice", "theme_reward_punishment"]
+    },
+    {
+      "id": "story_of_dawud",
+      "title_english": "The Story of Prophet Dawud (David)",
+      "title_arabic": "قصة داود",
+      "title_urdu": "داؤد علیہ السلام کی کہانی",
+      "description": "From shepherd to king — Dawud defeats Goliath, receives the Psalms, mountains and birds glorify with him",
+      "entities_involved": ["prophet_dawud", "figure_jalut", "figure_talut"],
+      "surah_sequence": [
+        { "surah": 2, "ayah_range": [246, 251], "summary": "Israelites ask for a king; Talut appointed; Dawud kills Jalut; given the kingdom and wisdom" },
+        { "surah": 21, "ayah_range": [78, 80], "summary": "Dawud and Sulayman judge the field case; mountains and birds glorify with Dawud; taught to make armor" },
+        { "surah": 34, "ayah_range": [10, 11], "summary": "Mountains and birds commanded to glorify with Dawud; iron made soft; coats of mail" },
+        { "surah": 38, "ayah_range": [17, 26], "summary": "Dawud given strength; tested by two disputants; realizes and repents; made khalifah — judge with truth" }
+      ],
+      "themes": ["theme_justice", "theme_worship", "theme_gratitude", "theme_divine_gifts"]
     },
     {
       "id": "story_of_ayyub",
       "title_english": "The Story of Prophet Ayyub (Job)",
       "title_arabic": "قصة أيوب",
-      "description": "The ultimate test of patience — Ayyub loses everything yet never loses faith",
-      "chapters": [
-        {
-          "title": "The Trial",
-          "ayahs": [{"surah": 38, "ayah_start": 41, "ayah_end": 42}, {"surah": 21, "ayah_start": 83, "ayah_end": 83}],
-          "summary": "Ayyub is afflicted with severe illness and hardship. He calls out to Allah: 'Adversity has touched me, and You are the Most Merciful of the merciful.'"
-        },
-        {
-          "title": "The Healing",
-          "ayahs": [{"surah": 38, "ayah_start": 42, "ayah_end": 44}, {"surah": 21, "ayah_start": 84, "ayah_end": 84}],
-          "summary": "Allah commands him to strike the ground with his foot — a cool spring gushes forth. His health and family are restored, doubled as a mercy."
-        }
+      "title_urdu": "ایوب علیہ السلام کی کہانی",
+      "description": "The ultimate test of patience — Ayyub loses health and family yet never loses faith",
+      "entities_involved": ["prophet_ayyub"],
+      "surah_sequence": [
+        { "surah": 21, "ayah_range": [83, 84], "summary": "Ayyub calls: 'Adversity has touched me, and You are the Most Merciful'; Allah removes affliction, restores family doubled" },
+        { "surah": 38, "ayah_range": [41, 44], "summary": "Ayyub calls to his Lord; told to strike ground — cool spring gushes; health and family restored" }
       ],
-      "key_lessons": ["patience", "trust_in_allah", "gratitude", "supplication"]
+      "themes": ["theme_patience", "theme_trust", "theme_supplication", "theme_healing"]
     },
     {
       "id": "story_of_yunus",
       "title_english": "The Story of Prophet Yunus (Jonah)",
       "title_arabic": "قصة يونس",
-      "description": "The prophet who left his people in frustration, was swallowed by a whale, and repented in its belly",
-      "chapters": [
-        {
-          "title": "Departure & the Whale",
-          "ayahs": [{"surah": 37, "ayah_start": 139, "ayah_end": 144}, {"surah": 21, "ayah_start": 87, "ayah_end": 87}],
-          "summary": "Yunus leaves his people in anger. He boards a ship, is cast overboard, and is swallowed by a great fish. In darkness, he calls out: 'There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.'"
-        },
-        {
-          "title": "Salvation & His People's Repentance",
-          "ayahs": [{"surah": 37, "ayah_start": 145, "ayah_end": 148}, {"surah": 10, "ayah_start": 98, "ayah_end": 98}],
-          "summary": "Allah saves Yunus and casts him ashore, weak. Meanwhile, his people repent and are the only nation in the Quran saved from punishment after initially rejecting their prophet."
-        }
+      "title_urdu": "یونس علیہ السلام کی کہانی",
+      "description": "The prophet who departed in anger, was swallowed by a whale, repented in darkness, and was restored",
+      "entities_involved": ["prophet_yunus"],
+      "surah_sequence": [
+        { "surah": 37, "ayah_range": [139, 144], "summary": "Yunus flees; boarded ship; cast lots; swallowed by whale; in darkness glorifies Allah" },
+        { "surah": 21, "ayah_range": [87, 88], "summary": "Dhun-Nun's supplication: 'La ilaha illa Anta, Subhanaka'; Allah saves him from distress" },
+        { "surah": 37, "ayah_range": [145, 148], "summary": "Cast ashore weak; Allah grows gourd tree; sent to 100,000+; his people believe and are spared" },
+        { "surah": 10, "ayah_range": [98, 98], "summary": "Yunus's people — the only nation saved from punishment after initially rejecting their prophet" },
+        { "surah": 68, "ayah_range": [48, 50], "summary": "Be patient — do not be like the companion of the whale; had Allah's favor not reached him, he'd have been blamed" }
       ],
-      "key_lessons": ["repentance", "patience", "supplication", "mercy"]
+      "themes": ["theme_repentance", "theme_patience", "theme_mercy", "theme_supplication"]
     },
     {
-      "id": "story_of_shuayb",
-      "title_english": "The Story of Prophet Shu'ayb",
-      "title_arabic": "قصة شعيب",
-      "description": "The prophet sent to Madyan who called his people to honest trade and fair dealing",
-      "chapters": [
-        {
-          "title": "The Call to Justice in Trade",
-          "ayahs": [{"surah": 11, "ayah_start": 84, "ayah_end": 87}, {"surah": 7, "ayah_start": 85, "ayah_end": 87}],
-          "summary": "Shu'ayb warns the people of Madyan against cheating in weights and measures, and corruption in the land."
-        },
-        {
-          "title": "Rejection & Destruction",
-          "ayahs": [{"surah": 11, "ayah_start": 91, "ayah_end": 95}, {"surah": 7, "ayah_start": 91, "ayah_end": 93}],
-          "summary": "The people mock Shu'ayb and threaten to expel him. An earthquake seizes them and they are found lifeless in their homes."
-        }
+      "id": "luqmans_wisdom",
+      "title_english": "Luqman's Wisdom to His Son",
+      "title_arabic": "وصايا لقمان لابنه",
+      "title_urdu": "لقمان کی اپنے بیٹے کو نصیحت",
+      "description": "Timeless parental wisdom — tawheed, gratitude, parents, prayer, character, and humility",
+      "entities_involved": ["figure_luqman"],
+      "surah_sequence": [
+        { "surah": 31, "ayah_range": [12, 12], "summary": "Allah gave Luqman wisdom: 'Be grateful to Allah — whoever is grateful is grateful for himself'" },
+        { "surah": 31, "ayah_range": [13, 13], "summary": "First advice: Do not associate anything with Allah — shirk is tremendous injustice" },
+        { "surah": 31, "ayah_range": [14, 15], "summary": "Honor parents — mother carried in weakness; but if they urge shirk, do not obey yet keep kind company" },
+        { "surah": 31, "ayah_range": [16, 16], "summary": "Allah's omniscience — even a mustard seed hidden in a rock, Allah will bring it forth" },
+        { "surah": 31, "ayah_range": [17, 19], "summary": "Establish prayer, enjoin good, forbid evil, be patient; don't walk arrogantly; be moderate; lower your voice" }
       ],
-      "key_lessons": ["trade_ethics", "justice", "patience", "faith"]
+      "themes": ["theme_tawheed", "theme_parenthood", "theme_character", "theme_wisdom"]
     },
     {
       "id": "story_of_lut",
       "title_english": "The Story of Prophet Lut (Lot)",
       "title_arabic": "قصة لوط",
-      "description": "Lut's mission to a people committing unprecedented sin, and their ultimate destruction",
-      "chapters": [
-        {
-          "title": "Warning His People",
-          "ayahs": [{"surah": 7, "ayah_start": 80, "ayah_end": 82}, {"surah": 26, "ayah_start": 160, "ayah_end": 168}],
-          "summary": "Lut calls his people to abandon their transgression. They mock him and threaten to expel him."
-        },
-        {
-          "title": "The Angels' Visit",
-          "ayahs": [{"surah": 11, "ayah_start": 77, "ayah_end": 81}, {"surah": 15, "ayah_start": 61, "ayah_end": 72}],
-          "summary": "Angels visit Lut in human form. The people descend upon his house. The angels reveal their mission and tell Lut to leave by night."
-        },
-        {
-          "title": "The Destruction",
-          "ayahs": [{"surah": 11, "ayah_start": 82, "ayah_end": 83}, {"surah": 15, "ayah_start": 73, "ayah_end": 77}],
-          "summary": "At dawn, the cities are turned upside down and pelted with stones of baked clay. Lut's wife is among those who perish."
-        }
+      "title_urdu": "لوط علیہ السلام کی کہانی",
+      "description": "Lut warns his people; angels visit; cities overturned at dawn with stones of baked clay",
+      "entities_involved": ["prophet_lut", "prophet_ibrahim"],
+      "surah_sequence": [
+        { "surah": 7, "ayah_range": [80, 84], "summary": "Lut warns; they approach men; they say expel him; rained with stones" },
+        { "surah": 26, "ayah_range": [160, 175], "summary": "Lut warns; they threaten; Allah saves his family except wife; rained evil rain" },
+        { "surah": 11, "ayah_range": [77, 83], "summary": "Angels come; people rush to his house; told to leave by night; cities overturned; stones of baked clay" },
+        { "surah": 15, "ayah_range": [61, 77], "summary": "Angels visit; people come with desire; dawn — cities turned upside down; marked stones rain" },
+        { "surah": 29, "ayah_range": [28, 35], "summary": "Lut tells people of unprecedented evil; they say bring punishment; angels tell Ibrahim" },
+        { "surah": 54, "ayah_range": [33, 39], "summary": "Lut's people denied warnings; sandstorm sent; Lut's family saved at dawn" }
       ],
-      "key_lessons": ["faith", "patience", "justice", "divine_plan"]
+      "themes": ["theme_divine_punishment", "theme_warning", "theme_justice"]
+    },
+    {
+      "id": "story_of_shuayb",
+      "title_english": "The Story of Prophet Shu'ayb",
+      "title_arabic": "قصة شعيب",
+      "title_urdu": "شعیب علیہ السلام کی کہانی",
+      "description": "The prophet of fair trade — sent to Madyan to end economic corruption",
+      "entities_involved": ["prophet_shuayb"],
+      "surah_sequence": [
+        { "surah": 7, "ayah_range": [85, 93], "summary": "Shu'ayb sent to Madyan — worship Allah, give full measure; earthquake seizes them" },
+        { "surah": 11, "ayah_range": [84, 95], "summary": "Shu'ayb warns against shortchanging; they threaten stoning; blast from sky destroys them" },
+        { "surah": 26, "ayah_range": [176, 191], "summary": "Companions of the Thicket denied Shu'ayb; punishment of the Day of Shadow" },
+        { "surah": 29, "ayah_range": [36, 37], "summary": "To Madyan their brother Shu'ayb; earthquake seized them" }
+      ],
+      "themes": ["theme_economic_justice", "theme_honesty", "theme_divine_punishment"]
     }
   ]
 }
