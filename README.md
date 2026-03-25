@@ -9,6 +9,22 @@
 
 ---
 
+### See it in action
+
+<p align="center">
+  <img src="assets/screenshots/home.png" width="250" alt="Home Screen" />
+  <img src="assets/screenshots/reading.png" width="250" alt="Reading View" />
+  <img src="assets/screenshots/journey-explore.png" width="250" alt="Knowledge Explorer" />
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/quran.png" width="250" alt="Surah Index" />
+  <img src="assets/screenshots/journey-completion.png" width="250" alt="Quran Completion" />
+  <img src="assets/screenshots/settings.png" width="250" alt="Settings" />
+</p>
+
+---
+
 ### Read the Quran your way
 
 Noor gives you three reading modes designed around how you actually read:
