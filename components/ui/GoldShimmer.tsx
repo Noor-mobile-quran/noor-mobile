@@ -27,9 +27,20 @@ export function GoldShimmer({
 
   const [reduceMotion, setReduceMotion] = useState(false);
   useEffect(() => {
-    AccessibilityInfo.isReduceMotionEnabled().then(setReduceMotion);
-    const sub = AccessibilityInfo.addEventListener('reduceMotionChanged', setReduceMotion);
-    return () => sub.remove();
+    try {
+      AccessibilityInfo.isReduceMotionEnabled().then(setReduceMotion).catch(() => {});
+    } catch (_) {
+      // AccessibilityInfo is unavailable on web
+    }
+    let sub: ReturnType<typeof AccessibilityInfo.addEventListener> | null = null;
+    try {
+      sub = AccessibilityInfo.addEventListener("reduceMotionChanged", setReduceMotion);
+    } catch (_) {
+      // Not supported on web
+    }
+    return () => {
+      sub?.remove();
+    };
   }, []);
 
   useEffect(() => {

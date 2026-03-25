@@ -1,4 +1,4 @@
-import { Text, type TextProps, type TextStyle } from "react-native";
+import { Platform, Text, type TextProps, type TextStyle } from "react-native";
 import { fonts, fontSizes } from "../../theme/typography";
 import { useAppStore } from "../../store/useAppStore";
 
@@ -39,9 +39,13 @@ export function ArabicText({
         },
         style,
       ]}
-      accessibilityLanguage="ar"
+      {...(Platform.OS !== "web"
+        ? {
+            accessibilityLanguage: "ar",
+            importantForAccessibility: decorative ? "no" : "yes",
+          }
+        : { lang: "ar" })}
       accessibilityRole={decorative ? "none" : "text"}
-      importantForAccessibility={decorative ? "no" : "yes"}
       accessible={!decorative}
       {...rest}
     >
