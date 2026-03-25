@@ -1,88 +1,76 @@
-import { View, Text } from "react-native";
+import { View, Text, Pressable, StyleSheet } from "react-native";
 import { useAppStore } from "../store/useAppStore";
 import { useTheme } from "../theme/ThemeProvider";
-import { Crescent } from "./ornaments";
 
 export default function StreakCounter() {
-  const { currentStreak, longestStreak, dailyGoal } = useAppStore((s) => s.progress);
+  const { currentStreak, dailyGoal } = useAppStore((s) => s.progress);
+  const streakVisible = useAppStore((s) => s.streakVisible);
+  const toggleStreakVisible = useAppStore((s) => s.toggleStreakVisible);
   const { colors } = useTheme();
+
+  if (!streakVisible) return null;
 
   return (
     <View
-      className="p-6 rounded-2xl items-center overflow-hidden"
-      style={{ backgroundColor: colors.surface }}
+      style={[styles.container, { backgroundColor: colors.surface }]}
       accessibilityRole="summary"
-      accessibilityLabel={`Reading streak: ${currentStreak} days. Best: ${longestStreak}. Daily goal: ${dailyGoal} ayahs.`}
+      accessibilityLabel={`You have spent time with the Quran ${currentStreak} days this month. Your intention: ${dailyGoal} ayahs.`}
     >
-      <View className="absolute top-2 right-3">
-        <Crescent size={40} color={colors.gold} opacity={0.1} />
-      </View>
-
-      <Text
-        style={{
-          fontSize: 48,
-          fontFamily: "Inter-Bold",
-          color: colors.gold,
-        }}
-      >
-        {currentStreak}
-      </Text>
-      <Text
-        style={{
-          fontSize: 14,
-          fontFamily: "Inter-Medium",
-          color: colors.textSecondary,
-          marginTop: 4,
-        }}
-      >
-        Day Streak
+      <Text style={[styles.reflection, { color: colors.textSecondary }]}>
+        You've spent time with the Quran{" "}
+        <Text style={[styles.reflectionHighlight, { color: colors.textPrimary }]}>
+          {currentStreak} {currentStreak === 1 ? "day" : "days"}
+        </Text>{" "}
+        this month
       </Text>
 
-      <View className="flex-row justify-center gap-6 mt-4">
-        <View className="items-center">
-          <Text
-            style={{
-              fontSize: 18,
-              fontFamily: "Inter-SemiBold",
-              color: colors.textPrimary,
-            }}
-          >
-            {longestStreak}
-          </Text>
-          <Text
-            style={{
-              fontSize: 12,
-              fontFamily: "Inter-Regular",
-              color: colors.textSecondary,
-            }}
-          >
-            Best
-          </Text>
-        </View>
+      <Text style={[styles.intention, { color: colors.textSecondary }]}>
+        Your intention: {dailyGoal} ayahs
+      </Text>
 
-        <View style={{ width: 1, backgroundColor: colors.border }} />
-
-        <View className="items-center">
-          <Text
-            style={{
-              fontSize: 18,
-              fontFamily: "Inter-SemiBold",
-              color: colors.textPrimary,
-            }}
-          >
-            {dailyGoal}
-          </Text>
-          <Text
-            style={{
-              fontSize: 12,
-              fontFamily: "Inter-Regular",
-              color: colors.textSecondary,
-            }}
-          >
-            Daily Goal
-          </Text>
-        </View>
-      </View>
+      <Pressable
+        onPress={toggleStreakVisible}
+        accessibilityLabel="Hide reading reflection"
+        accessibilityRole="button"
+        hitSlop={{ top: 8, bottom: 8, left: 16, right: 16 }}
+        style={styles.hideButton}
+      >
+        <Text style={[styles.hideText, { color: colors.textSecondary }]}>
+          Hide
+        </Text>
+      </Pressable>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 16,
+    borderRadius: 12,
+    alignItems: "center",
+    gap: 6,
+  },
+  reflection: {
+    fontFamily: "Inter-Regular",
+    fontSize: 14,
+    lineHeight: 20,
+    textAlign: "center",
+  },
+  reflectionHighlight: {
+    fontFamily: "Inter-SemiBold",
+  },
+  intention: {
+    fontFamily: "Inter-Regular",
+    fontSize: 12,
+    opacity: 0.7,
+  },
+  hideButton: {
+    marginTop: 4,
+    minHeight: 44,
+    justifyContent: "center",
+  },
+  hideText: {
+    fontFamily: "Inter-Regular",
+    fontSize: 12,
+  },
+});

@@ -25,6 +25,7 @@ interface AppState {
   progress: UserProgress;
   audioPlaying: boolean;
   currentAudioAyah: number | null;
+  streakVisible: boolean;
 
   setUXMode: (mode: UXMode) => void;
   setTheme: (theme: ThemeMode) => void;
@@ -34,6 +35,7 @@ interface AppState {
   updateProgress: (p: Partial<UserProgress>) => void;
   recordReading: (surah: number, ayah: number) => void;
   setAudioPlaying: (playing: boolean, ayah?: number | null) => void;
+  toggleStreakVisible: () => void;
 }
 
 export const useAppStore = create<AppState>((set, get) => ({
@@ -41,6 +43,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   progress: storage.getProgress() ?? DEFAULT_PROGRESS,
   audioPlaying: false,
   currentAudioAyah: null,
+  streakVisible: true,
 
   setUXMode: (mode) => {
     set((s) => {
@@ -119,5 +122,9 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   setAudioPlaying: (playing, ayah = null) => {
     set({ audioPlaying: playing, currentAudioAyah: ayah });
+  },
+
+  toggleStreakVisible: () => {
+    set((s) => ({ streakVisible: !s.streakVisible }));
   },
 }));

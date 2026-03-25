@@ -39,11 +39,11 @@ export default function HomePage() {
       contentContainerStyle={{ paddingBottom: 40 }}
       showsVerticalScrollIndicator={false}
     >
-      {/* Hero Section */}
+      {/* Hero Section — compact */}
       <LinearGradient
         colors={isDark ? ["#2D261C", "#1A1410"] : ["#4A3F30", "#2D261C"]}
-        className="px-6 pb-10 items-center overflow-hidden rounded-b-3xl"
-        style={{ paddingTop: insets.top + 16 }}
+        className="px-6 pb-6 items-center overflow-hidden rounded-b-3xl"
+        style={{ paddingTop: insets.top + 12 }}
       >
         {/* Decorative crescent */}
         <View className="absolute top-4 right-6">
@@ -59,69 +59,62 @@ export default function HomePage() {
           <View className="w-1 h-10 rounded-t-full" style={{ backgroundColor: "#FFF9ED" }} />
         </View>
 
-        <Text
-          style={{
-            color: "rgba(255, 232, 184, 0.6)",
-            fontFamily: "Inter-Regular",
-            fontSize: 10,
-            letterSpacing: 3,
-            textTransform: "uppercase",
-            marginBottom: 8,
-          }}
-        >
-          {hijriDate}
-        </Text>
-
         <ArabicText
           variant="display"
           bold
-          style={{ color: colors.gold, textAlign: "center", fontSize: 40, lineHeight: 56 }}
+          style={{ color: colors.gold, textAlign: "center", fontSize: 36, lineHeight: 48 }}
         >
-          {"نور"}
+          {"\u0646\u0648\u0631"}
         </ArabicText>
 
         <Text
           style={{
             color: "#FFF9ED",
             fontFamily: "Inter-SemiBold",
-            fontSize: 22,
+            fontSize: 20,
             marginTop: 2,
           }}
         >
           Noor
         </Text>
-        <Text
-          style={{
-            color: "rgba(255, 249, 237, 0.7)",
-            fontFamily: "Inter-Regular",
-            fontSize: 13,
-            marginTop: 6,
-          }}
-        >
-          Your Daily Quran Companion
-        </Text>
 
-        <View className="mt-4">
-          <IslamicGreeting />
+        {/* 1. Islamic Greeting — compact single row with Hijri date */}
+        <View className="mt-3">
+          <IslamicGreeting hijriDate={hijriDate} />
         </View>
 
         {/* Ornamental line */}
-        <View className="flex-row items-center justify-center gap-3 mt-6">
+        <View className="flex-row items-center justify-center gap-3 mt-4">
           <View className="h-px w-12" style={{ backgroundColor: "rgba(212, 168, 67, 0.3)" }} />
           <StarOrnament size={12} color={colors.gold} opacity={0.5} />
           <View className="h-px w-12" style={{ backgroundColor: "rgba(212, 168, 67, 0.3)" }} />
         </View>
       </LinearGradient>
 
-      {/* Content */}
+      {/* Content — reordered */}
       <View className="px-4 mt-6 gap-5">
-        <StreakCounter />
+        {/* 2. Continue Reading — HERO position with gold accent border */}
+        <View
+          style={{
+            borderWidth: 1.5,
+            borderColor: `${colors.gold}40`,
+            borderRadius: 20,
+            padding: 2,
+          }}
+        >
+          <ContinueReading />
+        </View>
 
-        {/* Ornamental divider */}
+        {/* 3. Divider */}
         <OrnamentalDivider />
 
+        {/* 4. Daily Ayah */}
         <DailyAyah />
-        <ContinueReading />
+
+        {/* 5. Divider */}
+        <OrnamentalDivider />
+
+        {/* 6. Quick Dua — compact */}
         <QuickDua />
 
         {/* Browse All Surahs button */}
@@ -149,6 +142,9 @@ export default function HomePage() {
           </Pressable>
         </Link>
 
+        {/* 7. Streak Counter — BOTTOM, subtle reflection */}
+        <StreakCounter />
+
         {/* Footer decoration */}
         <View className="items-center py-4">
           <View className="flex-row items-center gap-2">
@@ -163,7 +159,7 @@ export default function HomePage() {
                 textAlign: "center",
               }}
             >
-              {"بسم الله"}
+              {"\u0628\u0633\u0645 \u0627\u0644\u0644\u0647"}
             </ArabicText>
             <StarOrnament size={10} color={colors.textSecondary} opacity={0.4} />
           </View>

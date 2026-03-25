@@ -1,9 +1,13 @@
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import { ArabicText } from "./ui/ArabicText";
 import { useTheme } from "../theme/ThemeProvider";
 import { useI18n } from "../hooks/useI18n";
 
-export default function IslamicGreeting() {
+interface Props {
+  hijriDate?: string;
+}
+
+export default function IslamicGreeting({ hijriDate }: Props) {
   const { colors } = useTheme();
   const { t, isUrdu } = useI18n();
   const hour = new Date().getHours();
@@ -12,41 +16,73 @@ export default function IslamicGreeting() {
   let greetingKey: string;
 
   if (hour >= 4 && hour < 12) {
-    greetingArabic = "صباح الخير";
+    greetingArabic = "\u0635\u0628\u0627\u062D \u0627\u0644\u062E\u064A\u0631";
     greetingKey = "goodMorning";
   } else if (hour >= 12 && hour < 17) {
-    greetingArabic = "مساء النور";
+    greetingArabic = "\u0645\u0633\u0627\u0621 \u0627\u0644\u0646\u0648\u0631";
     greetingKey = "goodAfternoon";
   } else if (hour >= 17 && hour < 21) {
-    greetingArabic = "مساء الخير";
+    greetingArabic = "\u0645\u0633\u0627\u0621 \u0627\u0644\u062E\u064A\u0631";
     greetingKey = "goodEvening";
   } else {
-    greetingArabic = "تصبح على خير";
+    greetingArabic = "\u062A\u0635\u0628\u062D \u0639\u0644\u0649 \u062E\u064A\u0631";
     greetingKey = "goodNight";
   }
 
   const greetingLabel = t(greetingKey);
 
   return (
-    <View className="items-center">
-      <ArabicText
-        variant="body"
-        style={{ color: colors.gold, textAlign: "center", fontSize: 18, lineHeight: 28 }}
-      >
-        {greetingArabic}
-      </ArabicText>
-      <Text
-        style={{
-          color: colors.textSecondary,
-          fontFamily: isUrdu ? "Amiri_400Regular" : "Inter-Regular",
-          fontSize: 12,
-          marginTop: 2,
-          ...(isUrdu && { writingDirection: "rtl" as const, textAlign: "right" as const }),
-        }}
-        {...(isUrdu && { accessibilityLanguage: "ur" })}
-      >
-        {greetingLabel}
-      </Text>
+    <View style={styles.container}>
+      <View style={styles.row}>
+        <ArabicText
+          variant="body"
+          style={[styles.arabic, { color: colors.gold }]}
+        >
+          {greetingArabic}
+        </ArabicText>
+        <Text
+          style={[
+            styles.label,
+            {
+              color: "rgba(255, 249, 237, 0.7)",
+              fontFamily: isUrdu ? "Amiri-Regular" : "Inter-Regular",
+              ...(isUrdu && { writingDirection: "rtl" as const }),
+            },
+          ]}
+          {...(isUrdu ? { accessibilityLanguage: "ur" } : {})}
+        >
+          {greetingLabel}
+        </Text>
+      </View>
+      {hijriDate && (
+        <Text style={styles.hijri}>
+          {hijriDate}
+        </Text>
+      )}
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: "center",
+    gap: 2,
+  },
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+  },
+  arabic: {
+    fontSize: 16,
+    lineHeight: 24,
+  },
+  label: {
+    fontSize: 13,
+  },
+  hijri: {
+    color: "rgba(255, 232, 184, 0.5)",
+    fontFamily: "Inter-Regular",
+    fontSize: 11,
+  },
+});
