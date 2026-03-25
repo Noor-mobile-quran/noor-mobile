@@ -1,4 +1,5 @@
 import { useRef, useCallback } from "react";
+import { Platform } from "react-native";
 import { Audio } from "expo-av";
 import { useAppStore } from "../store/useAppStore";
 
@@ -11,10 +12,13 @@ export function useAudioPlayer() {
       await soundRef.current.unloadAsync();
     }
 
-    await Audio.setAudioModeAsync({
-      playsInSilentModeIOS: true,
-      staysActiveInBackground: true,
-    });
+    // setAudioModeAsync options are native-only; skip on web to prevent crash
+    if (Platform.OS !== "web") {
+      await Audio.setAudioModeAsync({
+        playsInSilentModeIOS: true,
+        staysActiveInBackground: true,
+      });
+    }
 
     const { sound } = await Audio.Sound.createAsync(
       { uri: url },

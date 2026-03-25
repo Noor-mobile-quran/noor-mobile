@@ -1,10 +1,18 @@
-import { useState } from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { useEffect, useState } from "react";
+import { AccessibilityInfo, View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import Animated, {
+  Easing,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from "react-native-reanimated";
+import Svg, { Path, Rect } from "react-native-svg";
 import { ArabicText } from "./ui/ArabicText";
 import { StarOrnament } from "./ornaments";
 import { useTheme } from "../theme/ThemeProvider";
 import { fonts } from "../theme/typography";
 import type { Ayah } from "../types";
+import type { UXMode } from "../types";
 
 interface Props {
   ayah: Ayah;
@@ -12,6 +20,37 @@ interface Props {
   onPlay: () => void;
   onBookmark: () => void;
   isBookmarked: boolean;
+  uxMode?: UXMode;
+}
+
+function PlayIcon({ size, color }: { size: number; color: string }) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path d="M8 5v14l11-7z" fill={color} />
+    </Svg>
+  );
+}
+
+function PauseIcon({ size, color }: { size: number; color: string }) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Rect x={6} y={4} width={4} height={16} rx={1} fill={color} />
+      <Rect x={14} y={4} width={4} height={16} rx={1} fill={color} />
+    </Svg>
+  );
+}
+
+function BookmarkIcon({ size, color, filled }: { size: number; color: string; filled: boolean }) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path
+        d="M5 3h14a1 1 0 011 1v17.2a.8.8 0 01-1.2.7L12 18l-6.8 3.9A.8.8 0 014 21.2V4a1 1 0 011-1z"
+        fill={filled ? color : "none"}
+        stroke={filled ? undefined : color}
+        strokeWidth={filled ? undefined : 2}
+      />
+    </Svg>
+  );
 }
 
 export default function AyahCard({
@@ -20,14 +59,69 @@ export default function AyahCard({
   onPlay,
   onBookmark,
   isBookmarked,
+  uxMode = "serene",
 }: Props) {
   const { colors } = useTheme();
   const [showControls, setShowControls] = useState(false);
+  const [reduceMotion, setReduceMotion] = useState(false);
+  const enterOpacity = useSharedValue(reduceMotion ? 1 : 0);
+  const enterTranslateY = useSharedValue(reduceMotion ? 0 : 10);
+
+  useEffect(() => {
+    const checkMotion = async () => {
+      try {
+        const enabled = await AccessibilityInfo.isReduceMotionEnabled();
+        setReduceMotion(enabled);
+        if (enabled) {
+          enterOpacity.value = 1;
+          enterTranslateY.value = 0;
+        } else {
+          enterOpacity.value = withTiming(1, {
+            duration: 200,
+            easing: Easing.out(Easing.cubic),
+          });
+          enterTranslateY.value = withTiming(0, {
+            duration: 200,
+            easing: Easing.out(Easing.cubic),
+          });
+        }
+      } catch {
+        setReduceMotion(false);
+        enterOpacity.value = withTiming(1, {
+          duration: 200,
+          easing: Easing.out(Easing.cubic),
+        });
+        enterTranslateY.value = withTiming(0, {
+          duration: 200,
+          easing: Easing.out(Easing.cubic),
+        });
+      }
+    };
+    checkMotion();
+
+    let sub: any;
+    try {
+      sub = AccessibilityInfo.addEventListener("reduceMotionChanged", setReduceMotion);
+    } catch {}
+    return () => { try { sub?.remove(); } catch {} };
+  }, [enterOpacity, enterTranslateY]);
+
+  const enterStyle = useAnimatedStyle(() => ({
+    opacity: enterOpacity.value,
+    transform: [{ translateY: enterTranslateY.value }],
+  }));
+
+  const isImmersive = uxMode === "immersive";
+  const controlsVisible = isImmersive || showControls;
+  const controlButtonSize = isImmersive ? 56 : 44;
 
   return (
+    <Animated.View style={enterStyle}>
     <TouchableOpacity
       activeOpacity={0.9}
-      onPress={() => setShowControls((prev) => !prev)}
+      onPress={() => {
+        if (!isImmersive) setShowControls((prev) => !prev);
+      }}
       accessibilityRole="button"
       accessibilityLabel={`Ayah ${ayah.number_in_surah}. Tap for controls.`}
     >
@@ -40,6 +134,10 @@ export default function AyahCard({
               : colors.surface,
             borderColor: isPlaying ? `${colors.accent}40` : "transparent",
             borderWidth: isPlaying ? 1 : 0,
+          },
+          isImmersive && {
+            borderLeftWidth: 2,
+            borderLeftColor: colors.accent,
           },
         ]}
       >
@@ -65,41 +163,50 @@ export default function AyahCard({
             </Text>
           </View>
 
-          {/* Controls — visible on tap (Serene mode: hidden until tap) */}
-          {showControls && (
+          {/* Controls */}
+          {controlsVisible && (
             <View style={styles.controls}>
               <TouchableOpacity
                 onPress={onPlay}
                 accessibilityLabel={isPlaying ? "Pause recitation" : "Play recitation"}
                 accessibilityRole="button"
+                accessibilityHint="Double tap to toggle audio playback"
                 style={[
                   styles.controlButton,
-                  { backgroundColor: `${colors.accent}15` },
+                  {
+                    backgroundColor: `${colors.accent}15`,
+                    width: controlButtonSize,
+                    height: controlButtonSize,
+                  },
                 ]}
                 hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
               >
-                <Text style={[styles.controlIcon, { color: isPlaying ? colors.accent : colors.textSecondary }]}>
-                  {isPlaying ? "\u23F8" : "\u25B6"}
-                </Text>
+                {isPlaying ? (
+                  <PauseIcon size={18} color={colors.accent} />
+                ) : (
+                  <PlayIcon size={18} color={colors.textSecondary} />
+                )}
               </TouchableOpacity>
               <TouchableOpacity
                 onPress={onBookmark}
                 accessibilityLabel={isBookmarked ? "Remove bookmark" : "Add bookmark"}
                 accessibilityRole="button"
+                accessibilityHint="Double tap to toggle bookmark"
                 style={[
                   styles.controlButton,
-                  { backgroundColor: `${colors.accent}15` },
+                  {
+                    backgroundColor: `${colors.accent}15`,
+                    width: controlButtonSize,
+                    height: controlButtonSize,
+                  },
                 ]}
                 hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
               >
-                <Text
-                  style={[
-                    styles.controlIcon,
-                    { color: isBookmarked ? colors.gold : colors.textSecondary },
-                  ]}
-                >
-                  {isBookmarked ? "\u2605" : "\u2606"}
-                </Text>
+                <BookmarkIcon
+                  size={18}
+                  color={isBookmarked ? colors.gold : colors.textSecondary}
+                  filled={isBookmarked}
+                />
               </TouchableOpacity>
             </View>
           )}
@@ -126,6 +233,7 @@ export default function AyahCard({
         </Text>
       </View>
     </TouchableOpacity>
+    </Animated.View>
   );
 }
 
@@ -158,14 +266,9 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   controlButton: {
-    width: 44,
-    height: 44,
     borderRadius: 12,
     alignItems: "center",
     justifyContent: "center",
-  },
-  controlIcon: {
-    fontSize: 18,
   },
   translation: {
     fontSize: 14,
