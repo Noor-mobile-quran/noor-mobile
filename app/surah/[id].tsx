@@ -46,10 +46,16 @@ export default function ReadingScreen() {
   const isImmersive = uxMode === "immersive";
   const isStudy = uxMode === "study";
 
-  // Hide header in immersive mode
+  // Configure header — show surah name, hide in immersive
   useEffect(() => {
-    navigation.setOptions({ headerShown: !isImmersive });
-  }, [isImmersive, navigation]);
+    navigation.setOptions({
+      headerShown: !isImmersive,
+      title: surah ? `${surah.name_english}` : "",
+      headerTintColor: colors.accent,
+      headerStyle: { backgroundColor: colors.bg },
+      headerTitleStyle: { fontFamily: "Inter-SemiBold", fontSize: 16, color: colors.textPrimary },
+    });
+  }, [isImmersive, navigation, surah, colors]);
 
   // Load bookmarks
   useEffect(() => {

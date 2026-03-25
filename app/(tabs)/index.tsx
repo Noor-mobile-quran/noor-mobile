@@ -35,9 +35,8 @@ export default function HomePage() {
 
   return (
     <ScrollView
-      className="flex-1"
-      style={{ backgroundColor: colors.bg }}
-      contentContainerStyle={{ paddingBottom: 24 }}
+      style={{ flex: 1, backgroundColor: colors.bg }}
+      contentContainerStyle={{ paddingBottom: 40 }}
       showsVerticalScrollIndicator={false}
     >
       {/* Hero Section */}
