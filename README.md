@@ -64,15 +64,157 @@ Light mode, dark mode, and high contrast. Adjustable font sizes. Full accessibil
 
 ---
 
-### Get started
+## Developer Setup
 
+Follow these steps in order to get your development environment ready.
+
+### 1. Prerequisites
+
+Make sure you have these installed on your machine:
+
+- **Node.js** (v20 or later) — [Download](https://nodejs.org/)
+- **npm** (comes with Node.js)
+- **Git** — [Download](https://git-scm.com/)
+
+Verify your installation:
+
+```bash
+node -v    # should be v20+
+npm -v     # should be 10+
+git --version
 ```
-git clone https://github.com/varunmoka7/noor-mobile.git
-cd noor-mobile && npm install
+
+### 2. Install Claude Code CLI
+
+Claude Code is our AI-powered development assistant. Install it globally:
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+Verify it works:
+
+```bash
+claude --version
+```
+
+On first run, it will ask you to authenticate with your Anthropic account. Follow the prompts to log in.
+
+> **Note:** You need an Anthropic account with API access. Ask the team lead if you need an invite.
+
+### 3. Install Superpowers (Skills & Workflows)
+
+Superpowers gives Claude Code a library of specialized skills (design review, debugging, shipping, etc.). Install it:
+
+```bash
+claude install-skill https://github.com/gstack-gg/superpowers
+```
+
+This adds skills like `/browse`, `/review`, `/ship`, `/qa`, `/design-review`, and many more. You can see the full list by running `/help` inside Claude Code.
+
+### 4. Install gstack (Browser & QA Tools)
+
+gstack gives Claude Code a real headless Chromium browser for QA testing, site dogfooding, and web browsing.
+
+```bash
+claude install-skill https://github.com/gstack-gg/gstack
+```
+
+This adds the `/browse`, `/qa`, `/qa-only`, and `/setup-browser-cookies` skills among others.
+
+### 5. Install BRV (Context Tree & Skills)
+
+BRV provides context tree management and additional skills for the project.
+
+```bash
+claude install-skill https://github.com/varunmoka7/brv
+```
+
+The `.brv/` directory in the project root contains the local config — it's already committed.
+
+### 6. Install Vestige (Agents & Orchestration)
+
+Vestige provides multi-agent orchestration capabilities for complex development tasks.
+
+```bash
+claude install-skill https://github.com/varunmoka7/vestige
+```
+
+### 7. Install BMad Builder Module
+
+BMad provides structured workflows for product development — PRDs, architecture docs, sprint planning, story creation, and more.
+
+Inside the project root, the `_bmad/` directory is already included. Claude Code will pick it up automatically.
+
+### 8. Install Impeccable (Design Intelligence)
+
+Impeccable gives Claude Code deep understanding of our design system. The `.impeccable.md` file in the project root contains Noor's complete design context (colors, typography, brand personality, anti-patterns).
+
+It's already committed to the repo — no extra installation needed. Claude Code reads it automatically.
+
+### 9. Clone the Noor App
+
+```bash
+git clone https://github.com/Noor-mobile-quran/noor-mobile.git
+cd noor-mobile
+```
+
+### 10. Install Dependencies
+
+```bash
+npm install
+```
+
+### 11. Run the App
+
+```bash
 npx expo start
 ```
 
-Scan the QR code with [Expo Go](https://expo.dev/go) on your phone, or press `w` to open in your browser.
+This starts the Expo dev server. From here you can:
+
+- **Press `w`** — open in your web browser
+- **Press `i`** — open in iOS Simulator (macOS only, requires Xcode)
+- **Press `a`** — open on Android Emulator (requires Android Studio)
+- **Scan the QR code** — open on your physical device with [Expo Go](https://expo.dev/go)
+
+### 12. Start Claude Code
+
+Open a terminal in the project root and run:
+
+```bash
+claude
+```
+
+Claude Code will read the `CLAUDE.md` and `.impeccable.md` files automatically, giving it full context about the project's tech stack, architecture, and design system.
+
+### Recommended Tools (Optional)
+
+| Tool | Purpose | Install |
+|------|---------|---------|
+| [Expo Go](https://expo.dev/go) | Test on your physical device | App Store / Play Store |
+| [VS Code](https://code.visualstudio.com/) | Code editor | Download from site |
+| [React Native Debugger](https://github.com/nickvdh/react-native-debugger) | Debug React Native apps | `brew install react-native-debugger` |
+
+---
+
+## Project Structure
+
+```
+app/              — Expo Router screens (file-based routing)
+  (tabs)/         — Tab navigator (Home, Quran, Journey, Settings)
+  surah/[id].tsx  — Reading view with Serene/Immersive/Study modes
+components/       — Shared UI components
+  ornaments/      — SVG Islamic ornaments
+  ui/             — Primitives (ArabicText, GoldShimmer)
+hooks/            — Custom hooks (useAudioPlayer, useQuranData)
+theme/            — Colors, typography, ThemeProvider
+store/            — Zustand state management
+assets/
+  data/           — Bundled Quran JSON (114 surahs)
+  knowledge/      — HyperGraph (entities, themes, narratives)
+  fonts/          — Amiri + Inter font files
+```
 
 ---
 
