@@ -64,19 +64,35 @@ Light mode, dark mode, and high contrast. Adjustable font sizes. Full accessibil
 
 ---
 
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Expo SDK 55 + React Native 0.83 |
+| Language | TypeScript |
+| Routing | Expo Router (file-based) |
+| Styling | NativeWind 4 (Tailwind CSS for RN) |
+| State | Zustand 5 + MMKV (native) / localStorage (web) |
+| Data fetching | TanStack React Query 5 |
+| Animation | React Native Reanimated |
+| Audio | expo-av |
+| Typography | Amiri (Arabic) + Inter (Latin) |
+
+Quran text and audio come from the [Al-Quran Cloud API](https://alquran.cloud/api). No API key needed — it's free and open. The app also bundles all 114 surahs as local JSON, so it works offline for reading.
+
+---
+
 ## Developer Setup
 
-Follow these steps in order to get your development environment ready.
+Follow these steps in order. Steps 1-5 are tools you install **before** cloning. Steps 6-9 are the app itself.
 
 ### 1. Prerequisites
 
-Make sure you have these installed on your machine:
+Make sure you have these installed:
 
-- **Node.js** (v20 or later) — [Download](https://nodejs.org/)
+- **Node.js** (v20 or later) — we recommend using [nvm](https://github.com/nvm-sh/nvm) to manage versions
 - **npm** (comes with Node.js)
 - **Git** — [Download](https://git-scm.com/)
-
-Verify your installation:
 
 ```bash
 node -v    # should be v20+
@@ -86,99 +102,66 @@ git --version
 
 ### 2. Install Claude Code CLI
 
-Claude Code is our AI-powered development assistant. Install it globally:
+Claude Code is our AI-powered development assistant. We use it for code generation, reviews, QA, and design feedback.
 
 ```bash
 npm install -g @anthropic-ai/claude-code
-```
-
-Verify it works:
-
-```bash
 claude --version
 ```
 
-On first run, it will ask you to authenticate with your Anthropic account. Follow the prompts to log in.
+On first run, it will ask you to authenticate with your Anthropic account.
 
 > **Note:** You need an Anthropic account with API access. Ask the team lead if you need an invite.
 
 ### 3. Install Superpowers (Skills & Workflows)
 
-Superpowers gives Claude Code a library of specialized skills (design review, debugging, shipping, etc.). Install it:
+Adds specialized skills to Claude Code — design review, debugging, shipping, QA, and more.
 
 ```bash
 claude install-skill https://github.com/gstack-gg/superpowers
 ```
 
-This adds skills like `/browse`, `/review`, `/ship`, `/qa`, `/design-review`, and many more. You can see the full list by running `/help` inside Claude Code.
-
 ### 4. Install gstack (Browser & QA Tools)
 
-gstack gives Claude Code a real headless Chromium browser for QA testing, site dogfooding, and web browsing.
+Gives Claude Code a real headless Chromium browser for QA testing and web browsing.
 
 ```bash
 claude install-skill https://github.com/gstack-gg/gstack
 ```
 
-This adds the `/browse`, `/qa`, `/qa-only`, and `/setup-browser-cookies` skills among others.
+### 5. Install Vestige (Cognitive Memory)
 
-### 5. Install BRV (Context Tree & Skills)
+Vestige gives Claude Code persistent memory across sessions using spaced repetition. Follow the setup instructions at [samvallad33/vestige](https://github.com/samvallad33/vestige) to configure it as an MCP server. The README there has copy-paste config for `claude_desktop_config.json`.
 
-BRV provides context tree management and additional skills for the project.
-
-```bash
-claude install-skill https://github.com/varunmoka7/brv
-```
-
-The `.brv/` directory in the project root contains the local config — it's already committed.
-
-### 6. Install Vestige (Agents & Orchestration)
-
-Vestige provides multi-agent orchestration capabilities for complex development tasks.
-
-```bash
-claude install-skill https://github.com/varunmoka7/vestige
-```
-
-### 7. Install BMad Builder Module
-
-BMad provides structured workflows for product development — PRDs, architecture docs, sprint planning, story creation, and more.
-
-Inside the project root, the `_bmad/` directory is already included. Claude Code will pick it up automatically.
-
-### 8. Install Impeccable (Design Intelligence)
-
-Impeccable gives Claude Code deep understanding of our design system. The `.impeccable.md` file in the project root contains Noor's complete design context (colors, typography, brand personality, anti-patterns).
-
-It's already committed to the repo — no extra installation needed. Claude Code reads it automatically.
-
-### 9. Clone the Noor App
+### 6. Clone the Noor App
 
 ```bash
 git clone https://github.com/Noor-mobile-quran/noor-mobile.git
 cd noor-mobile
 ```
 
-### 10. Install Dependencies
+### 7. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 11. Run the App
+### 8. Run the App
 
 ```bash
 npx expo start
 ```
 
-This starts the Expo dev server. From here you can:
+From here:
 
-- **Press `w`** — open in your web browser
-- **Press `i`** — open in iOS Simulator (macOS only, requires Xcode)
-- **Press `a`** — open on Android Emulator (requires Android Studio)
-- **Scan the QR code** — open on your physical device with [Expo Go](https://expo.dev/go)
+- **`w`** — open in your web browser
+- **`i`** — open in iOS Simulator (macOS only, requires Xcode)
+- **`a`** — open on Android Emulator (requires Android Studio)
+- **Scan QR code** — open on your physical device with [Expo Go](https://expo.dev/go)
 
-### 12. Start Claude Code
+> **Troubleshooting:** If `expo start` fails, try `npx expo start --clear` to reset the bundler cache. If you get a port conflict, kill the process on port 8081 or use `npx expo start --port 8082`.
+
+### 9. Start Claude Code
 
 Open a terminal in the project root and run:
 
@@ -186,7 +169,12 @@ Open a terminal in the project root and run:
 claude
 ```
 
-Claude Code will read the `CLAUDE.md` and `.impeccable.md` files automatically, giving it full context about the project's tech stack, architecture, and design system.
+Claude Code automatically reads two key files from the repo:
+
+- **`CLAUDE.md`** — Tech stack, architecture, file structure, design rules, and UX modes (Serene/Immersive/Study). **Read this file before making any UI changes** — it defines how the app should look and behave.
+- **`.impeccable.md`** — Deep design context: brand personality, color palette (cream/gold/forest), typography rules, accessibility requirements, and anti-patterns to avoid.
+
+You don't need to install anything for these — they're already in the repo and Claude Code picks them up on startup.
 
 ### Recommended Tools (Optional)
 
@@ -194,7 +182,6 @@ Claude Code will read the `CLAUDE.md` and `.impeccable.md` files automatically, 
 |------|---------|---------|
 | [Expo Go](https://expo.dev/go) | Test on your physical device | App Store / Play Store |
 | [VS Code](https://code.visualstudio.com/) | Code editor | Download from site |
-| [React Native Debugger](https://github.com/nickvdh/react-native-debugger) | Debug React Native apps | `brew install react-native-debugger` |
 
 ---
 
@@ -218,15 +205,17 @@ assets/
 
 ---
 
-### Built with
+## For Team Members
 
-Expo + React Native (iOS, Android, Web) | TypeScript | Amiri + Inter typography | Hand-crafted SVG Islamic ornaments
+If you've been invited as a collaborator, welcome! Here's how we work:
 
----
+- **All development goes through Claude Code** — use it for implementation, reviews, and QA
+- **Read `CLAUDE.md` before writing any code** — it has the design rules and architecture decisions
+- **No emoji in UI** — all icons are SVG via react-native-svg
+- **No gamification** — no badges, leaderboards, or guilt-based motivation
+- **Three UX modes** matter: Serene (minimal), Immersive (dark + audio), Study (translations + notes). Know which mode your code affects.
 
-### Contributing
-
-Noor is open source and welcomes contributions from anyone who cares about making the Quran more accessible. Whether you're a developer, designer, Arabic linguist, or Islamic studies student — there's a place for you here.
+Questions? Reach out to the team lead.
 
 ### License
 
