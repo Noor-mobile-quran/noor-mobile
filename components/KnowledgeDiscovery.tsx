@@ -71,7 +71,7 @@ export default function KnowledgeDiscovery() {
             <View style={styles.nameRow}>
               <Text style={styles.nameEnglish}>{featured.name_english}</Text>
               <Text
-                style={[styles.nameArabic, { color: colors.accent }]}
+                style={[styles.nameArabic, { color: colors.textGold }]}
                 accessibilityLanguage="ar"
               >
                 {featured.name_arabic}

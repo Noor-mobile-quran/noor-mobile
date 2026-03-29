@@ -159,7 +159,7 @@ export default function AyahCard({
               style={[
                 styles.ayahNumber,
                 {
-                  color: colors.accent,
+                  color: colors.textGold,
                   fontFamily: fonts.latin.semiBold,
                 },
               ]}

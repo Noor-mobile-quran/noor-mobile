@@ -30,7 +30,7 @@ export default function SurahCard({ surah }: Props) {
         >
           <Text
             style={{
-              color: colors.accent,
+              color: colors.textGold,
               fontFamily: "Inter-SemiBold",
               fontSize: 14,
             }}
@@ -98,7 +98,7 @@ export default function SurahCard({ surah }: Props) {
                   color:
                     surah.revelation_type === "meccan"
                       ? colors.forest
-                      : colors.accent,
+                      : colors.textGold,
                   fontFamily: "Inter-Medium",
                   fontSize: 11,
                 }}

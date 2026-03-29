@@ -27,7 +27,7 @@ export default function SurahHeader({ surah }: Props) {
         <Text
           style={[
             styles.numberText,
-            { color: colors.accent, fontFamily: fonts.latin.semiBold },
+            { color: colors.textGold, fontFamily: fonts.latin.semiBold },
           ]}
         >
           {surah.number}
@@ -37,7 +37,7 @@ export default function SurahHeader({ surah }: Props) {
       {/* Arabic name */}
       <ArabicText
         variant="display"
-        style={{ color: colors.accent, textAlign: "center", marginVertical: 8 }}
+        style={{ color: colors.textGold, textAlign: "center", marginVertical: 8 }}
       >
         {surah.name_arabic}
       </ArabicText>
@@ -79,7 +79,7 @@ export default function SurahHeader({ surah }: Props) {
         <View style={styles.bismillahContainer}>
           <ArabicText
             variant="heading"
-            style={{ color: colors.accent, textAlign: "center" }}
+            style={{ color: colors.textGold, textAlign: "center" }}
           >
             بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
           </ArabicText>

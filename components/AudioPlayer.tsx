@@ -10,7 +10,7 @@ import Animated, {
 } from "react-native-reanimated";
 import { useTheme } from "../theme/ThemeProvider";
 import { useAppStore } from "../store/useAppStore";
-import { useAudioPlayer } from "../hooks/useAudioPlayer";
+import { useNoorAudioPlayer } from "../hooks/useAudioPlayer";
 import { useSurahList } from "../hooks/useQuranData";
 
 export function AudioPlayer() {
@@ -19,7 +19,7 @@ export function AudioPlayer() {
   const currentAyah = useAppStore((s) => s.currentAudioAyah);
   const uxMode = useAppStore((s) => s.settings.uxMode);
   const lastReadSurah = useAppStore((s) => s.progress.lastReadSurah);
-  const { stop, pause, resume } = useAudioPlayer();
+  const { stop, pause, resume } = useNoorAudioPlayer();
   const { data: surahList } = useSurahList();
 
   const [isPaused, setIsPaused] = useState(false);

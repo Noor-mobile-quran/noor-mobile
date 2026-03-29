@@ -6,7 +6,7 @@ import { useTheme } from "../../theme/ThemeProvider";
 import { Crescent, StarOrnament, FlowerOrnament, OrnamentalDivider } from "../../components/ornaments";
 import { ArabicText } from "../../components/ui/ArabicText";
 import IslamicGreeting from "../../components/IslamicGreeting";
-import StreakCounter from "../../components/StreakCounter";
+import ReadingLog from "../../components/ReadingLog";
 import DailyAyah from "../../components/DailyAyah";
 import ContinueReading from "../../components/ContinueReading";
 import QuickDua from "../../components/QuickDua";
@@ -64,7 +64,7 @@ export default function HomePage() {
         <ArabicText
           variant="display"
           bold
-          style={{ color: colors.accent, textAlign: "center", fontSize: 36, lineHeight: 48 }}
+          style={{ color: colors.textGold, textAlign: "center", fontSize: 36, lineHeight: 48 }}
         >
           {"\u0646\u0648\u0631"}
         </ArabicText>
@@ -154,7 +154,7 @@ export default function HomePage() {
         </Link>
 
         {/* 7. Streak Counter — BOTTOM, subtle reflection */}
-        <StreakCounter />
+        <ReadingLog />
 
         {/* Footer decoration */}
         <View className="items-center py-4">

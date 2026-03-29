@@ -76,14 +76,14 @@ export default function NarrativeOfDay() {
         styles.container,
         {
           backgroundColor: colors.surface,
-          borderLeftColor: colors.gold,
+          borderLeftColor: colors.accent,
         },
       ]}
     >
       {/* Label row */}
       <View style={styles.labelRow}>
-        <BookIcon size={14} color={colors.gold} />
-        <Text style={[styles.label, { color: colors.gold }]}>Story Arc</Text>
+        <BookIcon size={14} color={colors.accent} />
+        <Text style={[styles.label, { color: colors.textGold }]}>Story Arc</Text>
       </View>
 
       {/* Title: English + Arabic */}
@@ -104,12 +104,12 @@ export default function NarrativeOfDay() {
 
       {/* Footer: badge + arrow */}
       <View style={styles.footer}>
-        <View style={[styles.badge, { backgroundColor: `${colors.gold}20` }]}>
-          <Text style={[styles.badgeText, { color: colors.gold }]}>
+        <View style={[styles.badge, { backgroundColor: `${colors.accent}20` }]}>
+          <Text style={[styles.badgeText, { color: colors.textGold }]}>
             Spans {surahCount} surah{surahCount !== 1 ? "s" : ""}
           </Text>
         </View>
-        <ArrowRightIcon size={14} color={colors.gold} />
+        <ArrowRightIcon size={14} color={colors.accent} />
       </View>
     </Pressable>
   );

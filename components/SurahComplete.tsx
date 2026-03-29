@@ -43,12 +43,12 @@ export function SurahComplete({ visible }: Props) {
 
   return (
     <Animated.View style={[styles.container, { opacity }]}>
-      <OrnamentalDivider color={colors.accent} />
+      <OrnamentalDivider />
       <Text
         style={[
           styles.text,
           {
-            color: colors.accent,
+            color: colors.textGold,
             fontFamily: fonts.latin.medium,
           },
         ]}

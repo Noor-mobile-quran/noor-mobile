@@ -837,7 +837,7 @@ function createStyles(colors: any) {
     mentionCount: {
       fontFamily: "Inter-Regular",
       fontSize: 13,
-      color: colors.accent,
+      color: colors.textGold,
       marginTop: 6,
     },
     expandedContent: {
@@ -877,7 +877,7 @@ function createStyles(colors: any) {
     surahChipText: {
       fontFamily: "Inter-Medium",
       fontSize: 13,
-      color: colors.accent,
+      color: colors.textGold,
     },
     emptyContainer: {
       paddingVertical: 40,
@@ -909,7 +909,7 @@ function createStyles(colors: any) {
     timelineSurahNum: {
       fontFamily: "Inter-SemiBold",
       fontSize: 13,
-      color: colors.accent,
+      color: colors.textGold,
     },
     timelineSummary: {
       fontFamily: "Inter-Regular",

@@ -12,10 +12,14 @@ const LANG_OPTIONS: { value: string; label: string; labelNative: string }[] = [
   { value: "ur", label: "Urdu", labelNative: "\u0627\u0631\u062F\u0648" },
 ];
 
-const THEME_OPTIONS: { value: ThemeMode; label: string; desc: string }[] = [
-  { value: "light", label: "Light", desc: "Warm cream" },
-  { value: "dark", label: "Dark", desc: "Warm midnight" },
-  { value: "high-contrast", label: "High Contrast", desc: "Maximum clarity" },
+const THEME_OPTIONS: { value: ThemeMode; label: string; desc: string; swatch: { bg: string; accent: string } }[] = [
+  { value: "light", label: "Light", desc: "Warm cream", swatch: { bg: "#FFF9ED", accent: "#D4A843" } },
+  { value: "parchment", label: "Parchment", desc: "Aged paper", swatch: { bg: "#F5E6C8", accent: "#C49A3C" } },
+  { value: "dark", label: "Dark", desc: "Warm midnight", swatch: { bg: "#1A1410", accent: "#E8C547" } },
+  { value: "moonlight", label: "Moonlight", desc: "Cool night", swatch: { bg: "#1C2331", accent: "#7EB8DA" } },
+  { value: "forest", label: "Forest", desc: "Deep emerald", swatch: { bg: "#0B2618", accent: "#D4A843" } },
+  { value: "oled", label: "OLED", desc: "True black", swatch: { bg: "#000000", accent: "#D4A843" } },
+  { value: "high-contrast", label: "Contrast", desc: "Max clarity", swatch: { bg: "#000000", accent: "#FFD700" } },
 ];
 
 const UX_MODES: { value: UXMode; label: string; desc: string }[] = [
@@ -67,7 +71,7 @@ export default function SettingsScreen() {
           >
             APPEARANCE
           </Text>
-          <View style={styles.themeRow}>
+          <View style={styles.themeGrid}>
             {THEME_OPTIONS.map((opt) => {
               const isActive = settings.theme === opt.value;
               return (
@@ -75,28 +79,40 @@ export default function SettingsScreen() {
                   key={opt.value}
                   onPress={() => setTheme(opt.value)}
                   style={[
-                    styles.themeButton,
+                    styles.themeCard,
                     {
-                      backgroundColor: isActive ? colors.accent : colors.bg,
-                      shadowColor: isActive ? colors.accent : "transparent",
-                      shadowOpacity: isActive ? 0.3 : 0,
-                      shadowRadius: 8,
-                      shadowOffset: { width: 0, height: 4 },
+                      backgroundColor: isActive ? `${colors.accent}15` : colors.bg,
+                      borderColor: isActive ? colors.accent : colors.border,
+                      borderWidth: 1.5,
                     },
                   ]}
-                  accessibilityLabel={`${opt.label} theme`}
+                  accessibilityLabel={`${opt.label} theme: ${opt.desc}`}
                   accessibilityState={{ selected: isActive }}
                 >
-                  <StarOrnament
-                    size={20}
-                    color={isActive ? "#FFFFFF" : colors.textSecondary}
-                    opacity={isActive ? 0.9 : 0.4}
-                  />
+                  <View style={styles.swatchRow}>
+                    <View
+                      style={[
+                        styles.swatch,
+                        { backgroundColor: opt.swatch.bg, borderColor: `${colors.textSecondary}30` },
+                      ]}
+                    >
+                      <View
+                        style={[styles.swatchAccent, { backgroundColor: opt.swatch.accent }]}
+                      />
+                    </View>
+                    {isActive && (
+                      <StarOrnament
+                        size={14}
+                        color={colors.accent}
+                        opacity={0.9}
+                      />
+                    )}
+                  </View>
                   <Text
                     style={[
                       styles.themeLabel,
                       {
-                        color: isActive ? "#FFFFFF" : colors.textSecondary,
+                        color: isActive ? colors.accent : colors.textPrimary,
                         fontFamily: fonts.latin.medium,
                       },
                     ]}
@@ -107,7 +123,7 @@ export default function SettingsScreen() {
                     style={[
                       styles.themeDesc,
                       {
-                        color: isActive ? "rgba(255,255,255,0.7)" : `${colors.textSecondary}80`,
+                        color: isActive ? colors.accent : `${colors.textSecondary}90`,
                         fontFamily: fonts.latin.regular,
                       },
                     ]}
@@ -450,16 +466,35 @@ const styles = StyleSheet.create({
     fontSize: 12,
     letterSpacing: 1,
   },
-  themeRow: {
+  themeGrid: {
     flexDirection: "row",
+    flexWrap: "wrap",
     gap: 10,
   },
-  themeButton: {
-    flex: 1,
-    padding: 16,
+  themeCard: {
+    width: "47%",
+    padding: 12,
     borderRadius: 12,
+    gap: 4,
+  },
+  swatchRow: {
+    flexDirection: "row",
     alignItems: "center",
-    gap: 6,
+    justifyContent: "space-between",
+    marginBottom: 4,
+  },
+  swatch: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    borderWidth: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  swatchAccent: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
   },
   themeLabel: {
     fontSize: 13,

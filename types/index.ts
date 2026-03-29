@@ -41,7 +41,7 @@ export interface UserProgress {
 }
 
 export type UXMode = "serene" | "immersive" | "study";
-export type ThemeMode = "light" | "dark" | "high-contrast";
+export type ThemeMode = "light" | "dark" | "high-contrast" | "parchment" | "moonlight" | "forest" | "oled";
 
 export interface UserSettings {
   theme: ThemeMode;

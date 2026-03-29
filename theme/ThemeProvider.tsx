@@ -17,10 +17,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const uxMode = useAppStore((s) => s.settings.uxMode);
 
   const value = useMemo(() => {
-    const effectiveTheme = uxMode === "immersive" ? "dark" : theme;
+    const DARK_THEMES: string[] = ["dark", "high-contrast", "moonlight", "forest", "oled"];
+    const effectiveTheme = uxMode === "immersive"
+      ? (DARK_THEMES.includes(theme) ? theme : "dark")
+      : theme;
     return {
       colors: themes[effectiveTheme],
-      isDark: effectiveTheme === "dark" || effectiveTheme === "high-contrast",
+      isDark: DARK_THEMES.includes(effectiveTheme),
     };
   }, [theme, uxMode]);
 

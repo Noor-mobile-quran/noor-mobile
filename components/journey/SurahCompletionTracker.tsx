@@ -181,17 +181,17 @@ export function SurahCompletionTracker() {
       {/* Stats row */}
       <View style={[styles.statsRow, { borderColor: colors.border }]}>
         <View style={styles.statItem}>
-          <Text style={[styles.statValue, { color: colors.accent }]}>{completedCount}</Text>
+          <Text style={[styles.statValue, { color: colors.textGold }]}>{completedCount}</Text>
           <Text style={[styles.statLabel, { color: colors.textSecondary }]}>Completed</Text>
         </View>
         <View style={[styles.statDivider, { backgroundColor: colors.border }]} />
         <View style={styles.statItem}>
-          <Text style={[styles.statValue, { color: colors.accent }]}>{total - completedCount}</Text>
+          <Text style={[styles.statValue, { color: colors.textGold }]}>{total - completedCount}</Text>
           <Text style={[styles.statLabel, { color: colors.textSecondary }]}>Remaining</Text>
         </View>
         <View style={[styles.statDivider, { backgroundColor: colors.border }]} />
         <View style={styles.statItem}>
-          <Text style={[styles.statValue, { color: colors.accent }]}>{percentComplete}%</Text>
+          <Text style={[styles.statValue, { color: colors.textGold }]}>{percentComplete}%</Text>
           <Text style={[styles.statLabel, { color: colors.textSecondary }]}>Complete</Text>
         </View>
       </View>
@@ -213,7 +213,7 @@ export function SurahCompletionTracker() {
           style={[styles.tooltip, { backgroundColor: colors.surfaceElevated, borderColor: colors.accent }]}
           accessibilityLiveRegion="polite"
         >
-          <Text style={[styles.tooltipArabic, { color: colors.accent }]}>
+          <Text style={[styles.tooltipArabic, { color: colors.textGold }]}>
             {selectedSurah.name_arabic}
           </Text>
           <Text style={[styles.tooltipName, { color: colors.textPrimary }]}>

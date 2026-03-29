@@ -36,7 +36,7 @@ export default function IslamicGreeting({ hijriDate }: Props) {
       <View style={styles.row}>
         <ArabicText
           variant="body"
-          style={{ fontSize: 16, lineHeight: 24, color: colors.accent }}
+          style={{ fontSize: 16, lineHeight: 24, color: colors.textGold }}
         >
           {greetingArabic}
         </ArabicText>

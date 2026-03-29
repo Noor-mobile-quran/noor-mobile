@@ -44,7 +44,7 @@ export default function QuickDua() {
       </Text>
       <ArabicText
         variant="heading"
-        style={{ color: colors.accent, textAlign: "center" }}
+        style={{ color: colors.textGold, textAlign: "center" }}
       >
         {dua.arabic}
       </ArabicText>

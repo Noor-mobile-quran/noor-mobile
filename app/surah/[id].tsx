@@ -12,7 +12,7 @@ import { useLocalSearchParams, useRouter, useNavigation } from "expo-router";
 import Svg, { Path } from "react-native-svg";
 import { useSurah } from "../../hooks/useQuranData";
 import { useAppStore } from "../../store/useAppStore";
-import { useAudioPlayer } from "../../hooks/useAudioPlayer";
+import { useNoorAudioPlayer } from "../../hooks/useAudioPlayer";
 import { useTheme } from "../../theme/ThemeProvider";
 import { storage } from "../../lib/storage";
 import { fonts } from "../../theme/typography";
@@ -38,7 +38,7 @@ export default function ReadingScreen() {
   const uxMode = useAppStore((s) => s.settings.uxMode);
   const translationLang = useAppStore((s) => s.settings.translationLang);
 
-  const { play, stop } = useAudioPlayer();
+  const { play, stop } = useNoorAudioPlayer();
   const [bookmarks, setBookmarks] = useState<Bookmark[]>([]);
   const [tafsirVisible, setTafsirVisible] = useState(false);
   const autoAdvanceRef = useRef(true);
@@ -222,7 +222,7 @@ export default function ReadingScreen() {
                 fill="none"
               />
             </Svg>
-            <Text style={[styles.tafsirButtonText, { color: colors.accent, fontFamily: fonts.latin.medium }]}>
+            <Text style={[styles.tafsirButtonText, { color: colors.textGold, fontFamily: fonts.latin.medium }]}>
               Tafsir
             </Text>
           </TouchableOpacity>
@@ -245,7 +245,7 @@ export default function ReadingScreen() {
               <Svg width={14} height={14} viewBox="0 0 24 24">
                 <Path d="M15 18l-6-6 6-6" stroke={colors.accent} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" fill="none" />
               </Svg>
-              <Text style={[styles.navText, { color: colors.accent, fontFamily: fonts.latin.medium }]}>
+              <Text style={[styles.navText, { color: colors.textGold, fontFamily: fonts.latin.medium }]}>
                 Previous Surah
               </Text>
             </View>
@@ -260,7 +260,7 @@ export default function ReadingScreen() {
             accessibilityLabel="Next Surah"
           >
             <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-              <Text style={[styles.navText, { color: colors.accent, fontFamily: fonts.latin.medium }]}>
+              <Text style={[styles.navText, { color: colors.textGold, fontFamily: fonts.latin.medium }]}>
                 Next Surah
               </Text>
               <Svg width={14} height={14} viewBox="0 0 24 24">

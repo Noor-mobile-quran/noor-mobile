@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "entity_count": 222,
+  "entity_count": 257,
   "entities": [
     {
       "id": "prophet_adam",
@@ -4178,6 +4178,691 @@
         33
       ],
       "name_urdu": "عہد الست (میثاق)"
+    },
+    {
+      "id": "figure_aziz_wife",
+      "name_english": "Wife of Al-Aziz (Zulaykha)",
+      "name_arabic": "امْرَأَةُ الْعَزِيز",
+      "name_urdu": "زلیخا (عزیز مصر کی بیوی)",
+      "type": "figure",
+      "description": "The wife of the Egyptian minister Al-Aziz who attempted to seduce the prophet Yusuf and, when he refused, falsely accused him of impropriety leading to his imprisonment. She later publicly acknowledged her wrongdoing and Yusuf's innocence. Her story is a central thread in the narrative of Surah Yusuf.",
+      "mentioned_in": [
+        12
+      ]
+    },
+    {
+      "id": "figure_wife_of_firawn",
+      "name_english": "Asiya, Wife of Pharaoh",
+      "name_arabic": "امْرَأَةُ فِرْعَوْن",
+      "name_urdu": "آسیہ (فرعون کی بیوی)",
+      "type": "figure",
+      "description": "A righteous believer who lived as the wife of one of history's greatest tyrants yet maintained unwavering faith in Allah. She rescued and raised the infant Musa, and the Quran presents her as one of the best examples for all believers. Her prayer for a house in Paradise near Allah is recorded in Surah At-Tahrim.",
+      "mentioned_in": [
+        28,
+        66
+      ]
+    },
+    {
+      "id": "figure_wife_of_lut",
+      "name_english": "Wife of Lut",
+      "name_arabic": "امْرَأَةُ لُوط",
+      "name_urdu": "لوط کی بیوی",
+      "type": "figure",
+      "description": "The wife of Prophet Lut who betrayed her husband and remained loyal to the corrupt people of Sodom. The Quran uses her as a warning example of one who squanders the privilege of living with a prophet by choosing treachery. She perished along with the people of Sodom.",
+      "mentioned_in": [
+        7,
+        11,
+        15,
+        26,
+        66
+      ]
+    },
+    {
+      "id": "figure_wife_of_nuh",
+      "name_english": "Wife of Nuh",
+      "name_arabic": "امْرَأَةُ نُوح",
+      "name_urdu": "نوح کی بیوی",
+      "type": "figure",
+      "description": "The wife of Prophet Nuh who refused to believe despite living with a messenger of Allah for centuries. The Quran presents her alongside the wife of Lut as an example that family ties do not guarantee salvation without personal faith. She was among those who drowned in the flood.",
+      "mentioned_in": [
+        11,
+        66
+      ]
+    },
+    {
+      "id": "figure_samiri",
+      "name_english": "As-Samiri",
+      "name_arabic": "السَّامِرِيّ",
+      "name_urdu": "سامری",
+      "type": "figure",
+      "description": "The man who misled the Israelites during Musa's absence on Mount Sinai by crafting a golden calf from their jewelry and ornaments, which produced a lowing sound. He was confronted by Musa and banished, condemned to spend his life in isolation. His story is a cautionary tale about those who exploit crises to spread deviation.",
+      "mentioned_in": [
+        20
+      ]
+    },
+    {
+      "id": "place_makkah",
+      "name_english": "Makkah (The Holy City)",
+      "name_arabic": "مَكَّة",
+      "name_urdu": "مکہ مکرمہ",
+      "type": "place",
+      "description": "The holiest city in Islam, located in present-day Saudi Arabia and home to the Sacred Mosque (Masjid al-Haram) and the Ka'bah. It is the birthplace of Prophet Muhammad and the destination of the annual Hajj pilgrimage. The city is also referred to as Bakkah and Umm al-Qura in the Quran.",
+      "mentioned_in": [
+        2,
+        3,
+        48
+      ]
+    },
+    {
+      "id": "place_madinah",
+      "name_english": "Madinah (City of the Prophet)",
+      "name_arabic": "الْمَدِينَة",
+      "name_urdu": "مدینہ منورہ",
+      "type": "place",
+      "description": "The second holiest city in Islam, to which the Prophet Muhammad migrated from Makkah in the Hijra. It became the center of the early Muslim community and state, and contains the Prophet's Mosque (Masjid an-Nabawi). The Quran references it in connection with the hypocrites and the battles fought nearby.",
+      "mentioned_in": [
+        9,
+        33,
+        63
+      ]
+    },
+    {
+      "id": "place_misr",
+      "name_english": "Egypt (Misr)",
+      "name_arabic": "مِصْر",
+      "name_urdu": "مصر",
+      "type": "place",
+      "description": "The ancient land of the Nile referenced in the Quran as the setting for the trials and triumphs of the prophets Yusuf and Musa. It was the land of Pharaoh's tyranny as well as Yusuf's rise to power as a minister. Egypt represents both the heights of civilization and the depths of injustice in Quranic narratives.",
+      "mentioned_in": [
+        2,
+        10,
+        12,
+        43
+      ]
+    },
+    {
+      "id": "place_tur_sinai",
+      "name_english": "Mount Sinai (Tur Sina)",
+      "name_arabic": "طُورِ سَيْنَاء",
+      "name_urdu": "کوہ طور سینا",
+      "type": "place",
+      "description": "The sacred mountain where Allah spoke directly to Prophet Musa and gave him the Torah. The Quran swears by it as a sign of divine majesty and references it as the site of the great covenant with the Israelites. It is known in the Quran as Al-Tur and is among the most sacred places in the Abrahamic tradition.",
+      "mentioned_in": [
+        2,
+        7,
+        19,
+        20,
+        23,
+        28,
+        52,
+        95
+      ]
+    },
+    {
+      "id": "place_kaabah",
+      "name_english": "The Ka'bah",
+      "name_arabic": "الْكَعْبَة",
+      "name_urdu": "کعبہ (بیت اللہ)",
+      "type": "place",
+      "description": "The cubic structure at the center of Masjid al-Haram in Makkah, considered the House of Allah and the holiest site in Islam. It was built by Ibrahim and his son Ismail as the first house of worship dedicated to the one God. Muslims face it in prayer and circumambulate it during Hajj and Umrah.",
+      "mentioned_in": [
+        2,
+        3,
+        5,
+        14,
+        22
+      ]
+    },
+    {
+      "id": "place_masjid_al_aqsa",
+      "name_english": "Al-Aqsa Mosque",
+      "name_arabic": "الْمَسْجِدُ الْأَقْصَى",
+      "name_urdu": "مسجد اقصیٰ",
+      "type": "place",
+      "description": "The farthest mosque, located in Jerusalem, which was the destination of the Prophet's miraculous Night Journey. It is considered the third holiest site in Islam and was the first qibla (direction of prayer) for Muslims. The surrounding land is described in the Quran as blessed.",
+      "mentioned_in": [
+        17
+      ]
+    },
+    {
+      "id": "place_cave_of_kahf",
+      "name_english": "Cave of the Sleepers (Al-Kahf)",
+      "name_arabic": "كَهْف",
+      "name_urdu": "غار کہف",
+      "type": "place",
+      "description": "The cave where a group of young believers sought refuge from religious persecution and were put to sleep by Allah for an extended period of 309 years. It serves as a symbol of divine protection for those who flee oppression for the sake of their faith. Surah Al-Kahf takes its name from this cave.",
+      "mentioned_in": [
+        18
+      ]
+    },
+    {
+      "id": "concept_tawbah",
+      "name_english": "Repentance (Tawbah)",
+      "name_arabic": "التَّوْبَة",
+      "name_urdu": "توبہ",
+      "type": "concept",
+      "description": "The act of sincerely turning back to Allah after committing sin, involving remorse, cessation of the sin, and firm resolve not to repeat it. The Quran emphasizes that Allah loves those who repent and that His door of forgiveness is always open. Tawbah is a fundamental concept in Islamic spirituality and moral reform.",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        19,
+        20,
+        24,
+        25,
+        28,
+        39,
+        40,
+        42,
+        46,
+        49,
+        66,
+        85,
+        110
+      ]
+    },
+    {
+      "id": "concept_shura",
+      "name_english": "Consultation (Shura)",
+      "name_arabic": "الشُّورَى",
+      "name_urdu": "شورائیت",
+      "type": "concept",
+      "description": "The Islamic principle of mutual consultation in decision-making, enjoined upon the Prophet and the believers. The Quran commands the Prophet to consult his companions in affairs and describes believers as those who conduct their matters by mutual consultation. Shura is foundational to Islamic governance and community leadership.",
+      "mentioned_in": [
+        3,
+        42
+      ]
+    },
+    {
+      "id": "concept_ihsan",
+      "name_english": "Excellence in Worship (Ihsan)",
+      "name_arabic": "الْإِحْسَان",
+      "name_urdu": "احسان",
+      "type": "concept",
+      "description": "The highest level of worship and moral conduct, defined as worshipping Allah as though you see Him, or knowing that He sees you. Beyond mere compliance with rules, ihsan represents the internalization of faith into beauty of character and action. The Quran frequently promises that Allah is with those who practice ihsan.",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        16,
+        22,
+        28,
+        29,
+        31,
+        33,
+        37,
+        39,
+        46,
+        51,
+        55
+      ]
+    },
+    {
+      "id": "concept_birr",
+      "name_english": "Righteousness (Birr)",
+      "name_arabic": "الْبِرّ",
+      "name_urdu": "نیکی",
+      "type": "concept",
+      "description": "Comprehensive righteousness encompassing faith, charity, prayer, patience, and fulfilling commitments. The Quran provides a detailed definition of birr in Surah Al-Baqarah, distinguishing true righteousness from merely following outward rituals. It represents the wholeness of Islamic virtue in belief, worship, and conduct.",
+      "mentioned_in": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "concept_fasad",
+      "name_english": "Corruption and Moral Decay (Fasad)",
+      "name_arabic": "الْفَسَاد",
+      "name_urdu": "فساد",
+      "type": "concept",
+      "description": "The concept of moral, social, and spiritual corruption that the Quran repeatedly condemns and warns against. It includes injustice, transgression, dishonesty, and the spreading of disorder in society. The Quran states that Allah does not love those who cause fasad and that it brings destruction to individuals and communities.",
+      "mentioned_in": [
+        2,
+        5,
+        7,
+        8,
+        11,
+        13,
+        16,
+        26,
+        27,
+        28,
+        29,
+        30,
+        38,
+        47
+      ]
+    },
+    {
+      "id": "concept_fitrah",
+      "name_english": "Natural Disposition (Fitrah)",
+      "name_arabic": "الْفِطْرَة",
+      "name_urdu": "فطرت",
+      "type": "concept",
+      "description": "The innate, God-given nature of the human being that is inclined toward recognizing and worshipping Allah. The Quran references fitrah in Surah Ar-Rum in the context of the natural religion of Islam, stating it as the pure original disposition. Every child is born upon this fitrah before external influences shape their beliefs.",
+      "mentioned_in": [
+        30
+      ]
+    },
+    {
+      "id": "concept_qadr",
+      "name_english": "Divine Decree (Qadr)",
+      "name_arabic": "الْقَدَر",
+      "name_urdu": "تقدیر",
+      "type": "concept",
+      "description": "The doctrine that Allah has decreed all things that occur in creation, past, present, and future, in accordance with His perfect knowledge and wisdom. Belief in qadr is one of the six pillars of Islamic faith and encompasses the understanding that both good and hardship come from Allah. The Quran repeatedly affirms that nothing occurs except by Allah's permission and decree.",
+      "mentioned_in": [
+        3,
+        6,
+        7,
+        9,
+        10,
+        13,
+        15,
+        17,
+        22,
+        25,
+        33,
+        35,
+        42,
+        54,
+        57,
+        64,
+        65,
+        97
+      ]
+    },
+    {
+      "id": "concept_taqwa",
+      "name_english": "God-Consciousness (Taqwa)",
+      "name_arabic": "التَّقْوَى",
+      "name_urdu": "تقویٰ",
+      "type": "concept",
+      "description": "The quality of being ever-mindful of Allah, guarding oneself against disobedience, and living with a constant awareness of accountability before Him. The Quran identifies taqwa as the criterion of honor before Allah and repeatedly commands believers to attain it. It is described as the best provision for the journey of life and the hereafter.",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        16,
+        22,
+        24,
+        33,
+        39,
+        47,
+        49,
+        57,
+        58,
+        59,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "concept_tawhid",
+      "name_english": "Divine Oneness (Tawhid)",
+      "name_arabic": "التَّوْحِيد",
+      "name_urdu": "توحید",
+      "type": "concept",
+      "description": "The foundational Islamic belief in the absolute oneness and uniqueness of Allah, with no partners, equals, or intermediaries. Tawhid encompasses the oneness of Allah's lordship, worship, and divine attributes. It is the central message of every prophet and the defining characteristic of Islam.",
+      "mentioned_in": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        20,
+        21,
+        22,
+        23,
+        25,
+        27,
+        28,
+        29,
+        35,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        46,
+        47,
+        51,
+        52,
+        59,
+        72,
+        112,
+        114
+      ]
+    },
+    {
+      "id": "concept_shirk",
+      "name_english": "Associating Partners with Allah (Shirk)",
+      "name_arabic": "الشِّرْك",
+      "name_urdu": "شرک",
+      "type": "concept",
+      "description": "The gravest sin in Islam, defined as attributing partners, equals, or associates to Allah in worship, lordship, or His attributes. The Quran states that Allah may forgive all sins except shirk if a person dies without repenting from it. It encompasses open idolatry as well as subtle forms such as showing off in worship.",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        16,
+        17,
+        18,
+        22,
+        23,
+        25,
+        27,
+        29,
+        30,
+        31,
+        35,
+        36,
+        39,
+        40,
+        41,
+        46
+      ]
+    },
+    {
+      "id": "concept_adl",
+      "name_english": "Justice (Adl)",
+      "name_arabic": "الْعَدْل",
+      "name_urdu": "عدل",
+      "type": "concept",
+      "description": "The Quranic imperative to establish justice in all affairs, from personal dealings to societal governance. Allah commands justice as one of His core commandments alongside kindness and giving to relatives. Justice is both an attribute of Allah and an obligation placed upon believers in their conduct with all people.",
+      "mentioned_in": [
+        4,
+        5,
+        6,
+        7,
+        16,
+        42,
+        49,
+        55,
+        57,
+        60
+      ]
+    },
+    {
+      "id": "concept_amanah",
+      "name_english": "Trust and Moral Responsibility (Amanah)",
+      "name_arabic": "الْأَمَانَة",
+      "name_urdu": "امانت",
+      "type": "concept",
+      "description": "The trust or moral responsibility that Allah offered to the heavens, earth, and mountains, but which only the human being accepted. In everyday life it encompasses fulfilling commitments, safeguarding what is entrusted to one, and being honest in all dealings. The Quran presents fulfillment of amanah as a key characteristic of the true believers.",
+      "mentioned_in": [
+        2,
+        3,
+        4,
+        8,
+        23,
+        33,
+        70
+      ]
+    },
+    {
+      "id": "concept_rizq",
+      "name_english": "Divine Provision (Rizq)",
+      "name_arabic": "الرِّزْق",
+      "name_urdu": "رزق",
+      "type": "concept",
+      "description": "The belief that all sustenance — food, wealth, health, and every blessing — comes ultimately from Allah the Provider. The Quran commands believers to seek rizq through lawful means while trusting entirely in Allah's guarantee to provide for all living things. It is a concept that encompasses material provision as well as spiritual and moral nourishment.",
+      "mentioned_in": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        22,
+        27,
+        28,
+        29,
+        30,
+        34,
+        35,
+        39,
+        40,
+        42,
+        51,
+        62,
+        65,
+        67
+      ]
+    },
+    {
+      "id": "concept_dhikr",
+      "name_english": "Remembrance of Allah (Dhikr)",
+      "name_arabic": "الذِّكْر",
+      "name_urdu": "ذکر",
+      "type": "concept",
+      "description": "The constant remembrance, mention, and contemplation of Allah through words, heart, and action. The Quran declares that it is in the remembrance of Allah that hearts find rest, and it enjoins believers to remember Allah often. Dhikr ranges from ritual phrases to mindful awareness of Allah's presence in every moment.",
+      "mentioned_in": [
+        2,
+        3,
+        7,
+        8,
+        13,
+        18,
+        20,
+        22,
+        24,
+        29,
+        33,
+        39,
+        43,
+        62,
+        63,
+        73,
+        76,
+        87
+      ]
+    },
+    {
+      "id": "event_isra_miraj",
+      "name_english": "Night Journey and Ascension (Isra wal-Miraj)",
+      "name_arabic": "الْإِسْرَاء وَالْمِعْرَاج",
+      "name_urdu": "اسراء و معراج",
+      "type": "event",
+      "description": "The miraculous night journey of Prophet Muhammad from Masjid al-Haram in Makkah to Masjid al-Aqsa in Jerusalem, followed by his ascension through the heavens. During the ascension he was given the five daily prayers and encountered the previous prophets. It is one of the greatest miracles of the Prophet and is referenced in Surahs Al-Isra and An-Najm.",
+      "mentioned_in": [
+        17,
+        53
+      ]
+    },
+    {
+      "id": "event_conquest_of_makkah",
+      "name_english": "Conquest of Makkah (Fath Makkah)",
+      "name_arabic": "فَتْحُ مَكَّة",
+      "name_urdu": "فتح مکہ",
+      "type": "event",
+      "description": "The largely peaceful entry of the Muslim forces into Makkah in 8 AH, when the Prophet Muhammad granted general amnesty to its inhabitants. The conquest fulfilled the promise of Allah and cleared the Sacred Mosque of idols. It is referenced in Surah Al-Fath as a clear victory and anticipated in Surah An-Nasr.",
+      "mentioned_in": [
+        48,
+        110
+      ]
+    },
+    {
+      "id": "event_yawm_al_qiyamah",
+      "name_english": "Day of Resurrection (Yawm al-Qiyamah)",
+      "name_arabic": "يَوْمُ الْقِيَامَة",
+      "name_urdu": "یوم القیامہ",
+      "type": "event",
+      "description": "The final day when all creation will be resurrected and gathered before Allah for the ultimate judgment. The Quran describes it with many names — the Day of Gathering, the Hour, the Day of Reckoning — and depicts it with vivid imagery of cosmic upheaval and the weighing of deeds. It is one of the most frequently referenced events in the Quran, appearing in over fifty surahs.",
+      "mentioned_in": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        27,
+        29,
+        30,
+        32,
+        34,
+        36,
+        37,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        64,
+        66,
+        67,
+        68,
+        69,
+        70,
+        73,
+        74,
+        75,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        86,
+        88,
+        89,
+        99,
+        100,
+        101
+      ]
+    },
+    {
+      "id": "event_covenant_of_alast",
+      "name_english": "Primordial Covenant (Mithaq al-Alast)",
+      "name_arabic": "مِيثَاقُ أَلَسْت",
+      "name_urdu": "عہد الست",
+      "type": "event",
+      "description": "The primordial covenant described in Surah Al-A'raf where Allah drew forth all the souls of Adam's descendants and asked them: 'Am I not your Lord?' and all replied: 'Yes, we testify.' This covenant is the foundation of the human soul's innate recognition of Allah. It is invoked in the Quran as evidence against those who will claim ignorance on the Day of Judgment.",
+      "mentioned_in": [
+        7
+      ]
+    },
+    {
+      "id": "group_yajuj_majuj",
+      "name_english": "Gog and Magog (Yajuj and Majuj)",
+      "name_arabic": "يَأْجُوجُ وَمَأْجُوج",
+      "name_urdu": "یاجوج و ماجوج",
+      "type": "group",
+      "description": "Destructive peoples whose emergence is mentioned as one of the major signs before the Day of Judgment. They were contained behind a great barrier built by Dhul-Qarnayn and will break free when the time ordained by Allah arrives. Their release is described in both Surah Al-Kahf and Surah Al-Anbiya as a sign of the approaching end of time.",
+      "mentioned_in": [
+        18,
+        21
+      ]
+    },
+    {
+      "id": "group_ashab_al_kahf",
+      "name_english": "Companions of the Cave (Ashab al-Kahf)",
+      "name_arabic": "أَصْحَابُ الْكَهْف",
+      "name_urdu": "اصحاب الکہف",
+      "type": "group",
+      "description": "A group of young believers who fled their pagan society to protect their faith and took refuge in a cave, where Allah put them into a miraculous sleep for 309 years. Their story, told in detail in Surah Al-Kahf, demonstrates that Allah protects those who stand firm in their faith. They are held up as a sign of divine power over time and death.",
+      "mentioned_in": [
+        18
+      ]
+    },
+    {
+      "id": "group_ashab_al_fil",
+      "name_english": "Companions of the Elephant (Ashab al-Fil)",
+      "name_arabic": "أَصْحَابُ الْفِيل",
+      "name_urdu": "اصحاب الفیل",
+      "type": "group",
+      "description": "The army led by Abraha, the Abyssinian governor of Yemen, who marched on Makkah with war elephants intending to destroy the Ka'bah in the Year of the Elephant, the birth year of Prophet Muhammad. Allah destroyed the army by sending flocks of birds that pelted them with stones of baked clay. This event is commemorated in Surah Al-Fil.",
+      "mentioned_in": [
+        105
+      ]
+    },
+    {
+      "id": "being_harut_marut",
+      "name_english": "Harut and Marut",
+      "name_arabic": "هَارُوتَ وَمَارُوت",
+      "name_urdu": "ہاروت اور ماروت",
+      "type": "being",
+      "description": "Two angels mentioned in Surah Al-Baqarah who were sent to Babylon as a trial and test for the people. They taught the knowledge of magic only after warning that doing so was disbelief, and they informed people that this knowledge would be used to harm rather than benefit. The people's misuse of this knowledge is cited as an example of how they chose what harmed them over what benefited them.",
+      "mentioned_in": [
+        2
+      ]
+    },
+    {
+      "id": "group_quraysh",
+      "name_english": "Quraysh",
+      "name_arabic": "قُرَيْش",
+      "name_urdu": "قریش",
+      "type": "group",
+      "description": "The dominant tribe of Makkah and the tribe of Prophet Muhammad, who were the custodians of the Ka'bah and the most powerful mercantile clan of Arabia. Surah Quraysh reminds them of Allah's favors in providing them safety for their winter and summer trade journeys and commands them to worship the Lord of the Ka'bah. They were initially the primary opponents of the Prophet and the early Muslim community.",
+      "mentioned_in": [
+        106
+      ]
     }
   ]
 }

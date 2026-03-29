@@ -31,7 +31,7 @@ export default function SurahContextCard({ surahNumber }: Props) {
         <Text
           style={[
             styles.headerText,
-            { color: colors.accent, fontFamily: fonts.latin.semiBold },
+            { color: colors.textGold, fontFamily: fonts.latin.semiBold },
           ]}
         >
           Revelation Context
@@ -70,7 +70,7 @@ export default function SurahContextCard({ surahNumber }: Props) {
           <Text
             style={[
               styles.tagText,
-              { color: colors.accent, fontFamily: fonts.latin.medium },
+              { color: colors.textGold, fontFamily: fonts.latin.medium },
             ]}
           >
             {ctx.rukus} {ctx.rukus === 1 ? "Ruku" : "Rukus"}

@@ -65,7 +65,7 @@ export default function SurahIndexPage() {
         <View className="absolute top-3 right-4 opacity-10">
           <ArabicText
             decorative
-            style={{ color: colors.accent, fontSize: 36, lineHeight: 44, textAlign: "right" }}
+            style={{ color: colors.textGold, fontSize: 36, lineHeight: 44, textAlign: "right" }}
           >
             {"القرآن"}
           </ArabicText>

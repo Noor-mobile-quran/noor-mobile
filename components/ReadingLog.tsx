@@ -2,7 +2,7 @@ import { View, Text, Pressable, StyleSheet } from "react-native";
 import { useAppStore } from "../store/useAppStore";
 import { useTheme } from "../theme/ThemeProvider";
 
-export default function StreakCounter() {
+export default function ReadingLog() {
   const currentStreak = useAppStore((s) => s.progress.currentStreak);
   const dailyGoal = useAppStore((s) => s.progress.dailyGoal);
   const streakVisible = useAppStore((s) => s.streakVisible);
