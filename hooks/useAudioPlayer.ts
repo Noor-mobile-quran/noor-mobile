@@ -53,7 +53,13 @@ export function useNoorAudioPlayer() {
         playerRef.current = player;
 
         player.addListener("playbackStatusUpdate", (status) => {
-          if (status.playing === false && status.currentTime >= status.duration && status.duration > 0) {
+          // Detect end of track: not playing, has duration, and near the end (within 0.5s tolerance)
+          if (
+            status.playing === false &&
+            status.duration > 0 &&
+            status.currentTime > 0 &&
+            (status.currentTime >= status.duration - 0.5 || status.currentTime >= status.duration)
+          ) {
             setAudioPlaying(false);
           }
         });
@@ -80,8 +86,9 @@ export function useNoorAudioPlayer() {
       playerRef.current.remove();
       playerRef.current = null;
     }
-    setAudioPlaying(false);
-  }, [setAudioPlaying]);
+    // Explicitly clear ayah on manual stop (prevents auto-advance)
+    useAppStore.setState({ audioPlaying: false, currentAudioAyah: null });
+  }, []);
 
   const pause = useCallback(() => {
     if (playerRef.current) {

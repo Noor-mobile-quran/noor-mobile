@@ -127,7 +127,12 @@ export const useAppStore = create<AppState>((set, get) => ({
   },
 
   setAudioPlaying: (playing, ayah = null) => {
-    set({ audioPlaying: playing, currentAudioAyah: ayah });
+    // When stopping, keep currentAudioAyah so auto-advance knows which ayah just finished
+    if (playing) {
+      set({ audioPlaying: true, currentAudioAyah: ayah });
+    } else {
+      set({ audioPlaying: false });
+    }
   },
 
   toggleStreakVisible: () => {
