@@ -101,7 +101,7 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   recordReading: (surah, ayah) => {
     const { progress } = get();
-    const today = new Date().toISOString().split("T")[0];
+    const today = new Date().toLocaleDateString("en-CA");
 
     if (progress.lastReadDate === today) {
       const updated = { ...progress, lastReadSurah: surah, lastReadAyah: ayah };
@@ -110,7 +110,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       return;
     }
 
-    const yesterday = new Date(Date.now() - 86400000).toISOString().split("T")[0];
+    const yesterday = new Date(Date.now() - 86400000).toLocaleDateString("en-CA");
     const isConsecutive = progress.lastReadDate === yesterday;
     const newStreak = isConsecutive ? progress.currentStreak + 1 : 1;
 

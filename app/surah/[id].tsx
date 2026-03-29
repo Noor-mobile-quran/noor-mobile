@@ -51,11 +51,32 @@ export default function ReadingScreen() {
     navigation.setOptions({
       headerShown: !isImmersive,
       title: surah ? `${surah.name_english}` : "",
-      headerTintColor: colors.accent,
+      headerTintColor: colors.textGold,
+      headerBackVisible: true,
+      headerBackTitle: "Back",
       headerStyle: { backgroundColor: colors.bg },
       headerTitleStyle: { fontFamily: "Inter-SemiBold", fontSize: 16, color: colors.textPrimary },
+      headerLeft: () => (
+        <TouchableOpacity
+          onPress={() => router.back()}
+          style={{ minWidth: 44, minHeight: 44, justifyContent: "center", paddingRight: 8 }}
+          accessibilityRole="button"
+          accessibilityLabel="Go back"
+        >
+          <Svg width={20} height={20} viewBox="0 0 24 24">
+            <Path
+              d="M15 18l-6-6 6-6"
+              stroke={colors.textGold}
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+            />
+          </Svg>
+        </TouchableOpacity>
+      ),
     });
-  }, [isImmersive, navigation, surah, colors]);
+  }, [isImmersive, navigation, surah, colors, router]);
 
   // Load bookmarks
   useEffect(() => {
@@ -280,6 +301,55 @@ export default function ReadingScreen() {
 
   return (
     <View style={[styles.screen, { backgroundColor: colors.bg }]}>
+      {/* Custom header bar — always visible on all platforms */}
+      <View
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          paddingHorizontal: 12,
+          paddingVertical: isImmersive ? 6 : 10,
+          backgroundColor: isImmersive ? "transparent" : colors.bg,
+          borderBottomWidth: isImmersive ? 0 : 1,
+          borderBottomColor: colors.border,
+        }}
+      >
+        <TouchableOpacity
+          onPress={() => router.back()}
+          style={{
+            minWidth: 44,
+            minHeight: 44,
+            justifyContent: "center",
+            alignItems: "center",
+            paddingRight: 8,
+          }}
+          accessibilityRole="button"
+          accessibilityLabel="Go back"
+        >
+          <Svg width={22} height={22} viewBox="0 0 24 24">
+            <Path
+              d="M15 18l-6-6 6-6"
+              stroke={colors.textGold}
+              strokeWidth={2.5}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+            />
+          </Svg>
+        </TouchableOpacity>
+        {!isImmersive && (
+          <Text
+            style={{
+              flex: 1,
+              fontFamily: "Inter-SemiBold",
+              fontSize: 16,
+              color: colors.textPrimary,
+            }}
+            numberOfLines={1}
+          >
+            {surah.name_english}
+          </Text>
+        )}
+      </View>
       {/* Immersive: subtle Islamic pattern background */}
       {isImmersive && (
         <View style={styles.patternBackground} pointerEvents="none">

@@ -14,20 +14,30 @@ import KnowledgeDiscovery from "../../components/KnowledgeDiscovery";
 import NarrativeOfDay from "../../components/NarrativeOfDay";
 
 function getApproxHijriDate(): string {
-  const gregorian = new Date();
-  const epochDiff = 227015;
-  const daysSinceGregorianEpoch = Math.floor(gregorian.getTime() / 86400000) + 719528;
-  const hijriDays = daysSinceGregorianEpoch - epochDiff;
-  const hijriYear = Math.floor((30 * hijriDays + 10646) / 10631);
-  const monthDays = hijriDays - Math.floor((10631 * hijriYear - 10617) / 30);
-  const hijriMonth = Math.min(12, Math.ceil((monthDays + 0.5) * 30 / 325.62));
-  const hijriDay = monthDays - Math.floor((325.62 * (hijriMonth - 1)) / 30) + 1;
+  // Kuwaiti algorithm for tabular Islamic calendar
+  const today = new Date();
+  const jd = Math.floor((1461 * (today.getFullYear() + 4800 + Math.floor((today.getMonth() + 1 - 14) / 12))) / 4)
+    + Math.floor((367 * (today.getMonth() + 1 - 2 - 12 * Math.floor((today.getMonth() + 1 - 14) / 12))) / 12)
+    - Math.floor((3 * Math.floor((today.getFullYear() + 4900 + Math.floor((today.getMonth() + 1 - 14) / 12)) / 100)) / 4)
+    + today.getDate() - 32075;
+
+  const l = jd - 1948440 + 10632;
+  const n = Math.floor((l - 1) / 10631);
+  const l2 = l - 10631 * n + 354;
+  const j = Math.floor((10985 - l2) / 5316) * Math.floor((50 * l2) / 17719)
+    + Math.floor(l2 / 5670) * Math.floor((43 * l2) / 15238);
+  const l3 = l2 - Math.floor((30 - j) / 15) * Math.floor((17719 * j) / 50)
+    - Math.floor(j / 16) * Math.floor((15238 * j) / 43) + 29;
+  const hijriMonth = Math.floor((24 * l3) / 709);
+  const hijriDay = l3 - Math.floor((709 * hijriMonth) / 24);
+  const hijriYear = 30 * n + j - 30;
+
   const months = [
     "Muharram", "Safar", "Rabi al-Awwal", "Rabi al-Thani",
     "Jumada al-Ula", "Jumada al-Thani", "Rajab", "Sha'ban",
     "Ramadan", "Shawwal", "Dhul Qi'dah", "Dhul Hijjah",
   ];
-  return `${Math.max(1, Math.round(hijriDay))} ${months[Math.min(11, Math.max(0, hijriMonth - 1))]} ${hijriYear} AH`;
+  return `${hijriDay} ${months[Math.min(11, Math.max(0, hijriMonth - 1))]} ${hijriYear} AH`;
 }
 
 export default function HomePage() {
