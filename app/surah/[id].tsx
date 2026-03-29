@@ -41,6 +41,7 @@ export default function ReadingScreen() {
   const { play, stop } = useNoorAudioPlayer();
   const [bookmarks, setBookmarks] = useState<Bookmark[]>([]);
   const [tafsirVisible, setTafsirVisible] = useState(false);
+  const [continuousPlay, setContinuousPlay] = useState(false);
   const autoAdvanceRef = useRef(true);
 
   const isImmersive = uxMode === "immersive";
@@ -90,9 +91,9 @@ export default function ReadingScreen() {
     }
   }, [surahNum, surah, recordReading]);
 
-  // Auto-advance: in immersive mode, when current ayah finishes, play the next
+  // Auto-advance: when continuous play is active (or immersive), play next ayah when current finishes
   useEffect(() => {
-    if (!isImmersive || !surah || audioPlaying) return;
+    if ((!continuousPlay && !isImmersive) || !surah || audioPlaying) return;
     if (currentAudioAyah && autoAdvanceRef.current) {
       const idx = surah.ayahs.findIndex(
         (a) => a.number_in_surah === currentAudioAyah
@@ -100,9 +101,25 @@ export default function ReadingScreen() {
       if (idx >= 0 && idx < surah.ayahs.length - 1) {
         const nextAyah = surah.ayahs[idx + 1];
         play(nextAyah.number_in_surah);
+      } else {
+        // End of surah — stop continuous play
+        setContinuousPlay(false);
       }
     }
-  }, [isImmersive, audioPlaying, currentAudioAyah, surah, play]);
+  }, [continuousPlay, isImmersive, audioPlaying, currentAudioAyah, surah, play]);
+
+  const playSurah = useCallback(() => {
+    if (!surah || surah.ayahs.length === 0) return;
+    setContinuousPlay(true);
+    play(surah.ayahs[0].number_in_surah);
+  }, [surah, play]);
+
+  const stopSurah = useCallback(() => {
+    setContinuousPlay(false);
+    autoAdvanceRef.current = false;
+    stop();
+    autoAdvanceRef.current = true;
+  }, [stop]);
 
   const isBookmarked = useCallback(
     (ayahNum: number) =>
@@ -349,6 +366,35 @@ export default function ReadingScreen() {
             {surah.name_english}
           </Text>
         )}
+        {/* Play / Stop Surah button */}
+        <TouchableOpacity
+          onPress={continuousPlay ? stopSurah : playSurah}
+          style={{
+            minWidth: 44,
+            minHeight: 44,
+            justifyContent: "center",
+            alignItems: "center",
+            paddingLeft: 8,
+          }}
+          accessibilityRole="button"
+          accessibilityLabel={continuousPlay ? "Stop surah playback" : "Play entire surah"}
+        >
+          {continuousPlay ? (
+            <Svg width={22} height={22} viewBox="0 0 24 24">
+              <Path
+                d="M6 4h4v16H6zM14 4h4v16h-4z"
+                fill={colors.textGold}
+              />
+            </Svg>
+          ) : (
+            <Svg width={22} height={22} viewBox="0 0 24 24">
+              <Path
+                d="M8 5v14l11-7z"
+                fill={colors.textGold}
+              />
+            </Svg>
+          )}
+        </TouchableOpacity>
       </View>
       {/* Immersive: subtle Islamic pattern background */}
       {isImmersive && (
