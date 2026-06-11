@@ -4,6 +4,7 @@ import { useRouter } from "expo-router";
 import Svg, { Path } from "react-native-svg";
 import { useAppStore } from "../store/useAppStore";
 import { useTheme } from "../theme/ThemeProvider";
+import { fonts } from "../theme/typography";
 
 const entitiesData = require("../assets/knowledge/entities.json");
 
@@ -41,14 +42,14 @@ export default function KnowledgeDiscovery() {
 
     const entities = entitiesData.entities as Entity[];
     const relevant = entities.filter((e) =>
-      e.mentioned_in.includes(lastReadSurah)
+      e.mentioned_in.includes(lastReadSurah),
     );
 
     if (relevant.length === 0) return null;
 
     // Pick the entity with the most surah mentions (most prominent)
     return relevant.reduce((best, curr) =>
-      curr.mentioned_in.length > best.mentioned_in.length ? curr : best
+      curr.mentioned_in.length > best.mentioned_in.length ? curr : best,
     );
   }, [lastReadSurah]);
 
@@ -113,7 +114,7 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   label: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 11,
     color: "rgba(255, 249, 237, 0.6)",
     letterSpacing: 0.5,
@@ -126,28 +127,28 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
   },
   nameEnglish: {
-    fontFamily: "Inter-SemiBold",
+    fontFamily: fonts.latin.semiBold,
     fontSize: 16,
     color: "#FFF9ED",
   },
   nameArabic: {
-    fontFamily: "Amiri-Regular",
+    fontFamily: fonts.arabic.regular,
     fontSize: 14,
     writingDirection: "rtl",
   },
   description: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 13,
     color: "rgba(255, 249, 237, 0.8)",
   },
   mention: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 12,
     color: "rgba(255, 249, 237, 0.5)",
     marginTop: 2,
   },
   fallback: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 14,
     color: "rgba(255, 249, 237, 0.85)",
     lineHeight: 20,

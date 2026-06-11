@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
   TouchableOpacity,
   StyleSheet,
+  type ViewToken,
 } from "react-native";
 import { useLocalSearchParams, useRouter, useNavigation } from "expo-router";
 import Svg, { Path } from "react-native-svg";
@@ -32,6 +33,11 @@ export default function ReadingScreen() {
 
   const { data: surah, isLoading, error } = useSurah(surahNum);
   const recordReading = useAppStore((s) => s.recordReading);
+  const markSurahComplete = useAppStore((s) => s.markSurahComplete);
+  const unmarkSurahComplete = useAppStore((s) => s.unmarkSurahComplete);
+  const isSurahCompleted = useAppStore((s) =>
+    s.progress.completedSurahs.includes(surahNum),
+  );
   const audioPlaying = useAppStore((s) => s.audioPlaying);
   const currentAudioAyah = useAppStore((s) => s.currentAudioAyah);
 
@@ -43,6 +49,8 @@ export default function ReadingScreen() {
   const [tafsirVisible, setTafsirVisible] = useState(false);
   const [continuousPlay, setContinuousPlay] = useState(false);
   const autoAdvanceRef = useRef(true);
+  const progressRecorderRef = useRef({ surahNum, recordReading });
+  const viewabilityConfig = useRef({ itemVisiblePercentThreshold: 60 }).current;
 
   const isImmersive = uxMode === "immersive";
   const isStudy = uxMode === "study";
@@ -56,11 +64,20 @@ export default function ReadingScreen() {
       headerBackVisible: true,
       headerBackTitle: "Back",
       headerStyle: { backgroundColor: colors.bg },
-      headerTitleStyle: { fontFamily: "Inter-SemiBold", fontSize: 16, color: colors.textPrimary },
+      headerTitleStyle: {
+        fontFamily: fonts.latin.semiBold,
+        fontSize: 16,
+        color: colors.textPrimary,
+      },
       headerLeft: () => (
         <TouchableOpacity
           onPress={() => router.back()}
-          style={{ minWidth: 44, minHeight: 44, justifyContent: "center", paddingRight: 8 }}
+          style={{
+            minWidth: 44,
+            minHeight: 44,
+            justifyContent: "center",
+            paddingRight: 8,
+          }}
           accessibilityRole="button"
           accessibilityLabel="Go back"
         >
@@ -84,35 +101,71 @@ export default function ReadingScreen() {
     setBookmarks(storage.getBookmarks());
   }, []);
 
-  // Record reading on mount
   useEffect(() => {
-    if (surah) {
-      recordReading(surahNum, 1);
-    }
-  }, [surahNum, surah, recordReading]);
+    progressRecorderRef.current = { surahNum, recordReading };
+  }, [surahNum, recordReading]);
+
+  const onViewableItemsChanged = useRef(
+    ({ viewableItems }: { viewableItems: ViewToken<Ayah>[] }) => {
+      const firstVisible = viewableItems.find(
+        (item) => item.isViewable && item.item,
+      )?.item;
+
+      if (firstVisible) {
+        const {
+          surahNum: currentSurahNum,
+          recordReading: recordCurrentReading,
+        } = progressRecorderRef.current;
+        recordCurrentReading(currentSurahNum, firstVisible.number_in_surah);
+      }
+    },
+  ).current;
+
+  const playAyahAudio = useCallback(
+    async (ayah: Ayah) => {
+      autoAdvanceRef.current = true;
+      recordReading(surahNum, ayah.number_in_surah);
+      await play({
+        globalAyah: ayah.number,
+        displayAyah: ayah.number_in_surah,
+        audioUrl: ayah.audio_url,
+      });
+    },
+    [play, recordReading, surahNum],
+  );
 
   // Auto-advance: when continuous play is active (or immersive), play next ayah when current finishes
   useEffect(() => {
     if ((!continuousPlay && !isImmersive) || !surah || audioPlaying) return;
     if (currentAudioAyah && autoAdvanceRef.current) {
       const idx = surah.ayahs.findIndex(
-        (a) => a.number_in_surah === currentAudioAyah
+        (a) => a.number_in_surah === currentAudioAyah,
       );
       if (idx >= 0 && idx < surah.ayahs.length - 1) {
         const nextAyah = surah.ayahs[idx + 1];
-        play(nextAyah.number_in_surah);
+        playAyahAudio(nextAyah);
       } else {
-        // End of surah — stop continuous play
+        autoAdvanceRef.current = false;
         setContinuousPlay(false);
+        markSurahComplete(surahNum);
       }
     }
-  }, [continuousPlay, isImmersive, audioPlaying, currentAudioAyah, surah, play]);
+  }, [
+    continuousPlay,
+    isImmersive,
+    audioPlaying,
+    currentAudioAyah,
+    markSurahComplete,
+    playAyahAudio,
+    surah,
+    surahNum,
+  ]);
 
   const playSurah = useCallback(() => {
     if (!surah || surah.ayahs.length === 0) return;
     setContinuousPlay(true);
-    play(surah.ayahs[0].number_in_surah);
-  }, [surah, play]);
+    playAyahAudio(surah.ayahs[0]);
+  }, [surah, playAyahAudio]);
 
   const stopSurah = useCallback(() => {
     setContinuousPlay(false);
@@ -124,7 +177,7 @@ export default function ReadingScreen() {
   const isBookmarked = useCallback(
     (ayahNum: number) =>
       bookmarks.some((b) => b.surah === surahNum && b.ayah === ayahNum),
-    [bookmarks, surahNum]
+    [bookmarks, surahNum],
   );
 
   const toggleBookmark = useCallback(
@@ -140,7 +193,7 @@ export default function ReadingScreen() {
       }
       setBookmarks(storage.getBookmarks());
     },
-    [isBookmarked, surahNum]
+    [isBookmarked, surahNum],
   );
 
   const saveNote = useCallback(
@@ -153,29 +206,31 @@ export default function ReadingScreen() {
       });
       setBookmarks(storage.getBookmarks());
     },
-    [surahNum]
+    [surahNum],
   );
 
   const getNote = useCallback(
     (ayahNum: number) =>
       bookmarks.find((b) => b.surah === surahNum && b.ayah === ayahNum)?.note,
-    [bookmarks, surahNum]
+    [bookmarks, surahNum],
   );
 
-  const surahBookmarkCount = bookmarks.filter((b) => b.surah === surahNum).length;
+  const surahBookmarkCount = bookmarks.filter(
+    (b) => b.surah === surahNum,
+  ).length;
 
   const playAyah = useCallback(
-    async (ayahNumber: number) => {
-      if (audioPlaying && currentAudioAyah === ayahNumber) {
+    async (ayah: Ayah) => {
+      if (audioPlaying && currentAudioAyah === ayah.number_in_surah) {
         autoAdvanceRef.current = false;
         await stop();
         autoAdvanceRef.current = true;
         return;
       }
 
-      await play(ayahNumber);
+      await playAyahAudio(ayah);
     },
-    [audioPlaying, currentAudioAyah, play, stop]
+    [audioPlaying, currentAudioAyah, playAyahAudio, stop],
   );
 
   const renderAyah = useCallback(
@@ -184,7 +239,7 @@ export default function ReadingScreen() {
         <AyahCard
           ayah={item}
           isPlaying={audioPlaying && currentAudioAyah === item.number_in_surah}
-          onPlay={() => playAyah(item.number_in_surah)}
+          onPlay={() => playAyah(item)}
           onBookmark={() => toggleBookmark(item.number_in_surah)}
           isBookmarked={isBookmarked(item.number_in_surah)}
           uxMode={uxMode}
@@ -202,7 +257,20 @@ export default function ReadingScreen() {
         )}
       </View>
     ),
-    [audioPlaying, currentAudioAyah, playAyah, toggleBookmark, isBookmarked, uxMode, translationLang, isStudy, surahNum, getNote, saveNote]
+    [
+      audioPlaying,
+      currentAudioAyah,
+      playAyah,
+      toggleBookmark,
+      isBookmarked,
+      uxMode,
+      translationLang,
+      isStudy,
+      surahNum,
+      getNote,
+      saveNote,
+      surah,
+    ],
   );
 
   if (isLoading) {
@@ -216,7 +284,12 @@ export default function ReadingScreen() {
   if (error || !surah) {
     return (
       <View style={[styles.center, { backgroundColor: colors.bg }]}>
-        <Text style={{ color: colors.textSecondary, fontFamily: fonts.latin.regular }}>
+        <Text
+          style={{
+            color: colors.textSecondary,
+            fontFamily: fonts.latin.regular,
+          }}
+        >
           Surah not found
         </Text>
       </View>
@@ -240,7 +313,12 @@ export default function ReadingScreen() {
                 fill="none"
               />
             </Svg>
-            <Text style={[styles.studyBarText, { color: colors.textSecondary, fontFamily: fonts.latin.medium }]}>
+            <Text
+              style={[
+                styles.studyBarText,
+                { color: colors.textSecondary, fontFamily: fonts.latin.medium },
+              ]}
+            >
               {surahBookmarkCount} bookmarked
             </Text>
           </View>
@@ -260,7 +338,12 @@ export default function ReadingScreen() {
                 fill="none"
               />
             </Svg>
-            <Text style={[styles.tafsirButtonText, { color: colors.textGold, fontFamily: fonts.latin.medium }]}>
+            <Text
+              style={[
+                styles.tafsirButtonText,
+                { color: colors.textGold, fontFamily: fonts.latin.medium },
+              ]}
+            >
               Tafsir
             </Text>
           </TouchableOpacity>
@@ -272,6 +355,50 @@ export default function ReadingScreen() {
 
   const ListFooter = () => (
     <View style={styles.footer}>
+      <TouchableOpacity
+        onPress={() =>
+          isSurahCompleted
+            ? unmarkSurahComplete(surahNum)
+            : markSurahComplete(surahNum)
+        }
+        style={[
+          styles.completeButton,
+          {
+            backgroundColor: isSurahCompleted
+              ? `${colors.accent}18`
+              : colors.surface,
+            borderColor: isSurahCompleted ? colors.accent : colors.border,
+          },
+        ]}
+        accessibilityRole="button"
+        accessibilityLabel={
+          isSurahCompleted
+            ? "Mark this surah as not complete"
+            : "Mark this surah complete"
+        }
+      >
+        <Svg width={18} height={18} viewBox="0 0 24 24">
+          <Path
+            d="M20 6L9 17l-5-5"
+            stroke={isSurahCompleted ? colors.accent : colors.textSecondary}
+            strokeWidth={2.2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+        </Svg>
+        <Text
+          style={[
+            styles.completeButtonText,
+            {
+              color: isSurahCompleted ? colors.textGold : colors.textSecondary,
+              fontFamily: fonts.latin.medium,
+            },
+          ]}
+        >
+          {isSurahCompleted ? "Marked complete" : "Mark complete"}
+        </Text>
+      </TouchableOpacity>
       <View style={styles.navRow}>
         {surahNum > 1 ? (
           <TouchableOpacity
@@ -279,11 +406,25 @@ export default function ReadingScreen() {
             style={[styles.navButton, { borderColor: colors.border }]}
             accessibilityLabel="Previous Surah"
           >
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+            <View
+              style={{ flexDirection: "row", alignItems: "center", gap: 6 }}
+            >
               <Svg width={14} height={14} viewBox="0 0 24 24">
-                <Path d="M15 18l-6-6 6-6" stroke={colors.accent} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                <Path
+                  d="M15 18l-6-6 6-6"
+                  stroke={colors.accent}
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                />
               </Svg>
-              <Text style={[styles.navText, { color: colors.textGold, fontFamily: fonts.latin.medium }]}>
+              <Text
+                style={[
+                  styles.navText,
+                  { color: colors.textGold, fontFamily: fonts.latin.medium },
+                ]}
+              >
                 Previous Surah
               </Text>
             </View>
@@ -297,12 +438,26 @@ export default function ReadingScreen() {
             style={[styles.navButton, { borderColor: colors.border }]}
             accessibilityLabel="Next Surah"
           >
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-              <Text style={[styles.navText, { color: colors.textGold, fontFamily: fonts.latin.medium }]}>
+            <View
+              style={{ flexDirection: "row", alignItems: "center", gap: 6 }}
+            >
+              <Text
+                style={[
+                  styles.navText,
+                  { color: colors.textGold, fontFamily: fonts.latin.medium },
+                ]}
+              >
                 Next Surah
               </Text>
               <Svg width={14} height={14} viewBox="0 0 24 24">
-                <Path d="M9 18l6-6-6-6" stroke={colors.accent} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                <Path
+                  d="M9 18l6-6-6-6"
+                  stroke={colors.accent}
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                />
               </Svg>
             </View>
           </TouchableOpacity>
@@ -357,7 +512,7 @@ export default function ReadingScreen() {
           <Text
             style={{
               flex: 1,
-              fontFamily: "Inter-SemiBold",
+              fontFamily: fonts.latin.semiBold,
               fontSize: 16,
               color: colors.textPrimary,
             }}
@@ -377,21 +532,17 @@ export default function ReadingScreen() {
             paddingLeft: 8,
           }}
           accessibilityRole="button"
-          accessibilityLabel={continuousPlay ? "Stop surah playback" : "Play entire surah"}
+          accessibilityLabel={
+            continuousPlay ? "Stop surah playback" : "Play entire surah"
+          }
         >
           {continuousPlay ? (
             <Svg width={22} height={22} viewBox="0 0 24 24">
-              <Path
-                d="M6 4h4v16H6zM14 4h4v16h-4z"
-                fill={colors.textGold}
-              />
+              <Path d="M6 4h4v16H6zM14 4h4v16h-4z" fill={colors.textGold} />
             </Svg>
           ) : (
             <Svg width={22} height={22} viewBox="0 0 24 24">
-              <Path
-                d="M8 5v14l11-7z"
-                fill={colors.textGold}
-              />
+              <Path d="M8 5v14l11-7z" fill={colors.textGold} />
             </Svg>
           )}
         </TouchableOpacity>
@@ -409,9 +560,13 @@ export default function ReadingScreen() {
                   left: col * 140 + (row % 2 === 0 ? 0 : 70),
                 }}
               >
-                <FlowerOrnament size={32} color={colors.accent} opacity={0.04} />
+                <FlowerOrnament
+                  size={32}
+                  color={colors.accent}
+                  opacity={0.04}
+                />
               </View>
-            ))
+            )),
           )}
         </View>
       )}
@@ -422,6 +577,8 @@ export default function ReadingScreen() {
         keyExtractor={(item) => String(item.number_in_surah)}
         ListHeaderComponent={ListHeader}
         ListFooterComponent={ListFooter}
+        onViewableItemsChanged={onViewableItemsChanged}
+        viewabilityConfig={viewabilityConfig}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
         initialNumToRender={10}
@@ -442,7 +599,12 @@ export default function ReadingScreen() {
           onPress={() => setTafsirVisible(false)}
           accessibilityLabel="Close tafsir modal"
         >
-          <View style={[styles.modalContent, { backgroundColor: colors.surface, borderColor: colors.border }]}>
+          <View
+            style={[
+              styles.modalContent,
+              { backgroundColor: colors.surface, borderColor: colors.border },
+            ]}
+          >
             <Svg width={24} height={24} viewBox="0 0 24 24">
               <Path
                 d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5V5a2 2 0 012-2h14v14H6.5A2.5 2.5 0 004 19.5z"
@@ -453,10 +615,23 @@ export default function ReadingScreen() {
                 fill="none"
               />
             </Svg>
-            <Text style={[styles.modalTitle, { color: colors.textPrimary, fontFamily: fonts.latin.semiBold }]}>
+            <Text
+              style={[
+                styles.modalTitle,
+                { color: colors.textPrimary, fontFamily: fonts.latin.semiBold },
+              ]}
+            >
               Tafsir
             </Text>
-            <Text style={[styles.modalSubtitle, { color: colors.textSecondary, fontFamily: fonts.latin.regular }]}>
+            <Text
+              style={[
+                styles.modalSubtitle,
+                {
+                  color: colors.textSecondary,
+                  fontFamily: fonts.latin.regular,
+                },
+              ]}
+            >
               Coming Soon
             </Text>
           </View>
@@ -487,6 +662,18 @@ const styles = StyleSheet.create({
   navRow: {
     flexDirection: "row",
     justifyContent: "space-between",
+  },
+  completeButton: {
+    minHeight: 48,
+    borderRadius: 12,
+    borderWidth: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "row",
+    gap: 8,
+  },
+  completeButtonText: {
+    fontSize: 14,
   },
   navButton: {
     paddingHorizontal: 16,

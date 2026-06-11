@@ -5,7 +5,9 @@ import Svg, { Circle } from "react-native-svg";
 import { useTheme } from "../../theme/ThemeProvider";
 import { useAppStore } from "../../store/useAppStore";
 import { useSurahList } from "../../hooks/useQuranData";
-import type { SurahMeta } from "../../types";
+import { getAllSurahs } from "../../assets/data/surahRequireMap";
+import type { Surah, SurahMeta } from "../../types";
+import { fonts } from "../../theme/typography";
 
 const TOTAL_JUZ = 30;
 const RING_SIZE = 44;
@@ -22,61 +24,56 @@ interface JuzData {
   completionPercent: number;
 }
 
-function buildJuzData(
-  surahs: SurahMeta[],
-  completedSurahs: number[]
-): JuzData[] {
-  const juzMap = new Map<number, SurahMeta[]>();
+function buildJuzData(surahs: Surah[], completedSurahs: number[]): JuzData[] {
+  const completedSet = new Set(completedSurahs);
+  const groups = new Map<
+    number,
+    {
+      firstSurah: Surah;
+      surahs: Map<number, Surah>;
+      completedAyahs: number;
+      totalAyahs: number;
+    }
+  >();
 
   for (const surah of surahs) {
-    const juz = surah.juz_start;
-    if (!juzMap.has(juz)) juzMap.set(juz, []);
-    juzMap.get(juz)!.push(surah);
-  }
-
-  // Surahs belong to the juz they start in. For surahs spanning multiple juz,
-  // juz_start indicates the primary juz.
-  // Build 30 juz entries — a juz with no direct juz_start surahs inherits
-  // surahs from the preceding juz that spans into it.
-  const result: JuzData[] = [];
-  const completedSet = new Set(completedSurahs);
-
-  for (let j = 1; j <= TOTAL_JUZ; j++) {
-    const juzSurahs = juzMap.get(j) ?? [];
-    if (juzSurahs.length === 0) {
-      // Juz with no direct starts — find the surah spanning from previous juz
-      const prev = result[result.length - 1];
-      if (prev) {
-        const lastSurah = prev.surahs[prev.surahs.length - 1];
-        result.push({
-          juz: j,
-          surahs: [lastSurah],
-          firstSurah: lastSurah,
-          completedCount: completedSet.has(lastSurah.number) ? 1 : 0,
-          totalCount: 1,
-          completionPercent: completedSet.has(lastSurah.number) ? 100 : 0,
+    for (const ayah of surah.ayahs) {
+      const existing = groups.get(ayah.juz);
+      if (existing) {
+        existing.surahs.set(surah.number, surah);
+        existing.totalAyahs += 1;
+        if (completedSet.has(surah.number)) {
+          existing.completedAyahs += 1;
+        }
+      } else {
+        groups.set(ayah.juz, {
+          firstSurah: surah,
+          surahs: new Map([[surah.number, surah]]),
+          completedAyahs: completedSet.has(surah.number) ? 1 : 0,
+          totalAyahs: 1,
         });
       }
-      continue;
     }
-
-    const completed = juzSurahs.filter((s) =>
-      completedSet.has(s.number)
-    ).length;
-    const percent =
-      juzSurahs.length > 0 ? Math.round((completed / juzSurahs.length) * 100) : 0;
-
-    result.push({
-      juz: j,
-      surahs: juzSurahs,
-      firstSurah: juzSurahs[0],
-      completedCount: completed,
-      totalCount: juzSurahs.length,
-      completionPercent: percent,
-    });
   }
 
-  return result;
+  return Array.from({ length: TOTAL_JUZ }, (_, index) => {
+    const juz = index + 1;
+    const group = groups.get(juz);
+    const firstSurah = group?.firstSurah ?? surahs[0];
+    const totalCount = group?.totalAyahs ?? 0;
+    const completedCount = group?.completedAyahs ?? 0;
+    const completionPercent =
+      totalCount > 0 ? Math.round((completedCount / totalCount) * 100) : 0;
+
+    return {
+      juz,
+      surahs: group ? [...group.surahs.values()] : [],
+      firstSurah,
+      completedCount,
+      totalCount,
+      completionPercent,
+    };
+  });
 }
 
 export function JuzMap() {
@@ -87,13 +84,19 @@ export function JuzMap() {
 
   const juzData = useMemo(() => {
     if (!surahs) return [];
-    return buildJuzData(surahs, completedSurahs);
+    return buildJuzData(getAllSurahs(), completedSurahs);
   }, [surahs, completedSurahs]);
 
   if (!surahs) return null;
 
   return (
-    <ScrollView style={{ flex: 1 }} contentContainerStyle={[styles.container, { backgroundColor: colors.surface }]}>
+    <ScrollView
+      style={{ flex: 1 }}
+      contentContainerStyle={[
+        styles.container,
+        { backgroundColor: colors.surface },
+      ]}
+    >
       <Text
         style={[styles.header, { color: colors.textPrimary }]}
         accessibilityRole="header"
@@ -101,7 +104,8 @@ export function JuzMap() {
         Juz Overview
       </Text>
       <Text style={[styles.subtitle, { color: colors.textSecondary }]}>
-        The Quran is divided into 30 Juz (parts). Read 1 Juz per day to complete in a month.
+        The Quran is divided into 30 Juz (parts). Read 1 Juz per day to complete
+        in a month.
       </Text>
 
       <View style={styles.grid}>
@@ -110,9 +114,7 @@ export function JuzMap() {
             key={item.juz}
             data={item}
             colors={colors}
-            onPress={() =>
-              router.push(`/surah/${item.firstSurah.number}`)
-            }
+            onPress={() => router.push(`/surah/${item.firstSurah.number}`)}
           />
         ))}
       </View>
@@ -129,7 +131,8 @@ function JuzCard({
   colors: ReturnType<typeof useTheme>["colors"];
   onPress: () => void;
 }) {
-  const { juz, firstSurah, completionPercent } = data;
+  const { juz, firstSurah, completedCount, totalCount, completionPercent } =
+    data;
   const strokeDashoffset =
     RING_CIRCUMFERENCE - (completionPercent / 100) * RING_CIRCUMFERENCE;
 
@@ -142,12 +145,9 @@ function JuzCard({
         : "transparent";
 
   const cardBg =
-    completionPercent === 100
-      ? colors.accent
-      : colors.surfaceElevated;
+    completionPercent === 100 ? colors.accent : colors.surfaceElevated;
 
-  const textColor =
-    completionPercent === 100 ? colors.bg : colors.textPrimary;
+  const textColor = completionPercent === 100 ? colors.bg : colors.textPrimary;
 
   const secondaryTextColor =
     completionPercent === 100 ? colors.bg : colors.textSecondary;
@@ -156,7 +156,7 @@ function JuzCard({
     <Pressable
       onPress={onPress}
       accessibilityRole="button"
-      accessibilityLabel={`Juz ${juz}, ${firstSurah.name_english}, ${completionPercent}% complete`}
+      accessibilityLabel={`Juz ${juz}, ${firstSurah.name_english}, ${completedCount} of ${totalCount} ayahs represented by completed surahs`}
       style={[styles.card, { backgroundColor: cardBg }]}
     >
       <View style={styles.cardRow}>
@@ -191,9 +191,7 @@ function JuzCard({
               styles.juzNumber,
               {
                 color:
-                  completionPercent === 100
-                    ? colors.bg
-                    : colors.textPrimary,
+                  completionPercent === 100 ? colors.bg : colors.textPrimary,
               },
             ]}
           >
@@ -227,12 +225,12 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   header: {
-    fontFamily: "Inter-SemiBold",
+    fontFamily: fonts.latin.semiBold,
     fontSize: 18,
     marginBottom: 2,
   },
   subtitle: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 12,
     lineHeight: 18,
     marginBottom: 16,
@@ -262,25 +260,25 @@ const styles = StyleSheet.create({
   },
   juzNumber: {
     position: "absolute",
-    fontFamily: "Inter-Bold",
+    fontFamily: fonts.latin.bold,
     fontSize: 14,
   },
   cardInfo: {
     flex: 1,
   },
   surahArabic: {
-    fontFamily: "Amiri-Regular",
+    fontFamily: fonts.arabic.regular,
     fontSize: 14,
     textAlign: "right",
     writingDirection: "rtl",
   },
   surahEnglish: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 13,
     marginTop: 1,
   },
   percentText: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 11,
     marginTop: 2,
   },

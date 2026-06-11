@@ -11,6 +11,7 @@ import {
 } from "react-native";
 import { useRouter } from "expo-router";
 import { storage } from "../lib/storage";
+import { fonts } from "../theme/typography";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -148,10 +149,7 @@ export default function Onboarding({ onComplete }: Props) {
     <View style={styles.root}>
       {/* Slides container */}
       <Animated.View
-        style={[
-          styles.slidesTrack,
-          { transform: [{ translateX: slideAnim }] },
-        ]}
+        style={[styles.slidesTrack, { transform: [{ translateX: slideAnim }] }]}
       >
         {/* Screen 1: Welcome */}
         <View style={styles.slide}>
@@ -265,7 +263,9 @@ export default function Onboarding({ onComplete }: Props) {
                             </View>
                           )}
                         </View>
-                        <Text style={styles.optionSubtitle}>{opt.subtitle}</Text>
+                        <Text style={styles.optionSubtitle}>
+                          {opt.subtitle}
+                        </Text>
                       </View>
                     </View>
                   </Pressable>
@@ -279,7 +279,10 @@ export default function Onboarding({ onComplete }: Props) {
       {/* Bottom controls */}
       <View style={styles.bottomControls}>
         {/* Dot indicators */}
-        <View style={styles.dotsRow} accessibilityLabel={`Step ${currentScreen + 1} of ${TOTAL_SCREENS}`}>
+        <View
+          style={styles.dotsRow}
+          accessibilityLabel={`Step ${currentScreen + 1} of ${TOTAL_SCREENS}`}
+        >
           {Array.from({ length: TOTAL_SCREENS }).map((_, i) => (
             <View
               key={i}
@@ -322,7 +325,9 @@ export default function Onboarding({ onComplete }: Props) {
                 style={styles.primaryButton}
               >
                 <Text style={styles.primaryButtonText}>
-                  {currentScreen === TOTAL_SCREENS - 1 ? "Start Reading" : "Next"}
+                  {currentScreen === TOTAL_SCREENS - 1
+                    ? "Start Reading"
+                    : "Next"}
                 </Text>
               </Pressable>
             </>
@@ -375,14 +380,14 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   arabicTitle: {
-    fontFamily: "Amiri-Bold",
+    fontFamily: fonts.arabic.bold,
     fontSize: 72,
     color: COLORS.textGold,
     textAlign: "center",
     lineHeight: 88,
   },
   tagline: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 18,
     color: "#D4B896",
     textAlign: "center",
@@ -391,7 +396,7 @@ const styles = StyleSheet.create({
 
   // Screen 2 & 3 — headings
   screenHeading: {
-    fontFamily: "Inter-SemiBold",
+    fontFamily: fonts.latin.semiBold,
     fontSize: 22,
     color: COLORS.textPrimary,
     textAlign: "center",
@@ -450,7 +455,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   optionLabel: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 15,
     color: COLORS.textSecondary,
   },
@@ -458,7 +463,7 @@ const styles = StyleSheet.create({
     color: COLORS.textPrimary,
   },
   optionSubtitle: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 12,
     color: COLORS.textSecondary,
   },
@@ -469,7 +474,7 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
   },
   recommendedText: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 10,
     color: COLORS.textGold,
     letterSpacing: 0.3,
@@ -513,7 +518,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   primaryButtonText: {
-    fontFamily: "Inter-SemiBold",
+    fontFamily: fonts.latin.semiBold,
     fontSize: 16,
     color: "#1A1410",
     letterSpacing: 0.2,
@@ -528,7 +533,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   secondaryButtonText: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 15,
     color: COLORS.textSecondary,
   },
@@ -538,7 +543,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   skipText: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 14,
     color: COLORS.textSecondary,
     textDecorationLine: "underline",

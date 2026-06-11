@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TextInput } from "react-native";
 import { useTheme } from "../theme/ThemeProvider";
+import { fonts } from "../theme/typography";
 
 interface Props {
   onSearch: (query: string) => void;
@@ -26,7 +27,7 @@ export default function SearchBar({ onSearch }: Props) {
         borderRadius: 12,
         paddingHorizontal: 16,
         paddingVertical: 12,
-        fontFamily: "Inter-Regular",
+        fontFamily: fonts.latin.regular,
         fontSize: 15,
         color: colors.textPrimary,
       }}

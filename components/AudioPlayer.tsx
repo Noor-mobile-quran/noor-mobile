@@ -1,17 +1,25 @@
 import { useEffect, useState } from "react";
-import { View, Text, Pressable, AccessibilityInfo } from "react-native";
+import {
+  View,
+  Text,
+  Pressable,
+  AccessibilityInfo,
+  type DimensionValue,
+} from "react-native";
 import Svg, { Path, Rect, Line } from "react-native-svg";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   withRepeat,
+  cancelAnimation,
   Easing,
 } from "react-native-reanimated";
 import { useTheme } from "../theme/ThemeProvider";
 import { useAppStore } from "../store/useAppStore";
 import { useNoorAudioPlayer } from "../hooks/useAudioPlayer";
 import { useSurahList } from "../hooks/useQuranData";
+import { fonts } from "../theme/typography";
 
 export function AudioPlayer() {
   const { colors } = useTheme();
@@ -23,10 +31,9 @@ export function AudioPlayer() {
   const { data: surahList } = useSurahList();
 
   const [isPaused, setIsPaused] = useState(false);
+  const [reduceMotion, setReduceMotion] = useState(false);
 
-  // Slide-up entrance animation
   const translateY = useSharedValue(100);
-  // Progress shimmer
   const progressWidth = useSharedValue(0);
 
   const isImmersive = uxMode === "immersive";
@@ -39,33 +46,63 @@ export function AudioPlayer() {
   const surahNameLatin = surahMeta?.name_english ?? "";
 
   useEffect(() => {
-    translateY.value = withTiming(audioPlaying ? 0 : 100, {
-      duration: 300,
-      easing: Easing.out(Easing.cubic),
-    });
-  }, [audioPlaying, translateY]);
+    try {
+      AccessibilityInfo.isReduceMotionEnabled()
+        .then(setReduceMotion)
+        .catch(() => {});
+      const sub = AccessibilityInfo.addEventListener(
+        "reduceMotionChanged",
+        setReduceMotion,
+      );
+      return () => sub?.remove();
+    } catch {
+      return undefined;
+    }
+  }, []);
 
-  // Animated progress bar (subtle repeating shimmer to indicate playback)
   useEffect(() => {
+    if (!audioPlaying) {
+      setIsPaused(false);
+    }
+  }, [audioPlaying, currentAyah]);
+
+  useEffect(() => {
+    translateY.value = reduceMotion
+      ? audioPlaying
+        ? 0
+        : 100
+      : withTiming(audioPlaying ? 0 : 100, {
+          duration: 300,
+          easing: Easing.out(Easing.cubic),
+        });
+  }, [audioPlaying, reduceMotion, translateY]);
+
+  useEffect(() => {
+    cancelAnimation(progressWidth);
+
     if (audioPlaying && !isPaused) {
       progressWidth.value = 0;
-      progressWidth.value = withRepeat(
-        withTiming(1, { duration: 4000, easing: Easing.linear }),
-        -1,
-        false
-      );
+      progressWidth.value = reduceMotion
+        ? 1
+        : withRepeat(
+            withTiming(1, { duration: 4000, easing: Easing.linear }),
+            -1,
+            false,
+          );
+    } else {
+      progressWidth.value = 0;
     }
-  }, [audioPlaying, progressWidth]);
+  }, [audioPlaying, isPaused, progressWidth, reduceMotion]);
 
   const slideStyle = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],
   }));
 
   const progressStyle = useAnimatedStyle(() => ({
-    width: `${progressWidth.value * 100}%` as unknown as number,
+    width: `${progressWidth.value * 100}%` as DimensionValue,
   }));
 
-  if (!audioPlaying && translateY.value >= 100) {
+  if (!audioPlaying) {
     return null;
   }
 
@@ -130,7 +167,7 @@ export function AudioPlayer() {
         <View style={{ flex: 1 }}>
           <Text
             style={{
-              fontFamily: "Amiri-Regular",
+              fontFamily: fonts.arabic.regular,
               fontSize: isImmersive ? 18 : 14,
               color: colors.textPrimary,
               writingDirection: "rtl",
@@ -143,7 +180,7 @@ export function AudioPlayer() {
           </Text>
           <Text
             style={{
-              fontFamily: "Inter-Regular",
+              fontFamily: fonts.latin.regular,
               fontSize: isImmersive ? 13 : 11,
               color: colors.textSecondary,
             }}
@@ -177,7 +214,14 @@ export function AudioPlayer() {
           ) : (
             <Svg width={iconSize} height={iconSize} viewBox="0 0 24 24">
               <Rect x={6} y={4} width={4} height={16} rx={1} fill={colors.bg} />
-              <Rect x={14} y={4} width={4} height={16} rx={1} fill={colors.bg} />
+              <Rect
+                x={14}
+                y={4}
+                width={4}
+                height={16}
+                rx={1}
+                fill={colors.bg}
+              />
             </Svg>
           )}
         </Pressable>
@@ -197,8 +241,24 @@ export function AudioPlayer() {
           accessibilityHint="Double tap to stop and close audio player"
         >
           <Svg width={iconSize} height={iconSize} viewBox="0 0 24 24">
-            <Line x1={6} y1={6} x2={18} y2={18} stroke={colors.textSecondary} strokeWidth={2.5} strokeLinecap="round" />
-            <Line x1={18} y1={6} x2={6} y2={18} stroke={colors.textSecondary} strokeWidth={2.5} strokeLinecap="round" />
+            <Line
+              x1={6}
+              y1={6}
+              x2={18}
+              y2={18}
+              stroke={colors.textSecondary}
+              strokeWidth={2.5}
+              strokeLinecap="round"
+            />
+            <Line
+              x1={18}
+              y1={6}
+              x2={6}
+              y2={18}
+              stroke={colors.textSecondary}
+              strokeWidth={2.5}
+              strokeLinecap="round"
+            />
           </Svg>
         </Pressable>
       </View>

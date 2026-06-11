@@ -7,6 +7,7 @@ import surahMap from "../../assets/data/surahRequireMap";
 import surahIndex from "../../assets/data/surah-index.json";
 import hyperedgesData from "../../assets/knowledge/hyperedges.json";
 import type { Surah } from "../../types";
+import { fonts } from "../../theme/typography";
 
 interface StoryModeProps {
   narrativeId: string;
@@ -226,7 +227,7 @@ export function StoryMode({
                     { color: colors.textSecondary },
                   ]}
                 >
-                  {surahName} · {scene.surah}:{rangeLabel}
+                  {surahName} - {scene.surah}:{rangeLabel}
                 </Text>
               </Pressable>
             </View>
@@ -255,12 +256,12 @@ const styles = StyleSheet.create({
   },
   title: {
     flex: 1,
-    fontFamily: "Inter-SemiBold",
+    fontFamily: fonts.latin.semiBold,
     fontSize: 16,
     marginLeft: 4,
   },
   counter: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 14,
     marginLeft: 8,
   },
@@ -290,13 +291,13 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   translation: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 14,
     marginTop: 8,
     lineHeight: 20,
   },
   reference: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 12,
     marginTop: 8,
   },
@@ -312,7 +313,7 @@ const styles = StyleSheet.create({
     opacity: 0.3,
   },
   dividerText: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 12,
   },
 });

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, Text, Pressable, StyleSheet } from "react-native";
 import Svg, { Polygon, Rect } from "react-native-svg";
 import { useTheme } from "../../theme/ThemeProvider";
+import { fonts } from "../../theme/typography";
 
 interface EntityChipsProps {
   entities: Array<{
@@ -27,11 +28,19 @@ function getChipColor(type: string): string {
 }
 
 function CircleIndicator({ color }: { color: string }) {
-  return <View style={[styles.indicator, styles.circle, { backgroundColor: color }]} />;
+  return (
+    <View
+      style={[styles.indicator, styles.circle, { backgroundColor: color }]}
+    />
+  );
 }
 
 function RoundedRectIndicator({ color }: { color: string }) {
-  return <View style={[styles.indicator, styles.roundedRect, { backgroundColor: color }]} />;
+  return (
+    <View
+      style={[styles.indicator, styles.roundedRect, { backgroundColor: color }]}
+    />
+  );
 }
 
 function DiamondIndicator({ color }: { color: string }) {
@@ -51,7 +60,9 @@ function HexagonIndicator({ color }: { color: string }) {
 }
 
 function PillIndicator({ color }: { color: string }) {
-  return <View style={[styles.indicator, styles.pill, { backgroundColor: color }]} />;
+  return (
+    <View style={[styles.indicator, styles.pill, { backgroundColor: color }]} />
+  );
 }
 
 function ShapeIndicator({ type, color }: { type: string; color: string }) {
@@ -105,7 +116,11 @@ export function EntityChips({
       })}
       {!expanded && overflowCount > 0 && (
         <Pressable
-          style={[styles.chip, styles.overflowChip, { backgroundColor: colors.surface, borderColor: colors.border }]}
+          style={[
+            styles.chip,
+            styles.overflowChip,
+            { backgroundColor: colors.surface, borderColor: colors.border },
+          ]}
           onPress={() => setExpanded(true)}
           accessibilityLabel={`Show ${overflowCount} more entities`}
           accessibilityRole="button"
@@ -134,7 +149,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
   },
   chipLabel: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 13,
     color: "#FFFFFF",
   },
@@ -142,7 +157,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   overflowLabel: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 13,
   },
   indicator: {

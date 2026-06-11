@@ -6,6 +6,7 @@ import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider, useTheme } from "../theme/ThemeProvider";
+import { AudioPlayer } from "../components/AudioPlayer";
 import Onboarding from "../components/Onboarding";
 import "../global.css";
 
@@ -46,15 +47,22 @@ function RootLayoutInner() {
     "Inter-Bold": require("../assets/fonts/Inter-Bold.ttf"),
   });
 
+
   useEffect(() => {
     try {
-      AccessibilityInfo.isReduceMotionEnabled().then(setReduceMotion).catch(() => {});
+      AccessibilityInfo.isReduceMotionEnabled()
+        .then(setReduceMotion)
+        .catch(() => {});
     } catch (_) {
       // AccessibilityInfo is unavailable on web
     }
-    let sub: ReturnType<typeof AccessibilityInfo.addEventListener> | null = null;
+    let sub: ReturnType<typeof AccessibilityInfo.addEventListener> | null =
+      null;
     try {
-      sub = AccessibilityInfo.addEventListener("reduceMotionChanged", setReduceMotion);
+      sub = AccessibilityInfo.addEventListener(
+        "reduceMotionChanged",
+        setReduceMotion,
+      );
     } catch (_) {
       // Not supported on web
     }
@@ -98,6 +106,7 @@ function RootLayoutInner() {
           animationDuration: 250,
         }}
       />
+      <AudioPlayer />
     </>
   );
 }

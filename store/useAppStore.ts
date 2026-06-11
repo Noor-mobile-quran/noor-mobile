@@ -11,9 +11,6 @@ const DEFAULT_SETTINGS: UserSettings = {
 };
 
 const DEFAULT_PROGRESS: UserProgress = {
-  currentStreak: 0,
-  longestStreak: 0,
-  lastReadDate: null,
   lastReadSurah: null,
   lastReadAyah: null,
   dailyGoal: 5,
@@ -25,7 +22,7 @@ interface AppState {
   progress: UserProgress;
   audioPlaying: boolean;
   currentAudioAyah: number | null;
-  streakVisible: boolean;
+  readingReflectionVisible: boolean;
   completionGuideShown: boolean;
   explorerGuideShown: boolean;
 
@@ -36,8 +33,11 @@ interface AppState {
   setReciter: (reciterId: string) => void;
   updateProgress: (p: Partial<UserProgress>) => void;
   recordReading: (surah: number, ayah: number) => void;
+  markSurahComplete: (surah: number) => void;
+  unmarkSurahComplete: (surah: number) => void;
   setAudioPlaying: (playing: boolean, ayah?: number | null) => void;
-  toggleStreakVisible: () => void;
+  stopAudio: () => void;
+  toggleReadingReflectionVisible: () => void;
   setCompletionGuideShown: (shown: boolean) => void;
   dismissExplorerGuide: () => void;
 }
@@ -47,14 +47,18 @@ export const useAppStore = create<AppState>((set, get) => ({
   progress: storage.getProgress() ?? DEFAULT_PROGRESS,
   audioPlaying: false,
   currentAudioAyah: null,
-  streakVisible: true,
+  readingReflectionVisible: true,
   completionGuideShown: false,
   explorerGuideShown: false,
 
   setUXMode: (mode) => {
     set((s) => {
       const settings = { ...s.settings, uxMode: mode };
-      try { storage.setSettings(settings); } catch (e) { console.warn("Storage write failed:", e); }
+      try {
+        storage.setSettings(settings);
+      } catch (e) {
+        console.warn("Storage write failed:", e);
+      }
       return { settings };
     });
   },
@@ -62,7 +66,11 @@ export const useAppStore = create<AppState>((set, get) => ({
   setTheme: (theme) => {
     set((s) => {
       const settings = { ...s.settings, theme };
-      try { storage.setSettings(settings); } catch (e) { console.warn("Storage write failed:", e); }
+      try {
+        storage.setSettings(settings);
+      } catch (e) {
+        console.warn("Storage write failed:", e);
+      }
       return { settings };
     });
   },
@@ -70,7 +78,11 @@ export const useAppStore = create<AppState>((set, get) => ({
   setFontSize: (fontSize) => {
     set((s) => {
       const settings = { ...s.settings, fontSize };
-      try { storage.setSettings(settings); } catch (e) { console.warn("Storage write failed:", e); }
+      try {
+        storage.setSettings(settings);
+      } catch (e) {
+        console.warn("Storage write failed:", e);
+      }
       return { settings };
     });
   },
@@ -78,7 +90,11 @@ export const useAppStore = create<AppState>((set, get) => ({
   setTranslationLang: (translationLang) => {
     set((s) => {
       const settings = { ...s.settings, translationLang };
-      try { storage.setSettings(settings); } catch (e) { console.warn("Storage write failed:", e); }
+      try {
+        storage.setSettings(settings);
+      } catch (e) {
+        console.warn("Storage write failed:", e);
+      }
       return { settings };
     });
   },
@@ -86,7 +102,11 @@ export const useAppStore = create<AppState>((set, get) => ({
   setReciter: (reciterId) => {
     set((s) => {
       const settings = { ...s.settings, reciterId };
-      try { storage.setSettings(settings); } catch (e) { console.warn("Storage write failed:", e); }
+      try {
+        storage.setSettings(settings);
+      } catch (e) {
+        console.warn("Storage write failed:", e);
+      }
       return { settings };
     });
   },
@@ -94,36 +114,64 @@ export const useAppStore = create<AppState>((set, get) => ({
   updateProgress: (partial) => {
     set((s) => {
       const progress = { ...s.progress, ...partial };
-      try { storage.setProgress(progress); } catch (e) { console.warn("Storage write failed:", e); }
+      try {
+        storage.setProgress(progress);
+      } catch (e) {
+        console.warn("Storage write failed:", e);
+      }
       return { progress };
     });
   },
 
   recordReading: (surah, ayah) => {
     const { progress } = get();
-    const today = new Date().toLocaleDateString("en-CA");
-
-    if (progress.lastReadDate === today) {
-      const updated = { ...progress, lastReadSurah: surah, lastReadAyah: ayah };
-      try { storage.setProgress(updated); } catch (e) { console.warn("Storage write failed:", e); }
-      set({ progress: updated });
-      return;
-    }
-
-    const yesterday = new Date(Date.now() - 86400000).toLocaleDateString("en-CA");
-    const isConsecutive = progress.lastReadDate === yesterday;
-    const newStreak = isConsecutive ? progress.currentStreak + 1 : 1;
 
     const updated: UserProgress = {
       ...progress,
-      lastReadDate: today,
       lastReadSurah: surah,
       lastReadAyah: ayah,
-      currentStreak: newStreak,
-      longestStreak: Math.max(newStreak, progress.longestStreak),
     };
-    try { storage.setProgress(updated); } catch (e) { console.warn("Storage write failed:", e); }
+    try {
+      storage.setProgress(updated);
+    } catch (e) {
+      console.warn("Storage write failed:", e);
+    }
     set({ progress: updated });
+  },
+
+  markSurahComplete: (surah) => {
+    set((s) => {
+      if (s.progress.completedSurahs.includes(surah)) {
+        return s;
+      }
+      const progress = {
+        ...s.progress,
+        completedSurahs: [...s.progress.completedSurahs, surah].sort(
+          (a, b) => a - b,
+        ),
+      };
+      try {
+        storage.setProgress(progress);
+      } catch (e) {
+        console.warn("Storage write failed:", e);
+      }
+      return { progress };
+    });
+  },
+
+  unmarkSurahComplete: (surah) => {
+    set((s) => {
+      const progress = {
+        ...s.progress,
+        completedSurahs: s.progress.completedSurahs.filter((n) => n !== surah),
+      };
+      try {
+        storage.setProgress(progress);
+      } catch (e) {
+        console.warn("Storage write failed:", e);
+      }
+      return { progress };
+    });
   },
 
   setAudioPlaying: (playing, ayah = null) => {
@@ -135,8 +183,12 @@ export const useAppStore = create<AppState>((set, get) => ({
     }
   },
 
-  toggleStreakVisible: () => {
-    set((s) => ({ streakVisible: !s.streakVisible }));
+  stopAudio: () => {
+    set({ audioPlaying: false, currentAudioAyah: null });
+  },
+
+  toggleReadingReflectionVisible: () => {
+    set((s) => ({ readingReflectionVisible: !s.readingReflectionVisible }));
   },
 
   setCompletionGuideShown: (shown) => {

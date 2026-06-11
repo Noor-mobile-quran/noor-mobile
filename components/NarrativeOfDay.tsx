@@ -6,7 +6,13 @@ import { fonts } from "../theme/typography";
 
 const narrativesData = require("../assets/knowledge/narratives.json");
 
-function BookIcon({ size = 16, color = "#D4A843" }: { size?: number; color?: string }) {
+function BookIcon({
+  size = 16,
+  color = "#D4A843",
+}: {
+  size?: number;
+  color?: string;
+}) {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <Path
@@ -27,7 +33,13 @@ function BookIcon({ size = 16, color = "#D4A843" }: { size?: number; color?: str
   );
 }
 
-function ArrowRightIcon({ size = 14, color = "#D4A843" }: { size?: number; color?: string }) {
+function ArrowRightIcon({
+  size = 14,
+  color = "#D4A843",
+}: {
+  size?: number;
+  color?: string;
+}) {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <Path
@@ -46,7 +58,8 @@ export default function NarrativeOfDay() {
   const router = useRouter();
 
   const dayOfYear = Math.floor(
-    (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000
+    (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) /
+      86400000,
   );
   const narratives = narrativesData.narratives as Array<{
     id: string;
@@ -54,7 +67,11 @@ export default function NarrativeOfDay() {
     title_arabic: string;
     title_urdu: string;
     description: string;
-    surah_sequence: Array<{ surah: number; ayah_range: number[]; summary: string }>;
+    surah_sequence: Array<{
+      surah: number;
+      ayah_range: number[];
+      summary: string;
+    }>;
   }>;
   const narrative = narratives[dayOfYear % narratives.length];
 
@@ -83,7 +100,9 @@ export default function NarrativeOfDay() {
       {/* Label row */}
       <View style={styles.labelRow}>
         <BookIcon size={14} color={colors.accent} />
-        <Text style={[styles.label, { color: colors.textGold }]}>Story Arc</Text>
+        <Text style={[styles.label, { color: colors.textGold }]}>
+          Story Arc
+        </Text>
       </View>
 
       {/* Title: English + Arabic */}
@@ -129,24 +148,24 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   label: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 11,
     textTransform: "uppercase",
     letterSpacing: 0.5,
   },
   title: {
-    fontFamily: "Inter-SemiBold",
+    fontFamily: fonts.latin.semiBold,
     fontSize: 16,
     marginBottom: 2,
   },
   titleArabic: {
-    fontFamily: "Amiri-Regular",
+    fontFamily: fonts.arabic.regular,
     fontSize: 18,
     writingDirection: "rtl",
     marginBottom: 8,
   },
   description: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 13,
     lineHeight: 19,
     marginBottom: 12,
@@ -162,7 +181,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   badgeText: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 12,
   },
 });

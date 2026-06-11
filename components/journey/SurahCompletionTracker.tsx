@@ -1,4 +1,10 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import {
   View,
   Text,
@@ -16,12 +22,19 @@ import { useTheme } from "../../theme/ThemeProvider";
 import { useAppStore } from "../../store/useAppStore";
 import { useSurahList } from "../../hooks/useQuranData";
 import type { SurahMeta } from "../../types";
+import { fonts } from "../../theme/typography";
 
 const COLUMNS_MOBILE = 8;
 const COLUMNS_DESKTOP = 11;
 
 /* ── Help icon SVG ── */
-function HelpIcon({ size = 16, color = "#6B5B45" }: { size?: number; color?: string }) {
+function HelpIcon({
+  size = 16,
+  color = "#6B5B45",
+}: {
+  size?: number;
+  color?: string;
+}) {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24">
       <Path
@@ -37,13 +50,16 @@ function HelpIcon({ size = 16, color = "#6B5B45" }: { size?: number; color?: str
 }
 
 /* ── Tiny crescent SVG for "last read" indicator ── */
-function CrescentIndicator({ size = 10, color = "#D4A843" }: { size?: number; color?: string }) {
+function CrescentIndicator({
+  size = 10,
+  color = "#D4A843",
+}: {
+  size?: number;
+  color?: string;
+}) {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24">
-      <Path
-        d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
-        fill={color}
-      />
+      <Path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill={color} />
     </Svg>
   );
 }
@@ -85,7 +101,7 @@ export function SurahCompletionTracker() {
       if (Platform.OS === "web") return;
       const subscription = AccessibilityInfo.addEventListener(
         "reduceMotionChanged",
-        (value) => setReduceMotion(value)
+        (value) => setReduceMotion(value),
       );
       AccessibilityInfo.isReduceMotionEnabled()
         .then((value) => setReduceMotion(value))
@@ -110,20 +126,26 @@ export function SurahCompletionTracker() {
     return getJuzBoundaries(surahs.slice(0, 114));
   }, [surahs]);
 
-  const handleSurahPress = useCallback((surah: SurahMeta) => {
-    setSelectedSurah((prev) => {
-      if (prev?.number === surah.number) {
-        // Second tap — navigate
-        router.push(`/surah/${surah.number}`);
-        return null;
-      }
-      return surah;
-    });
-  }, [router]);
+  const handleSurahPress = useCallback(
+    (surah: SurahMeta) => {
+      setSelectedSurah((prev) => {
+        if (prev?.number === surah.number) {
+          // Second tap navigates.
+          router.push(`/surah/${surah.number}`);
+          return null;
+        }
+        return surah;
+      });
+    },
+    [router],
+  );
 
-  const handleSurahLongPress = useCallback((surah: SurahMeta) => {
-    router.push(`/surah/${surah.number}`);
-  }, [router]);
+  const handleSurahLongPress = useCallback(
+    (surah: SurahMeta) => {
+      router.push(`/surah/${surah.number}`);
+    },
+    [router],
+  );
 
   // Auto-dismiss tooltip after 3s
   useEffect(() => {
@@ -138,7 +160,13 @@ export function SurahCompletionTracker() {
   const surahList = surahs.slice(0, 114);
 
   return (
-    <ScrollView style={{ flex: 1 }} contentContainerStyle={[styles.container, { backgroundColor: colors.surface }]}>
+    <ScrollView
+      style={{ flex: 1 }}
+      contentContainerStyle={[
+        styles.container,
+        { backgroundColor: colors.surface },
+      ]}
+    >
       <View style={styles.headerRow}>
         <Text
           style={[styles.header, { color: colors.textPrimary }]}
@@ -181,25 +209,42 @@ export function SurahCompletionTracker() {
       {/* Stats row */}
       <View style={[styles.statsRow, { borderColor: colors.border }]}>
         <View style={styles.statItem}>
-          <Text style={[styles.statValue, { color: colors.textGold }]}>{completedCount}</Text>
-          <Text style={[styles.statLabel, { color: colors.textSecondary }]}>Completed</Text>
+          <Text style={[styles.statValue, { color: colors.textGold }]}>
+            {completedCount}
+          </Text>
+          <Text style={[styles.statLabel, { color: colors.textSecondary }]}>
+            Completed
+          </Text>
         </View>
-        <View style={[styles.statDivider, { backgroundColor: colors.border }]} />
+        <View
+          style={[styles.statDivider, { backgroundColor: colors.border }]}
+        />
         <View style={styles.statItem}>
-          <Text style={[styles.statValue, { color: colors.textGold }]}>{total - completedCount}</Text>
-          <Text style={[styles.statLabel, { color: colors.textSecondary }]}>Remaining</Text>
+          <Text style={[styles.statValue, { color: colors.textGold }]}>
+            {total - completedCount}
+          </Text>
+          <Text style={[styles.statLabel, { color: colors.textSecondary }]}>
+            Remaining
+          </Text>
         </View>
-        <View style={[styles.statDivider, { backgroundColor: colors.border }]} />
+        <View
+          style={[styles.statDivider, { backgroundColor: colors.border }]}
+        />
         <View style={styles.statItem}>
-          <Text style={[styles.statValue, { color: colors.textGold }]}>{percentComplete}%</Text>
-          <Text style={[styles.statLabel, { color: colors.textSecondary }]}>Complete</Text>
+          <Text style={[styles.statValue, { color: colors.textGold }]}>
+            {percentComplete}%
+          </Text>
+          <Text style={[styles.statLabel, { color: colors.textSecondary }]}>
+            Complete
+          </Text>
         </View>
       </View>
 
       {/* Guide text — shows on first visit or when "?" is tapped */}
       {showGuide && (
         <Text style={[styles.guideText, { color: colors.textSecondary }]}>
-          Each circle is a surah. Tap to see its name, tap again to read. Gold = completed. Your goal: fill all 114.
+          Each circle is a surah. Tap to see its name, tap again to read. Gold =
+          completed. Your goal: fill all 114.
         </Text>
       )}
 
@@ -210,7 +255,13 @@ export function SurahCompletionTracker() {
             router.push(`/surah/${selectedSurah.number}`);
             setSelectedSurah(null);
           }}
-          style={[styles.tooltip, { backgroundColor: colors.surfaceElevated, borderColor: colors.accent }]}
+          style={[
+            styles.tooltip,
+            {
+              backgroundColor: colors.surfaceElevated,
+              borderColor: colors.accent,
+            },
+          ]}
           accessibilityLiveRegion="polite"
         >
           <Text style={[styles.tooltipArabic, { color: colors.textGold }]}>
@@ -220,7 +271,9 @@ export function SurahCompletionTracker() {
             {selectedSurah.name_english}
           </Text>
           <Text style={[styles.tooltipMeta, { color: colors.textSecondary }]}>
-            Surah {selectedSurah.number} · {selectedSurah.ayah_count} ayahs · {selectedSurah.revelation_type === "meccan" ? "Meccan" : "Medinan"} · Tap to read
+            Surah {selectedSurah.number}, {selectedSurah.ayah_count} ayahs,{" "}
+            {selectedSurah.revelation_type === "meccan" ? "Meccan" : "Medinan"},
+            tap to read
           </Text>
         </Pressable>
       )}
@@ -237,11 +290,17 @@ export function SurahCompletionTracker() {
               {/* Juz boundary marker — full-width row */}
               {juzStart !== undefined && (
                 <View style={[styles.juzMarker, { width: "100%" }]}>
-                  <View style={[styles.juzLine, { backgroundColor: colors.border }]} />
-                  <Text style={[styles.juzLabel, { color: colors.textSecondary }]}>
+                  <View
+                    style={[styles.juzLine, { backgroundColor: colors.border }]}
+                  />
+                  <Text
+                    style={[styles.juzLabel, { color: colors.textSecondary }]}
+                  >
                     Juz {juzStart}
                   </Text>
-                  <View style={[styles.juzLine, { backgroundColor: colors.border }]} />
+                  <View
+                    style={[styles.juzLine, { backgroundColor: colors.border }]}
+                  />
                 </View>
               )}
               <SurahCircle
@@ -303,7 +362,7 @@ function SurahCircle({
             duration: 1200,
             useNativeDriver: false,
           }),
-        ])
+        ]),
       );
       animation.start();
       return () => animation.stop();
@@ -338,12 +397,18 @@ function SurahCircle({
       accessibilityLabel={`Surah ${surah.number}, ${surah.name_english}${
         isCompleted ? ", completed" : isCurrent ? ", current" : ""
       }`}
-      style={[styles.circleWrapper, { width: columnWidth as unknown as number }]}
+      style={[
+        styles.circleWrapper,
+        { width: columnWidth as unknown as number },
+      ]}
     >
       {/* Crescent indicator above current surah */}
       {isCurrent && (
         <View style={styles.currentIndicator}>
-          <CrescentIndicator size={Math.max(8, size * 0.3)} color={colors.accent} />
+          <CrescentIndicator
+            size={Math.max(8, size * 0.3)}
+            color={colors.accent}
+          />
         </View>
       )}
       <Animated.View
@@ -365,7 +430,7 @@ function SurahCircle({
             fontSize: Math.max(9, size * 0.35),
             textAlign: "center",
             color: isCompleted ? colors.bg : colors.textSecondary,
-            fontFamily: "Inter-Medium",
+            fontFamily: fonts.latin.medium,
           }}
         >
           {surah.number}
@@ -387,7 +452,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   header: {
-    fontFamily: "Inter-SemiBold",
+    fontFamily: fonts.latin.semiBold,
     fontSize: 18,
     marginBottom: 2,
   },
@@ -398,13 +463,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   guideText: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 12,
     lineHeight: 18,
     marginBottom: 12,
   },
   fraction: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 14,
     marginBottom: 12,
   },
@@ -432,11 +497,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   statValue: {
-    fontFamily: "Inter-SemiBold",
+    fontFamily: fonts.latin.semiBold,
     fontSize: 16,
   },
   statLabel: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 11,
     marginTop: 1,
   },
@@ -452,16 +517,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   tooltipArabic: {
-    fontFamily: "Amiri-Regular",
+    fontFamily: fonts.arabic.regular,
     fontSize: 20,
     marginBottom: 2,
   },
   tooltipName: {
-    fontFamily: "Inter-SemiBold",
+    fontFamily: fonts.latin.semiBold,
     fontSize: 14,
   },
   tooltipMeta: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 12,
     marginTop: 2,
   },
@@ -475,7 +540,7 @@ const styles = StyleSheet.create({
     height: 1,
   },
   juzLabel: {
-    fontFamily: "Inter-Medium",
+    fontFamily: fonts.latin.medium,
     fontSize: 10,
     paddingHorizontal: 6,
   },

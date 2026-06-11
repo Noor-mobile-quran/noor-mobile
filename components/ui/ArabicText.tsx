@@ -44,7 +44,7 @@ export function ArabicText({
             accessibilityLanguage: "ar",
             importantForAccessibility: decorative ? "no" : "yes",
           }
-        : { lang: "ar" })}
+        : ({ lang: "ar", dir: "rtl" } as unknown as TextProps))}
       accessibilityRole={decorative ? "none" : "text"}
       accessible={!decorative}
       {...rest}

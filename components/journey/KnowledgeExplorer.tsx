@@ -17,6 +17,7 @@ import { useRouter } from "expo-router";
 import Svg, { Path, Circle, Line } from "react-native-svg";
 import { useTheme } from "../../theme/ThemeProvider";
 import { useAppStore } from "../../store/useAppStore";
+import { fonts } from "../../theme/typography";
 
 const entities = require("../../assets/knowledge/entities.json");
 const themes = require("../../assets/knowledge/themes.json");
@@ -154,7 +155,7 @@ export default function KnowledgeExplorer() {
         (n) =>
           n.title_english.toLowerCase().includes(query) ||
           n.title_arabic.includes(query) ||
-          n.title_urdu.includes(query)
+          n.title_urdu.includes(query),
       );
     }
 
@@ -173,7 +174,7 @@ export default function KnowledgeExplorer() {
         (t) =>
           t.name_english.toLowerCase().includes(query) ||
           t.name_arabic.includes(query) ||
-          t.name_urdu.includes(query)
+          t.name_urdu.includes(query),
       );
     }
 
@@ -196,7 +197,7 @@ export default function KnowledgeExplorer() {
         (e) =>
           e.name_english.toLowerCase().includes(query) ||
           e.name_arabic.includes(query) ||
-          e.name_urdu.includes(query)
+          e.name_urdu.includes(query),
       );
     }
 
@@ -249,13 +250,11 @@ export default function KnowledgeExplorer() {
           colors={colors}
           expanded={expandedId === item.id}
           onToggle={() => handleToggleExpand(item.id)}
-          onSurahPress={(surahNum: number) =>
-            router.push(`/surah/${surahNum}`)
-          }
+          onSurahPress={(surahNum: number) => router.push(`/surah/${surahNum}`)}
         />
       );
     },
-    [activeCategory, colors, expandedId, handleToggleExpand, router]
+    [activeCategory, colors, expandedId, handleToggleExpand, router],
   );
 
   const styles = useMemo(() => createStyles(colors), [colors]);
@@ -336,7 +335,8 @@ export default function KnowledgeExplorer() {
           !explorerGuideShown ? (
             <View style={styles.introCard}>
               <Text style={styles.introText}>
-                Explore 222 Quranic entities — prophets, angels, places, themes, and more. Tap any entity to see which surahs mention it.
+                Explore 222 Quranic entities: prophets, angels, places, themes,
+                and more. Tap any entity to see which surahs mention it.
               </Text>
               <Pressable
                 onPress={dismissExplorerGuide}
@@ -390,9 +390,7 @@ function EntityCard({
       accessibilityRole="button"
       accessibilityState={{ expanded }}
       accessibilityLabel={`${item.name_english}, ${formatTypeBadge(item.type)}`}
-      accessibilityHint={
-        expanded ? "Tap to collapse" : "Tap to expand details"
-      }
+      accessibilityHint={expanded ? "Tap to collapse" : "Tap to expand details"}
     >
       <View style={styles.cardHeader}>
         <View style={styles.cardNames}>
@@ -489,9 +487,7 @@ function ThemeCard({
       accessibilityRole="button"
       accessibilityState={{ expanded }}
       accessibilityLabel={`Theme: ${item.name_english}`}
-      accessibilityHint={
-        expanded ? "Tap to collapse" : "Tap to expand details"
-      }
+      accessibilityHint={expanded ? "Tap to collapse" : "Tap to expand details"}
     >
       <View style={styles.cardHeader}>
         <View style={styles.cardNames}>
@@ -679,8 +675,7 @@ function NarrativeCard({
                   accessibilityLabel={`Surah ${step.surah}, ayahs ${step.ayah_range[0]} to ${step.ayah_range[1]}: ${step.summary}`}
                 >
                   <Text style={styles.timelineSurahNum}>
-                    Surah {step.surah}:{step.ayah_range[0]}-
-                    {step.ayah_range[1]}
+                    Surah {step.surah}:{step.ayah_range[0]}-{step.ayah_range[1]}
                   </Text>
                   <Text style={styles.timelineSummary}>{step.summary}</Text>
                 </TouchableOpacity>
@@ -707,7 +702,7 @@ function createStyles(colors: any) {
       paddingBottom: 8,
     },
     headerTitle: {
-      fontFamily: "Inter-SemiBold",
+      fontFamily: fonts.latin.semiBold,
       fontSize: 22,
       color: colors.textPrimary,
     },
@@ -736,7 +731,7 @@ function createStyles(colors: any) {
       backgroundColor: "transparent",
     },
     categoryChipText: {
-      fontFamily: "Inter-Medium",
+      fontFamily: fonts.latin.medium,
       fontSize: 12,
     },
     categoryChipTextActive: {
@@ -762,7 +757,7 @@ function createStyles(colors: any) {
     },
     searchInput: {
       flex: 1,
-      fontFamily: "Inter-Regular",
+      fontFamily: fonts.latin.regular,
       fontSize: 15,
       color: colors.textPrimary,
       paddingVertical: 12,
@@ -795,7 +790,7 @@ function createStyles(colors: any) {
       flexWrap: "wrap",
     },
     nameEnglish: {
-      fontFamily: "Inter-SemiBold",
+      fontFamily: fonts.latin.semiBold,
       fontSize: 16,
       color: colors.textPrimary,
     },
@@ -805,13 +800,13 @@ function createStyles(colors: any) {
       marginTop: 4,
     },
     nameArabic: {
-      fontFamily: "Amiri-Regular",
+      fontFamily: fonts.arabic.regular,
       fontSize: 18,
       color: colors.textPrimary,
       writingDirection: "rtl",
     },
     nameUrdu: {
-      fontFamily: "Amiri-Regular",
+      fontFamily: fonts.arabic.regular,
       fontSize: 16,
       color: colors.textSecondary,
       writingDirection: "rtl",
@@ -823,19 +818,19 @@ function createStyles(colors: any) {
       borderRadius: 10,
     },
     typeBadgeText: {
-      fontFamily: "Inter-Medium",
+      fontFamily: fonts.latin.medium,
       fontSize: 11,
       color: "#FFFFFF",
       textTransform: "capitalize",
     },
     descriptionTruncated: {
-      fontFamily: "Inter-Regular",
+      fontFamily: fonts.latin.regular,
       fontSize: 14,
       color: colors.textSecondary,
       marginTop: 8,
     },
     mentionCount: {
-      fontFamily: "Inter-Regular",
+      fontFamily: fonts.latin.regular,
       fontSize: 13,
       color: colors.textGold,
       marginTop: 6,
@@ -847,13 +842,13 @@ function createStyles(colors: any) {
       paddingTop: 12,
     },
     descriptionFull: {
-      fontFamily: "Inter-Regular",
+      fontFamily: fonts.latin.regular,
       fontSize: 14,
       color: colors.textPrimary,
       lineHeight: 22,
     },
     surahListLabel: {
-      fontFamily: "Inter-SemiBold",
+      fontFamily: fonts.latin.semiBold,
       fontSize: 13,
       color: colors.textSecondary,
       marginTop: 12,
@@ -875,7 +870,7 @@ function createStyles(colors: any) {
       justifyContent: "center",
     },
     surahChipText: {
-      fontFamily: "Inter-Medium",
+      fontFamily: fonts.latin.medium,
       fontSize: 13,
       color: colors.textGold,
     },
@@ -884,7 +879,7 @@ function createStyles(colors: any) {
       alignItems: "center",
     },
     emptyText: {
-      fontFamily: "Inter-Regular",
+      fontFamily: fonts.latin.regular,
       fontSize: 15,
       color: colors.textSecondary,
     },
@@ -907,12 +902,12 @@ function createStyles(colors: any) {
       justifyContent: "center",
     },
     timelineSurahNum: {
-      fontFamily: "Inter-SemiBold",
+      fontFamily: fonts.latin.semiBold,
       fontSize: 13,
       color: colors.textGold,
     },
     timelineSummary: {
-      fontFamily: "Inter-Regular",
+      fontFamily: fonts.latin.regular,
       fontSize: 13,
       color: colors.textSecondary,
       marginTop: 2,
@@ -927,7 +922,7 @@ function createStyles(colors: any) {
       borderColor: colors.border,
     },
     introText: {
-      fontFamily: "Inter-Regular",
+      fontFamily: fonts.latin.regular,
       fontSize: 14,
       color: colors.textPrimary,
       lineHeight: 21,
@@ -940,7 +935,7 @@ function createStyles(colors: any) {
       paddingHorizontal: 12,
     },
     introButtonText: {
-      fontFamily: "Inter-Medium",
+      fontFamily: fonts.latin.medium,
       fontSize: 14,
       color: colors.textSecondary,
     },

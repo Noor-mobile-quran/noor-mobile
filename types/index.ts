@@ -31,9 +31,6 @@ export interface Bookmark {
 }
 
 export interface UserProgress {
-  currentStreak: number;
-  longestStreak: number;
-  lastReadDate: string | null;
   lastReadSurah: number | null;
   lastReadAyah: number | null;
   dailyGoal: number;
@@ -41,7 +38,14 @@ export interface UserProgress {
 }
 
 export type UXMode = "serene" | "immersive" | "study";
-export type ThemeMode = "light" | "dark" | "high-contrast" | "parchment" | "moonlight" | "forest" | "oled";
+export type ThemeMode =
+  | "light"
+  | "dark"
+  | "high-contrast"
+  | "parchment"
+  | "moonlight"
+  | "forest"
+  | "oled";
 
 export interface UserSettings {
   theme: ThemeMode;

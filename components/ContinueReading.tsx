@@ -3,6 +3,7 @@ import { Link } from "expo-router";
 import { useAppStore } from "../store/useAppStore";
 import { useSurahList } from "../hooks/useQuranData";
 import { useTheme } from "../theme/ThemeProvider";
+import { fonts } from "../theme/typography";
 
 export default function ContinueReading() {
   const lastReadSurah = useAppStore((s) => s.progress.lastReadSurah);
@@ -29,7 +30,7 @@ export default function ContinueReading() {
           <Text
             style={{
               color: colors.textSecondary,
-              fontFamily: "Inter-Regular",
+              fontFamily: fonts.latin.regular,
               fontSize: 11,
               letterSpacing: 1,
               textTransform: "uppercase",
@@ -40,7 +41,7 @@ export default function ContinueReading() {
           <Text
             style={{
               color: colors.textPrimary,
-              fontFamily: "Inter-SemiBold",
+              fontFamily: fonts.latin.semiBold,
               fontSize: 16,
               marginTop: 4,
             }}
@@ -50,7 +51,7 @@ export default function ContinueReading() {
           <Text
             style={{
               color: colors.textSecondary,
-              fontFamily: "Inter-Regular",
+              fontFamily: fonts.latin.regular,
               fontSize: 14,
             }}
           >
@@ -61,7 +62,7 @@ export default function ContinueReading() {
     );
   }
 
-  // No reading history — show "Start Your Journey"
+  // No reading history - show "Start Your Journey"
   return (
     <Link href="/surah/1" asChild>
       <Pressable
@@ -73,7 +74,7 @@ export default function ContinueReading() {
         <Text
           style={{
             color: colors.textSecondary,
-            fontFamily: "Inter-Regular",
+            fontFamily: fonts.latin.regular,
             fontSize: 11,
             letterSpacing: 1,
             textTransform: "uppercase",
@@ -84,7 +85,7 @@ export default function ContinueReading() {
         <Text
           style={{
             color: colors.textPrimary,
-            fontFamily: "Inter-SemiBold",
+            fontFamily: fonts.latin.semiBold,
             fontSize: 16,
             marginTop: 4,
           }}
@@ -94,7 +95,7 @@ export default function ContinueReading() {
         <Text
           style={{
             color: colors.textSecondary,
-            fontFamily: "Inter-Regular",
+            fontFamily: fonts.latin.regular,
             fontSize: 14,
           }}
         >

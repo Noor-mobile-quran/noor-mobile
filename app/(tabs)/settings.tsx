@@ -1,9 +1,19 @@
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  TouchableOpacity,
+  StyleSheet,
+} from "react-native";
 import { useAppStore } from "../../store/useAppStore";
 import { useTheme } from "../../theme/ThemeProvider";
 import { fonts, fontSizes } from "../../theme/typography";
 import { ArabicText } from "../../components/ui/ArabicText";
-import { Crescent, StarOrnament, OrnamentalDivider } from "../../components/ornaments";
+import {
+  Crescent,
+  StarOrnament,
+  OrnamentalDivider,
+} from "../../components/ornaments";
 import { RECITERS } from "../../data/reciters";
 import type { ThemeMode, UXMode } from "../../types";
 
@@ -12,19 +22,63 @@ const LANG_OPTIONS: { value: string; label: string; labelNative: string }[] = [
   { value: "ur", label: "Urdu", labelNative: "\u0627\u0631\u062F\u0648" },
 ];
 
-const THEME_OPTIONS: { value: ThemeMode; label: string; desc: string; swatch: { bg: string; accent: string } }[] = [
-  { value: "light", label: "Light", desc: "Warm cream", swatch: { bg: "#FFF9ED", accent: "#D4A843" } },
-  { value: "parchment", label: "Parchment", desc: "Aged paper", swatch: { bg: "#F5E6C8", accent: "#C49A3C" } },
-  { value: "dark", label: "Dark", desc: "Warm midnight", swatch: { bg: "#1A1410", accent: "#E8C547" } },
-  { value: "moonlight", label: "Moonlight", desc: "Cool night", swatch: { bg: "#1C2331", accent: "#7EB8DA" } },
-  { value: "forest", label: "Forest", desc: "Deep emerald", swatch: { bg: "#0B2618", accent: "#D4A843" } },
-  { value: "oled", label: "OLED", desc: "True black", swatch: { bg: "#000000", accent: "#D4A843" } },
-  { value: "high-contrast", label: "Contrast", desc: "Max clarity", swatch: { bg: "#000000", accent: "#FFD700" } },
+const THEME_OPTIONS: {
+  value: ThemeMode;
+  label: string;
+  desc: string;
+  swatch: { bg: string; accent: string };
+}[] = [
+  {
+    value: "light",
+    label: "Light",
+    desc: "Warm cream",
+    swatch: { bg: "#FFF9ED", accent: "#D4A843" },
+  },
+  {
+    value: "parchment",
+    label: "Parchment",
+    desc: "Aged paper",
+    swatch: { bg: "#F5E6C8", accent: "#C49A3C" },
+  },
+  {
+    value: "dark",
+    label: "Dark",
+    desc: "Warm midnight",
+    swatch: { bg: "#1A1410", accent: "#E8C547" },
+  },
+  {
+    value: "moonlight",
+    label: "Moonlight",
+    desc: "Cool night",
+    swatch: { bg: "#1C2331", accent: "#7EB8DA" },
+  },
+  {
+    value: "forest",
+    label: "Forest",
+    desc: "Deep emerald",
+    swatch: { bg: "#0B2618", accent: "#D4A843" },
+  },
+  {
+    value: "oled",
+    label: "OLED",
+    desc: "True black",
+    swatch: { bg: "#000000", accent: "#D4A843" },
+  },
+  {
+    value: "high-contrast",
+    label: "Contrast",
+    desc: "Max clarity",
+    swatch: { bg: "#000000", accent: "#FFD700" },
+  },
 ];
 
 const UX_MODES: { value: UXMode; label: string; desc: string }[] = [
   { value: "serene", label: "Serene", desc: "Clean, peaceful reading" },
-  { value: "immersive", label: "Immersive", desc: "Dark, atmospheric experience" },
+  {
+    value: "immersive",
+    label: "Immersive",
+    desc: "Dark, atmospheric experience",
+  },
   { value: "study", label: "Study", desc: "With tafsir and study tools" },
 ];
 
@@ -55,7 +109,9 @@ export default function SettingsScreen() {
         <Text style={[styles.headerTitle, { fontFamily: fonts.latin.bold }]}>
           Settings
         </Text>
-        <Text style={[styles.headerSubtitle, { fontFamily: fonts.latin.regular }]}>
+        <Text
+          style={[styles.headerSubtitle, { fontFamily: fonts.latin.regular }]}
+        >
           Customize your experience
         </Text>
       </View>
@@ -81,7 +137,9 @@ export default function SettingsScreen() {
                   style={[
                     styles.themeCard,
                     {
-                      backgroundColor: isActive ? `${colors.accent}15` : colors.bg,
+                      backgroundColor: isActive
+                        ? `${colors.accent}15`
+                        : colors.bg,
                       borderColor: isActive ? colors.accent : colors.border,
                       borderWidth: 1.5,
                     },
@@ -93,11 +151,17 @@ export default function SettingsScreen() {
                     <View
                       style={[
                         styles.swatch,
-                        { backgroundColor: opt.swatch.bg, borderColor: `${colors.textSecondary}30` },
+                        {
+                          backgroundColor: opt.swatch.bg,
+                          borderColor: `${colors.textSecondary}30`,
+                        },
                       ]}
                     >
                       <View
-                        style={[styles.swatchAccent, { backgroundColor: opt.swatch.accent }]}
+                        style={[
+                          styles.swatchAccent,
+                          { backgroundColor: opt.swatch.accent },
+                        ]}
                       />
                     </View>
                     {isActive && (
@@ -123,7 +187,9 @@ export default function SettingsScreen() {
                     style={[
                       styles.themeDesc,
                       {
-                        color: isActive ? colors.accent : `${colors.textSecondary}90`,
+                        color: isActive
+                          ? colors.accent
+                          : `${colors.textSecondary}90`,
                         fontFamily: fonts.latin.regular,
                       },
                     ]}
@@ -156,8 +222,12 @@ export default function SettingsScreen() {
                   style={[
                     styles.modeButton,
                     {
-                      backgroundColor: isActive ? `${colors.accent}15` : "transparent",
-                      borderColor: isActive ? `${colors.accent}40` : "transparent",
+                      backgroundColor: isActive
+                        ? `${colors.accent}15`
+                        : "transparent",
+                      borderColor: isActive
+                        ? `${colors.accent}40`
+                        : "transparent",
                       borderWidth: isActive ? 1 : 0,
                     },
                   ]}
@@ -212,7 +282,9 @@ export default function SettingsScreen() {
 
           {/* Live Arabic preview */}
           <View style={[styles.previewBox, { backgroundColor: colors.bg }]}>
-            <ArabicText style={{ color: colors.textPrimary, textAlign: "center" }}>
+            <ArabicText
+              style={{ color: colors.textPrimary, textAlign: "center" }}
+            >
               بِسْمِ اللَّهِ
             </ArabicText>
           </View>
@@ -283,8 +355,12 @@ export default function SettingsScreen() {
                   style={[
                     styles.modeButton,
                     {
-                      backgroundColor: isActive ? `${colors.accent}15` : "transparent",
-                      borderColor: isActive ? `${colors.accent}40` : "transparent",
+                      backgroundColor: isActive
+                        ? `${colors.accent}15`
+                        : "transparent",
+                      borderColor: isActive
+                        ? `${colors.accent}40`
+                        : "transparent",
                       borderWidth: isActive ? 1 : 0,
                     },
                   ]}
@@ -313,11 +389,16 @@ export default function SettingsScreen() {
                         styles.modeDesc,
                         {
                           color: colors.textSecondary,
-                          fontFamily: opt.value === "ur" ? fonts.arabic.regular : fonts.latin.regular,
+                          fontFamily:
+                            opt.value === "ur"
+                              ? fonts.arabic.regular
+                              : fonts.latin.regular,
                           writingDirection: opt.value === "ur" ? "rtl" : "ltr",
                         },
                       ]}
-                      {...(opt.value === "ur" ? { accessibilityLanguage: "ur" } : {})}
+                      {...(opt.value === "ur"
+                        ? { accessibilityLanguage: "ur" }
+                        : {})}
                     >
                       {opt.labelNative}
                     </Text>
@@ -348,7 +429,9 @@ export default function SettingsScreen() {
                   style={[
                     styles.reciterCard,
                     {
-                      backgroundColor: isActive ? `${colors.accent}15` : "transparent",
+                      backgroundColor: isActive
+                        ? `${colors.accent}15`
+                        : "transparent",
                       borderColor: isActive ? colors.accent : colors.border,
                       borderWidth: 1,
                     },
@@ -410,7 +493,11 @@ export default function SettingsScreen() {
           <OrnamentalDivider width="compact" />
           <ArabicText
             decorative
-            style={{ color: colors.textSecondary, textAlign: "center", opacity: 0.4 }}
+            style={{
+              color: colors.textSecondary,
+              textAlign: "center",
+              opacity: 0.4,
+            }}
           >
             الحمد لله
           </ArabicText>

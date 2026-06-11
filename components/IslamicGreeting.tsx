@@ -2,6 +2,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { ArabicText } from "./ui/ArabicText";
 import { useTheme } from "../theme/ThemeProvider";
 import { useI18n } from "../hooks/useI18n";
+import { fonts } from "../theme/typography";
 
 interface Props {
   hijriDate?: string;
@@ -25,7 +26,8 @@ export default function IslamicGreeting({ hijriDate }: Props) {
     greetingArabic = "\u0645\u0633\u0627\u0621 \u0627\u0644\u062E\u064A\u0631";
     greetingKey = "goodEvening";
   } else {
-    greetingArabic = "\u062A\u0635\u0628\u062D \u0639\u0644\u0649 \u062E\u064A\u0631";
+    greetingArabic =
+      "\u062A\u0635\u0628\u062D \u0639\u0644\u0649 \u062E\u064A\u0631";
     greetingKey = "goodNight";
   }
 
@@ -54,11 +56,7 @@ export default function IslamicGreeting({ hijriDate }: Props) {
           {greetingLabel}
         </Text>
       </View>
-      {hijriDate && (
-        <Text style={styles.hijri}>
-          {hijriDate}
-        </Text>
-      )}
+      {hijriDate && <Text style={styles.hijri}>{hijriDate}</Text>}
     </View>
   );
 }
@@ -82,7 +80,7 @@ const styles = StyleSheet.create({
   },
   hijri: {
     color: "rgba(255, 232, 184, 0.5)",
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 11,
   },
 });

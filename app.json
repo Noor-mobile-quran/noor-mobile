@@ -7,7 +7,7 @@
     "orientation": "portrait",
     "scheme": "noor",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -34,10 +34,6 @@
       "output": "single",
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-font",
-      "expo-router",
-      "expo-audio"
-    ]
+    "plugins": ["expo-font", "expo-router", "expo-audio"]
   }
 }

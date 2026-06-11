@@ -2,6 +2,7 @@ import { View, Text, Pressable } from "react-native";
 import { Link } from "expo-router";
 import { ArabicText } from "./ui/ArabicText";
 import { useTheme } from "../theme/ThemeProvider";
+import { fonts } from "../theme/typography";
 import type { SurahMeta } from "../types";
 
 interface Props {
@@ -31,7 +32,7 @@ export default function SurahCard({ surah }: Props) {
           <Text
             style={{
               color: colors.textGold,
-              fontFamily: "Inter-SemiBold",
+              fontFamily: fonts.latin.semiBold,
               fontSize: 14,
             }}
           >
@@ -45,7 +46,7 @@ export default function SurahCard({ surah }: Props) {
             <Text
               style={{
                 color: colors.textPrimary,
-                fontFamily: "Inter-SemiBold",
+                fontFamily: fonts.latin.semiBold,
                 fontSize: 15,
               }}
               numberOfLines={1}
@@ -67,23 +68,23 @@ export default function SurahCard({ surah }: Props) {
             <Text
               style={{
                 color: colors.textSecondary,
-                fontFamily: "Inter-Regular",
+                fontFamily: fonts.latin.regular,
                 fontSize: 12,
               }}
             >
               {surah.name_translation}
             </Text>
-            <Text style={{ color: colors.textSecondary, fontSize: 12 }}>·</Text>
+            <Text style={{ color: colors.textSecondary, fontSize: 12 }}>|</Text>
             <Text
               style={{
                 color: colors.textSecondary,
-                fontFamily: "Inter-Regular",
+                fontFamily: fonts.latin.regular,
                 fontSize: 12,
               }}
             >
               {surah.ayah_count} ayahs
             </Text>
-            <Text style={{ color: colors.textSecondary, fontSize: 12 }}>·</Text>
+            <Text style={{ color: colors.textSecondary, fontSize: 12 }}>|</Text>
             <View
               className="px-2 py-0.5 rounded-full"
               style={{
@@ -99,7 +100,7 @@ export default function SurahCard({ surah }: Props) {
                     surah.revelation_type === "meccan"
                       ? colors.forest
                       : colors.textGold,
-                  fontFamily: "Inter-Medium",
+                  fontFamily: fonts.latin.medium,
                   fontSize: 11,
                 }}
               >

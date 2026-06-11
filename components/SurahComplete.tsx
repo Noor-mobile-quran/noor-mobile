@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-import { AccessibilityInfo, Animated, StyleSheet, Text, View } from "react-native";
+import {
+  AccessibilityInfo,
+  Animated,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import { OrnamentalDivider, FlowerOrnament } from "./ornaments";
 import { useTheme } from "../theme/ThemeProvider";
 import { fonts } from "../theme/typography";

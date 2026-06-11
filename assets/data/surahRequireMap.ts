@@ -120,4 +120,8 @@ const surahMap: Record<number, Surah> = {
   114: require("./surahs/114.json"),
 };
 
+export function getAllSurahs(): Surah[] {
+  return Object.values(surahMap);
+}
+
 export default surahMap;

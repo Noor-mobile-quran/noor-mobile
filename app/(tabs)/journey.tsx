@@ -14,10 +14,26 @@ import {
 type Section = "completion" | "juz" | "bookmarks" | "explore";
 
 const SECTIONS: { key: Section; label: string; desc: string }[] = [
-  { key: "completion", label: "Completion", desc: "Track your progress through all 114 surahs" },
-  { key: "juz", label: "Juz Map", desc: "30 parts of the Quran \u2014 read 1 per day" },
-  { key: "bookmarks", label: "Bookmarks", desc: "Ayahs you\u2019ve saved for reflection" },
-  { key: "explore", label: "Explore", desc: "Discover prophets, themes, and stories across the Quran" },
+  {
+    key: "completion",
+    label: "Completion",
+    desc: "Track your progress through all 114 surahs",
+  },
+  {
+    key: "juz",
+    label: "Juz Map",
+    desc: "30 parts of the Quran \u2014 read 1 per day",
+  },
+  {
+    key: "bookmarks",
+    label: "Bookmarks",
+    desc: "Ayahs you\u2019ve saved for reflection",
+  },
+  {
+    key: "explore",
+    label: "Explore",
+    desc: "Discover prophets, themes, and stories across the Quran",
+  },
 ];
 
 export default function JourneyPage() {
@@ -26,10 +42,20 @@ export default function JourneyPage() {
   const [activeSection, setActiveSection] = useState<Section>("completion");
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.bg, paddingTop: insets.top }]}>
+    <View
+      style={[
+        styles.container,
+        { backgroundColor: colors.bg, paddingTop: insets.top },
+      ]}
+    >
       {/* Header */}
       <View style={styles.header}>
-        <Text style={[styles.title, { color: colors.textPrimary, fontFamily: fonts.latin.bold }]}>
+        <Text
+          style={[
+            styles.title,
+            { color: colors.textPrimary, fontFamily: fonts.latin.bold },
+          ]}
+        >
           Your Journey
         </Text>
       </View>
@@ -49,9 +75,13 @@ export default function JourneyPage() {
                 styles.tab,
                 {
                   backgroundColor:
-                    activeSection === section.key ? colors.accent : "transparent",
+                    activeSection === section.key
+                      ? colors.accent
+                      : "transparent",
                   borderColor:
-                    activeSection === section.key ? colors.accent : colors.border,
+                    activeSection === section.key
+                      ? colors.accent
+                      : colors.border,
                 },
               ]}
               accessibilityRole="tab"
@@ -63,7 +93,9 @@ export default function JourneyPage() {
                   styles.tabText,
                   {
                     color:
-                      activeSection === section.key ? colors.bg : colors.textSecondary,
+                      activeSection === section.key
+                        ? colors.bg
+                        : colors.textSecondary,
                     fontFamily: fonts.latin.medium,
                   },
                 ]}
@@ -76,12 +108,7 @@ export default function JourneyPage() {
       </View>
 
       {/* Section description */}
-      <Text
-        style={[
-          styles.sectionDesc,
-          { color: colors.textSecondary },
-        ]}
-      >
+      <Text style={[styles.sectionDesc, { color: colors.textSecondary }]}>
         {SECTIONS.find((s) => s.key === activeSection)?.desc}
       </Text>
 
@@ -131,7 +158,7 @@ const styles = StyleSheet.create({
     lineHeight: 16,
   },
   sectionDesc: {
-    fontFamily: "Inter-Regular",
+    fontFamily: fonts.latin.regular,
     fontSize: 11,
     paddingHorizontal: 20,
     paddingTop: 6,

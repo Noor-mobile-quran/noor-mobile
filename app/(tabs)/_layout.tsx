@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { AccessibilityInfo } from "react-native";
 import { Tabs } from "expo-router";
 import { useTheme } from "../../theme/ThemeProvider";
+import { fonts } from "../../theme/typography";
 import Svg, { Path } from "react-native-svg";
 
 function HomeIcon({ color, size }: { color: string; size: number }) {
@@ -95,7 +96,7 @@ export default function TabLayout() {
           height: 56,
         },
         tabBarLabelStyle: {
-          fontFamily: "Inter-Medium",
+          fontFamily: fonts.latin.medium,
           fontSize: 11,
         },
       }}

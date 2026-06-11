@@ -1,5 +1,11 @@
 import { useState, useMemo } from "react";
-import { View, Text, FlatList, Pressable, ActivityIndicator } from "react-native";
+import {
+  View,
+  Text,
+  FlatList,
+  Pressable,
+  ActivityIndicator,
+} from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useSurahList } from "../../hooks/useQuranData";
@@ -11,6 +17,7 @@ import SurahCard from "../../components/SurahCard";
 import SearchBar from "../../components/SearchBar";
 import SearchResultCard from "../../components/SearchResultCard";
 import type { SurahMeta } from "../../types";
+import { fonts } from "../../theme/typography";
 
 type Filter = "all" | "meccan" | "medinan";
 
@@ -20,7 +27,11 @@ export default function SurahIndexPage() {
   const [filter, setFilter] = useState<Filter>("all");
   const { colors, isDark } = useTheme();
   const insets = useSafeAreaInsets();
-  const { setQuery: setAyahQuery, results: ayahResults, query: ayahQuery } = useQuranSearch();
+  const {
+    setQuery: setAyahQuery,
+    results: ayahResults,
+    query: ayahQuery,
+  } = useQuranSearch();
 
   const handleSearch = (text: string) => {
     setSearch(text);
@@ -65,7 +76,12 @@ export default function SurahIndexPage() {
         <View className="absolute top-3 right-4 opacity-10">
           <ArabicText
             decorative
-            style={{ color: colors.textGold, fontSize: 36, lineHeight: 44, textAlign: "right" }}
+            style={{
+              color: colors.textGold,
+              fontSize: 36,
+              lineHeight: 44,
+              textAlign: "right",
+            }}
           >
             {"القرآن"}
           </ArabicText>
@@ -74,7 +90,7 @@ export default function SurahIndexPage() {
         <Text
           style={{
             color: "#FFF9ED",
-            fontFamily: "Inter-Bold",
+            fontFamily: fonts.latin.bold,
             fontSize: 22,
           }}
         >
@@ -83,7 +99,7 @@ export default function SurahIndexPage() {
         <Text
           style={{
             color: "rgba(255, 249, 237, 0.6)",
-            fontFamily: "Inter-Regular",
+            fontFamily: fonts.latin.regular,
             fontSize: 13,
             marginTop: 4,
           }}
@@ -92,9 +108,15 @@ export default function SurahIndexPage() {
         </Text>
 
         <View className="flex-row items-center justify-center gap-3 mt-4">
-          <View className="h-px w-12" style={{ backgroundColor: "rgba(212, 168, 67, 0.3)" }} />
+          <View
+            className="h-px w-12"
+            style={{ backgroundColor: "rgba(212, 168, 67, 0.3)" }}
+          />
           <StarOrnament size={12} color={colors.accent} opacity={0.5} />
-          <View className="h-px w-12" style={{ backgroundColor: "rgba(212, 168, 67, 0.3)" }} />
+          <View
+            className="h-px w-12"
+            style={{ backgroundColor: "rgba(212, 168, 67, 0.3)" }}
+          />
         </View>
       </LinearGradient>
 
@@ -109,7 +131,8 @@ export default function SurahIndexPage() {
               onPress={() => setFilter(f.key)}
               className="px-4 py-2 rounded-full"
               style={{
-                backgroundColor: filter === f.key ? colors.accent : colors.surface,
+                backgroundColor:
+                  filter === f.key ? colors.accent : colors.surface,
                 shadowColor: filter === f.key ? colors.accent : "transparent",
                 shadowOffset: { width: 0, height: 2 },
                 shadowOpacity: filter === f.key ? 0.2 : 0,
@@ -120,7 +143,7 @@ export default function SurahIndexPage() {
               <Text
                 style={{
                   color: filter === f.key ? "#FFFFFF" : colors.textSecondary,
-                  fontFamily: "Inter-Medium",
+                  fontFamily: fonts.latin.medium,
                   fontSize: 13,
                 }}
               >
@@ -133,7 +156,7 @@ export default function SurahIndexPage() {
         <Text
           style={{
             color: colors.textSecondary,
-            fontFamily: "Inter-Regular",
+            fontFamily: fonts.latin.regular,
             fontSize: 12,
           }}
         >
@@ -145,7 +168,10 @@ export default function SurahIndexPage() {
 
   if (isLoading) {
     return (
-      <View className="flex-1 items-center justify-center" style={{ backgroundColor: colors.bg }}>
+      <View
+        className="flex-1 items-center justify-center"
+        style={{ backgroundColor: colors.bg }}
+      >
         <ActivityIndicator size="large" color={colors.accent} />
       </View>
     );
@@ -159,13 +185,19 @@ export default function SurahIndexPage() {
       ListHeaderComponent={ListHeader}
       ListEmptyComponent={
         <View className="items-center py-12">
-          <Text style={{ color: colors.textSecondary, fontFamily: "Inter-Regular", fontSize: 15 }}>
+          <Text
+            style={{
+              color: colors.textSecondary,
+              fontFamily: fonts.latin.regular,
+              fontSize: 15,
+            }}
+          >
             No surahs found
           </Text>
           <Text
             style={{
               color: colors.textSecondary,
-              fontFamily: "Inter-Regular",
+              fontFamily: fonts.latin.regular,
               fontSize: 12,
               marginTop: 4,
               opacity: 0.6,
@@ -177,16 +209,19 @@ export default function SurahIndexPage() {
       }
       ListFooterComponent={
         showAyahResults ? (
-          <View style={{ paddingHorizontal: 16, paddingTop: 8, paddingBottom: 24 }}>
+          <View
+            style={{ paddingHorizontal: 16, paddingTop: 8, paddingBottom: 24 }}
+          >
             <Text
               style={{
                 color: colors.textSecondary,
-                fontFamily: "Inter_600SemiBold",
+                fontFamily: fonts.latin.semiBold,
                 fontSize: 14,
                 marginBottom: 10,
               }}
             >
-              Ayah matches ({ayahResults.length}{ayahResults.length >= 50 ? "+" : ""})
+              Ayah matches ({ayahResults.length}
+              {ayahResults.length >= 50 ? "+" : ""})
             </Text>
             {ayahResults.map((r) => (
               <SearchResultCard
