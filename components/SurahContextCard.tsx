@@ -78,7 +78,10 @@ export default function SurahContextCard({ surahNumber }: Props) {
         </View>
         {ctx.sajdah != null && (
           <View
-            style={[styles.tag, { backgroundColor: `${colors.textSecondary}15` }]}
+            style={[
+              styles.tag,
+              { backgroundColor: `${colors.textSecondary}15` },
+            ]}
             accessibilityRole="text"
           >
             <Text

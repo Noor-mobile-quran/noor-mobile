@@ -22,6 +22,9 @@ interface AppState {
   progress: UserProgress;
   audioPlaying: boolean;
   currentAudioAyah: number | null;
+  audioBuffering: boolean;
+  audioError: string | null;
+  audioRetryAttempt: number;
   readingReflectionVisible: boolean;
   completionGuideShown: boolean;
   explorerGuideShown: boolean;
@@ -36,6 +39,9 @@ interface AppState {
   markSurahComplete: (surah: number) => void;
   unmarkSurahComplete: (surah: number) => void;
   setAudioPlaying: (playing: boolean, ayah?: number | null) => void;
+  setAudioBuffering: (buffering: boolean) => void;
+  setAudioError: (message: string | null) => void;
+  setAudioRetryAttempt: (attempt: number) => void;
   stopAudio: () => void;
   toggleReadingReflectionVisible: () => void;
   setCompletionGuideShown: (shown: boolean) => void;
@@ -47,6 +53,9 @@ export const useAppStore = create<AppState>((set, get) => ({
   progress: storage.getProgress() ?? DEFAULT_PROGRESS,
   audioPlaying: false,
   currentAudioAyah: null,
+  audioBuffering: false,
+  audioError: null,
+  audioRetryAttempt: 0,
   readingReflectionVisible: true,
   completionGuideShown: false,
   explorerGuideShown: false,
@@ -177,14 +186,37 @@ export const useAppStore = create<AppState>((set, get) => ({
   setAudioPlaying: (playing, ayah = null) => {
     // When stopping, keep currentAudioAyah so auto-advance knows which ayah just finished
     if (playing) {
-      set({ audioPlaying: true, currentAudioAyah: ayah });
+      set({
+        audioPlaying: true,
+        currentAudioAyah: ayah,
+        audioBuffering: false,
+        audioError: null,
+      });
     } else {
-      set({ audioPlaying: false });
+      set({ audioPlaying: false, audioBuffering: false });
     }
   },
 
+  setAudioBuffering: (buffering) => {
+    set({ audioBuffering: buffering });
+  },
+
+  setAudioError: (message) => {
+    set({ audioError: message });
+  },
+
+  setAudioRetryAttempt: (attempt) => {
+    set({ audioRetryAttempt: attempt });
+  },
+
   stopAudio: () => {
-    set({ audioPlaying: false, currentAudioAyah: null });
+    set({
+      audioPlaying: false,
+      currentAudioAyah: null,
+      audioBuffering: false,
+      audioError: null,
+      audioRetryAttempt: 0,
+    });
   },
 
   toggleReadingReflectionVisible: () => {

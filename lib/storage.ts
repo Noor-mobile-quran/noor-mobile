@@ -86,7 +86,10 @@ function unwrapVersioned(value: unknown): unknown {
   if (!value || typeof value !== "object") return value;
 
   const maybeVersioned = value as Partial<VersionedPayload<unknown>>;
-  if (typeof maybeVersioned.version !== "number" || !("data" in maybeVersioned)) {
+  if (
+    typeof maybeVersioned.version !== "number" ||
+    !("data" in maybeVersioned)
+  ) {
     return value;
   }
 
@@ -120,7 +123,9 @@ function normalizeSettings(value: unknown): UserSettings | null {
         ? raw.translationLang
         : DEFAULT_SETTINGS.translationLang,
     reciterId:
-      typeof raw.reciterId === "string" ? raw.reciterId : DEFAULT_SETTINGS.reciterId,
+      typeof raw.reciterId === "string"
+        ? raw.reciterId
+        : DEFAULT_SETTINGS.reciterId,
     fontSize:
       typeof raw.fontSize === "string" && VALID_FONT_SIZES.has(raw.fontSize)
         ? raw.fontSize
@@ -169,7 +174,9 @@ function normalizeBookmarks(value: unknown): Bookmark[] {
 
 export const storage = {
   getSettings: () => {
-    const settings = normalizeSettings(unwrapVersioned(getJSON<unknown>(KEYS.settings)));
+    const settings = normalizeSettings(
+      unwrapVersioned(getJSON<unknown>(KEYS.settings)),
+    );
     if (settings) {
       setVersionedJSON(KEYS.settings, settings);
     }
@@ -178,7 +185,9 @@ export const storage = {
   setSettings: (s: UserSettings) => setVersionedJSON(KEYS.settings, s),
 
   getProgress: () => {
-    const progress = normalizeProgress(unwrapVersioned(getJSON<unknown>(KEYS.progress)));
+    const progress = normalizeProgress(
+      unwrapVersioned(getJSON<unknown>(KEYS.progress)),
+    );
     if (progress) {
       setVersionedJSON(KEYS.progress, progress);
     }
@@ -186,7 +195,8 @@ export const storage = {
   },
   setProgress: (p: UserProgress) => setVersionedJSON(KEYS.progress, p),
 
-  getBookmarks: () => normalizeBookmarks(unwrapVersioned(getJSON<unknown>(KEYS.bookmarks))),
+  getBookmarks: () =>
+    normalizeBookmarks(unwrapVersioned(getJSON<unknown>(KEYS.bookmarks))),
   setBookmarks: (b: Bookmark[]) => setVersionedJSON(KEYS.bookmarks, b),
 
   addBookmark: (b: Bookmark) => {

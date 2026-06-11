@@ -18,12 +18,7 @@ export default function SurahHeader({ surah }: Props) {
       <OrnamentalDivider width="compact" />
 
       {/* Surah number badge */}
-      <View
-        style={[
-          styles.numberBadge,
-          { borderColor: `${colors.accent}40` },
-        ]}
-      >
+      <View style={[styles.numberBadge, { borderColor: `${colors.accent}40` }]}>
         <Text
           style={[
             styles.numberText,
@@ -37,7 +32,11 @@ export default function SurahHeader({ surah }: Props) {
       {/* Arabic name */}
       <ArabicText
         variant="display"
-        style={{ color: colors.textGold, textAlign: "center", marginVertical: 8 }}
+        style={{
+          color: colors.textGold,
+          textAlign: "center",
+          marginVertical: 8,
+        }}
       >
         {surah.name_arabic}
       </ArabicText>

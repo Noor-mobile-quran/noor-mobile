@@ -10,6 +10,7 @@ import {
   type ViewToken,
 } from "react-native";
 import { useLocalSearchParams, useRouter, useNavigation } from "expo-router";
+import { ErrorBoundary } from "react-error-boundary";
 import Svg, { Path } from "react-native-svg";
 import { useSurah } from "../../hooks/useQuranData";
 import { useAppStore } from "../../store/useAppStore";
@@ -22,9 +23,13 @@ import SurahContextCard from "../../components/SurahContextCard";
 import AyahCard from "../../components/AyahCard";
 import { NotesInput } from "../../components/NotesInput";
 import { StarOrnament, FlowerOrnament } from "../../components/ornaments";
+import {
+  ErrorFallback,
+  logBoundaryError,
+} from "../../components/ErrorFallback";
 import type { Ayah, Bookmark } from "../../types";
 
-export default function ReadingScreen() {
+function ReadingScreenContent() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const surahNum = Number(id);
   const router = useRouter();
@@ -55,7 +60,7 @@ export default function ReadingScreen() {
   const isImmersive = uxMode === "immersive";
   const isStudy = uxMode === "study";
 
-  // Configure header — show surah name, hide in immersive
+  // Configure header: show surah name, hide in immersive mode.
   useEffect(() => {
     navigation.setOptions({
       headerShown: !isImmersive,
@@ -473,7 +478,7 @@ export default function ReadingScreen() {
 
   return (
     <View style={[styles.screen, { backgroundColor: colors.bg }]}>
-      {/* Custom header bar — always visible on all platforms */}
+      {/* Custom header bar, always visible on all platforms. */}
       <View
         style={{
           flexDirection: "row",
@@ -638,6 +643,22 @@ export default function ReadingScreen() {
         </TouchableOpacity>
       </Modal>
     </View>
+  );
+}
+
+export default function ReadingScreen() {
+  const { id } = useLocalSearchParams<{ id: string }>();
+
+  return (
+    <ErrorBoundary
+      FallbackComponent={(props) => (
+        <ErrorFallback {...props} title="This surah could not load" />
+      )}
+      onError={logBoundaryError}
+      resetKeys={[id]}
+    >
+      <ReadingScreenContent />
+    </ErrorBoundary>
   );
 }
 

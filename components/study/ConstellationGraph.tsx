@@ -1,6 +1,14 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { AccessibilityInfo, StyleSheet, View } from "react-native";
-import Svg, { Circle, Line, Rect, Text as SvgText, Defs, RadialGradient, Stop } from "react-native-svg";
+import Svg, {
+  Circle,
+  Line,
+  Rect,
+  Text as SvgText,
+  Defs,
+  RadialGradient,
+  Stop,
+} from "react-native-svg";
 import Animated, {
   useSharedValue,
   useAnimatedProps,
@@ -59,7 +67,9 @@ function getNodeColor(type: string): string {
 }
 
 function getEntityById(id: string): Entity | undefined {
-  return (entitiesData as { entities: Entity[] }).entities.find((e) => e.id === id);
+  return (entitiesData as { entities: Entity[] }).entities.find(
+    (e) => e.id === id,
+  );
 }
 
 function truncateLabel(text: string, max: number): string {
@@ -78,13 +88,21 @@ export function ConstellationGraph({
   const [reduceMotion, setReduceMotion] = useState(false);
   useEffect(() => {
     try {
-      AccessibilityInfo.isReduceMotionEnabled().then(setReduceMotion).catch(() => {});
+      AccessibilityInfo.isReduceMotionEnabled()
+        .then(setReduceMotion)
+        .catch(() => {});
     } catch (_) {}
-    let sub: ReturnType<typeof AccessibilityInfo.addEventListener> | null = null;
+    let sub: ReturnType<typeof AccessibilityInfo.addEventListener> | null =
+      null;
     try {
-      sub = AccessibilityInfo.addEventListener("reduceMotionChanged", setReduceMotion);
+      sub = AccessibilityInfo.addEventListener(
+        "reduceMotionChanged",
+        setReduceMotion,
+      );
     } catch (_) {}
-    return () => { sub?.remove(); };
+    return () => {
+      sub?.remove();
+    };
   }, []);
 
   const pulseOpacity = useSharedValue(0.3);
@@ -98,7 +116,8 @@ export function ConstellationGraph({
   }, [reduceMotion, pulseOpacity]);
 
   const { ring1, ring2, centralEntity } = useMemo(() => {
-    const hyperedges = (hyperedgesData as { hyperedges: Hyperedge[] }).hyperedges;
+    const hyperedges = (hyperedgesData as { hyperedges: Hyperedge[] })
+      .hyperedges;
     const central = getEntityById(centralEntityId);
 
     // Ring 1: direct connections
@@ -135,8 +154,12 @@ export function ConstellationGraph({
     const ring2List = Array.from(ring2Ids).slice(0, Math.min(6, remaining));
 
     return {
-      ring1: ring1List.map((id) => getEntityById(id)).filter(Boolean) as Entity[],
-      ring2: ring2List.map((id) => getEntityById(id)).filter(Boolean) as Entity[],
+      ring1: ring1List
+        .map((id) => getEntityById(id))
+        .filter(Boolean) as Entity[],
+      ring2: ring2List
+        .map((id) => getEntityById(id))
+        .filter(Boolean) as Entity[],
       centralEntity: central,
     };
   }, [centralEntityId]);
@@ -150,7 +173,9 @@ export function ConstellationGraph({
   const centralLabel = truncateLabel(centralEntity.name_english, 14);
 
   return (
-    <View style={[styles.container, { width, height, backgroundColor: BG_COLOR }]}>
+    <View
+      style={[styles.container, { width, height, backgroundColor: BG_COLOR }]}
+    >
       <Svg width={width} height={height}>
         <Defs>
           <RadialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
@@ -245,7 +270,13 @@ export function ConstellationGraph({
           const color = getNodeColor(entity.type);
           return (
             <React.Fragment key={`r2-${entity.id}`}>
-              <Circle cx={x} cy={y} r={RING_2_NODE_R} fill={color} opacity={0.7} />
+              <Circle
+                cx={x}
+                cy={y}
+                r={RING_2_NODE_R}
+                fill={color}
+                opacity={0.7}
+              />
               <Rect
                 x={x - TOUCH_SIZE / 2}
                 y={y - TOUCH_SIZE / 2}

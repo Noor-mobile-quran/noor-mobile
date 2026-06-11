@@ -18,7 +18,9 @@ interface HyperedgeEntry {
 
 // Parse a grounding_ayah string such as "2:30-34" or "2:50" into surah number
 // and an inclusive ayah range [start, end]. Returns null if the string is malformed.
-function parseGroundingRef(ref: string): { surah: number; start: number; end: number } | null {
+function parseGroundingRef(
+  ref: string,
+): { surah: number; start: number; end: number } | null {
   const colonIdx = ref.indexOf(":");
   if (colonIdx === -1) return null;
 
@@ -44,7 +46,8 @@ function parseGroundingRef(ref: string): { surah: number; start: number; end: nu
 function buildConnectionMap(): Map<number, Map<number, number>> {
   const map = new Map<number, Map<number, number>>();
 
-  const edges = (hyperedgesData as { hyperedges?: HyperedgeEntry[] }).hyperedges ?? [];
+  const edges =
+    (hyperedgesData as { hyperedges?: HyperedgeEntry[] }).hyperedges ?? [];
 
   for (const edge of edges) {
     if (!Array.isArray(edge.grounding_ayahs)) continue;

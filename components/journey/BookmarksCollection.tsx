@@ -41,7 +41,13 @@ function BookmarkIcon({
   );
 }
 
-function StarOrnament({ size = 64, color = "#D4A843" }: { size?: number; color?: string }) {
+function StarOrnament({
+  size = 64,
+  color = "#D4A843",
+}: {
+  size?: number;
+  color?: string;
+}) {
   return (
     <Svg width={size} height={size} viewBox="0 0 64 64" fill="none">
       <G opacity={0.6}>
@@ -58,7 +64,13 @@ function StarOrnament({ size = 64, color = "#D4A843" }: { size?: number; color?:
   );
 }
 
-function DeleteIcon({ size = 18, color = "#C0392B" }: { size?: number; color?: string }) {
+function DeleteIcon({
+  size = 18,
+  color = "#C0392B",
+}: {
+  size?: number;
+  color?: string;
+}) {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <Path
@@ -108,7 +120,9 @@ export default function BookmarksCollection() {
 
   const [activeTab, setActiveTab] = useState<FilterTab>("all");
   const [confirmDeleteKey, setConfirmDeleteKey] = useState<string | null>(null);
-  const [bookmarks, setBookmarks] = useState<Bookmark[]>(() => storage.getBookmarks());
+  const [bookmarks, setBookmarks] = useState<Bookmark[]>(() =>
+    storage.getBookmarks(),
+  );
 
   // Reduce motion check (safe for web)
   const [reduceMotion, setReduceMotion] = useState(false);
@@ -116,7 +130,10 @@ export default function BookmarksCollection() {
     if (Platform.OS === "web") return;
     try {
       AccessibilityInfo.isReduceMotionEnabled().then(setReduceMotion);
-      const sub = AccessibilityInfo.addEventListener("reduceMotionChanged", setReduceMotion);
+      const sub = AccessibilityInfo.addEventListener(
+        "reduceMotionChanged",
+        setReduceMotion,
+      );
       return () => sub?.remove();
     } catch {
       // AccessibilityInfo not available
@@ -126,7 +143,10 @@ export default function BookmarksCollection() {
   const surahMap = useMemo(() => {
     if (!surahs) return new Map<number, { arabic: string; english: string }>();
     return new Map(
-      surahs.map((s) => [s.number, { arabic: s.name_arabic, english: s.name_english }])
+      surahs.map((s) => [
+        s.number,
+        { arabic: s.name_arabic, english: s.name_english },
+      ]),
     );
   }, [surahs]);
 
@@ -136,20 +156,17 @@ export default function BookmarksCollection() {
     return sorted;
   }, [bookmarks, activeTab]);
 
-  const handleDelete = useCallback(
-    (surah: number, ayah: number) => {
-      storage.removeBookmark(surah, ayah);
-      setBookmarks(storage.getBookmarks());
-      setConfirmDeleteKey(null);
-    },
-    []
-  );
+  const handleDelete = useCallback((surah: number, ayah: number) => {
+    storage.removeBookmark(surah, ayah);
+    setBookmarks(storage.getBookmarks());
+    setConfirmDeleteKey(null);
+  }, []);
 
   const handlePress = useCallback(
     (surah: number) => {
       router.push(`/surah/${surah}` as const);
     },
-    [router]
+    [router],
   );
 
   const bookmarkKey = (b: Bookmark) => `${b.surah}-${b.ayah}`;
@@ -304,7 +321,7 @@ export default function BookmarksCollection() {
           paddingHorizontal: 24,
         },
       }),
-    [colors]
+    [colors],
   );
 
   // -----------------------------------------------------------------------
@@ -378,10 +395,7 @@ export default function BookmarksCollection() {
               <View style={styles.cardRow}>
                 <View style={styles.cardContent}>
                   {surah && (
-                    <Text
-                      style={styles.surahArabic}
-                      accessibilityLanguage="ar"
-                    >
+                    <Text style={styles.surahArabic} accessibilityLanguage="ar">
                       {surah.arabic}
                     </Text>
                   )}

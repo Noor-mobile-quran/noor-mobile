@@ -22,7 +22,8 @@ export const RECITERS: Reciter[] = [
     name_arabic: "عبد الباسط عبد الصمد",
     name_urdu: "عبدالباسط عبدالصمد",
     style: "Mujawwad",
-    audioBaseUrl: "https://cdn.islamic.network/quran/audio/192/ar.abdulbasitmurattal",
+    audioBaseUrl:
+      "https://cdn.islamic.network/quran/audio/192/ar.abdulbasitmurattal",
   },
   {
     id: "sudais",
@@ -30,7 +31,8 @@ export const RECITERS: Reciter[] = [
     name_arabic: "عبد الرحمن السديس",
     name_urdu: "عبدالرحمٰن السدیس",
     style: "Murattal",
-    audioBaseUrl: "https://cdn.islamic.network/quran/audio/128/ar.abdurrahmaansudais",
+    audioBaseUrl:
+      "https://cdn.islamic.network/quran/audio/128/ar.abdurrahmaansudais",
   },
   {
     id: "maher",
@@ -38,7 +40,8 @@ export const RECITERS: Reciter[] = [
     name_arabic: "ماهر المعيقلي",
     name_urdu: "ماہر المعیقلی",
     style: "Murattal",
-    audioBaseUrl: "https://cdn.islamic.network/quran/audio/128/ar.maaboralmueaqly",
+    audioBaseUrl:
+      "https://cdn.islamic.network/quran/audio/128/ar.maaboralmueaqly",
   },
   {
     id: "husary",

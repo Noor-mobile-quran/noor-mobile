@@ -34,7 +34,7 @@ export const themes: Record<ThemeMode, ThemeColors> = {
     textSecondary: "#6B5B45",
     accent: "#D4A843",
     accentBright: "#E8C547",
-    textGold: "#8B6914",       // 4.85:1 on #FFF9ED — AA compliant for text
+    textGold: "#8B6914", // 4.85:1 on #FFF9ED — AA compliant for text
     forest: "#1B4332",
     border: "rgba(212, 168, 67, 0.15)",
   },
@@ -46,7 +46,7 @@ export const themes: Record<ThemeMode, ThemeColors> = {
     textSecondary: "#D4B896",
     accent: "#E8C547",
     accentBright: "#D4A843",
-    textGold: "#E8C547",       // 8.2:1 on #1A1410 — AAA compliant
+    textGold: "#E8C547", // 8.2:1 on #1A1410 — AAA compliant
     forest: "#1B4332",
     border: "rgba(232, 197, 71, 0.15)",
   },
@@ -58,7 +58,7 @@ export const themes: Record<ThemeMode, ThemeColors> = {
     textSecondary: "#E0E0E0",
     accent: "#FFD700",
     accentBright: "#FFEA00",
-    textGold: "#FFD700",       // 15.1:1 on #000000 — AAA compliant
+    textGold: "#FFD700", // 15.1:1 on #000000 — AAA compliant
     forest: "#00C853",
     border: "rgba(255, 215, 0, 0.3)",
   },
@@ -70,7 +70,7 @@ export const themes: Record<ThemeMode, ThemeColors> = {
     textSecondary: "#7A6548",
     accent: "#C49A3C",
     accentBright: "#D4A843",
-    textGold: "#7A5C10",       // 5.1:1 on #F5E6C8 — AA compliant
+    textGold: "#7A5C10", // 5.1:1 on #F5E6C8 — AA compliant
     forest: "#1B4332",
     border: "rgba(196, 154, 60, 0.15)",
   },
@@ -82,7 +82,7 @@ export const themes: Record<ThemeMode, ThemeColors> = {
     textSecondary: "#9BA4B5",
     accent: "#7EB8DA",
     accentBright: "#A3D1ED",
-    textGold: "#A3D1ED",       // 7.8:1 on #1C2331 — AAA compliant
+    textGold: "#A3D1ED", // 7.8:1 on #1C2331 — AAA compliant
     forest: "#2D6A4F",
     border: "rgba(126, 184, 218, 0.15)",
   },
@@ -94,7 +94,7 @@ export const themes: Record<ThemeMode, ThemeColors> = {
     textSecondary: "#A3C4A0",
     accent: "#D4A843",
     accentBright: "#E8C547",
-    textGold: "#E8C547",       // 9.4:1 on #0B2618 — AAA compliant
+    textGold: "#E8C547", // 9.4:1 on #0B2618 — AAA compliant
     forest: "#2D6A4F",
     border: "rgba(212, 168, 67, 0.15)",
   },
@@ -106,7 +106,7 @@ export const themes: Record<ThemeMode, ThemeColors> = {
     textSecondary: "#999999",
     accent: "#D4A843",
     accentBright: "#E8C547",
-    textGold: "#E8C547",       // 11.4:1 on #000000 — AAA compliant
+    textGold: "#E8C547", // 11.4:1 on #000000 — AAA compliant
     forest: "#1B4332",
     border: "rgba(212, 168, 67, 0.12)",
   },

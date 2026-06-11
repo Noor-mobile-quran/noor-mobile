@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
-import { AccessibilityInfo, View, Text, Pressable, TouchableOpacity, StyleSheet } from "react-native";
+import {
+  AccessibilityInfo,
+  View,
+  Text,
+  Pressable,
+  TouchableOpacity,
+  StyleSheet,
+} from "react-native";
 import Animated, {
   Easing,
   useAnimatedStyle,
@@ -44,7 +51,15 @@ function PauseIcon({ size, color }: { size: number; color: string }) {
   );
 }
 
-function BookmarkIcon({ size, color, filled }: { size: number; color: string; filled: boolean }) {
+function BookmarkIcon({
+  size,
+  color,
+  filled,
+}: {
+  size: number;
+  color: string;
+  filled: boolean;
+}) {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24">
       <Path
@@ -108,9 +123,16 @@ export default function AyahCard({
 
     let sub: any;
     try {
-      sub = AccessibilityInfo.addEventListener("reduceMotionChanged", setReduceMotion);
+      sub = AccessibilityInfo.addEventListener(
+        "reduceMotionChanged",
+        setReduceMotion,
+      );
     } catch {}
-    return () => { try { sub?.remove(); } catch {} };
+    return () => {
+      try {
+        sub?.remove();
+      } catch {}
+    };
   }, [enterOpacity, enterTranslateY]);
 
   const enterStyle = useAnimatedStyle(() => ({
@@ -124,136 +146,139 @@ export default function AyahCard({
 
   return (
     <Animated.View style={enterStyle}>
-    <Pressable
-      onPress={() => {
-        if (!isImmersive) setShowControls((prev) => !prev);
-      }}
-      accessibilityLabel={`Ayah ${ayah.number_in_surah}. Tap for controls.`}
-    >
-      <View
-        style={[
-          styles.container,
-          {
-            backgroundColor: isPlaying
-              ? `${colors.accent}15`
-              : colors.surface,
-            borderColor: isPlaying ? `${colors.accent}40` : "transparent",
-            borderWidth: isPlaying ? 1 : 0,
-          },
-          isImmersive && {
-            borderLeftWidth: 2,
-            borderLeftColor: colors.accent,
-          },
-        ]}
+      <Pressable
+        onPress={() => {
+          if (!isImmersive) setShowControls((prev) => !prev);
+        }}
+        accessibilityLabel={`Ayah ${ayah.number_in_surah}. Tap for controls.`}
       >
-        {/* Ayah number badge */}
-        <View style={styles.header}>
-          <View
-            style={[
-              styles.ayahBadge,
-              { borderColor: `${colors.accent}40` },
-            ]}
-          >
-            <StarOrnament size={8} color={colors.accent} opacity={0.3} />
-            <Text
-              style={[
-                styles.ayahNumber,
-                {
-                  color: colors.textGold,
-                  fontFamily: fonts.latin.semiBold,
-                },
-              ]}
-            >
-              {ayah.number_in_surah}
-            </Text>
-          </View>
-
-          {/* Controls */}
-          {controlsVisible && (
-            <View style={styles.controls}>
-              <TouchableOpacity
-                onPress={onPlay}
-                accessibilityLabel={isPlaying ? `Pause recitation for ayah ${ayah.number_in_surah}` : `Play recitation for ayah ${ayah.number_in_surah}`}
-                accessibilityRole="button"
-                accessibilityHint="Double tap to toggle audio playback"
-                style={[
-                  styles.controlButton,
-                  {
-                    backgroundColor: `${colors.accent}15`,
-                    width: controlButtonSize,
-                    height: controlButtonSize,
-                  },
-                ]}
-                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-              >
-                {isPlaying ? (
-                  <PauseIcon size={18} color={colors.accent} />
-                ) : (
-                  <PlayIcon size={18} color={colors.textSecondary} />
-                )}
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={onBookmark}
-                accessibilityLabel={isBookmarked ? "Remove bookmark" : "Add bookmark"}
-                accessibilityRole="button"
-                accessibilityHint="Double tap to toggle bookmark"
-                style={[
-                  styles.controlButton,
-                  {
-                    backgroundColor: `${colors.accent}15`,
-                    width: controlButtonSize,
-                    height: controlButtonSize,
-                  },
-                ]}
-                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-              >
-                <BookmarkIcon
-                  size={18}
-                  color={isBookmarked ? colors.accent : colors.textSecondary}
-                  filled={isBookmarked}
-                />
-              </TouchableOpacity>
-              {surahName && (
-                <ShareButton
-                  ayah={ayah}
-                  surahName={surahName}
-                  surahNameArabic={surahNameArabic ?? ""}
-                  translationLang={translationLang}
-                />
-              )}
-            </View>
-          )}
-        </View>
-
-        {/* Arabic text */}
-        <ArabicText
-          style={{ color: colors.textPrimary, marginBottom: 16 }}
-        >
-          {ayah.text_arabic}
-        </ArabicText>
-
-        {/* Translation */}
-        <Text
+        <View
           style={[
-            styles.translation,
+            styles.container,
             {
-              color: colors.textSecondary,
-              fontFamily:
-                translationLang === "ur" ? "Amiri_400Regular" : fonts.latin.regular,
-              ...(translationLang === "ur" && {
-                writingDirection: "rtl" as const,
-                textAlign: "right" as const,
-              }),
+              backgroundColor: isPlaying
+                ? `${colors.accent}15`
+                : colors.surface,
+              borderColor: isPlaying ? `${colors.accent}40` : "transparent",
+              borderWidth: isPlaying ? 1 : 0,
+            },
+            isImmersive && {
+              borderLeftWidth: 2,
+              borderLeftColor: colors.accent,
             },
           ]}
-          {...(translationLang === "ur" && { accessibilityLanguage: "ur" })}
         >
-          {translationLang === "ur" && ayah.text_translation_ur
-            ? ayah.text_translation_ur
-            : ayah.text_translation}
-        </Text>
-      </View>
-    </Pressable>
+          {/* Ayah number badge */}
+          <View style={styles.header}>
+            <View
+              style={[styles.ayahBadge, { borderColor: `${colors.accent}40` }]}
+            >
+              <StarOrnament size={8} color={colors.accent} opacity={0.3} />
+              <Text
+                style={[
+                  styles.ayahNumber,
+                  {
+                    color: colors.textGold,
+                    fontFamily: fonts.latin.semiBold,
+                  },
+                ]}
+              >
+                {ayah.number_in_surah}
+              </Text>
+            </View>
+
+            {/* Controls */}
+            {controlsVisible && (
+              <View style={styles.controls}>
+                <TouchableOpacity
+                  onPress={onPlay}
+                  accessibilityLabel={
+                    isPlaying
+                      ? `Pause recitation for ayah ${ayah.number_in_surah}`
+                      : `Play recitation for ayah ${ayah.number_in_surah}`
+                  }
+                  accessibilityRole="button"
+                  accessibilityHint="Double tap to toggle audio playback"
+                  style={[
+                    styles.controlButton,
+                    {
+                      backgroundColor: `${colors.accent}15`,
+                      width: controlButtonSize,
+                      height: controlButtonSize,
+                    },
+                  ]}
+                  hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                >
+                  {isPlaying ? (
+                    <PauseIcon size={18} color={colors.accent} />
+                  ) : (
+                    <PlayIcon size={18} color={colors.textSecondary} />
+                  )}
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={onBookmark}
+                  accessibilityLabel={
+                    isBookmarked ? "Remove bookmark" : "Add bookmark"
+                  }
+                  accessibilityRole="button"
+                  accessibilityHint="Double tap to toggle bookmark"
+                  style={[
+                    styles.controlButton,
+                    {
+                      backgroundColor: `${colors.accent}15`,
+                      width: controlButtonSize,
+                      height: controlButtonSize,
+                    },
+                  ]}
+                  hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                >
+                  <BookmarkIcon
+                    size={18}
+                    color={isBookmarked ? colors.accent : colors.textSecondary}
+                    filled={isBookmarked}
+                  />
+                </TouchableOpacity>
+                {surahName && (
+                  <ShareButton
+                    ayah={ayah}
+                    surahName={surahName}
+                    surahNameArabic={surahNameArabic ?? ""}
+                    translationLang={translationLang}
+                  />
+                )}
+              </View>
+            )}
+          </View>
+
+          {/* Arabic text */}
+          <ArabicText style={{ color: colors.textPrimary, marginBottom: 16 }}>
+            {ayah.text_arabic}
+          </ArabicText>
+
+          {/* Translation */}
+          <Text
+            style={[
+              styles.translation,
+              {
+                color: colors.textSecondary,
+                fontFamily:
+                  translationLang === "ur"
+                    ? "Amiri_400Regular"
+                    : fonts.latin.regular,
+                ...(translationLang === "ur" && {
+                  writingDirection: "rtl" as const,
+                  textAlign: "right" as const,
+                }),
+              },
+            ]}
+            {...(translationLang === "ur" && { accessibilityLanguage: "ur" })}
+          >
+            {translationLang === "ur" && ayah.text_translation_ur
+              ? ayah.text_translation_ur
+              : ayah.text_translation}
+          </Text>
+        </View>
+      </Pressable>
     </Animated.View>
   );
 }

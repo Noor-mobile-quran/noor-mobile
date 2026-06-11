@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  StyleSheet,
+} from "react-native";
 import Svg, { Path } from "react-native-svg";
 import { useTheme } from "../theme/ThemeProvider";
 import { fonts } from "../theme/typography";

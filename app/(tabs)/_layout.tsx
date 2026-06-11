@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react";
 import { AccessibilityInfo } from "react-native";
 import { Tabs } from "expo-router";
+import { ErrorBoundary } from "react-error-boundary";
 import { useTheme } from "../../theme/ThemeProvider";
 import { fonts } from "../../theme/typography";
+import {
+  ErrorFallback,
+  logBoundaryError,
+} from "../../components/ErrorFallback";
 import Svg, { Path } from "react-native-svg";
 
 function HomeIcon({ color, size }: { color: string; size: number }) {
@@ -82,53 +87,60 @@ export default function TabLayout() {
   }, []);
 
   return (
-    <Tabs
-      screenOptions={{
-        headerShown: false,
-        animation: reduceMotion ? "none" : "fade",
-        tabBarActiveTintColor: colors.accent,
-        tabBarInactiveTintColor: colors.textSecondary,
-        tabBarStyle: {
-          backgroundColor: isDark ? colors.surface : colors.bg,
-          borderTopColor: colors.border,
-          borderTopWidth: 1,
-          paddingBottom: 4,
-          height: 56,
-        },
-        tabBarLabelStyle: {
-          fontFamily: fonts.latin.medium,
-          fontSize: 11,
-        },
-      }}
+    <ErrorBoundary
+      FallbackComponent={(props) => (
+        <ErrorFallback {...props} title="This section could not load" />
+      )}
+      onError={logBoundaryError}
     >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: "Home",
-          tabBarIcon: ({ color }) => <HomeIcon color={color} size={22} />,
+      <Tabs
+        screenOptions={{
+          headerShown: false,
+          animation: reduceMotion ? "none" : "fade",
+          tabBarActiveTintColor: colors.accent,
+          tabBarInactiveTintColor: colors.textSecondary,
+          tabBarStyle: {
+            backgroundColor: isDark ? colors.surface : colors.bg,
+            borderTopColor: colors.border,
+            borderTopWidth: 1,
+            paddingBottom: 4,
+            height: 56,
+          },
+          tabBarLabelStyle: {
+            fontFamily: fonts.latin.medium,
+            fontSize: 11,
+          },
         }}
-      />
-      <Tabs.Screen
-        name="surahs"
-        options={{
-          title: "Quran",
-          tabBarIcon: ({ color }) => <BookIcon color={color} size={22} />,
-        }}
-      />
-      <Tabs.Screen
-        name="journey"
-        options={{
-          title: "Journey",
-          tabBarIcon: ({ color }) => <JourneyIcon color={color} size={22} />,
-        }}
-      />
-      <Tabs.Screen
-        name="settings"
-        options={{
-          title: "Settings",
-          tabBarIcon: ({ color }) => <SettingsIcon color={color} size={22} />,
-        }}
-      />
-    </Tabs>
+      >
+        <Tabs.Screen
+          name="index"
+          options={{
+            title: "Home",
+            tabBarIcon: ({ color }) => <HomeIcon color={color} size={22} />,
+          }}
+        />
+        <Tabs.Screen
+          name="surahs"
+          options={{
+            title: "Quran",
+            tabBarIcon: ({ color }) => <BookIcon color={color} size={22} />,
+          }}
+        />
+        <Tabs.Screen
+          name="journey"
+          options={{
+            title: "Journey",
+            tabBarIcon: ({ color }) => <JourneyIcon color={color} size={22} />,
+          }}
+        />
+        <Tabs.Screen
+          name="settings"
+          options={{
+            title: "Settings",
+            tabBarIcon: ({ color }) => <SettingsIcon color={color} size={22} />,
+          }}
+        />
+      </Tabs>
+    </ErrorBoundary>
   );
 }

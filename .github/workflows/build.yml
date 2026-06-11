@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  quality:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,20 +22,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: TypeScript check
-        run: npx tsc --noEmit
-
       - name: Lint
-        run: npm run lint || true
+        run: npm run lint
 
-      - name: EAS Build (Preview APK)
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: expo/expo-github-action@v8
-        with:
-          eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
+      - name: Typecheck
+        run: npm run typecheck
 
-      - run: eas build --platform android --profile preview --non-interactive
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        env:
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+      - name: Format check
+        run: npm run format
+
+      - name: Tests with coverage
+        run: npm run test:coverage
+
+      - name: Expo web export
+        run: npx expo export --platform web

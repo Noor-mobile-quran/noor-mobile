@@ -27,20 +27,14 @@ export function AyahShareCard({
     <View style={styles.card}>
       {/* Header bar with brand mark */}
       <View style={styles.header}>
-        <Text
-          style={styles.brandMark}
-          accessibilityLanguage="ar"
-        >
+        <Text style={styles.brandMark} accessibilityLanguage="ar">
           {"\u0646\u0648\u0631"}
         </Text>
       </View>
 
       {/* Arabic ayah text */}
       <View style={styles.arabicContainer}>
-        <Text
-          style={styles.arabicText}
-          accessibilityLanguage="ar"
-        >
+        <Text style={styles.arabicText} accessibilityLanguage="ar">
           {ayah.text_arabic}
         </Text>
       </View>

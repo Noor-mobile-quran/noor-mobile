@@ -4,6 +4,7 @@ import {
   Text,
   Pressable,
   AccessibilityInfo,
+  ActivityIndicator,
   type DimensionValue,
 } from "react-native";
 import Svg, { Path, Rect, Line } from "react-native-svg";
@@ -25,6 +26,9 @@ export function AudioPlayer() {
   const { colors } = useTheme();
   const audioPlaying = useAppStore((s) => s.audioPlaying);
   const currentAyah = useAppStore((s) => s.currentAudioAyah);
+  const audioBuffering = useAppStore((s) => s.audioBuffering);
+  const audioError = useAppStore((s) => s.audioError);
+  const audioRetryAttempt = useAppStore((s) => s.audioRetryAttempt);
   const uxMode = useAppStore((s) => s.settings.uxMode);
   const lastReadSurah = useAppStore((s) => s.progress.lastReadSurah);
   const { stop, pause, resume } = useNoorAudioPlayer();
@@ -39,6 +43,7 @@ export function AudioPlayer() {
   const isImmersive = uxMode === "immersive";
   const barHeight = isImmersive ? 80 : 56;
   const iconSize = isImmersive ? 28 : 20;
+  const showPlayer = audioPlaying || audioBuffering || audioError;
 
   // Find surah name
   const surahMeta = surahList?.find((s) => s.number === lastReadSurah);
@@ -61,6 +66,12 @@ export function AudioPlayer() {
   }, []);
 
   useEffect(() => {
+    return () => {
+      stop();
+    };
+  }, [stop]);
+
+  useEffect(() => {
     if (!audioPlaying) {
       setIsPaused(false);
     }
@@ -68,19 +79,19 @@ export function AudioPlayer() {
 
   useEffect(() => {
     translateY.value = reduceMotion
-      ? audioPlaying
+      ? showPlayer
         ? 0
         : 100
-      : withTiming(audioPlaying ? 0 : 100, {
+      : withTiming(showPlayer ? 0 : 100, {
           duration: 300,
           easing: Easing.out(Easing.cubic),
         });
-  }, [audioPlaying, reduceMotion, translateY]);
+  }, [reduceMotion, showPlayer, translateY]);
 
   useEffect(() => {
     cancelAnimation(progressWidth);
 
-    if (audioPlaying && !isPaused) {
+    if (audioPlaying && !isPaused && !audioBuffering) {
       progressWidth.value = 0;
       progressWidth.value = reduceMotion
         ? 1
@@ -92,7 +103,7 @@ export function AudioPlayer() {
     } else {
       progressWidth.value = 0;
     }
-  }, [audioPlaying, isPaused, progressWidth, reduceMotion]);
+  }, [audioBuffering, audioPlaying, isPaused, progressWidth, reduceMotion]);
 
   const slideStyle = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],
@@ -102,9 +113,19 @@ export function AudioPlayer() {
     width: `${progressWidth.value * 100}%` as DimensionValue,
   }));
 
-  if (!audioPlaying) {
+  if (!showPlayer) {
     return null;
   }
+
+  const statusText = audioError
+    ? audioError
+    : audioBuffering
+      ? audioRetryAttempt > 1
+        ? `Preparing audio, retry ${audioRetryAttempt} of 3`
+        : "Preparing audio"
+      : currentAyah
+        ? `Ayah ${currentAyah}`
+        : "";
 
   const handlePlayPause = async () => {
     if (isPaused) {
@@ -138,7 +159,7 @@ export function AudioPlayer() {
         },
       ]}
       accessibilityRole="toolbar"
-      accessibilityLabel="Audio player"
+      accessibilityLabel={audioError ? "Audio playback error" : "Audio player"}
     >
       {/* Progress bar */}
       <Animated.View
@@ -176,30 +197,32 @@ export function AudioPlayer() {
             numberOfLines={1}
             accessibilityLanguage="ar"
           >
-            {surahName}
+            {audioError ? "" : surahName}
           </Text>
           <Text
             style={{
               fontFamily: fonts.latin.regular,
               fontSize: isImmersive ? 13 : 11,
-              color: colors.textSecondary,
+              color: audioError ? colors.textGold : colors.textSecondary,
             }}
             numberOfLines={1}
           >
-            {surahNameLatin}
-            {currentAyah ? ` · Ayah ${currentAyah}` : ""}
+            {audioError ? "Audio unavailable" : surahNameLatin}
+            {statusText ? ` - ${statusText}` : ""}
           </Text>
         </View>
 
         {/* Play/Pause */}
         <Pressable
           onPress={handlePlayPause}
+          disabled={audioBuffering || !!audioError}
           hitSlop={12}
           style={{
             width: isImmersive ? 48 : 44,
             height: isImmersive ? 48 : 44,
             borderRadius: isImmersive ? 24 : 22,
-            backgroundColor: colors.accent,
+            backgroundColor:
+              audioBuffering || audioError ? colors.border : colors.accent,
             justifyContent: "center",
             alignItems: "center",
           }}
@@ -207,7 +230,9 @@ export function AudioPlayer() {
           accessibilityLabel={isPaused ? "Resume" : "Pause"}
           accessibilityHint="Double tap to toggle audio playback"
         >
-          {isPaused ? (
+          {audioBuffering ? (
+            <ActivityIndicator size="small" color={colors.bg} />
+          ) : isPaused ? (
             <Svg width={iconSize} height={iconSize} viewBox="0 0 24 24">
               <Path d="M8 5v14l11-7z" fill={colors.bg} />
             </Svg>

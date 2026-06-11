@@ -3,7 +3,10 @@ import surahMap from "../assets/data/surahRequireMap";
 import type { Surah } from "../types";
 
 // Pre-load all surahs from the static require map (bundled JSON, not API calls)
-const allSurahs: Surah[] = Array.from({ length: 114 }, (_, i) => surahMap[i + 1]);
+const allSurahs: Surah[] = Array.from(
+  { length: 114 },
+  (_, i) => surahMap[i + 1],
+);
 
 export interface SearchResult {
   surah: number;

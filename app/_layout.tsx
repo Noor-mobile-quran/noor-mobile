@@ -2,15 +2,17 @@ import { useEffect, useState } from "react";
 import { AccessibilityInfo, Platform } from "react-native";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import { ErrorBoundary } from "react-error-boundary";
 import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider, useTheme } from "../theme/ThemeProvider";
 import { AudioPlayer } from "../components/AudioPlayer";
+import { ErrorFallback, logBoundaryError } from "../components/ErrorFallback";
 import Onboarding from "../components/Onboarding";
 import "../global.css";
 
-// On web the splash screen API is a no-op — guard it so it never blocks render
+// On web the splash screen API is a no-op, so guard it before render.
 if (Platform.OS !== "web") {
   SplashScreen.preventAutoHideAsync().catch(() => {});
 }
@@ -46,7 +48,6 @@ function RootLayoutInner() {
     "Inter-SemiBold": require("../assets/fonts/Inter-SemiBold.ttf"),
     "Inter-Bold": require("../assets/fonts/Inter-Bold.ttf"),
   });
-
 
   useEffect(() => {
     try {
@@ -113,10 +114,12 @@ function RootLayoutInner() {
 
 export default function RootLayout() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider>
-        <RootLayoutInner />
-      </ThemeProvider>
-    </QueryClientProvider>
+    <ErrorBoundary FallbackComponent={ErrorFallback} onError={logBoundaryError}>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider>
+          <RootLayoutInner />
+        </ThemeProvider>
+      </QueryClientProvider>
+    </ErrorBoundary>
   );
 }

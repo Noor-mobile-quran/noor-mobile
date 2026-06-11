@@ -47,9 +47,9 @@ function parseRange(ref: string): ParsedRange | null {
 }
 
 function getSurahName(surahNum: number): string {
-  const meta = (surahIndex as Array<{ number: number; name_english: string }>).find(
-    (s) => s.number === surahNum
-  );
+  const meta = (
+    surahIndex as Array<{ number: number; name_english: string }>
+  ).find((s) => s.number === surahNum);
   return meta?.name_english ?? `Surah ${surahNum}`;
 }
 
@@ -57,7 +57,7 @@ function getAyahs(surahNum: number, start: number, end: number) {
   const surah = surahMap[surahNum] as Surah | undefined;
   if (!surah) return [];
   return surah.ayahs.filter(
-    (a) => a.number_in_surah >= start && a.number_in_surah <= end
+    (a) => a.number_in_surah >= start && a.number_in_surah <= end,
   );
 }
 
@@ -72,9 +72,9 @@ export function StoryMode({
   const narrative = useMemo(
     () =>
       (hyperedgesData as any).hyperedges.find(
-        (h: any) => h.id === narrativeId && h.type === "narrative_arc"
+        (h: any) => h.id === narrativeId && h.type === "narrative_arc",
       ),
-    [narrativeId]
+    [narrativeId],
   );
 
   const scenes = useMemo(() => {
@@ -149,7 +149,7 @@ export function StoryMode({
             const ratio = offsetY / (contentHeight - height);
             const idx = Math.min(
               Math.round(ratio * (scenes.length - 1)),
-              scenes.length - 1
+              scenes.length - 1,
             );
             setCurrentIndex(Math.max(0, idx));
           }
@@ -158,8 +158,7 @@ export function StoryMode({
         {scenes.map((scene, idx) => {
           const ayahs = getAyahs(scene.surah, scene.ayahStart, scene.ayahEnd);
           const surahName = getSurahName(scene.surah);
-          const showDivider =
-            idx > 0 && scenes[idx - 1].surah !== scene.surah;
+          const showDivider = idx > 0 && scenes[idx - 1].surah !== scene.surah;
           const rangeLabel =
             scene.ayahStart === scene.ayahEnd
               ? `${scene.ayahStart}`
@@ -193,9 +192,7 @@ export function StoryMode({
               )}
 
               <Pressable
-                onPress={() =>
-                  onAyahPress?.(scene.surah, scene.ayahStart)
-                }
+                onPress={() => onAyahPress?.(scene.surah, scene.ayahStart)}
                 style={[
                   styles.card,
                   {
@@ -222,10 +219,7 @@ export function StoryMode({
                   </View>
                 ))}
                 <Text
-                  style={[
-                    styles.reference,
-                    { color: colors.textSecondary },
-                  ]}
+                  style={[styles.reference, { color: colors.textSecondary }]}
                 >
                   {surahName} - {scene.surah}:{rangeLabel}
                 </Text>

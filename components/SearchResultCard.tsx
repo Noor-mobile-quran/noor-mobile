@@ -5,7 +5,13 @@ import { useRouter } from "expo-router";
 import { useTheme } from "../theme/ThemeProvider";
 import type { SearchResult } from "../hooks/useQuranSearch";
 
-function ChevronRightIcon({ size = 16, color = "#6B5B45" }: { size?: number; color?: string }) {
+function ChevronRightIcon({
+  size = 16,
+  color = "#6B5B45",
+}: {
+  size?: number;
+  color?: string;
+}) {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <Path
@@ -31,7 +37,11 @@ function HighlightedText({
   highlightStyle: object;
 }) {
   if (!highlight || highlight.length < 3) {
-    return <Text style={baseStyle} numberOfLines={3}>{text}</Text>;
+    return (
+      <Text style={baseStyle} numberOfLines={3}>
+        {text}
+      </Text>
+    );
   }
 
   const lowerText = text.toLowerCase();
@@ -61,7 +71,7 @@ function HighlightedText({
           </Text>
         ) : (
           <Text key={i}>{part.text}</Text>
-        )
+        ),
       )}
     </Text>
   );
@@ -128,7 +138,7 @@ export default function SearchResultCard({ result, query }: Props) {
           width: 24,
         },
       }),
-    [colors]
+    [colors],
   );
 
   return (
@@ -141,10 +151,7 @@ export default function SearchResultCard({ result, query }: Props) {
     >
       <View style={styles.content}>
         <View style={styles.headerRow}>
-          <Text
-            style={styles.surahArabic}
-            accessibilityLanguage="ar"
-          >
+          <Text style={styles.surahArabic} accessibilityLanguage="ar">
             {result.surahNameArabic}
           </Text>
           <Text style={styles.surahEnglish}>{result.surahName}</Text>

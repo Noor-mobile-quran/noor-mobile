@@ -77,10 +77,7 @@ export default function ShareButton({
       onPress={handleShare}
       accessibilityLabel="Share this ayah"
       accessibilityRole="button"
-      style={[
-        styles.button,
-        { backgroundColor: `${colors.accent}15` },
-      ]}
+      style={[styles.button, { backgroundColor: `${colors.accent}15` }]}
     >
       <ShareIcon size={size} color={colors.textSecondary} />
     </TouchableOpacity>

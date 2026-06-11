@@ -16,10 +16,7 @@ import Animated, {
   withTiming,
   type SharedValue,
 } from "react-native-reanimated";
-import {
-  Gesture,
-  GestureDetector,
-} from "react-native-gesture-handler";
+import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import { useTheme } from "../../theme/ThemeProvider";
 import { fonts } from "../../theme/typography";
 import surahIndex from "../../assets/data/surah-index.json";
@@ -58,8 +55,8 @@ const SCREEN_HEIGHT = Dimensions.get("window").height;
 // Full  = 10% from top  => 90% visible
 // Offscreen = 100% (hidden below screen)
 const SNAP_PEEK = SCREEN_HEIGHT * 0.75;
-const SNAP_HALF = SCREEN_HEIGHT * 0.50;
-const SNAP_FULL = SCREEN_HEIGHT * 0.10;
+const SNAP_HALF = SCREEN_HEIGHT * 0.5;
+const SNAP_FULL = SCREEN_HEIGHT * 0.1;
 const SNAP_OFFSCREEN = SCREEN_HEIGHT;
 
 const SNAP_POINTS = [SNAP_FULL, SNAP_HALF, SNAP_PEEK] as const;
@@ -73,7 +70,10 @@ const SWIPE_THRESHOLD = 50;
 // Helpers
 // ---------------------------------------------------------------------------
 
-function getSurahName(surahNumber: number): { english: string; arabic: string } {
+function getSurahName(surahNumber: number): {
+  english: string;
+  arabic: string;
+} {
   const entries = surahIndex as SurahEntry[];
   const entry = entries.find((s) => s.number === surahNumber);
   if (!entry) {
@@ -179,9 +179,12 @@ export function KnowledgePanel({
     };
     init();
     try {
-      sub = AccessibilityInfo.addEventListener("reduceMotionChanged", (enabled) => {
-        reduceMotionRef.current = enabled;
-      });
+      sub = AccessibilityInfo.addEventListener(
+        "reduceMotionChanged",
+        (enabled) => {
+          reduceMotionRef.current = enabled;
+        },
+      );
     } catch {}
     return () => {
       try {
@@ -218,7 +221,7 @@ export function KnowledgePanel({
       });
       currentSnap.value = targetY;
     },
-    [translateY, currentSnap]
+    [translateY, currentSnap],
   );
 
   const dismiss = useCallback(() => {
@@ -348,10 +351,7 @@ export function KnowledgePanel({
           <View style={styles.header}>
             <View style={styles.headerRow}>
               <Text
-                style={[
-                  styles.surahName,
-                  { color: colors.textPrimary },
-                ]}
+                style={[styles.surahName, { color: colors.textPrimary }]}
                 numberOfLines={1}
                 accessibilityLanguage="ar"
                 aria-label={surahInfo.english}

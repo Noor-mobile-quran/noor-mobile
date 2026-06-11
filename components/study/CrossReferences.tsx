@@ -42,7 +42,9 @@ interface NarrativeInfo {
   totalScenes: number;
 }
 
-function parseAyahRef(ref: string): { surah: number; start: number; end: number } | null {
+function parseAyahRef(
+  ref: string,
+): { surah: number; start: number; end: number } | null {
   const match = ref.match(/^(\d+):(\d+)(?:-(\d+))?$/);
   if (!match) return null;
   return {
@@ -59,8 +61,13 @@ function ayahMatchesRef(surah: number, ayah: number, ref: string): boolean {
 }
 
 function getSurahMeta(num: number) {
-  return (surahIndex as { number: number; name_arabic: string; name_english: string }[])
-    .find((s) => s.number === num);
+  return (
+    surahIndex as {
+      number: number;
+      name_arabic: string;
+      name_english: string;
+    }[]
+  ).find((s) => s.number === num);
 }
 
 const TYPE_LABELS: Record<string, string> = {
@@ -159,7 +166,10 @@ export function CrossReferences({
     <View style={styles.container}>
       {narrative && (
         <View
-          style={[styles.narrativeBanner, { backgroundColor: colors.surface, borderColor: colors.border }]}
+          style={[
+            styles.narrativeBanner,
+            { backgroundColor: colors.surface, borderColor: colors.border },
+          ]}
         >
           <Text
             style={[
@@ -183,10 +193,7 @@ export function CrossReferences({
       {references.map((ref, index) => (
         <Pressable
           key={`${ref.ayahRange}-${ref.hyperedgeLabel}-${index}`}
-          style={[
-            styles.card,
-            { backgroundColor: colors.surface },
-          ]}
+          style={[styles.card, { backgroundColor: colors.surface }]}
           onPress={() => {
             const parsed = parseAyahRef(ref.ayahRange);
             if (parsed && onReferencePress) {
@@ -239,7 +246,10 @@ export function CrossReferences({
             <Text
               style={[
                 styles.typeBadgeText,
-                { color: colors.textSecondary, fontFamily: fonts.latin.regular },
+                {
+                  color: colors.textSecondary,
+                  fontFamily: fonts.latin.regular,
+                },
               ]}
             >
               {TYPE_LABELS[ref.hyperedgeType] || ref.hyperedgeType}
@@ -258,11 +268,29 @@ export function CrossReferencesSkeleton() {
       {[0, 1, 2].map((i) => (
         <View
           key={i}
-          style={[styles.card, { backgroundColor: colors.surface, opacity: 0.5 }]}
+          style={[
+            styles.card,
+            { backgroundColor: colors.surface, opacity: 0.5 },
+          ]}
         >
-          <View style={[styles.skeletonLine, { width: "60%", backgroundColor: colors.border }]} />
-          <View style={[styles.skeletonLine, { width: "30%", backgroundColor: colors.border }]} />
-          <View style={[styles.skeletonLine, { width: "80%", backgroundColor: colors.border }]} />
+          <View
+            style={[
+              styles.skeletonLine,
+              { width: "60%", backgroundColor: colors.border },
+            ]}
+          />
+          <View
+            style={[
+              styles.skeletonLine,
+              { width: "30%", backgroundColor: colors.border },
+            ]}
+          />
+          <View
+            style={[
+              styles.skeletonLine,
+              { width: "80%", backgroundColor: colors.border },
+            ]}
+          />
         </View>
       ))}
     </View>

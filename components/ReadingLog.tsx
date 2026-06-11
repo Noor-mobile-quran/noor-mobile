@@ -23,7 +23,9 @@ export default function ReadingLog() {
     >
       <Text style={[styles.reflection, { color: colors.textSecondary }]}>
         Welcome back to your{" "}
-        <Text style={[styles.reflectionHighlight, { color: colors.textPrimary }]}>
+        <Text
+          style={[styles.reflectionHighlight, { color: colors.textPrimary }]}
+        >
           Quran reflection
         </Text>
       </Text>
